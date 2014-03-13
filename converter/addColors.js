@@ -2,11 +2,11 @@ var fs = require('fs');
 var argv = require('optimist').usage('Add colors to json file with street points\nUsage: $0 [jsonfile]').demand(1).argv;
 
 var colors = {
-	'25': '#08306b',
-	'14-18': '#2171b5',
-	'14': '#4292c6',
-	'10': '#9ecae1',
-	'9': '#deebf7'
+	'25': '#d7301f',
+	'14-18': '#ce1256',
+	'14': '#00441b',
+	'10': '#3f007d',
+	'9': '#08306b'
 };
 
 var newGeojson = {
