@@ -35,13 +35,14 @@ var geojson = fs.readFile(argv._[0], {
 					feature.properties['haerte'] = haerte;
 					feature.properties['marker-symbol'] = 'circle-stroked';
 					feature.properties['marker-color'] = colors[haerte];
+
+					if (feature.geometry.coordinates.length === 2) {
+						newGeojson.features.push(feature);
+					}
 				}
 			}
 		}
 
-		if (feature.geometry.coordinates.length === 2) {
-			newGeojson.features.push(feature);
-		}
 	});
 
 	var geojsonString = JSON.stringify(newGeojson, null, '\t');

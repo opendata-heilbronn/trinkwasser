@@ -738,17 +738,6 @@
 		},
 		{
 			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.210879,
-					49.1426929
-				]
-			}
-		},
-		{
-			"type": "Feature",
 			"properties": {
 				"haerte": "14-18",
 				"marker-symbol": "circle-stroked",
@@ -1104,19 +1093,6 @@
 				"coordinates": [
 					9.188590699999999,
 					49.1382804
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties": {
-				"haerte": ""
-			},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.25807,
-					49.13395
 				]
 			}
 		},
@@ -1797,17 +1773,6 @@
 		},
 		{
 			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.1931674,
-					49.1348304
-				]
-			}
-		},
-		{
-			"type": "Feature",
 			"properties": {
 				"haerte": "10",
 				"marker-symbol": "circle-stroked",
@@ -2048,17 +2013,6 @@
 		},
 		{
 			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.1989293,
-					49.1622745
-				]
-			}
-		},
-		{
-			"type": "Feature",
 			"properties": {
 				"haerte": "14",
 				"marker-symbol": "circle-stroked",
@@ -2149,28 +2103,6 @@
 		},
 		{
 			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.220546299999999,
-					49.15904399999999
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.195107,
-					49.1667314
-				]
-			}
-		},
-		{
-			"type": "Feature",
 			"properties": {
 				"haerte": "14",
 				"marker-symbol": "circle-stroked",
@@ -2196,17 +2128,6 @@
 				"coordinates": [
 					9.1364802,
 					49.1953962
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.1990341,
-					49.1781143
 				]
 			}
 		},
@@ -2423,19 +2344,6 @@
 		{
 			"type": "Feature",
 			"properties": {
-				"haerte": "14-18"
-			},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.2209992,
-					49.1563975
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties": {
 				"haerte": "14-18",
 				"marker-symbol": "circle-stroked",
 				"marker-color": "#ce1256"
@@ -2535,17 +2443,6 @@
 				"coordinates": [
 					9.2236032,
 					49.1472574
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.2026297,
-					49.161638
 				]
 			}
 		},
@@ -3131,17 +3028,6 @@
 				"coordinates": [
 					9.1786826,
 					49.1162172
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.199290999999999,
-					49.1592261
 				]
 			}
 		},
@@ -4047,17 +3933,6 @@
 		},
 		{
 			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.139972,
-					49.1899186
-				]
-			}
-		},
-		{
-			"type": "Feature",
 			"properties": {
 				"haerte": "14-18",
 				"marker-symbol": "circle-stroked",
@@ -4418,17 +4293,6 @@
 		},
 		{
 			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.210879,
-					49.1426929
-				]
-			}
-		},
-		{
-			"type": "Feature",
 			"properties": {
 				"haerte": "9",
 				"marker-symbol": "circle-stroked",
@@ -4489,17 +4353,6 @@
 		},
 		{
 			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.2013991,
-					49.1681527
-				]
-			}
-		},
-		{
-			"type": "Feature",
 			"properties": {
 				"haerte": "9",
 				"marker-symbol": "circle-stroked",
@@ -4510,17 +4363,6 @@
 				"coordinates": [
 					9.2160002,
 					49.12465539999999
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.2169215,
-					49.1393573
 				]
 			}
 		},
@@ -4896,17 +4738,6 @@
 				"coordinates": [
 					9.2173565,
 					49.1396332
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.210879,
-					49.1426929
 				]
 			}
 		},
@@ -5812,17 +5643,6 @@
 		},
 		{
 			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.1767597,
-					49.1154462
-				]
-			}
-		},
-		{
-			"type": "Feature",
 			"properties": {
 				"haerte": "14-18",
 				"marker-symbol": "circle-stroked",
@@ -6213,17 +6033,6 @@
 		},
 		{
 			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.1679674,
-					49.1576527
-				]
-			}
-		},
-		{
-			"type": "Feature",
 			"properties": {
 				"haerte": "14",
 				"marker-symbol": "circle-stroked",
@@ -6564,19 +6373,6 @@
 				"coordinates": [
 					9.211760199999999,
 					49.1273695
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties": {
-				"haerte": "-1°"
-			},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.210879,
-					49.1426929
 				]
 			}
 		},
@@ -7147,17 +6943,6 @@
 				"coordinates": [
 					9.1999221,
 					49.157965
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.2175007,
-					49.1542477
 				]
 			}
 		},
@@ -7869,19 +7654,6 @@
 		{
 			"type": "Feature",
 			"properties": {
-				"haerte": "9 "
-			},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.183764199999999,
-					49.115876
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties": {
 				"haerte": "14",
 				"marker-symbol": "circle-stroked",
 				"marker-color": "#00441b"
@@ -8356,17 +8128,6 @@
 				"coordinates": [
 					9.1967894,
 					49.1235224
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.1854471,
-					49.1289552
 				]
 			}
 		},
@@ -9227,17 +8988,6 @@
 		},
 		{
 			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.3429,
-					49.32172
-				]
-			}
-		},
-		{
-			"type": "Feature",
 			"properties": {
 				"haerte": "9",
 				"marker-symbol": "circle-stroked",
@@ -9908,17 +9658,6 @@
 				"coordinates": [
 					9.1931941,
 					49.1634377
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.239733099999999,
-					49.1299881
 				]
 			}
 		},
@@ -15499,17 +15238,6 @@
 				"coordinates": [
 					9.3311111,
 					49.3994444
-				]
-			}
-		},
-		{
-			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					9.210879,
-					49.1426929
 				]
 			}
 		},
