@@ -1,0 +1,14 @@
+{
+  "name": "wasserkarte",
+  "version": "1.0.0",
+  "dependencies": {
+    "googlemaps": "~0.1.9",
+    "optimist": "~0.6.1",
+    "csv": "~0.3.7",
+    "async": "~0.2.10"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
