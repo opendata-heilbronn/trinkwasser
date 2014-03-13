@@ -9,6 +9,11 @@ var colors = {
 	'9': '#deebf7'
 };
 
+var newGeojson = {
+	"type": "FeatureCollection",
+	"features": []
+};
+
 var geojson = fs.readFile(argv._[0], {
 	encoding: 'utf-8'
 }, function(err, data) {
@@ -27,13 +32,18 @@ var geojson = fs.readFile(argv._[0], {
 			}
 			if (haerte && haerte != '-1' && haerte != '14-1') {
 				if (!values[haerte]) {
+					feature.properties['haerte'] = haerte;
 					feature.properties['marker-symbol'] = 'circle-stroked';
 					feature.properties['marker-color'] = colors[haerte];
 				}
 			}
 		}
+
+		if (feature.geometry.coordinates.length === 2) {
+			newGeojson.features.push(feature);
+		}
 	});
 
-	var geojsonString = JSON.stringify(geojson, null, '\t');
+	var geojsonString = JSON.stringify(newGeojson, null, '\t');
 	fs.writeFile('result-with-colors.geojson', geojsonString);
 });
