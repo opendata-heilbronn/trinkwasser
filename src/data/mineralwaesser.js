@@ -1,4 +1,4 @@
-data.referenceWaters = {
+tw.data.referenceWaters = {
 	"Gemminger Mineralquelle": {
 		"Natrium": 40.6,
 		"Kalium": 5.4,

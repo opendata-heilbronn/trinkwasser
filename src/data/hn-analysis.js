@@ -1,4 +1,4 @@
-data.heilbronn.analysis = {
+tw.data.heilbronn.analysis = {
 	"14": {
 		"Natrium": 7,
 		"Kalium": 2,
