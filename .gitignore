@@ -9,3 +9,4 @@ Thumbs.db
 .rvmrc
 dist
 libpeerconnection.log
+node_modules
