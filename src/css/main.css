@@ -1,5 +1,6 @@
 body {
 	min-width: 800px;
+	padding-top: 60px;
 }
 
 #map {
