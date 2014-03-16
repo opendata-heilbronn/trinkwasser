@@ -1,5 +1,5 @@
 {
-  "name": "wasserkarte",
+  "name": "trinkwasser-converter",
   "version": "1.0.0",
   "dependencies": {
     "googlemaps": "~0.1.9",
