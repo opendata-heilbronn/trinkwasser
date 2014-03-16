@@ -19,6 +19,16 @@ tw.data.referenceWaters = {
 		"Sulfat": 1450,
 		"sources": ["http://www.teusser.de/index.php?id=225"]
 	},
+	"Biberacher sanft": {
+		"Natrium": 17.1,
+		"Kalium": 8.65,
+		"Calcium": 585,
+		"Magnesium": 51.1,
+		"Chlorid": 32.3,
+		"Nitrat": 0.2,
+		"Sulfat": 1359,
+		"sources": []
+	},
 	"Volvic": {
 		"Natrium": 11.6,
 		"Kalium": 6.2,
