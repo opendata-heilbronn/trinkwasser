@@ -1,38 +1,38 @@
 tw.data.heilbronn.analysis = {
 	"14": {
-		"Natrium": 7,
-		"Kalium": 2,
-		"Calcium": 70,
-		"Magnesium": 17,
-		"Chlorid": 16,
-		"Nitrat": 13,
-		"Sulfat": 35
+		"natrium": 7,
+		"kalium": 2,
+		"calcium": 70,
+		"magnesium": 17,
+		"chlorid": 16,
+		"nitrat": 13,
+		"sulfat": 35
 	},
 	"14-18": {
-		"Natrium": "6-12",
-		"Kalium": "1-3",
-		"Calcium": "80-92",
-		"Magnesium": "14-20",
-		"Chlorid": "20-25",
-		"Nitrat": "18-22",
-		"Sulfat": "37-57"
+		"natrium": "6-12",
+		"kalium": "1-3",
+		"calcium": "80-92",
+		"magnesium": "14-20",
+		"chlorid": "20-25",
+		"nitrat": "18-22",
+		"sulfat": "37-57"
 	},
 	"10": {
-		"Natrium": "6-7",
-		"Kalium": "1-2",
-		"Calcium": "55-60",
-		"Magnesium": "11-12",
-		"Chlorid": "9-10",
-		"Nitrat": "8-9",
-		"Sulfat": "91-92"
+		"natrium": "6-7",
+		"kalium": "1-2",
+		"calcium": "55-60",
+		"magnesium": "11-12",
+		"chlorid": "9-10",
+		"nitrat": "8-9",
+		"sulfat": "91-92"
 	},
 	"9": {
-		"Natrium": "5-6",
-		"Kalium": "1-2",
-		"Calcium": "48-52",
-		"Magnesium": "7-9",
-		"Chlorid": "8-9",
-		"Nitrat": "5-7",
-		"Sulfat": 32
+		"natrium": "5-6",
+		"kalium": "1-2",
+		"calcium": "48-52",
+		"magnesium": "7-9",
+		"chlorid": "8-9",
+		"nitrat": "5-7",
+		"sulfat": 32
 	}
 };

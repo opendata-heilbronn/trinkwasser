@@ -1,32 +1,26 @@
 body {
-	min-width: 800px;
 	padding-top: 60px;
 }
-
-#map {
-	left: 0;
-	right: 0;
-	z-index: 0;
-	position: absolute;
-	top: 50px;
-	bottom: 0;
+a {
+	cursor: pointer;
+}
+h1 {
+	margin-bottom: 1em;
 }
 
-.info {
-	padding: 6px 8px;
-	font: 14px/16px Arial, Helvetica, sans-serif;
-	background: white;
-	background: rgba(255,255,255,0.8);
-	box-shadow: 0 0 15px rgba(0,0,0,0.2);
-	border-radius: 5px;
-	min-width: 300px;
+/* details page */
+.nutrient-gauge {
+	margin-right: 7px;
 }
-.info h4 {
-	margin: 0 0 5px;
-	color: #777;
+.nutrient-description {
+	margin-top: 5em;
 }
 
 /* svg gauge */
+.gauge {
+	width: 80px;
+	height: 380px;
+}
 .gauge-unit {
 	font-size: 18px;
 }
@@ -36,14 +30,19 @@ body {
 }
 .gauge-lines text {
 	font-size: 20px;
-	text-anchor: middle;
 }
 .gauge-tube {
 	stroke: #000;
 	stroke-width: 2;
 	fill: none;
 }
+.gauge-value,
+.gauge-value-2 {
+	stroke: none;
+}
 .gauge-value {
 	fill: #FF0000;
-	stroke: none;
+}
+.gauge-value-2 {
+	fill: #FF8E1C;
 }
