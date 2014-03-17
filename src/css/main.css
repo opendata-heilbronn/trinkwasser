@@ -25,3 +25,25 @@ body {
 	margin: 0 0 5px;
 	color: #777;
 }
+
+/* svg gauge */
+.gauge-unit {
+	font-size: 18px;
+}
+.gauge-lines line {
+	stroke: #000;
+	stroke-width: 1;
+}
+.gauge-lines text {
+	font-size: 20px;
+	text-anchor: middle;
+}
+.gauge-tube {
+	stroke: #000;
+	stroke-width: 2;
+	fill: none;
+}
+.gauge-value {
+	fill: #FF0000;
+	stroke: none;
+}
