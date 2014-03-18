@@ -47,9 +47,12 @@ h1 {
 	opacity: 0.85;
 }
 .gauge-lines line {
-	stroke: #000;
-	stroke-width: 1;
+	stroke: #002A54;
+	stroke-width: 2;
+	opacity: 0.8;
 }
 .gauge-lines text {
+	fill: #002A54;
 	font-size: 20px;
+	opacity: 0.8;
 }

@@ -15,42 +15,50 @@
 		var yValueStop = 180, yValueMaxHeight = 642, yValueStart = yValueStop + yValueMaxHeight;
 
 		/** lines */
-		var linesToDisplay = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+		var linesToDisplay = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 		var calculateLineY = function(lineNumber) {
 			var ratio = lineNumber / 20;
 			var y = yValueStart - Math.round(yValueMaxHeight * ratio);
-			return y;
+			return y - 2;
 		};
-		var calculateLineX1 = function(lineNumber) {
-			return lineNumber % 5 === 0 ? 38 : 47;
+		var calculateLineX2 = function(lineNumber) {
+			return lineNumber % 5 === 0 ? 68 : 48;
 		};
 		var renderLines = function() {
 			var gaugeLines = svg.select('.gauge-lines').selectAll('line').data(linesToDisplay);
 			var enter = gaugeLines.enter().append('line');
-			enter.attr('x1', calculateLineX1).attr('x2', 55);
+			enter.attr('x1', 35).attr('x2', calculateLineX2);
 			enter.attr('y1', calculateLineY).attr('y2', calculateLineY);
 		};
 
 		/** nutrient labels */
 		var labelsToDisplay = [];
-		for ( var longLineNumber = 0; longLineNumber < 5; longLineNumber++) {
-			labelsToDisplay.push(limit / 4 * longLineNumber);
-		}
 		var calculateLabelY = function(label) {
 			var lineNumber = (label / (limit / 4)) * 5;
 			return calculateLineY(lineNumber) + 6;
 		};
 		var updateLabels = function() {
+			var updateElements = function(d3Element) {
+				d3Element.text(function(label) {
+					return label;
+				}).attr('x', 78).attr('y', calculateLabelY).attr('text-anchor', 'start');
+			};
+
 			var gaugeLineLabels = svg.select('.gauge-lines').selectAll('text').data(labelsToDisplay);
-			var enter = gaugeLineLabels.enter().append('text');
-			enter.attr('x', 33).attr('y', calculateLabelY).attr('text-anchor', 'end');
-			enter.text(function(label) {
-				return label;
-			});
+			updateElements(gaugeLineLabels);
+			updateElements(gaugeLineLabels.enter().append('text'));
+			gaugeLineLabels.exit().remove();
+		};
+		var updateLabelsToDisplay = function() {
+			labelsToDisplay = [];
+			for ( var longLineNumber = 1; longLineNumber < 5; longLineNumber++) {
+				labelsToDisplay.push(limit / 4 * longLineNumber);
+			}
 		};
 		this.applyNutrient = function(nutrient) {
 			limit = nutrientLimits[nutrient];
-			// updateLabels();
+			updateLabelsToDisplay();
+			updateLabels();
 			return this;
 		};
 
@@ -108,7 +116,7 @@
 			return this;
 		};
 
-		// renderLines();
+		renderLines();
 	};
 
 	var glassInstance = null;
