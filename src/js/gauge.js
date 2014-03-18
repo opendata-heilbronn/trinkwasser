@@ -73,7 +73,7 @@
 			return height;
 		};
 		var updateBar = function(selector, y, height) {
-			svg.select(selector).attr('y', function() {
+			svg.select(selector).transition().duration(300).ease('outCirc').attr('y', function() {
 				return y;
 			}).attr('height', height);
 		};
