@@ -12,7 +12,7 @@
 			"nitrat": 60,
 			"sulfat": 240
 		};
-		var yValueStop = 180, yValueMaxHeight = 642, yValueStart = yValueStop + yValueMaxHeight;
+		var yValueStop = 220, yValueMaxHeight = 602, yValueStart = yValueStop + yValueMaxHeight;
 
 		/** lines */
 		var linesToDisplay = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
@@ -27,7 +27,7 @@
 		var renderLines = function() {
 			var gaugeLines = svg.select('.gauge-lines').selectAll('line').data(linesToDisplay);
 			var enter = gaugeLines.enter().append('line');
-			enter.attr('x1', 35).attr('x2', calculateLineX2);
+			enter.attr('x1', 36).attr('x2', calculateLineX2);
 			enter.attr('y1', calculateLineY).attr('y2', calculateLineY);
 		};
 

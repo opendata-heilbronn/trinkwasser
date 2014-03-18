@@ -28,7 +28,7 @@
 		
 		<ul class="nav nav-tabs">
 		  <li class="active dropdown">
-		  	<a class="dropdown-toggle" data-toggle="dropdown">Nährstoffe <b class="caret"></b></a>
+		  	<a class="dropdown-toggle" data-toggle="dropdown">Inhaltsstoffe <b class="caret"></b></a>
 			<ul class="dropdown-menu" role="menu">
 				<li class="active"><a tabindex="-1" data-toggle="tab" data-attribute="natrium">Natrium</a></li>
 				<li><a tabindex="-1" data-toggle="tab" data-attribute="kalium">Kalium</a></li>
@@ -44,8 +44,10 @@
 		</ul>
 		
 		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gauge-container">
 				<svg class="gauge-glass-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 186 837" preserveAspectRatio="xMinYMin meet">
+					<text class="gauge-unit" x="78" y="175" text-anchor="left">mg/l</text>
+				
 					<path class="gauge-glass"
 						d="M145.993,832.667H38.398
 						c-16.112,0-15.916-16.613-15.916-16.613V158.107c-8.89,0-16.094-7.203-16.094-16.092v-7.179c0-8.887,7.204-16.094,16.094-16.094
@@ -85,6 +87,17 @@
 					
 					<g class="gauge-lines"></g>
 				</svg>
+				
+				<div class="nutrient-description">
+					<p>
+						<h3>Magnesium</h3>
+						Wert: <strong>14-20 mg/l</strong><br />
+						Grenzwert: kein Grenzwert
+					</p>
+					<br />
+					<p>Ist für den Aufbau und die Erhaltung von Knochen und Zähnen zuständig und unterstützt die Koordination der Muskeln und Nerven.</p>
+					<p>Wer gesunde Nieren hat, der kann nicht zuviel aufnehmen.
+				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			</div>
