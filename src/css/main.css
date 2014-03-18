@@ -63,7 +63,7 @@ h1 {
 .gauge-container {
 	position: relative;
 }
-.nutrient-description {
+.gauge-description {
 	position: absolute;
 	left: 170px;
 	top: 135px;

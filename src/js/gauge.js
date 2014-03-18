@@ -31,7 +31,7 @@
 			enter.attr('y1', calculateLineY).attr('y2', calculateLineY);
 		};
 
-		/** nutrient labels */
+		/** line labels */
 		var labelsToDisplay = [];
 		var calculateLabelY = function(label) {
 			var lineNumber = (label / (limit / 4)) * 5;
@@ -122,6 +122,17 @@
 	var glassInstance = null;
 	var barInstance = null;
 
+	var toggleDescription = function(attribute, value) {
+		var elements = document.getElementsByClassName('gauge-description');
+		for ( var i = 0; i < elements.length; ++i) {
+			elements[i].style.display = 'none';
+		}
+
+		var attributeElement = document.getElementsByClassName('gauge-description-' + attribute)[0];
+		attributeElement.style.display = '';
+		attributeElement.getElementsByClassName('value')[0].innerHTML = value;
+	};
+
 	var update = function(attribute) {
 		var values = tw.data.heilbronn.analysis[tw.data.heilbronn.streets['Allee']];
 		var value = values[attribute];
@@ -133,6 +144,7 @@
 			glassInstance.hide();
 			barInstance.show().applyValue(value);
 		}
+		toggleDescription(attribute, value);
 	};
 
 	var init = function() {
