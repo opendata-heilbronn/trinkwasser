@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Details</title>
+<meta name="description" content="Details" />
+
+<!-- build:css css/tw.min.css -->
+<link href="css/bootstrap-cyborg.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
+<!-- endbuild -->
+
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+</head>
+<body class="bg-gradient">
+	<div class="container">
+		<h1>Heilbronn, Allee <a class="btn btn-primary pull-right"><span class="glyphicon glyphicon-cog"></span> Ort wechseln</a></h1>
+		
+		<ul class="nav nav-tabs">
+		  <li class="active dropdown">
+		  	<a class="dropdown-toggle" data-toggle="dropdown">Nährstoffe <b class="caret"></b></a>
+			<ul class="dropdown-menu" role="menu">
+				<li class="active"><a tabindex="-1" data-toggle="tab" data-attribute="natrium">Natrium</a></li>
+				<li><a tabindex="-1" data-toggle="tab" data-attribute="kalium">Kalium</a></li>
+				<li><a tabindex="-1" data-toggle="tab" data-attribute="calcium">Calcium</a></li>
+				<li><a tabindex="-1" data-toggle="tab" data-attribute="magnesium">Magnesium</a></li>
+				<li><a tabindex="-1" data-toggle="tab" data-attribute="chlorid">Chlorid</a></li>
+				<li><a tabindex="-1" data-toggle="tab" data-attribute="nitrat">Nitrat</a></li>
+				<li><a tabindex="-1" data-toggle="tab" data-attribute="sulfat">Sulfat</a></li>
+			</ul>
+		</li>
+		  <li><a data-toggle="tab" data-attribute="hardness">Härte</a></li>
+		  <li><a data-toggle="tab" data-attribute="price">Preis</a></li>
+		</ul>
+		
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<svg class="gauge-glass-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 186 837" preserveAspectRatio="xMinYMin meet">
+					<path class="gauge-glass"
+						d="M145.993,832.667H38.398
+						c-16.112,0-15.916-16.613-15.916-16.613V158.107c-8.89,0-16.094-7.203-16.094-16.092v-7.179c0-8.887,7.204-16.094,16.094-16.094
+						h139.661c8.887,0,16.094,7.207,16.094,16.094v7.179c0,8.889-7.207,16.092-16.094,16.092l-0.178,657.84
+						C161.966,815.947,162.999,832.667,145.993,832.667z" />
+
+					<g class="gauge-values">
+						<defs>
+							<clipPath id="cut-off-top">
+							 	<rect class="gauge-value-bubble-cut" x="34" y="822" width="116" height="0" />
+					 		</clipPath>
+						</defs>
+						
+						<rect class="gauge-value" x="34.5" y="822" width="115" height="0" />
+						<rect class="gauge-value-2" x="34.5" y="822" width="115" height="0" />
+						
+						<path class="gauge-value-bubbles" clip-path="url(#cut-off-top)"
+						d="M149.469,324.376H34.005v482.118c0,0-0.174,14.819,14.195,14.819h86.875
+							c15.169,0,14.247-14.912,14.247-14.912L149.469,324.376z M73.76,741.827c-3.763,0-6.814-3.05-6.814-6.813s3.052-6.813,6.814-6.813
+							c3.764,0,6.812,3.05,6.812,6.813S77.524,741.827,73.76,741.827z M105.182,801.029c-11.289,0-20.439-9.15-20.439-20.439
+							c0-11.288,9.15-20.439,20.439-20.439c11.29,0,20.441,9.151,20.441,20.439C125.623,791.879,116.472,801.029,105.182,801.029z
+							 M117.668,739.558c-9.198,0-16.653-7.457-16.653-16.653s7.455-16.658,16.653-16.658c9.196,0,16.653,7.462,16.653,16.658
+							S126.864,739.558,117.668,739.558z" />
+					</g>
+					
+					<g class="gauge-bubbles">
+						<path
+						d="M141.745,24.696c0,11.292-9.15,20.441-20.442,20.441c-11.287,0-20.437-9.149-20.437-20.441
+							c0-11.288,9.149-20.439,20.437-20.439C132.595,4.257,141.745,13.409,141.745,24.696z" />
+						<path
+						d="M106.921,92.833c0,3.763-3.048,6.813-6.814,6.813c-3.763,0-6.813-3.05-6.813-6.813
+							c0-3.762,3.05-6.812,6.813-6.812C103.873,86.021,106.921,89.071,106.921,92.833z" />
+						<path
+						d="M84.963,59.335c0,9.198-7.457,16.658-16.658,16.658c-9.192,0-16.651-7.459-16.651-16.658
+							c0-9.194,7.459-16.651,16.651-16.651C77.506,42.684,84.963,50.141,84.963,59.335z" />
+					</g>
+					
+					<g class="gauge-lines"></g>
+				</svg>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			</div>
+		</div>
+	</div>
+
+	<!-- build:js js/tw.min.js -->
+	<script src="lib/jquery.js"></script>
+	<script src="lib/bootstrap.js"></script>
+	<script src="lib/d3.js"></script>
+	<script src="lib/leaflet.js"></script>
+	<script src="lib/leaflet-pip.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="data/hn-analysis.js"></script>
+	<script src="data/hn-streets.js"></script>
+	<script src="data/mineralwaesser.js"></script>
+	<script src="js/gauge.js"></script>
+	<script src="js/details.js"></script>
+	<!-- endbuild -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			tw.details.init();
+		});
+	</script>
+</body>
+</html>
