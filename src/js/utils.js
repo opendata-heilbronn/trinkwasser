@@ -2,7 +2,7 @@
 	'use strict';
 
 	var isRange = function(value) {
-		return value.indexOf('-') > -1;
+		return value.toString().indexOf('-') > -1;
 	};
 
 	var getRange = function(value) {
@@ -12,8 +12,17 @@
 		return [min, max];
 	};
 
+	var getMeanValue = function(value) {
+		if (!isRange(value)) {
+			return value;
+		}
+		var minMax = getRange(value);
+		return minMax[0] + ((minMax[1] - minMax[0]) / 2);
+	};
+
 	tw.utils = {
 		'isRange': isRange,
-		'getRange': getRange
+		'getRange': getRange,
+		'getMeanValue': getMeanValue
 	};
 })(tw, jQuery);

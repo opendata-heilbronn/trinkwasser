@@ -28,9 +28,16 @@ h1 {
 }
 
 /* gauge */
+.gauge-glass-img,
+.gauge-bar-img {
+	height: 600px;
+}
 .gauge-glass-img {
 	width: 136px;
-	height: 600px;
+}
+.gauge-bar-img {
+	width: 106px;
+	margin-left: 30px;
 }
 .gauge-glass {
 	stroke: #FFF;
@@ -39,7 +46,7 @@ h1 {
 	fill: none;
 }
 .gauge-values path,
-.gauge-values rect,
+.gauge-value,
 .gauge-bubbles {
 	fill: #FFF;
 }
@@ -67,6 +74,32 @@ h1 {
 	position: absolute;
 	left: 170px;
 	top: 135px;
+}
+.gauge-bar-1 {
+	fill: #6C9BD0;
+}
+.gauge-bar-2 {
+	fill: #98BBE0;
+}
+.gauge-bar-3 {
+	fill: #D6E5F3;
+}
+.gauge-bar-labels text {
+	fill: #FFF;
+	font-size: 16px;
+}
+.gauge-value-indicators circle {
+	fill: #FF0000;
+	stroke-width: 1.6;
+	stroke: #AAA;
+}
+.range-indicator {
+	stroke: #001A33;
+	stroke-width: 1;
+}
+.range-indicator-bar {
+	stroke: #001A33;
+	stroke-width: 1;
 }
 .nutrient-description h3 {
 	margin-bottom: 1em;

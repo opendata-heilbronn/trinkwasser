@@ -5,16 +5,18 @@
 		tw.gauge.update(attribute);
 	};
 
-	var setupTabs = function() {
+	var setupTabs = function(startAttribute) {
 		$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
 			var attribute = $(e.target).data('attribute');
 			update(attribute);
 		});
+		$('a[data-attribute="' + startAttribute + '"]').parent().addClass('active').closest('.nav-li-main').addClass('active');
 	};
 
 	var init = function() {
-		setupTabs();
-		tw.gauge.init().update('natrium');
+		var startAttribute = 'hardness';
+		setupTabs(startAttribute);
+		tw.gauge.init().update(startAttribute);
 	};
 
 	tw.details = {

@@ -27,25 +27,40 @@
 		<h1>Heilbronn, Allee <a class="btn btn-primary pull-right"><span class="glyphicon glyphicon-cog"></span> Ort wechseln</a></h1>
 		
 		<ul class="nav nav-tabs">
-		  <li class="active dropdown">
-		  	<a class="dropdown-toggle" data-toggle="dropdown">Inhaltsstoffe <b class="caret"></b></a>
-			<ul class="dropdown-menu" role="menu">
-				<li class="active"><a tabindex="-1" data-toggle="tab" data-attribute="natrium">Natrium</a></li>
-				<li><a tabindex="-1" data-toggle="tab" data-attribute="kalium">Kalium</a></li>
-				<li><a tabindex="-1" data-toggle="tab" data-attribute="calcium">Calcium</a></li>
-				<li><a tabindex="-1" data-toggle="tab" data-attribute="magnesium">Magnesium</a></li>
-				<li><a tabindex="-1" data-toggle="tab" data-attribute="chlorid">Chlorid</a></li>
-				<li><a tabindex="-1" data-toggle="tab" data-attribute="nitrat">Nitrat</a></li>
-				<li><a tabindex="-1" data-toggle="tab" data-attribute="sulfat">Sulfat</a></li>
-			</ul>
-		</li>
-		  <li><a data-toggle="tab" data-attribute="hardness">Härte</a></li>
-		  <li><a data-toggle="tab" data-attribute="price">Preis</a></li>
+			<li class="dropdown nav-li-main"><a class="dropdown-toggle" data-toggle="dropdown">Inhaltsstoffe <b class="caret"></b></a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a tabindex="-1" data-toggle="tab" data-attribute="natrium">Natrium</a></li>
+					<li><a tabindex="-1" data-toggle="tab" data-attribute="kalium">Kalium</a></li>
+					<li><a tabindex="-1" data-toggle="tab" data-attribute="calcium">Calcium</a></li>
+					<li><a tabindex="-1" data-toggle="tab" data-attribute="magnesium">Magnesium</a></li>
+					<li><a tabindex="-1" data-toggle="tab" data-attribute="chlorid">Chlorid</a></li>
+					<li><a tabindex="-1" data-toggle="tab" data-attribute="nitrat">Nitrat</a></li>
+					<li><a tabindex="-1" data-toggle="tab" data-attribute="sulfat">Sulfat</a></li>
+				</ul>
+			</li>
+			<li class="nav-li-main"><a data-toggle="tab" data-attribute="hardness">Härte</a></li>
+			<li class="nav-li-main"><a data-toggle="tab" data-attribute="price">Preis</a></li>
 		</ul>
 		
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gauge-container">
-				<svg class="gauge-glass-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 186 837" preserveAspectRatio="xMinYMin meet">
+				<svg class="gauge-bar-img" style="display:none;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 75 600" preserveAspectRatio="xMinYMin meet">
+					<defs>
+						<pattern id="range-indicator" x="6" y="6" width="6" height="6" patternUnits="userSpaceOnUse">
+							<line class="range-indicator-bar" x1="0" x2="6" y1="6" y2="0" />
+						</pattern>
+					</defs>
+					
+					<g class="gauge-bars"></g>
+					<g class="gauge-bar-labels" transform="translate(-25, 0)"></g>
+					
+					<g class="gauge-value-indicators">
+						<rect class="gauge-bar-range-indicator" x="50" y="600" width="25" height="0" fill="url(#range-indicator)" />
+						<circle class="gauge-bar-ball" cx="63.5" cy="600" r="9" />
+					</g>
+				</svg>
+				
+				<svg class="gauge-glass-img" style="display:none;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 186 837" preserveAspectRatio="xMinYMin meet">
 					<text class="gauge-unit" x="78" y="175" text-anchor="left">mg/l</text>
 				
 					<path class="gauge-glass"
@@ -59,11 +74,13 @@
 							<clipPath id="cut-off-top">
 							 	<rect class="gauge-value-bubble-cut" x="34" y="822" width="116" height="0" />
 					 		</clipPath>
+					 		
+							<pattern id="range-indicator" x="8" y="8" width="8" height="8" patternUnits="userSpaceOnUse">
+								<line class="range-indicator" x1="0" x2="8" y1="8" y2="0" />
+							</pattern>
 						</defs>
 						
 						<rect class="gauge-value" x="34.5" y="822" width="115" height="0" />
-						<rect class="gauge-value-2" x="34.5" y="822" width="115" height="0" />
-						
 						<path class="gauge-value-bubbles" clip-path="url(#cut-off-top)"
 						d="M149.469,324.376H34.005v482.118c0,0-0.174,14.819,14.195,14.819h86.875
 							c15.169,0,14.247-14.912,14.247-14.912L149.469,324.376z M73.76,741.827c-3.763,0-6.814-3.05-6.814-6.813s3.052-6.813,6.814-6.813
@@ -71,6 +88,8 @@
 							c0-11.288,9.15-20.439,20.439-20.439c11.29,0,20.441,9.151,20.441,20.439C125.623,791.879,116.472,801.029,105.182,801.029z
 							 M117.668,739.558c-9.198,0-16.653-7.457-16.653-16.653s7.455-16.658,16.653-16.658c9.196,0,16.653,7.462,16.653,16.658
 							S126.864,739.558,117.668,739.558z" />
+
+						<rect class="gauge-value-2" x="34.5" y="822" width="115" height="0" fill="url(#range-indicator)" />
 					</g>
 					
 					<g class="gauge-bubbles">
@@ -159,6 +178,20 @@
 					</p>
 					<br />
 					<p>Wirkt entgiftend auf die Leber, regt die Gallenfunktion an und aktiviert die Darmtätigkeit.</p>
+				</div>
+				<div class="gauge-description gauge-description-hardness" style="display:none;">
+					<p>
+						<h3>Wasserhärte</h3>
+						Wert: <strong><span class="value"></span> °dH</strong><br />
+						Einstufung: <strong><span class="value-label"></span></strong><br />
+					</p>
+				</div>
+				<div class="gauge-description gauge-description-price" style="display:none;">
+					<p>
+						<h3>Preis</h3>
+						Wert: <strong><span class="value"></span> €</strong><br />
+						Einstufung: <strong><span class="value-label"></span></strong><br />
+					</p>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">

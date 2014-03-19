@@ -55,7 +55,7 @@
 				labelsToDisplay.push(limit / 4 * longLineNumber);
 			}
 		};
-		this.applyNutrient = function(nutrient) {
+		this.applyAttribute = function(nutrient) {
 			limit = nutrientLimits[nutrient];
 			updateLabelsToDisplay();
 			updateLabels();
@@ -81,19 +81,19 @@
 			return (valueHeight >= 123) ? 123 : 17;
 		};
 		var updateBars = function(value1, value2) {
-			var value1Height = calculateBarHeight(value1);
+			var valueHeight = calculateBarHeight(Math.max(value1, value2));
 			var startY = calculateBarY(0);
 			var value2Diff = value2 > value1 ? value2 - value1 : 0;
-			var bubbleBarBreakpoint = calculateBubbleBarBreakpoint(value1Height);
+			var bubbleBarBreakpoint = calculateBubbleBarBreakpoint(valueHeight);
 
-			if (bubbleBarBreakpoint > value1Height) {
+			if (bubbleBarBreakpoint > valueHeight) {
 				updateBar('.gauge-value-bubble-cut', startY, 0);
-				updateBar('.gauge-value', startY, value1Height);
+				updateBar('.gauge-value', startY, valueHeight);
 			} else {
 				updateBar('.gauge-value-bubble-cut', startY - bubbleBarBreakpoint, bubbleBarBreakpoint);
-				updateBar('.gauge-value', startY - value1Height, value1Height - bubbleBarBreakpoint + 1);
+				updateBar('.gauge-value', startY - valueHeight, valueHeight - bubbleBarBreakpoint + 1);
 			}
-			updateBar('.gauge-value-2', calculateBarY(value2), calculateBarHeight(value2Diff));
+			updateBar('.gauge-value-2', calculateBarY(value2) - 1, calculateBarHeight(value2Diff));
 		};
 		this.applyValue = function(value) {
 			var value1 = value, value2 = 0;
@@ -105,24 +105,163 @@
 			updateBars(value1, value2);
 			return this;
 		};
+		this.getValueLabel = function() {
+			return "";
+		};
 
 		/** display */
 		this.show = function() {
-			// ...
+			document.getElementsByClassName('gauge-glass-img')[0].style.display = '';
 			return this;
 		};
 		this.hide = function() {
-			// ...
+			document.getElementsByClassName('gauge-glass-img')[0].style.display = 'none';
 			return this;
 		};
 
 		renderLines();
 	};
 
+	var GaugeBar = function(svg) {
+		var attribute = 'hardness', value = 0;
+		var totalHeight = 600;
+		var defs = {
+			'hardness': {
+				'min': 0,
+				'max': 28,
+				'parts': [{
+					'id': 1,
+					'y': 420,
+					'height': 180,
+					'label': 'weich',
+					'rangeLabel': '&lt; 8,4 °dH',
+				}, {
+					'id': 2,
+					'y': 300,
+					'height': 120,
+					'label': 'mittel',
+					'rangeLabel': '8,4 - 14 °dH',
+				}, {
+					'id': 3,
+					'y': 0,
+					'height': 300,
+					'label': 'hart',
+					'rangeLabel': '&gt; 14 °dH',
+				}]
+			},
+			'price': {
+				'min': 0,
+				'max': 6,
+				'parts': [{
+					'id': 1,
+					'y': 420,
+					'height': 180,
+					'label': 'günstig',
+					'rangeLabel': '&lt; 1,80 €',
+				}, {
+					'id': 2,
+					'y': 300,
+					'height': 120,
+					'label': 'durchschnittlich',
+					'rangeLabel': '1,80 - 3 €',
+				}, {
+					'id': 3,
+					'y': 0,
+					'height': 300,
+					'label': 'teuer',
+					'rangeLabel': '&gt; 3 €',
+				}]
+			}
+		};
+
+		/** attribute */
+		var updatePartLabels = function() {
+			var calculatY = function(partDef) {
+				return (partDef.height / 2) - 12 + partDef.y;
+			};
+			var updateElements = function(d3Element) {
+				d3Element.attr('y', calculatY).attr('transform', function(partDef) {
+					return 'rotate(-90,23,' + calculatY(partDef) + ')';
+				}).attr('x', 23).attr('text-anchor', 'middle').html(function(partDef) {
+					return '<tspan x="10" dy="1.2em">' + partDef.rangeLabel + '</tspan><tspan x="10" dy="1.2em">' + partDef.label + '</tspan>';
+				});
+			};
+
+			var barLabels = svg.select('.gauge-bar-labels').selectAll('text').data(defs[attribute].parts);
+			updateElements(barLabels);
+			updateElements(barLabels.enter().append('text'));
+			barLabels.exit().remove();
+		};
+		var resizeParts = function() {
+			var updateElements = function(d3Element) {
+				d3Element.attr('y', function(partDef) {
+					return partDef.y;
+				}).attr('height', function(partDef) {
+					return partDef.height;
+				}).attr('class', function(partDef) {
+					return 'gauge-bar-' + partDef.id;
+				}).attr('x', 50).attr('width', 25);
+			};
+
+			var bars = svg.select('.gauge-bars').selectAll('rect').data(defs[attribute].parts);
+			updateElements(bars);
+			updateElements(bars.enter().append('rect'));
+			bars.exit().remove();
+		};
+		this.applyAttribute = function(newAttribute) {
+			attribute = newAttribute;
+			resizeParts();
+			updatePartLabels();
+			return this;
+		};
+
+		/** value */
+		var calculateValueY = function(valueNumber) {
+			return totalHeight - (totalHeight / (defs[attribute].max - defs[attribute].min) * valueNumber);
+		};
+		var updateBallPosition = function() {
+			svg.select('.gauge-bar-ball').transition().duration(300).ease('outCirc').attr('cy', calculateValueY(tw.utils.getMeanValue(value)));
+		};
+		var updateRangeIndicatorPosition = function() {
+			var value1 = value, value2 = value;
+			if (tw.utils.isRange(value)) {
+				var range = tw.utils.getRange(value);
+				value1 = range[0], value2 = range[1];
+			}
+			var value1Y = calculateValueY(value1), value2Y = calculateValueY(value2);
+			svg.select('.gauge-bar-range-indicator').attr('y', value2Y).attr('height', (value1Y - value2Y));
+		};
+		this.applyValue = function(newValue) {
+			value = newValue;
+			updateBallPosition();
+			updateRangeIndicatorPosition();
+			return this;
+		};
+		this.getValueLabel = function() {
+			var matchingPart = {}, valueY = calculateValueY(tw.utils.getMeanValue(value));
+			defs[attribute].parts.forEach(function(part) {
+				if ((part.y + part.height) >= valueY) {
+					matchingPart = part;
+				}
+			});
+			return matchingPart.label;
+		};
+
+		/** display */
+		this.show = function() {
+			document.getElementsByClassName('gauge-bar-img')[0].style.display = '';
+			return this;
+		};
+		this.hide = function() {
+			document.getElementsByClassName('gauge-bar-img')[0].style.display = 'none';
+			return this;
+		};
+	};
+
 	var glassInstance = null;
 	var barInstance = null;
 
-	var toggleDescription = function(attribute, value) {
+	var toggleDescription = function(attribute, value, valueLabel) {
 		var elements = document.getElementsByClassName('gauge-description');
 		for ( var i = 0; i < elements.length; ++i) {
 			elements[i].style.display = 'none';
@@ -130,25 +269,34 @@
 
 		var attributeElement = document.getElementsByClassName('gauge-description-' + attribute)[0];
 		attributeElement.style.display = '';
-		attributeElement.getElementsByClassName('value')[0].innerHTML = value;
+		attributeElement.getElementsByClassName('value')[0].innerHTML = value.toString().replace(/\./g, ',');
+
+		var valueLabelElement = attributeElement.getElementsByClassName('value-label');
+		if (valueLabelElement[0]) {
+			valueLabelElement[0].innerHTML = valueLabel;
+		}
 	};
 
 	var update = function(attribute) {
 		var values = tw.data.heilbronn.analysis[tw.data.heilbronn.streets['Allee']];
 		var value = values[attribute];
-
-		if (attribute !== 'hardness' && attribute !== 'price') {
-			// barInstance.hide();
-			glassInstance.show().applyNutrient(attribute).applyValue(value);
-		} else {
-			glassInstance.hide();
-			barInstance.show().applyValue(value);
+		if (attribute === 'price') {
+			value = tw.data.heilbronn.price;
 		}
-		toggleDescription(attribute, value);
+
+		var instanceToShow = glassInstance, instanceToHide = barInstance;
+		if (attribute === 'hardness' || attribute === 'price') {
+			instanceToShow = barInstance, instanceToHide = glassInstance;
+		}
+
+		instanceToHide.hide();
+		instanceToShow.show().applyAttribute(attribute).applyValue(value);
+		toggleDescription(attribute, value, instanceToShow.getValueLabel());
 	};
 
 	var init = function() {
 		glassInstance = new GaugeGlass(d3.select('.gauge-glass-img'));
+		barInstance = new GaugeBar(d3.select('.gauge-bar-img'));
 		return this;
 	};
 

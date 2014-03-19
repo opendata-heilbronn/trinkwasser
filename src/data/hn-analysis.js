@@ -1,3 +1,4 @@
+tw.data.heilbronn.price = 2.39;
 tw.data.heilbronn.analysis = {
 	"14": {
 		"natrium": 7,
@@ -6,7 +7,8 @@ tw.data.heilbronn.analysis = {
 		"magnesium": 17,
 		"chlorid": 16,
 		"nitrat": 13,
-		"sulfat": 35
+		"sulfat": 35,
+		"hardness": 14
 	},
 	"14-18": {
 		"natrium": "6-12",
@@ -15,7 +17,8 @@ tw.data.heilbronn.analysis = {
 		"magnesium": "14-20",
 		"chlorid": "20-25",
 		"nitrat": "18-22",
-		"sulfat": "37-57"
+		"sulfat": "37-57",
+		"hardness": "14-18"
 	},
 	"10": {
 		"natrium": "6-7",
@@ -24,7 +27,8 @@ tw.data.heilbronn.analysis = {
 		"magnesium": "11-12",
 		"chlorid": "9-10",
 		"nitrat": "8-9",
-		"sulfat": "91-92"
+		"sulfat": "91-92",
+		"hardness": 10
 	},
 	"9": {
 		"natrium": "5-6",
@@ -33,6 +37,7 @@ tw.data.heilbronn.analysis = {
 		"magnesium": "7-9",
 		"chlorid": "8-9",
 		"nitrat": "5-7",
-		"sulfat": 32
+		"sulfat": 32,
+		"hardness": 9
 	}
 };
