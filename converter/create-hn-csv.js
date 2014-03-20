@@ -1,4 +1,4 @@
-var fs = require('fs');
+var fs = require('fs'), csv = require('csv');
 
 var result = {};
 var previousStreetName = '';
@@ -146,17 +146,18 @@ var writeResult = function() {
 		}
 	};
 
-	var csv = '';
-	Object.keys(result).forEach(
-			function(streetName) {
-				var analysis = analysisPerHardness[result[streetName]];
-				if (analysis) {
-					csv += 'Heilbronn;;' + streetName + ';' + analysis.hardness + ';' + analysis.hardness + ';' + analysis.natrium + ';' + analysis.kalium
-							+ ';' + analysis.calcium + ';' + analysis.magnesium + ';' + analysis.chlorid + ';' + analysis.nitrat + ';' + analysis.sulfat
-							+ ";;;\n";
-				}
-			});
-	fs.writeFile('hn.csv', csv);
+	var appendStreet = function(streetName) {
+		var analysis = analysisPerHardness[result[streetName]];
+		if (analysis) {
+			var lineData = ['Heilbronn', '', streetName, analysis.hardness, analysis.hardness, analysis.natrium, analysis.kalium, analysis.calcium,
+				analysis.magnesium, analysis.chlorid, analysis.nitrat, analysis.sulfat, '', '2013', ''];
+			csvWriter.write(lineData);
+		}
+	};
+
+	var csvWriter = csv().to.path('hn.csv');
+	Object.keys(result).forEach(appendStreet);
+	csvWriter.end();
 };
 
 convert();

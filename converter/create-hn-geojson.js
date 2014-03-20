@@ -2,7 +2,7 @@ var fs = require('fs'), csv = require('csv'), async = require('async');
 var argv = require('optimist').usage('Convert csv file of streets in hn\nUsage: $0 [csvfile]').demand(1).argv;
 var gm = require('googlemaps');
 
-var input = csv().from(argv._[0], {
+csv().from(argv._[0], {
 	delimiter: ';'
 }).to.array(function(data) {
 	var result = [];

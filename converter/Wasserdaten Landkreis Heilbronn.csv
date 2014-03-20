@@ -1,0 +1,231 @@
+Stadt,Ortsteil,Straße,Zone,Härtegrad,Natrium,Kalium,Calcium,Magnesium,Chlorid,Nitrat,Sulfat,Anmerkungen,Jahresmittelwerte,Quelle
+Abstatt,Kernstadt,Ulmenring,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Kastanienweg,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Erlenweg,Zone 1,"15,5-15,7",,,,,,"7,8-13",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Radäckerweg,Zone 1,"15,5-15,7",,,,,,"7,8-13",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Weidenweg,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Pappelweg,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Akazienstraße,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Ahornstraße,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Plantanenweg,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Eschenweg ,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Buchenweg,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,alle anderen Str.,Zone 2,"15,7",,,,,,13,,,,
+Abstatt,Happenbach,,,"15,7",,,,,,13,,,2013,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
+Abstatt,Vohenlohe,,,"15,7",,,,,,13,,,2013,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
+Bad Friedrichshall,Duttenberg,,,"12,9","14,9","2,1","68,4","14,3","27,9",10,"53,2",,2013,"Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
+Bad Friedrichshall,Hagenbach,,,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,"Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
+Bad Friedrichshall,Jagstfeld,,,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,"Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
+Bad Friedrichshall,Plattenwald,,,"11,9","5,7","1,4","64,7","12,4","14,6","16,1","37,9",,2013,"Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
+Bad Friedrichshall,Untergriesheim,,,"14,9","6,6","1,3","81,7","14,8",20,"20,4","40,1",,2013,"Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
+Bad Rappenau,Babstadt,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
+Bad Rappenau,Bonfeld ,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
+Bad Rappenau,Fürfeld ,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
+Bad Rappenau,Grombach,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
+Bad Rappenau,Heinsheim ,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
+Bad Rappenau,Kernstadt,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
+Bad Rappenau,Obergimpern ,,,"12,1","17,9","2,5","67,2","11,8","30,5","14,4","47,9",,2014,Mischwasser
+Bad Rappenau,Treschklingen,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
+Bad Rappenau,Wollenberg ,,,"12,1","17,9","2,5","67,2","11,8","30,5","14,4","47,9",,2014,Mischwasser
+Bad Wimpfen,,,,,,,,,,,,,,
+Beilstein,,,,,,,,,,,,,,
+Brackenheim,Botenheim,,,"13,21","12,4","1,8",102,"24,9","25,7","25,6",105,,2012,"Hochbehälter Muckenloch, Mischwasser"
+Brackenheim,Brackenheim,,,"13,21","12,4","1,8",102,"24,9","25,7","25,6",105,"Bereiche etwas unklar, http://www.brackenheim.de/index.php?id=495",2012,"Hochbehälter Muckenloch, Mischwasser"
+Brackenheim,Dürrenzimmern,,,"13,21","12,4","1,8",102,"24,9","25,7","25,6",105,,2012,"Hochbehälter Muckenloch, Mischwasser"
+Brackenheim,Hausen,,,"13,21","12,4","1,8",102,"24,9","25,7","25,6",105,,2012,"Hochbehälter Muckenloch, Mischwasser"
+Brackenheim,Meimsheim,,,"13,21","12,4","1,8",102,"24,9","25,7","25,6",105,,2012,"Hochbehälter Muckenloch, Mischwasser"
+Brackenheim,Neipperg,,,9,"5,4","1,4",50,8,"7,2","4,3",33,,2013,Reines Bodenseewasser
+Brackenheim,Stocksberg Haberschlacht,,,9,"5,4","1,4",50,8,"7,2","4,3",33,,2013,Reines Bodenseewasser
+Brackenheim,Stocksberg Stockheim,,,9,"5,4","1,4",50,8,"7,2","4,3",33,,2013,Reines Bodenseewasser
+Cleebronn,,,,"25,3","12,2","2,1","120,3","36,7","11,4","7,9",247,Grenzwert Sulfat 250!,2012,Mischwasser
+Eberstadt,,,,23-25,13,2-3,100-120,34-37,29,19-20,137-145,,2013,"Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
+Ellhofen,,,,"14,9","7,3",2,"75,6","18,8","12,8","11,3","73,1",,2013,
+Eppingen,Adelshofen,,,"20,1","6,8","1,6",106,"22,8","30,5","29,9","45,7",,2014,Mischwasser
+Eppingen,Elsenz,,,"20,1","6,8","1,6",106,"22,8","30,5","29,9","45,7",,2014,Mischwasser
+Eppingen,Kernstadt,,,"20,1","6,8","1,6",106,"22,8","30,5","29,9","45,7",,2014,Mischwasser
+Eppingen,Kleingartach,,,"20,1","6,8","1,6",106,"22,8","30,5","29,9","45,7",,2014,Mischwasser
+Eppingen,Mühlbach,,,"18,5","5,91","1,48","90,8","25,1","22,2","27,4","41,8",,2014,Mischwasser
+Eppingen,Richen,,,"20,1","6,8","1,6",106,"22,8","30,5","29,9","45,7",,2014,Mischwasser
+Eppingen,Rohrbach,,,"20,1","6,8","1,6",106,"22,8","30,5","29,9","45,7",,2014,Mischwasser
+Erlenbach,,,,"17,1","7,1","1,7","87,4",21,"11,3","9,7",121,,2012,"Mischwasser, 80 % NOW (Zweckverband Wasserversorgung Nordostwürttemberg), 20 % Eigenwasser"
+Flein,,,,9,"5,2","1,4",48,8,7,"4,2",34,,2012,100 % Bodenseewasser
+Gemmingen ,,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
+Gochsen,,,,22,12,"1,4",105,31,46,22,34,,2013,Eigenwasser
+Güglingen,,,,"16,3",7,"1,5","80,7","21,7",17,"17,5","55,3",,2013,"Mischwasser, 60 % Eigenwasser, 40 % Bodenseewasser"
+Gundelsheim,,,,,,,,,,,,2 mal angefragt,,
+Haßmersheim ,Haßmersheim ,,,"12,9","23,7","2,9","71,6","12,5","39,2","19,9","55,7",,2014,Mischwasser
+Haßmersheim ,Hochhausen,,,9,"5,2","1,4",48,8,7,"4,2",35,,2014,Mischwasser
+Haßmersheim ,Neckarmühlbach,,,"12,9","23,7","2,9","71,6","12,5","39,2","19,9","55,7",,2014,Mischwasser
+Hüffenhardt,,,,"12,1","17,9","2,5","67,2","11,8","30,5","14,4","47,9",,2014,Mischwasser
+Ilsfeld,Abstetterhof,,,"15,7",,,,,,13,,,2013,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
+Ilsfeld,Auenstein,,,"15,7",,,,,,13,,,2013,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
+Ilsfeld,Helfenberg,,,"15,7",,,,,,13,,,2013,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
+Ilsfeld,Ilsfeld,,,"18,1","7,9","2,5","92,5","22,7","28,6","21,3","67,4",,2012,"Mischwasser, 60% Bodenseewasser, 40% Eigenwasser"
+Ilsfeld,Raststätten Wunnenstein,,,"15,7",,,,,,13,,,2013,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
+Ilsfeld,Schozach,,,,,,,,,,,,2012,Reines Bodenseewasser
+Ilsfeld,Wüstenhausen,,,"15,7",,,,,,13,,,2013,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
+Ittlingen,,,,"20,1","6,8","1,6",106,"22,8","30,5","29,9","45,7",,2014,Mischwasser
+Jagsthausen,,,,"26,2",11,"1,5",146,25,25,"30,6",165,Info-Text!,2013,100 % Eigenwasser
+Kirchardt,,,,"20,1","6,8","1,6",106,"22,8","30,5","29,9","45,7",,2014,Mischwasser
+Kochersteinsfeld,,Ahornweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Akazienweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Am Riegelberg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Birkenweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Buchenweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Dürerweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Eichenweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Forststraße,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Friedhofstraße,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Gartenweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Geisbergstraße,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Harnischgasse,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Im Leimental,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Im Vogelsang,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,In den Hofäckern ,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Kandinskyweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Kernerweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Lampoldshauser Straße ,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Lembergerweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Paul-Klee-Weg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Pfahlgasse,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Picassostraße,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Rembrandtstraße,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Rieslingweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Rubensweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Ruländerweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Schafgrabenweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Schafhausweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Silvanerweg,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Van-Gogh-Straße ,Hochzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Kochersteinsfeld,,Bahnhofstraße,Niederzone,23,15,"1,3",120,27,57,30,33,,2013,Eigenwasser
+Kochersteinsfeld,,Finkenstraße,Niederzone,23,15,"1,3",120,27,57,30,33,,2013,Eigenwasser
+Kochersteinsfeld,,Forststraße,Niederzone,23,15,"1,3",120,27,57,30,33,,2013,Eigenwasser
+Kochersteinsfeld,,Gartenweg,Niederzone,23,15,"1,3",120,27,57,30,33,,2013,Eigenwasser
+Kochersteinsfeld,,Häldenweg,Niederzone,23,15,"1,3",120,27,57,30,33,,2013,Eigenwasser
+Kochersteinsfeld,,Hintere Gasse,Niederzone,23,15,"1,3",120,27,57,30,33,,2013,Eigenwasser
+Kochersteinsfeld,,Im Vogelsang,Niederzone,23,15,"1,3",120,27,57,30,33,,2013,Eigenwasser
+Kochersteinsfeld,,Keltergasse,Niederzone,23,15,"1,3",120,27,57,30,33,,2013,Eigenwasser
+Kochersteinsfeld,,Kirchgasse,Niederzone,23,15,"1,3",120,27,57,30,33,,2013,Eigenwasser
+Kochersteinsfeld,,Lerchenstraße,Niederzone,23,15,"1,3",120,27,57,30,33,,2013,Eigenwasser
+Kochersteinsfeld,,Mittlere Gasse,Niederzone,23,15,"1,3",120,27,57,30,33,,2013,Eigenwasser
+Kochersteinsfeld,,Neuenstadter Straße,Niederzone,23,15,"1,3",120,27,57,30,33,,2013,Eigenwasser
+Kochersteinsfeld,,Öhringer Straße,Niederzone,23,15,"1,3",120,27,57,30,33,,2013,Eigenwasser
+Lampoldshausen,,Brückenstraße,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Brunnensteige ,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Eichbrunnenweg,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Habergasse,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Hagnerweg,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Im Bistenweiler,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Im Krebsgarten ,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Im Weingarten,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Klingenstraße,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Kochersteinsfelder Straße ab Nr. 41,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Lamprechtstraße ,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Möglinger Straße,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Schalrainweg,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Schöntaler Straße ,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Schulstraße ,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Sonnenweg ,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Ziegelsteige,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Züttlinger Straße ,Hochzone,21,"9,1","1,5",106,25,21,17,27,,2013,Eigenwasser
+Lampoldshausen,,Brunnenstraße,Niederzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Lampoldshausen,,Gochsener Straße,Niederzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Lampoldshausen,,Kochersteinsfelder Straße bis Nr. 40,Niederzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
+Langenbrettach,,,,18-20,,,,,,,,2mal angefragt,,
+Lauffen am Neckar,,,,9,"5,2","1,4",48,8,"7,1","4,5",35,,2013,Bodenseewasser
+Lehrensteinsfeld,,,,9,,,,,,,,2mal angefragt,,
+Leingarten,,,,25,13,"6,5",128,33,45,27,93,,2013,"Mischwasser, 74% Eigenwasser, 26% Bodensee"
+Löwenstein,Hirrweiler,,,16,k.A.,k.A.,65,31,,"6,8",18,,k. A.,
+Löwenstein,Hößlinsülz,,,9,k.A.,k.A.,48,"7,7",,"4,8 ",36,,k. A.,100 % Bodenseewasser
+Löwenstein,Kernstadt,,,14,k.A.,k.A.,59,25,,8,21,Restl. Werte bei Herr Mögerle anfragen 0174 3472501,k. A.,"Mischwasser, 60 % Eigenwasser, 40 % Bodenseewasser"
+Löwenstein,Reißach,,,14,k.A.,k.A.,61,24,,8,30,,k. A.,Mischwasser
+Löwenstein,Rittelhof,,,9,k.A.,k.A.,48,"7,7",,"4,8 ",36,,k. A.,100 % Bodenseewasser
+Löwenstein,Seemühle,,,9,k.A.,k.A.,48,"7,7",,"4,8 ",36,,k. A.,100 % Bodenseewasser
+Massenbach,,,,24,,,,,,,,angefragt (Schwaigern),,
+Massenbachhausen,,,,24,,,,,,,,2mal angefragt,,
+Möckmühl,,,,17-18,,,,,,,,2mal angefragt,,
+Möckmühl,Korb,,,17-18,,,,,,,,,,
+Möckmühl,Ruchsen,,,17-18,,,,,,,,,,
+Möckmühl,Züttlingen,,,17-18,,,,,,,,,,
+Möckmühl,Siegelbach,,,9,,,,,,,,,,
+Möckmühl,Bittelbach,,,9,,,,,,,,,,
+Neckarbischofsheim,Helmhof ,,,"12,1","17,9","2,5","67,2","11,8","30,5","14,4","47,9",,2014,Mischwasser
+Neckarbischofsheim,Kernstadt,,,"12,7","7,1","1,1","65,3","15,7","15,4","17,4","16,3",,2014,Mischwasser
+Neckarbischofsheim,Untergimpern,,,"12,1","17,9","2,5","67,2","11,8","30,5","14,4","47,9",,2014,Mischwasser
+Neckarsulm,Amorbach,,,"16,1","7,1","1,5","83,1","19,6",,"10,8","80,3",,2013,"Mischwasser, 70 % Bodenseewasser, 30 % Eigenwasser"
+Neckarsulm,Dahenfeld,,,"11,6","6,3","1,5","62,9","12,1",,"6,2","47,4",,2013,
+Neckarsulm,Obereisesheim,,,"17,9",23,3,100,17,,"8,2","94,3",,2013,
+Neckarsulm,Kernstadt,Amselweg,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Christian-Rieker-Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Damaschkestr.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Dammstr.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Drosselweg,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Elsternweg,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Erzbergerstr.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Eulenweg,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Falkenstr.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Felix-Wankel-Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Finkenweg,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Friedrich-Ebert-Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Frühmeßgasse,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Gottlieb-Daimler-Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Gottlob-Banzhaf-Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Grabenstr.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Hafenstr.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Hezenbergstr.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Im Vogelsang,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Kochendorfer Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Martin-Fischel-Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Neuenstädter Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,NSU-Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,NSU-Einfahrbahn,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Pfarrgasse,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Plattenwaldweg,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Schwalbenweg,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Seestraße,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Spitalstr.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Spohnstr.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Steinachstr.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Sudetenweg,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Untere Neckarstr.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Viktor-Brunner-Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Wachterstraße,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,Weidachstraße,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,alle anderen Straßen,Zone 2,"16,1","7,1","1,5","83,1","19,6",,"10,8","80,3",,2013,
+Neckarwestheim,,,,9,"5,2","1,4",48,8,7,"4,2",34,,2012,100 % Bodenseewasser
+Neudenau-Stadt,,,,21,"7,7","1,5",122,16,17,19,67,,,
+Neuenstadt am Kocher,,,,"20,5","6,89","2,2",101,"27,7",k.A.,"20,7","47,9",,2012,"75% Eigenwasser, 25% Bodenseewasser"
+Neuenstadt am Kocher,Stein,,,"16,5",7,"1,8",98,12,k.A.,16,74,,2012,"55% Eigenwasser, 45% Bodenseewasser"
+Nordheim,,,,14,7,2,70,17,16,13,35,,k. A.,Mischwasser
+Obersulm,Affaltrach,,,"9,4",,,"51,8","9,5",,"4,4",33,,k.A.,100 % Bodenseewasser
+Obersulm,Eichelberg,,,"11,9",,,"55,8","17,6",,"5,9",29,,k.A.,"Mischwasser, 50 % Eigenwasser, 50 % Bodenseewasser"
+Obersulm,Eschenau,,,"9,4",,,"51,8","9,5",,"4,4",33,,k.A.,100 % Bodenseewasser
+Obersulm,Sülzbach,,,"9,4",,,"51,8","9,5",,"4,4",33,,k.A.,100 % Bodenseewasser
+Obersulm,Weiler,,,"11,9",,,"55,8","17,6",,"5,9",29,,k.A.,"Mischwasser, 50 % Eigenwasser, 50 % Bodenseewasser"
+Obersulm,Willsbach,,,"9,4",,,"51,8","9,5",,"4,4",33,,k.A.,100 % Bodenseewasser
+Offenau,,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
+Pfaffenhofen,,,,,,,,,,,,2mal angefragt,,
+Roigheim,,,,"10,9","5,4","1,2","69,7","5,2","14,6","21,5","27,4",,2013,Eigene Quellen
+Schwaigern,,,,"21,56",,,,,,19,,2mal angefragt,,
+Siegelsbach,,,,"12,1","17,9","2,5","67,2","11,8","30,5","14,4","47,9",,2014,Mischwasser
+Siegelsbach,,,,"12,1","17,9","2,5","67,2","11,8","30,5","14,4","47,9",,2014,Mischwasser
+Talheim,,,,9,"5,2","1,4",48,8,7,"4,2",34,,2012,100 % Bodenseewasser
+Untereisesheim,,,, 15,"5,9","1,4 ",84,17 ,15,18 ,35,,2013,100 % Bodenseewasser
+Untergruppenbach,Donnbronn,,,"9,2",,,,,,6,,,2013,"Hochbehälter Egelsee, Reines Bodenseewasser"
+Untergruppenbach,Obergruppenbach,,,"15,8","7,5",2,83,18,18,15,65,,,
+Untergruppenbach,Oberheinriet,,,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Untergruppenbach,Untergruppenbach,,,"14,9","5,3","1,6",80,17,16,13,52,,,
+Untergruppenbach,Unterheinriet,,,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Untergruppenbach,Vorhof,,,"14,6",,,,,,11,,,2013,"Pumpwerk Vorhof, Quellwasser aus der Heumadenquelle"
+Weinsberg,Grantschen,,,"8,5-9",5-6,1-2,48-52,7-9,8-9,5-7,32,,2013,Bodenseewasser
+Weinsberg,,,,"8,5-9",5-6,1-2,48-52,7-9,8-9,5-7,32,,2010,Bodenseewasser
+Widdern,,,,,,,,,,,,angefragt,,
+Wüstenrot,,,,15-17,,,,,,,,2mal angefragt,,
+Zaberfeld,Michelbach,,,9,,,,,,,,,,
+Zaberfeld,Ochsenburg,,,"21,1",,,,,,,,,,
+Zaberfeld,Zaberfeld,Alle anderen Str.,Zone 2,"9,3",,,,,,,,,,
+Zaberfeld,Zaberfeld,Am Spitzenberg,Zone 1,"19,1",,,,,,,,,,
+Zaberfeld,Zaberfeld,Bahnhofstraße,Zone 1,"19,1",,,,,,,,,,
+Zaberfeld,Zaberfeld,Hauptstraße,Zone 1,"19,1",,,,,,,,,,
+Zaberfeld,Zaberfeld,Leonbronner Straße,Zone 1,"19,1",,,,,,,,,,
+Zaberfeld,Zaberfeld,Sonnengasse,Zone 1,"19,1",,,,,,,,,,
