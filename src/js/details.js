@@ -14,9 +14,10 @@
 	};
 
 	var init = function() {
-		var startAttribute = 'hardness';
+		var startAttribute = 'nitrat';
 		setupTabs(startAttribute);
 		tw.gauge.init().update(startAttribute);
+		tw.barChart.init().update();
 	};
 
 	tw.details = {

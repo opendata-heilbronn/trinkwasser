@@ -23,8 +23,51 @@ h1 {
 	background: radial-gradient(ellipse at center,  #007bc3 0%,#00578a 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007bc3', endColorstr='#00578a',GradientType=1 );
 }
+.choose-location {
+	margin-top: 8px;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI5ODlkOCIgc3RvcC1vcGFjaXR5PSIwLjc1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyOTg5ZDgiIHN0b3Atb3BhY2l0eT0iMC4zNSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(41,137,216,0.75) 0%, rgba(41,137,216,0.35) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(41,137,216,0.75)), color-stop(100%,rgba(41,137,216,0.35)));
+	background: -webkit-linear-gradient(top,  rgba(41,137,216,0.75) 0%,rgba(41,137,216,0.35) 100%);
+	background: -o-linear-gradient(top,  rgba(41,137,216,0.75) 0%,rgba(41,137,216,0.35) 100%);
+	background: -ms-linear-gradient(top,  rgba(41,137,216,0.75) 0%,rgba(41,137,216,0.35) 100%);
+	background: linear-gradient(to bottom,  rgba(41,137,216,0.75) 0%,rgba(41,137,216,0.35) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf2989d8', endColorstr='#592989d8',GradientType=0 );
+	border: none;
+}
 .nav {
-	margin-bottom: 3em;
+	margin: 2em 0 3em 0;
+}
+svg text {
+	fill: #FFF;
+}
+
+/* bar chart */
+.bar-chart-img {
+	width: 100%;
+	max-width: 600px;
+	max-height: 514px;
+}
+.comparison-description {
+	margin: 1em 0 3em 0;
+}
+.bar {
+	fill: #FFF;
+}
+.axis {
+	font-size: 12px;
+	color: #FFF;
+}
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #FFF;
+	stroke-width: 1.1;
+	shape-rendering: crispEdges;
+}
+.y.axis line,
+.y.axis path {
+	display: none;
 }
 
 /* gauge */
@@ -100,7 +143,4 @@ h1 {
 .range-indicator-bar {
 	stroke: #001A33;
 	stroke-width: 1;
-}
-.nutrient-description h3 {
-	margin-bottom: 1em;
 }

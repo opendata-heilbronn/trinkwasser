@@ -24,22 +24,36 @@
 </head>
 <body class="bg-gradient">
 	<div class="container">
-		<h1>Heilbronn, Allee <a class="btn btn-primary pull-right"><span class="glyphicon glyphicon-cog"></span> Ort wechseln</a></h1>
-		
+		<div class="row">
+			<div class="col-lg-6">
+				<h1>Trinkwasser</h1>
+				
+				<div class="well choose-location">
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label for="city" class="col-sm-2 control-label">Ort</label>
+							<div class="col-sm-10">
+								<select id="city" class="form-control">
+									<option value="">Bitte auswählen</option>
+								</select>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-lg-6">
+			</div>
+		</div>
+
 		<ul class="nav nav-tabs">
-			<li class="dropdown nav-li-main"><a class="dropdown-toggle" data-toggle="dropdown">Inhaltsstoffe <b class="caret"></b></a>
-				<ul class="dropdown-menu" role="menu">
-					<li><a tabindex="-1" data-toggle="tab" data-attribute="natrium">Natrium</a></li>
-					<li><a tabindex="-1" data-toggle="tab" data-attribute="kalium">Kalium</a></li>
-					<li><a tabindex="-1" data-toggle="tab" data-attribute="calcium">Calcium</a></li>
-					<li><a tabindex="-1" data-toggle="tab" data-attribute="magnesium">Magnesium</a></li>
-					<li><a tabindex="-1" data-toggle="tab" data-attribute="chlorid">Chlorid</a></li>
-					<li><a tabindex="-1" data-toggle="tab" data-attribute="nitrat">Nitrat</a></li>
-					<li><a tabindex="-1" data-toggle="tab" data-attribute="sulfat">Sulfat</a></li>
-				</ul>
-			</li>
 			<li class="nav-li-main"><a data-toggle="tab" data-attribute="hardness">Härte</a></li>
-			<li class="nav-li-main"><a data-toggle="tab" data-attribute="price">Preis</a></li>
+			<li class="nav-li-main"><a data-toggle="tab" data-attribute="natrium">Natrium</a></li>
+			<li class="nav-li-main"><a data-toggle="tab" data-attribute="kalium">Kalium</a></li>
+			<li class="nav-li-main"><a data-toggle="tab" data-attribute="calcium">Calcium</a></li>
+			<li class="nav-li-main"><a data-toggle="tab" data-attribute="magnesium">Magnesium</a></li>
+			<li class="nav-li-main"><a data-toggle="tab" data-attribute="chlorid">Chlorid</a></li>
+			<li class="nav-li-main"><a data-toggle="tab" data-attribute="nitrat">Nitrat</a></li>
+			<li class="nav-li-main"><a data-toggle="tab" data-attribute="sulfat">Sulfat</a></li>
 		</ul>
 		
 		<div class="row">
@@ -195,6 +209,15 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="pull-right">
+					<div class="comparison-description">
+						<p>Die Nitratwerte im Trinkwasser in der Region Heilbronn sind allgemein höher als im Mineralwasser.</p>
+						<p>Jedoch liegen die Nitratwerte mit 5 bis 22 mg/L in der Region weit unter dem Grenzwert und sind daher unbedenklich.</p>
+					</div>
+
+					<svg class="bar-chart-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 514" preserveAspectRatio="xMinYMin meet">
+					</svg>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -211,6 +234,7 @@
 	<script src="data/hn-streets.js"></script>
 	<script src="data/mineralwaesser.js"></script>
 	<script src="js/gauge.js"></script>
+	<script src="js/barChart.js"></script>
 	<script src="js/details.js"></script>
 	<!-- endbuild -->
 	<script type="text/javascript">
