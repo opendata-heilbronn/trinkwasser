@@ -148,29 +148,6 @@
 					'label': 'hart',
 					'rangeLabel': '&gt; 14 °dH',
 				}]
-			},
-			'price': {
-				'min': 0,
-				'max': 6,
-				'parts': [{
-					'id': 1,
-					'y': 420,
-					'height': 180,
-					'label': 'günstig',
-					'rangeLabel': '&lt; 1,80 €',
-				}, {
-					'id': 2,
-					'y': 300,
-					'height': 120,
-					'label': 'durchschnittlich',
-					'rangeLabel': '1,80 - 3 €',
-				}, {
-					'id': 3,
-					'y': 0,
-					'height': 300,
-					'label': 'teuer',
-					'rangeLabel': '&gt; 3 €',
-				}]
 			}
 		};
 
@@ -277,15 +254,9 @@
 		}
 	};
 
-	var update = function(attribute) {
-		var values = tw.data.heilbronn.analysis[tw.data.heilbronn.streets['Allee']];
-		var value = values[attribute];
-		if (attribute === 'price') {
-			value = tw.data.heilbronn.price;
-		}
-
+	var update = function(attribute, value) {
 		var instanceToShow = glassInstance, instanceToHide = barInstance;
-		if (attribute === 'hardness' || attribute === 'price') {
+		if (attribute === 'hardness') {
 			instanceToShow = barInstance, instanceToHide = glassInstance;
 		}
 

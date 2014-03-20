@@ -20,9 +20,14 @@
 		return minMax[0] + ((minMax[1] - minMax[0]) / 2);
 	};
 
+	var returnArgument = function(d) {
+		return d;
+	};
+
 	tw.utils = {
 		'isRange': isRange,
 		'getRange': getRange,
-		'getMeanValue': getMeanValue
+		'getMeanValue': getMeanValue,
+		'returnArgument': returnArgument
 	};
 })(tw, jQuery);
