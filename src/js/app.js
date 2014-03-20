@@ -35,7 +35,12 @@ var tw = {
 	};
 
 	var updateResult = function() {
-		$('.results').toggle(zoneData && Object.keys(zoneData).length > 0);
+		if (zoneData && Object.keys(zoneData).length > 0) {
+			$('.results').show();
+			tw.gauge.update('hardness', zoneData['hardness']);
+		} else {
+			$('.results').hide();
+		}
 
 		if (zoneData[attribute]) {
 			$('.result-without-value').hide();
@@ -126,8 +131,10 @@ var tw = {
 	tw.init = function() {
 		completeReferenceWaters();
 		setupForm();
-		setupTabs('hardness');
+		setupTabs('natrium');
 		tw.gauge.init();
 		tw.barChart.init();
+		tw.map.init();
+		$('#city').val('Erlenbach').trigger('change');
 	};
 })(tw, jQuery);

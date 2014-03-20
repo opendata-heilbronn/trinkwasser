@@ -10,7 +10,10 @@ a {
 	cursor: pointer;
 }
 h1 {
-	margin-bottom: 1em;
+	margin-bottom: 2em;
+}
+h2 {
+	margin: 2em 0 1em 0;
 }
 .bg-gradient {
 	background: #007bc3;
@@ -48,8 +51,7 @@ svg text {
 /* bar chart */
 .bar-chart-img {
 	width: 100%;
-	max-width: 600px;
-	max-height: 514px;
+	height: 350px;
 }
 .comparison-description {
 	margin: 0 0 3em 0;
@@ -70,17 +72,20 @@ svg text {
 	display: none;
 }
 
-/* gauge */
-.gauge-glass-img,
-.gauge-bar-img {
-	height: 600px;
+.map-img path {
+	stroke: #FFF;
+	stroke-width: 1px;
+	fill: transparent;
 }
+
+/* gauge */
 .gauge-glass-img {
+	height: 600px;
 	width: 136px;
 }
 .gauge-bar-img {
-	width: 106px;
-	margin-left: 30px;
+	height: 136px;
+	width: 600px;
 }
 .gauge-glass {
 	stroke: #FFF;
@@ -113,10 +118,8 @@ svg text {
 .gauge-container {
 	position: relative;
 }
-.gauge-description {
-	position: absolute;
-	left: 170px;
-	top: 135px;
+.gauge-description h3 {
+	margin-top: 0 !important;
 }
 .gauge-bar-1 {
 	fill: #6C9BD0;
@@ -129,7 +132,7 @@ svg text {
 }
 .gauge-bar-labels text {
 	fill: #FFF;
-	font-size: 16px;
+	font-size: 12px;
 }
 .gauge-value-indicators circle {
 	fill: #FF0000;

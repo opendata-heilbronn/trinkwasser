@@ -25,8 +25,8 @@
 <body class="bg-gradient">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6">
-				<h1>Trinkwasser</h1>
+			<div class="col-lg-7">
+				<h1>Was steckt in meinem Leitungswasser?<br /><small style="color:#CCC">Region Heilbronn</small></h1>
 				
 				<div class="well choose-location">
 					<form class="form-horizontal form-choose-location" role="form">
@@ -55,14 +55,31 @@
 					</form>
 				</div>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-5">
 			</div>
 		</div>
 
-		
 		<div class="results" style="display:none;">
+			<h2>Eigenschaften</h2>
+			<svg class="gauge-bar-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 136" preserveAspectRatio="xMinYMin meet">
+				<defs>
+					<pattern id="range-indicator" x="6" y="6" width="6" height="6" patternUnits="userSpaceOnUse">
+						<line class="range-indicator-bar" x1="0" x2="6" y1="6" y2="0" />
+					</pattern>
+				</defs>
+				
+				<g class="gauge-bars"></g>
+				<g class="gauge-bar-labels" transform="translate(-25, 0)"></g>
+				
+				<g class="gauge-value-indicators">
+					<rect class="gauge-bar-range-indicator" x="50" y="52.5" width="25" height="0" fill="url(#range-indicator)" />
+					<circle class="gauge-bar-ball" cx="63.5" cy="52.5" r="9" />
+				</g>
+			</svg>
+			
+			<h2>Was ist drin?</h2>
+		
 			<ul class="nav nav-tabs">
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="hardness">Härte</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="natrium">Natrium</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="kalium">Kalium</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="calcium">Calcium</a></li>
@@ -76,160 +93,149 @@
 				Es liegen leider keine Werte für diesen Inhaltsstoff vor.
 			</div>
 			
-			<div class="row result-with-value" style="display:none;">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gauge-container">
-					<svg class="gauge-bar-img" style="display:none;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 75 600" preserveAspectRatio="xMinYMin meet">
-						<defs>
-							<pattern id="range-indicator" x="6" y="6" width="6" height="6" patternUnits="userSpaceOnUse">
-								<line class="range-indicator-bar" x1="0" x2="6" y1="6" y2="0" />
-							</pattern>
-						</defs>
+			<div class="result-with-value">
+				<div class="row">
+					<div class="col-lg-6" style="text-align:center;">
+						<svg class="gauge-glass-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 186 837" preserveAspectRatio="xMinYMin meet">
+							<text class="gauge-unit" x="78" y="175" text-anchor="left">mg/l</text>
 						
-						<g class="gauge-bars"></g>
-						<g class="gauge-bar-labels" transform="translate(-25, 0)"></g>
-						
-						<g class="gauge-value-indicators">
-							<rect class="gauge-bar-range-indicator" x="50" y="600" width="25" height="0" fill="url(#range-indicator)" />
-							<circle class="gauge-bar-ball" cx="63.5" cy="600" r="9" />
-						</g>
-					</svg>
-					
-					<svg class="gauge-glass-img" style="display:none;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 186 837" preserveAspectRatio="xMinYMin meet">
-						<text class="gauge-unit" x="78" y="175" text-anchor="left">mg/l</text>
-					
-						<path class="gauge-glass"
-							d="M145.993,832.667H38.398
-							c-16.112,0-15.916-16.613-15.916-16.613V158.107c-8.89,0-16.094-7.203-16.094-16.092v-7.179c0-8.887,7.204-16.094,16.094-16.094
-							h139.661c8.887,0,16.094,7.207,16.094,16.094v7.179c0,8.889-7.207,16.092-16.094,16.092l-0.178,657.84
-							C161.966,815.947,162.999,832.667,145.993,832.667z" />
-	
-						<g class="gauge-values">
-							<defs>
-								<clipPath id="cut-off-top">
-								 	<rect class="gauge-value-bubble-cut" x="34" y="822" width="116" height="0" />
-						 		</clipPath>
-						 		
-								<pattern id="range-indicator" x="8" y="8" width="8" height="8" patternUnits="userSpaceOnUse">
-									<line class="range-indicator" x1="0" x2="8" y1="8" y2="0" />
-								</pattern>
-							</defs>
+							<path class="gauge-glass"
+								d="M145.993,832.667H38.398
+								c-16.112,0-15.916-16.613-15.916-16.613V158.107c-8.89,0-16.094-7.203-16.094-16.092v-7.179c0-8.887,7.204-16.094,16.094-16.094
+								h139.661c8.887,0,16.094,7.207,16.094,16.094v7.179c0,8.889-7.207,16.092-16.094,16.092l-0.178,657.84
+								C161.966,815.947,162.999,832.667,145.993,832.667z" />
+			
+							<g class="gauge-values">
+								<defs>
+									<clipPath id="cut-off-top">
+									 	<rect class="gauge-value-bubble-cut" x="34" y="822" width="116" height="0" />
+							 		</clipPath>
+							 		
+									<pattern id="range-indicator" x="8" y="8" width="8" height="8" patternUnits="userSpaceOnUse">
+										<line class="range-indicator" x1="0" x2="8" y1="8" y2="0" />
+									</pattern>
+								</defs>
+								
+								<rect class="gauge-value" x="34.5" y="822" width="115" height="0" />
+								<path class="gauge-value-bubbles" clip-path="url(#cut-off-top)"
+								d="M149.469,324.376H34.005v482.118c0,0-0.174,14.819,14.195,14.819h86.875
+									c15.169,0,14.247-14.912,14.247-14.912L149.469,324.376z M73.76,741.827c-3.763,0-6.814-3.05-6.814-6.813s3.052-6.813,6.814-6.813
+									c3.764,0,6.812,3.05,6.812,6.813S77.524,741.827,73.76,741.827z M105.182,801.029c-11.289,0-20.439-9.15-20.439-20.439
+									c0-11.288,9.15-20.439,20.439-20.439c11.29,0,20.441,9.151,20.441,20.439C125.623,791.879,116.472,801.029,105.182,801.029z
+									 M117.668,739.558c-9.198,0-16.653-7.457-16.653-16.653s7.455-16.658,16.653-16.658c9.196,0,16.653,7.462,16.653,16.658
+									S126.864,739.558,117.668,739.558z" />
+			
+								<rect class="gauge-value-2" x="34.5" y="822" width="115" height="0" fill="url(#range-indicator)" />
+							</g>
 							
-							<rect class="gauge-value" x="34.5" y="822" width="115" height="0" />
-							<path class="gauge-value-bubbles" clip-path="url(#cut-off-top)"
-							d="M149.469,324.376H34.005v482.118c0,0-0.174,14.819,14.195,14.819h86.875
-								c15.169,0,14.247-14.912,14.247-14.912L149.469,324.376z M73.76,741.827c-3.763,0-6.814-3.05-6.814-6.813s3.052-6.813,6.814-6.813
-								c3.764,0,6.812,3.05,6.812,6.813S77.524,741.827,73.76,741.827z M105.182,801.029c-11.289,0-20.439-9.15-20.439-20.439
-								c0-11.288,9.15-20.439,20.439-20.439c11.29,0,20.441,9.151,20.441,20.439C125.623,791.879,116.472,801.029,105.182,801.029z
-								 M117.668,739.558c-9.198,0-16.653-7.457-16.653-16.653s7.455-16.658,16.653-16.658c9.196,0,16.653,7.462,16.653,16.658
-								S126.864,739.558,117.668,739.558z" />
-	
-							<rect class="gauge-value-2" x="34.5" y="822" width="115" height="0" fill="url(#range-indicator)" />
-						</g>
-						
-						<g class="gauge-bubbles">
-							<path
-							d="M141.745,24.696c0,11.292-9.15,20.441-20.442,20.441c-11.287,0-20.437-9.149-20.437-20.441
-								c0-11.288,9.149-20.439,20.437-20.439C132.595,4.257,141.745,13.409,141.745,24.696z" />
-							<path
-							d="M106.921,92.833c0,3.763-3.048,6.813-6.814,6.813c-3.763,0-6.813-3.05-6.813-6.813
-								c0-3.762,3.05-6.812,6.813-6.812C103.873,86.021,106.921,89.071,106.921,92.833z" />
-							<path
-							d="M84.963,59.335c0,9.198-7.457,16.658-16.658,16.658c-9.192,0-16.651-7.459-16.651-16.658
-								c0-9.194,7.459-16.651,16.651-16.651C77.506,42.684,84.963,50.141,84.963,59.335z" />
-						</g>
-						
-						<g class="gauge-lines"></g>
-					</svg>
-					
-					<div class="gauge-description gauge-description-natrium" style="display:none;">
-						<h3>Natrium</h3>
-						Wert: <strong><span class="value"></span> mg/l</strong><br />
-						Grenzwert: 200 mg/l<br />
-						Tagesbedarf (Frau, 19-65j): 550mg
-						<p><br /></p>
-						<p>Reguliert den Flüssigkeitshaushalt und aktiviert Nerven und Muskeln.</p>
-						<p>Wir nehmen mit dem Kochsalz oft schon zuviel Natrium auf, sodass ein hoher Wert unerwünscht ist.</p>
-					</div>
-					<div class="gauge-description gauge-description-kalium" style="display:none;">
-						<h3>Kalium</h3>
-						Wert: <strong><span class="value"></span> mg/l</strong><br />
-						Grenzwert: kein Grenzwert<br />
-						Tagesbedarf (Frau, 19-65j): 2-4mg
-						<p><br /></p>
-						<p>Reguliert die Wasserverteilung im Körper.</p>
-						<p>Je mehr desto besser.</p>
-					</div>
-					<div class="gauge-description gauge-description-calcium" style="display:none;">
-						<h3>Calcium</h3>
-						Wert: <strong><span class="value"></span> mg/l</strong><br />
-						Grenzwert: kein Grenzwert<br />
-						Tagesbedarf (Frau, 19-65j): 1.000mg
-						<p><br /></p>
-						<p>Ist für den Aufbau und die Erhaltung von Knochen und Zähnen sehr wichtig, beugt Osteoporose vor</p>
-					</div>
-					<div class="gauge-description gauge-description-magnesium" style="display:none;">
-						<h3>Magnesium</h3>
-						Wert: <strong><span class="value"></span> mg/l</strong><br />
-						Grenzwert: kein Grenzwert<br />
-						Tagesbedarf (Frau, 19-65j): 500mg
-						<p><br /></p>
-						<p>Ist für den Aufbau und die Erhaltung von Knochen und Zähnen zuständig und unterstützt die Koordination der Muskeln und Nerven.</p>
-						<p>Wer gesunde Nieren hat, der kann nicht zuviel aufnehmen.</p>
-					</div>
-					<div class="gauge-description gauge-description-chlorid" style="display:none;">
-						<h3>Chlorid</h3>
-						Wert: <strong><span class="value"></span> mg/l</strong><br />
-						Grenzwert: 250 mg/l<br />
-						Tagesbedarf (Frau, 19-65j): 830mg
-						<p><br /></p>
-						<p>Ist für den ausgeglichenen Wasserhaushalt im Körper wichtig</p>
-					</div>
-					<div class="gauge-description gauge-description-nitrat" style="display:none;">
-						<h3>Nitrat</h3>
-						Wert: <strong><span class="value"></span> mg/l</strong><br />
-						Grenzwert: 50 mg/l
-						<p><br /></p>
-						<p>Nitrat kann sich im Körper zu Nitrit und und Nitrosamin umwandeln und als solches krebserregend wirkenn.</p>
-						<p>Daher ist ein tiefer Wert erwünscht.</p>
-					</div>
-					<div class="gauge-description gauge-description-sulfat" style="display:none;">
-						<h3>Sulfat</h3>
-						Wert: <strong><span class="value"></span> mg/l</strong><br />
-						Grenzwert: 250 mg/l
-						<p><br /></p>
-						<p>Wirkt entgiftend auf die Leber, regt die Gallenfunktion an und aktiviert die Darmtätigkeit.</p>
-					</div>
-					<div class="gauge-description gauge-description-hardness" style="display:none;">
-						<h3>Wasserhärte</h3>
-						Wert: <strong><span class="value"></span> °dH</strong><br />
-						Einstufung: <strong><span class="value-label"></span></strong><br />
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="pull-right" style="width:100%;">
-						<div class="comparison-description comparison-description-hardness" style="display:none;">
-						</div>
-						<div class="comparison-description comparison-description-natrium" style="display:none;">
-						</div>
-						<div class="comparison-description comparison-description-kalium" style="display:none;">
-						</div>
-						<div class="comparison-description comparison-description-calcium" style="display:none;">
-						</div>
-						<div class="comparison-description comparison-description-magnesium" style="display:none;">
-						</div>
-						<div class="comparison-description comparison-description-chlorid" style="display:none;">
-						</div>
-						<div class="comparison-description comparison-description-nitrat" style="display:none;">
-							<p>Die Nitratwerte im Trinkwasser in der Region Heilbronn sind allgemein höher als im Mineralwasser.</p>
-							<p>Jedoch liegen die Nitratwerte mit 5 bis 22 mg/L in der Region weit unter dem Grenzwert und sind daher unbedenklich.</p>
-						</div>
-						<div class="comparison-description comparison-description-sulfat">
-						</div>
-	
-						<svg class="bar-chart-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 514" preserveAspectRatio="xMinYMin meet">
+							<g class="gauge-bubbles">
+								<path
+								d="M141.745,24.696c0,11.292-9.15,20.441-20.442,20.441c-11.287,0-20.437-9.149-20.437-20.441
+									c0-11.288,9.149-20.439,20.437-20.439C132.595,4.257,141.745,13.409,141.745,24.696z" />
+								<path
+								d="M106.921,92.833c0,3.763-3.048,6.813-6.814,6.813c-3.763,0-6.813-3.05-6.813-6.813
+									c0-3.762,3.05-6.812,6.813-6.812C103.873,86.021,106.921,89.071,106.921,92.833z" />
+								<path
+								d="M84.963,59.335c0,9.198-7.457,16.658-16.658,16.658c-9.192,0-16.651-7.459-16.651-16.658
+									c0-9.194,7.459-16.651,16.651-16.651C77.506,42.684,84.963,50.141,84.963,59.335z" />
+							</g>
+							
+							<g class="gauge-lines"></g>
 						</svg>
 					</div>
+					<div class="col-lg-6">
+						<div class="gauge-description gauge-description-natrium" style="display:none;">
+							<h3>Natrium</h3>
+							Wert: <strong><span class="value"></span> mg/l</strong><br />
+							Grenzwert: 200 mg/l<br />
+							Tagesbedarf: ~1550mg
+							<p><br /></p>
+							<p>Natrium reguliert den Wasserhaushalt.</p>
+							<p>Wieviel Natrium für wen geeignet ist, hängt stark vom Einzelnen ab: Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit Bluthochdruck oder Säuglinge sollten natriumarmes Wasser (weniger als 20 Milligramm pro Liter) trinken.</p>
+							<p>Ein Mangel an Natrium äußert sich in körperlicher Schwäche, Übelkeit und Muskelkrämpfen bis hin zum Kreislaufkollaps.</p>
+							<p>Empfohlen sind mindestens 550 mg Natrium pro Tag. Für eine ärztlich empfohlene natriumarme Ernährung oder für Säuglinge sind weniger als 20 mg/l Natrium geeignet.</p>
+						</div>
+						<div class="gauge-description gauge-description-kalium" style="display:none;">
+							<h3>Kalium</h3>
+							Wert: <strong><span class="value"></span> mg/l</strong><br />
+							Grenzwert: kein Grenzwert<br />
+							Tagesbedarf: ~2-4mg
+							<p><br /></p>
+							<p>Reguliert die Wasserverteilung im Körper.</p>
+							<p>Je mehr desto besser.</p>
+						</div>
+						<div class="gauge-description gauge-description-calcium" style="display:none;">
+							<h3>Calcium</h3>
+							Wert: <strong><span class="value"></span> mg/l</strong><br />
+							Grenzwert: kein Grenzwert<br />
+							Tagesbedarf: ~1.000mg
+							<p><br /></p>
+							<p>Ist für den Aufbau und die Erhaltung von Knochen und Zähnen sehr wichtig, beugt Osteoporose vor</p>
+						</div>
+						<div class="gauge-description gauge-description-magnesium" style="display:none;">
+							<h3>Magnesium</h3>
+							Wert: <strong><span class="value"></span> mg/l</strong><br />
+							Grenzwert: kein Grenzwert<br />
+							Tagesbedarf: ~500mg
+							<p><br /></p>
+							<p>Ist für den Aufbau und die Erhaltung von Knochen und Zähnen zuständig und unterstützt die Koordination der Muskeln und Nerven.</p>
+							<p>Wer gesunde Nieren hat, der kann nicht zuviel aufnehmen.</p>
+						</div>
+						<div class="gauge-description gauge-description-chlorid" style="display:none;">
+							<h3>Chlorid</h3>
+							Wert: <strong><span class="value"></span> mg/l</strong><br />
+							Grenzwert: 250 mg/l<br />
+							Tagesbedarf: ~830mg
+							<p><br /></p>
+							<p>Ist für den ausgeglichenen Wasserhaushalt im Körper wichtig</p>
+						</div>
+						<div class="gauge-description gauge-description-nitrat" style="display:none;">
+							<h3>Nitrat</h3>
+							Wert: <strong><span class="value"></span> mg/l</strong><br />
+							Grenzwert: 50 mg/l
+							<p><br /></p>
+							<p>Nitrat kann sich im Körper zu Nitrit und und Nitrosamin umwandeln und als solches krebserregend wirkenn.</p>
+							<p>Daher ist ein tiefer Wert erwünscht.</p>
+						</div>
+						<div class="gauge-description gauge-description-sulfat" style="display:none;">
+							<h3>Sulfat</h3>
+							Wert: <strong><span class="value"></span> mg/l</strong><br />
+							Grenzwert: 250 mg/l
+							<p><br /></p>
+							<p>Wirkt entgiftend auf die Leber, regt die Gallenfunktion an und aktiviert die Darmtätigkeit.</p>
+						</div>
+					</div>
 				</div>
+				
+				<p><br /><br /></p>
+				<h3>Vergleich mit Mineralwasser</h3>
+				<div class="comparison-description comparison-description-hardness" style="display:none;">
+				</div>
+				<div class="comparison-description comparison-description-natrium" style="display:none;">
+				</div>
+				<div class="comparison-description comparison-description-kalium" style="display:none;">
+				</div>
+				<div class="comparison-description comparison-description-calcium" style="display:none;">
+				</div>
+				<div class="comparison-description comparison-description-magnesium" style="display:none;">
+				</div>
+				<div class="comparison-description comparison-description-chlorid" style="display:none;">
+				</div>
+				<div class="comparison-description comparison-description-nitrat" style="display:none;">
+					<p>Die Nitratwerte im Trinkwasser in der Region Heilbronn sind allgemein höher als im Mineralwasser.</p>
+					<p>Jedoch liegen die Nitratwerte mit 5 bis 22 mg/L in der Region weit unter dem Grenzwert und sind daher unbedenklich.</p>
+				</div>
+				<div class="comparison-description comparison-description-sulfat">
+				</div>
+				
+				<svg class="bar-chart-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 350" preserveAspectRatio="xMinYMin meet">
+				</svg>
+				
+				<p><br /><br /></p>
+				
+				<h3>Regionaler Vergleich</h3>
+				<svg class="map-img" style="width:1170px;height:1170px;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1170 1170" preserveAspectRatio="xMinYMin meet">
+				</svg>
 			</div>
 		</div>
 	</div>
@@ -245,8 +251,10 @@
 	<script src="data/locations.js"></script>
 	<script src="data/zones.js"></script>
 	<script src="data/mineralwaesser.js"></script>
+	<script src="data/gemeinden.js"></script>
 	<script src="js/gauge.js"></script>
 	<script src="js/barChart.js"></script>
+	<script src="js/map.js"></script>
 	<!-- endbuild -->
 	<script type="text/javascript">
 		$(document).ready(function() {

@@ -8,7 +8,7 @@
 			bottom: 30,
 			left: 110
 		};
-		var width = 600 - margin.left - margin.right, height = 514 - margin.top - margin.bottom;
+		var width = 600 - margin.left - margin.right, height = 350 - margin.top - margin.bottom;
 		var limits = {
 			"natrium": 200,
 			"kalium": 12,
@@ -34,7 +34,7 @@
 				'values': tw.data.referenceWaters[name]
 			});
 		});
-		var referenceZones = ['Jagsthausen', 'Neckarwestheim', 'Ellhofen'];
+		var referenceZones = [];
 		referenceZones.forEach(function(zoneId) {
 			referenceData.push({
 				'name': zoneId,
@@ -48,15 +48,15 @@
 
 		this.update = function(attribute, value, zoneLabel) {
 			var data = [];
-			data.push({
-				'name': zoneLabel,
-				'value': tw.utils.getMeanValue(value)
-			});
 			referenceData.forEach(function(reference) {
 				data.push({
 					'name': reference.name,
 					'value': tw.utils.getMeanValue(reference.values[attribute])
 				});
+			});
+			data.push({
+				'name': zoneLabel,
+				'value': tw.utils.getMeanValue(value)
 			});
 
 			x.domain([0, Math.max(limits[attribute], d3.max(data, function(d) {
