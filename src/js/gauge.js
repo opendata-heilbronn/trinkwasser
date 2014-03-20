@@ -109,42 +109,32 @@
 			return "";
 		};
 
-		/** display */
-		this.show = function() {
-			document.getElementsByClassName('gauge-glass-img')[0].style.display = '';
-			return this;
-		};
-		this.hide = function() {
-			document.getElementsByClassName('gauge-glass-img')[0].style.display = 'none';
-			return this;
-		};
-
 		renderLines();
 	};
 
 	var GaugeBar = function(svg) {
 		var attribute = 'hardness', value = 0;
-		var totalHeight = 600;
+		var totalWidth = 600;
 		var defs = {
 			'hardness': {
 				'min': 0,
 				'max': 28,
 				'parts': [{
 					'id': 1,
-					'y': 420,
-					'height': 180,
+					'x': 420,
+					'width': 180,
 					'label': 'weich',
 					'rangeLabel': '&lt; 8,4 °dH',
 				}, {
 					'id': 2,
-					'y': 300,
-					'height': 120,
+					'x': 300,
+					'width': 120,
 					'label': 'mittel',
 					'rangeLabel': '8,4 - 14 °dH',
 				}, {
 					'id': 3,
-					'y': 0,
-					'height': 300,
+					'x': 0,
+					'width': 300,
 					'label': 'hart',
 					'rangeLabel': '&gt; 14 °dH',
 				}]
@@ -153,14 +143,12 @@
 
 		/** attribute */
 		var updatePartLabels = function() {
-			var calculatY = function(partDef) {
-				return (partDef.height / 2) - 12 + partDef.y;
+			var calculatX = function(partDef) {
+				return (partDef.width / 2) - 12 + partDef.x;
 			};
 			var updateElements = function(d3Element) {
-				d3Element.attr('y', calculatY).attr('transform', function(partDef) {
-					return 'rotate(-90,23,' + calculatY(partDef) + ')';
-				}).attr('x', 23).attr('text-anchor', 'middle').html(function(partDef) {
-					return '<tspan x="10" dy="1.2em">' + partDef.rangeLabel + '</tspan><tspan x="10" dy="1.2em">' + partDef.label + '</tspan>';
+				d3Element.attr('x', calculatX).attr('y', 23).attr('text-anchor', 'middle').html(function(partDef) {
+					return '<tspan y="10" dy="1.2em">' + partDef.rangeLabel + '</tspan><tspan y="10" dy="1.2em">' + partDef.label + '</tspan>';
 				});
 			};
 
@@ -171,13 +159,13 @@
 		};
 		var resizeParts = function() {
 			var updateElements = function(d3Element) {
-				d3Element.attr('y', function(partDef) {
-					return partDef.y;
-				}).attr('height', function(partDef) {
-					return partDef.height;
+				d3Element.attr('x', function(partDef) {
+					return partDef.x;
+				}).attr('width', function(partDef) {
+					return partDef.width;
 				}).attr('class', function(partDef) {
 					return 'gauge-bar-' + partDef.id;
-				}).attr('x', 50).attr('width', 25);
+				}).attr('y', 40).attr('height', 25);
 			};
 
 			var bars = svg.select('.gauge-bars').selectAll('rect').data(defs[attribute].parts);
@@ -193,11 +181,11 @@
 		};
 
 		/** value */
-		var calculateValueY = function(valueNumber) {
-			return totalHeight - (totalHeight / (defs[attribute].max - defs[attribute].min) * valueNumber);
+		var calculateValueX = function(valueNumber) {
+			return totalWidth - (totalWidth / (defs[attribute].max - defs[attribute].min) * valueNumber);
 		};
 		var updateBallPosition = function() {
-			svg.select('.gauge-bar-ball').transition().duration(300).ease('outCirc').attr('cy', calculateValueY(tw.utils.getMeanValue(value)));
+			svg.select('.gauge-bar-ball').transition().duration(300).ease('outCirc').attr('cx', calculateValueX(tw.utils.getMeanValue(value)));
 		};
 		var updateRangeIndicatorPosition = function() {
 			var value1 = value, value2 = value;
@@ -205,8 +193,8 @@
 				var range = tw.utils.getRange(value);
 				value1 = range[0], value2 = range[1];
 			}
-			var value1Y = calculateValueY(value1), value2Y = calculateValueY(value2);
-			svg.select('.gauge-bar-range-indicator').attr('y', value2Y).attr('height', (value1Y - value2Y));
+			var value1X = calculateValueX(value1), value2X = calculateValueX(value2);
+			svg.select('.gauge-bar-range-indicator').attr('x', value2X).attr('width', (value1X - value2X));
 		};
 		this.applyValue = function(newValue) {
 			value = newValue;
@@ -215,23 +203,13 @@
 			return this;
 		};
 		this.getValueLabel = function() {
-			var matchingPart = {}, valueY = calculateValueY(tw.utils.getMeanValue(value));
+			var matchingPart = {}, valueX = calculateValueX(tw.utils.getMeanValue(value));
 			defs[attribute].parts.forEach(function(part) {
-				if ((part.y + part.height) >= valueY) {
+				if ((part.x + part.width) >= valueX) {
 					matchingPart = part;
 				}
 			});
 			return matchingPart.label;
-		};
-
-		/** display */
-		this.show = function() {
-			document.getElementsByClassName('gauge-bar-img')[0].style.display = '';
-			return this;
-		};
-		this.hide = function() {
-			document.getElementsByClassName('gauge-bar-img')[0].style.display = 'none';
-			return this;
 		};
 	};
 
@@ -255,14 +233,12 @@
 	};
 
 	var update = function(attribute, value) {
-		var instanceToShow = glassInstance, instanceToHide = barInstance;
-		if (attribute === 'hardness') {
-			instanceToShow = barInstance, instanceToHide = glassInstance;
-		}
+		var instance = (attribute === 'hardness') ? barInstance : glassInstance;
+		instance.applyAttribute(attribute).applyValue(value);
 
-		instanceToHide.hide();
-		instanceToShow.show().applyAttribute(attribute).applyValue(value);
-		toggleDescription(attribute, value, instanceToShow.getValueLabel());
+		if (attribute !== 'hardness') {
+			toggleDescription(attribute, value, instance.getValueLabel());
+		}
 	};
 
 	var init = function() {
