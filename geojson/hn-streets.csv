@@ -3,7 +3,7 @@ Achtungstraße;14-18
 Adelberger Straße;14-18
 Adenauerplatz;14-18
 Adlerstraße;14-18
-Adolf-Alter Straße;14
+Adolf-Alter-Straße;14
 Adolf-Grimme-Straße;10
 Äußere Mausklinge;9
 Äußerer Pfühl;9
@@ -27,7 +27,7 @@ Allensteiner Weg;14
 Allerheiligenstraße;14-18
 Allmendweg;14-18
 Almosengartenweg;14
-Altböllingerhof;25
+Altböllinger Hof;25
 Alter Hochweg;14
 Alter Mühlweg;10
 Alter Rathausweg;14
@@ -105,11 +105,11 @@ Bert-Brecht-Straße;14-18
 Berwanger Weg;10
 Besigheimer Straße;9
 Beutingerstraße;9
-Béziersstraße;9
+Beziersstraße;9
 Biberacher Straße;9
 Bibersteige;14-18
 Biedermanngasse;14-18
-Bietigheimer Staße;9
+Bietigheimer Straße;9
 Binderweg;10
 Binswanger Straße;14-18
 Birkenhof;14
@@ -189,7 +189,7 @@ Dinkelsbühler Straße;9
 Distelfinkweg;14
 Dittmarstraße;9
 Dobrudschastraße;9
-Dörnlesstraße;14
+Dörnlestraße;14
 Dorfgraben;14
 Dorfplatz;14
 Dr.-Hoffmann-Straße;10
@@ -279,7 +279,7 @@ Frankenstraße;14
 Frankfurter Straße;14-18
 Frankfurt-Oder-Straße;9
 Franziskanerhof;14-18
-Franziska-Schmitt-Weg;9
+Franziska-Schmidt-Weg;9
 Franz-Lehar-Straße;10
 Franz-Reichle-Straße;10
 Franz-Renner-Straße;14-18
@@ -287,7 +287,7 @@ Franz-Werfel-Straße;10
 Frauenweg;14-18
 Fraunhoferweg;14
 Freiligrathstraße;9
-Frida-Schumacher-Straße;10
+Frida-Schuhmacher-Straße;10
 Friedensplatz;14-18
 Friedenstraße;14
 Friedhofstraße;9
@@ -310,7 +310,7 @@ Gabelsbergerstraße;9
 Gänsäckerstraße;9
 Gaffenberg;9
 Gartachgaustraße;10
-Gartengäßchen;14-18
+Gartengässchen;14-18
 Gartenstraße;14-18
 Gaswerkstraße;14-18
 Gebwinstraße;18
@@ -319,7 +319,7 @@ Gellertstraße;9
 Gemmingergasse;14-18
 Georg-Vogel-Straße;14
 Geranienweg;10
-Gerberstraß;14-18
+Gerberstraße;14-18
 Gerhart-Hauptmann-Straße;10
 Geschwister-Scholl-Straße;14-18
 Gildenstraße;9
@@ -412,7 +412,7 @@ Heinrichstraße;14
 Heinrieter Straße;9
 Heisenbergstraße;14-18
 Helmholtzstraße;14
-Helmuth-Hirth-Straße;9
+Hellmuth-Hirth-Straße;9
 Herbert-Hoover-Straße;9
 Herbststraße;14-18
 Herderstraße;9
@@ -448,7 +448,7 @@ Holzstraße;14-18
 Homburger Straße;14
 Horkheimer Straße;9
 Hortensienweg;14
-Hoßäckerweg;14
+Hossäckerweg;14
 Hünderstraße;14
 Hünefeldstraße;9
 Hüttenäckerweg;9
@@ -538,7 +538,7 @@ Kastellstraße;14
 Katzensteige;9
 Kauffmannstraße;9
 Kaulbachweg;9
-Kehrhütttenstraße;10
+Kehrhüttenstraße;10
 Keilstraße;14
 Keitweg;14
 Keltenstraße;9
@@ -552,7 +552,7 @@ Kilianstraße;14-18
 Kindsberg;14-18
 Kirchbergstraße;14
 Kirchbrunnenstraße;14-18
-Kirchgäßle;14
+Kirchgässle;14
 Kirchgasse;14
 Kirchhausener Straße;14
 Kirchhöfle;14-18
@@ -615,7 +615,7 @@ Lauffener Straße;9
 Lauterbachweg;9
 Lehmhaldenstraße;14
 Leiblstraße;9
-Leibnitzstraße;14
+Leibnizstraße;14
 Leinbachstraße;14
 Leingartener Straße;14
 Leintalstraße;14
@@ -650,7 +650,7 @@ Lortzingstraße;14
 Lothringer Straße;9
 Louis-Hentges-Straße;9
 Ludwig-Essinger-Straße;14
-Ludwid-Pfau-Straße;9
+Ludwidg-Pfau-Straße;9
 Ludwig-Richter-Straße;9
 Ludwig-Wunderlich-Straße;14
 Ludwigsburger Straße;14
@@ -674,7 +674,7 @@ Marktplatz;14-18
 Martin-Luther-Straße;9
 Martin-Niemöller-Straße;14
 Massenbacher Straße;14
-Mathias-Erzberger-Straße;10
+Matthias-Erzberger-Straße;10
 Mauerstraße;9
 Maulbronner Straße;14
 Mauserstraße;9
@@ -743,7 +743,7 @@ Nordbergstraße;14-18
 Nordheimer Weg;14
 Nordstraße;14-18
 Nürnberger Straße;9
-Nußäckerstraße;14
+Nussäckerstraße;14
 Obere Kanalstraße;14
 Obere Neckarstraße;14-18
 Oberes Wehr;14
@@ -845,7 +845,7 @@ Rosengasse;14-18
 Rosenheimer Straße;14
 Rosenstraße;14
 Rosenweg;10
-Roßkampfstraße;14-18
+Roßkampffstraße;14-18
 Rothenburger Straße;9
 Rudolf-Harbig-Straße;10
 Rückertstraße;14-18
@@ -862,7 +862,7 @@ Sandbergsteige;9
 Sandgrubenweg;14
 Sandweg;9
 Sankt-Alban-Gassen;10
-Sankt-Martin-Straße;9
+St.-Martin-Straße;9
 Schäfergasse;14-18
 Schaeuffelenstraße;14-18
 Schafberg;14
@@ -883,10 +883,10 @@ Schleifweg;14
 Schleusenstraße;14
 Schlizstraße;9
 Schloßäckerweg;14
-Schloßgasse;14
-Schloßplatz;10
+Schlossgasse;14
+Schlossplatz;10
 Schloßstraße;10
-Schloßweg;14
+Schlossweg;14
 Schluchterner Straße;14
 Schlüsseläckerstraße;14
 Schlüsselgarnweg;9
@@ -913,7 +913,7 @@ Schumannstraße;10
 Schutzbarstraße;9
 Schwabenstraße;9
 Schwabstraße;9
-Schwaigener Straße;14
+Schwaigerner Straße;14
 Schwalbenweg;14
 Schweinsbergstraße;9
 Schwibbogengasse;14-18
@@ -924,11 +924,11 @@ Seewiesen;14
 Semmelweisstraße;9
 Sepp-Herberger-Straße;10
 Sichererstraße;14-18
-Sickingerstraße;14
+Sickingenstraße;14
 Siebenbürgenstraße;14
 Siebeneichgasse;14-18
 Siebenmorgenweg;14
-Siebennußbaumstraße;9
+Siebennussbaumstraße;9
 Siechenhausweg;14-18
 Siedlungsstraße;14
 Siedlungsweg;14
@@ -1051,7 +1051,7 @@ Verdistraße;10
 Viehweide;14
 Viereckiges Stück;14
 Viktor-Scheffel-Straße;14-18
-Victoria-Wolf-Weg;9
+Victoria-Wolff-Weg;9
 Villmatstraße;14-18
 Virchowstraße;9
 Vogelsangstraße;14
