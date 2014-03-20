@@ -103,15 +103,60 @@ var convert = function() {
 };
 
 var writeResult = function() {
-	var jsonString = JSON.stringify(result, null, '\t');
-	console.log(jsonString);
-	fs.writeFile('hn-streets.json', jsonString);
+	var analysisPerHardness = {
+		"14": {
+			"natrium": 7,
+			"kalium": 2,
+			"calcium": 70,
+			"magnesium": 17,
+			"chlorid": 16,
+			"nitrat": 13,
+			"sulfat": 35,
+			"hardness": 14
+		},
+		"14-18": {
+			"natrium": "6-12",
+			"kalium": "1-3",
+			"calcium": "80-92",
+			"magnesium": "14-20",
+			"chlorid": "20-25",
+			"nitrat": "18-22",
+			"sulfat": "37-57",
+			"hardness": "14-18"
+		},
+		"10": {
+			"natrium": "6-7",
+			"kalium": "1-2",
+			"calcium": "55-60",
+			"magnesium": "11-12",
+			"chlorid": "9-10",
+			"nitrat": "8-9",
+			"sulfat": "91-92",
+			"hardness": 10
+		},
+		"9": {
+			"natrium": "5-6",
+			"kalium": "1-2",
+			"calcium": "48-52",
+			"magnesium": "7-9",
+			"chlorid": "8-9",
+			"nitrat": "5-7",
+			"sulfat": 32,
+			"hardness": 9
+		}
+	};
 
 	var csv = '';
-	Object.keys(result).forEach(function(streetName) {
-		csv += streetName + ';' + result[streetName] + "\n";
-	});
-	fs.writeFile('hn-streets.csv', csv);
+	Object.keys(result).forEach(
+			function(streetName) {
+				var analysis = analysisPerHardness[result[streetName]];
+				if (analysis) {
+					csv += 'Heilbronn;;' + streetName + ';' + analysis.hardness + ';' + analysis.hardness + ';' + analysis.natrium + ';' + analysis.kalium
+							+ ';' + analysis.calcium + ';' + analysis.magnesium + ';' + analysis.chlorid + ';' + analysis.nitrat + ';' + analysis.sulfat
+							+ ";;;\n";
+				}
+			});
+	fs.writeFile('hn.csv', csv);
 };
 
 convert();
