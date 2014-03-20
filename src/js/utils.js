@@ -13,7 +13,7 @@
 	};
 
 	var getMeanValue = function(value) {
-		if (!isRange(value)) {
+		if (!value || !isRange(value)) {
 			return value;
 		}
 		var minMax = getRange(value);

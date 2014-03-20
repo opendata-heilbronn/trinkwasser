@@ -1176,8 +1176,6 @@ tw.data.locations = {
 		"Treschklingen": {},
 		"Wollenberg": {}
 	},
-	"Bad Wimpfen": {},
-	"Beilstein": {},
 	"Brackenheim": {
 		"Botenheim": {},
 		"Brackenheim": {},
@@ -1205,7 +1203,6 @@ tw.data.locations = {
 	"Gemmingen": {},
 	"Gochsen": {},
 	"Güglingen": {},
-	"Gundelsheim": {},
 	"Haßmersheim": {
 		"Haßmersheim": {},
 		"Hochhausen": {},
@@ -1218,7 +1215,6 @@ tw.data.locations = {
 		"Helfenberg": {},
 		"Ilsfeld": {},
 		"Raststätten Wunnenstein": {},
-		"Schozach": {},
 		"Wüstenhausen": {}
 	},
 	"Ittlingen": {},
@@ -1393,7 +1389,6 @@ tw.data.locations = {
 		"Willsbach": {}
 	},
 	"Offenau": {},
-	"Pfaffenhofen": {},
 	"Roigheim": {},
 	"Schwaigern": {},
 	"Siegelsbach": {},
@@ -1410,7 +1405,6 @@ tw.data.locations = {
 	"Weinsberg": {
 		"Grantschen": {}
 	},
-	"Widdern": {},
 	"Wüstenrot": {},
 	"Zaberfeld": {
 		"Michelbach": {},

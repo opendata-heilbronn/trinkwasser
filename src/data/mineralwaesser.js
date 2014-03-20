@@ -1,42 +1,42 @@
 tw.data.referenceWaters = {
-	"Gemminger Mineralquelle": {
-		"Natrium": 40.6,
-		"Kalium": 5.4,
-		"Calcium": 426,
-		"Magnesium": 70.6,
-		"Chlorid": 10.9,
-		"Nitrat": 0.05,
-		"Sulfat": 1065,
+	"Gemminger": {
+		"natrium": 40.6,
+		"kalium": 5.4,
+		"calcium": 426,
+		"magnesium": 70.6,
+		"chlorid": 10.9,
+		"nitrat": 0.05,
+		"sulfat": 1065,
 		"sources": ["http://www.wueteria.de/unser_wasser/index.php"]
 	},
-	"Teusser Naturell (Löwenstein)": {
-		"Natrium": 53,
-		"Kalium": 8,
-		"Calcium": 62,
-		"Magnesium": 565,
-		"Chlorid": 27,
-		"Nitrat": 0.5,
-		"Sulfat": 1450,
+	"Teusser Naturell": {
+		"natrium": 53,
+		"kalium": 8,
+		"calcium": 62,
+		"magnesium": 565,
+		"chlorid": 27,
+		"nitrat": 0.5,
+		"sulfat": 1450,
 		"sources": ["http://www.teusser.de/index.php?id=225"]
 	},
 	"Biberacher sanft": {
-		"Natrium": 17.1,
-		"Kalium": 8.65,
-		"Calcium": 585,
-		"Magnesium": 51.1,
-		"Chlorid": 32.3,
-		"Nitrat": 0.2,
-		"Sulfat": 1359,
+		"natrium": 17.1,
+		"kalium": 8.65,
+		"calcium": 585,
+		"magnesium": 51.1,
+		"chlorid": 32.3,
+		"nitrat": 0.2,
+		"sulfat": 1359,
 		"sources": []
 	},
 	"Volvic": {
-		"Natrium": 11.6,
-		"Kalium": 6.2,
-		"Calcium": 11.5,
-		"Magnesium": 8,
-		"Chlorid": 13.5,
-		"Nitrat": 6.9,
-		"Sulfat": 8.1,
+		"natrium": 11.6,
+		"kalium": 6.2,
+		"calcium": 11.5,
+		"magnesium": 8,
+		"chlorid": 13.5,
+		"nitrat": 6.9,
+		"sulfat": 8.1,
 		"sources": ["http://books.google.de/books?id=lzEoGWyqMBwC&pg=PA198&lpg=PA198&dq=volvic+nitratgehalt&source=bl&ots=pJEE0i9HwK&sig=OI_PeSr_QGBCfpeVCu70N4ohy8g&hl=de&ei=4-yvSuHrJ8jK_gbV0p3ZDA&sa=X&oi=book_result&ct=result&resnum=6#v=onepage&q&f=false"]
 	}
 };

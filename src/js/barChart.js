@@ -4,10 +4,21 @@
 	var BarChart = function(svg) {
 		var margin = {
 			top: 20,
-			right: 20,
+			right: 25,
 			bottom: 30,
 			left: 110
-		}, width = 600 - margin.left - margin.right, height = 514 - margin.top - margin.bottom;
+		};
+		var width = 600 - margin.left - margin.right, height = 514 - margin.top - margin.bottom;
+		var limits = {
+			"natrium": 200,
+			"kalium": 12,
+			"calcium": 400,
+			"magnesium": 60,
+			"chlorid": 240,
+			"nitrat": 50,
+			"sulfat": 240,
+			"hardness": 150
+		};
 
 		svg = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -16,54 +27,82 @@
 		var xAxis = d3.svg.axis().scale(x).orient("bottom").ticks(5);
 		var yAxis = d3.svg.axis().scale(y).orient("left");
 
-		var data = [{
-			name: "Wüteria Heilquelle",
-			value: 1
-		}, {
-			name: "Teusser Naturell",
-			value: 1
-		}, {
-			name: "Volvic",
-			value: 1
-		}, {
-			name: "Vittel",
-			value: 1
-		}, {
-			name: "Heilbronn",
-			value: 20
-		}, {
-			name: "Neckarsulm",
-			value: 10
-		}, {
-			name: "Bad Wimpfen",
-			value: 15
-		}, {
-			name: "Jagsthausen",
-			value: 30
-		}];
-
-		var yDomains = [];
-		data.forEach(function(entry) {
-			yDomains.push(entry.name);
+		var referenceData = [];
+		Object.keys(tw.data.referenceWaters).forEach(function(name) {
+			referenceData.push({
+				'name': name,
+				'values': tw.data.referenceWaters[name]
+			});
+		});
+		var referenceZones = ['Jagsthausen', 'Neckarwestheim', 'Ellhofen'];
+		referenceZones.forEach(function(zoneId) {
+			referenceData.push({
+				'name': zoneId,
+				'values': tw.data.zones[zoneId]
+			});
 		});
 
-		x.domain([0, 50]);
-		y.domain(yDomains);
+		var xAxisElement = svg.append("g").attr("class", "x axis").attr("transform", "translate(0," + height + ")");
+		var xAxisTextElement = xAxisElement.append("text").attr("transform", "rotate(90)").attr("y", 5).attr("dy", -481).style("text-anchor", "middle");
+		var yAxisElement = svg.append("g").attr("class", "y axis");
 
-		svg.append("g").attr("class", "x axis").attr("transform", "translate(0," + height + ")").call(xAxis);
-		svg.append("g").attr("class", "y axis").call(yAxis).append("text").attr("transform", "rotate(-90)").attr("y", 6).attr("dy", ".71em").style(
-				"text-anchor", "end");
+		this.update = function(attribute, value, zoneLabel) {
+			var data = [];
+			data.push({
+				'name': zoneLabel,
+				'value': tw.utils.getMeanValue(value)
+			});
+			referenceData.forEach(function(reference) {
+				data.push({
+					'name': reference.name,
+					'value': tw.utils.getMeanValue(reference.values[attribute])
+				});
+			});
 
-		svg.selectAll(".bar").data(data).enter().append("rect").attr("class", "bar").attr("y", function(d) {
-			return y(d.name);
-		}).attr("height", y.rangeBand()).attr("x", -1).attr("width", function(d) {
-			return x(d.value);
-		});
+			x.domain([0, Math.max(limits[attribute], d3.max(data, function(d) {
+				return d.value;
+			}))]);
+			y.domain(data.map(function(d) {
+				return d.name;
+			}));
+
+			xAxisElement.call(xAxis);
+			xAxisTextElement.text(function() {
+				return attribute === 'hardness' ? '°dH' : 'mg/l';
+			});
+			yAxisElement.call(yAxis);
+
+			var updateElements = function(d3Element) {
+				d3Element.attr("y", function(d) {
+					return y(d.name);
+				}).attr("height", y.rangeBand()).attr("x", -1).attr('fill', function(d) {
+					return d.name === zoneLabel ? '#FFCEA3' : '#FFF';
+				}).transition().duration(300).ease('outCirc').attr("width", function(d) {
+					return x(d.value);
+				});
+			};
+			var bars = svg.selectAll(".bar").data(data);
+			updateElements(bars);
+			updateElements(bars.enter().append("rect").attr("class", "bar"));
+			bars.exit().remove();
+		};
 	};
 
 	var barChartInstance = null;
 
-	var update = function(attribute) {
+	var toggleDescription = function(attribute) {
+		var elements = document.getElementsByClassName('comparison-description');
+		for ( var i = 0; i < elements.length; ++i) {
+			elements[i].style.display = 'none';
+		}
+
+		var attributeElement = document.getElementsByClassName('comparison-description-' + attribute)[0];
+		attributeElement.style.display = '';
+	};
+
+	var update = function(attribute, value, zoneLabel) {
+		toggleDescription(attribute);
+		barChartInstance.update(attribute, value, zoneLabel);
 	};
 
 	var init = function() {

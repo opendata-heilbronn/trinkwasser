@@ -41,6 +41,9 @@ h1 {
 svg text {
 	fill: #FFF;
 }
+.result {
+	margin-bottom: 10em;
+}
 
 /* bar chart */
 .bar-chart-img {
@@ -49,10 +52,7 @@ svg text {
 	max-height: 514px;
 }
 .comparison-description {
-	margin: 1em 0 3em 0;
-}
-.bar {
-	fill: #FFF;
+	margin: 0 0 3em 0;
 }
 .axis {
 	font-size: 12px;

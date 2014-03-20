@@ -41,7 +41,7 @@ var tw = {
 			$('.result-without-value').hide();
 			$('.result-with-value').show();
 			tw.gauge.update(attribute, zoneData[attribute]);
-			tw.barChart.update();
+			tw.barChart.update(attribute, zoneData[attribute], zoneId);
 		} else {
 			$('.result-with-value').hide();
 			$('.result-without-value').show();
@@ -116,7 +116,15 @@ var tw = {
 		$('#city').html(generateOptionsHtml(cities, true));
 	};
 
+	var completeReferenceWaters = function() {
+		Object.keys(tw.data.referenceWaters).forEach(function(name) {
+			var values = tw.data.referenceWaters[name];
+			values.hardness = Math.round(((0.14 * values.calcium) + (0.23 * values.magnesium)) * 10) / 10;
+		});
+	};
+
 	tw.init = function() {
+		completeReferenceWaters();
 		setupForm();
 		setupTabs('hardness');
 		tw.gauge.init();

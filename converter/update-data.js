@@ -67,6 +67,7 @@ var convertCsv = function(filename, finalCallback) {
 			} else {
 				zones[zoneId] = zoneValues;
 			}
+			fillLocations(line);
 		}
 	};
 
@@ -96,7 +97,6 @@ var convertCsv = function(filename, finalCallback) {
 	var convertLine = function(line) {
 		trimAll(line);
 		fillZones(line);
-		fillLocations(line);
 	};
 
 	csv().from(filename).to.array(function(data) {
