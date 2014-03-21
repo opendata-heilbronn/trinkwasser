@@ -76,7 +76,7 @@
 				d3Element.attr("y", function(d) {
 					return y(d.name);
 				}).attr("height", y.rangeBand()).attr("x", -1).attr('fill', function(d) {
-					return d.name === zoneLabel ? '#FFCEA3' : '#FFF';
+					return d.name === zoneLabel ? '#2a9fd6' : '#FFF';
 				}).transition().duration(300).ease('outCirc').attr("width", function(d) {
 					return x(d.value);
 				});

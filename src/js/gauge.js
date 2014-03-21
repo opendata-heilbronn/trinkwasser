@@ -121,19 +121,19 @@
 				'max': 28,
 				'parts': [{
 					'id': 1,
-					'x': 420,
+					'x': 0,
 					'width': 180,
 					'label': 'weich',
 					'rangeLabel': '&lt; 8,4 °dH',
 				}, {
 					'id': 2,
-					'x': 300,
+					'x': 180,
 					'width': 120,
 					'label': 'mittel',
 					'rangeLabel': '8,4 - 14 °dH',
 				}, {
 					'id': 3,
-					'x': 0,
+					'x': 300,
 					'width': 300,
 					'label': 'hart',
 					'rangeLabel': '&gt; 14 °dH',
@@ -144,11 +144,11 @@
 		/** attribute */
 		var updatePartLabels = function() {
 			var calculatX = function(partDef) {
-				return (partDef.width / 2) - 12 + partDef.x;
+				return (partDef.width / 2) + partDef.x;
 			};
 			var updateElements = function(d3Element) {
 				d3Element.attr('x', calculatX).attr('y', 23).attr('text-anchor', 'middle').html(function(partDef) {
-					return '<tspan y="10" dy="1.2em">' + partDef.rangeLabel + '</tspan><tspan y="10" dy="1.2em">' + partDef.label + '</tspan>';
+					return partDef.label + ' ' + partDef.rangeLabel;
 				});
 			};
 
@@ -182,7 +182,7 @@
 
 		/** value */
 		var calculateValueX = function(valueNumber) {
-			return totalWidth - (totalWidth / (defs[attribute].max - defs[attribute].min) * valueNumber);
+			return (totalWidth / (defs[attribute].max - defs[attribute].min) * valueNumber);
 		};
 		var updateBallPosition = function() {
 			svg.select('.gauge-bar-ball').transition().duration(300).ease('outCirc').attr('cx', calculateValueX(tw.utils.getMeanValue(value)));
