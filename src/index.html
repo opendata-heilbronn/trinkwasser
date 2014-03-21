@@ -24,6 +24,11 @@
 </head>
 <body class="bg-gradient state-1">
 	<div class="container">
+		<div class="pull-right">
+			<button type="button" class="btn btn-primary" style="margin-top:1.7em">
+				<span class="glyphicon glyphicon-question-sign"></span> Über
+			</button>
+		</div>
 		<h1>Was steckt in meinem Leitungswasser? <small>Region Heilbronn</small></h1>
 		
 		<div class="well choose-location">
@@ -82,7 +87,7 @@
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="chlorid">Chlorid</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="nitrat">Nitrat</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="sulfat">Sulfat</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="info"><span class="glyphicon glyphicon-question-sign"></span> mehr Infos</a></li>
+				<li class="nav-li-main"><a data-toggle="tab" data-attribute="info"><span class="glyphicon glyphicon-info-sign"></span> mehr Infos</a></li>
 			</ul>
 			
 			<div class="alert alert-warning result-without-value" style="display:none;">
@@ -115,6 +120,7 @@
 										<p>Zu einem Kaliummangel kann es nach größeren Flüssigkeitsverlusten, z. B. durch lang andauernde Durchfallerkrankungen, Erbrechen
 											oder längere Einnahme von Entwässerungs- und Abführmitteln.</p>
 										<p>Ein zu hoher Kaliumgehalt im Blut kann zu Herzversagen führen, da Kalium die Kontraktion des Herzmuskels hemmt.</p>
+										<p><img src="img/sport.svg" style="margin-top:1em;" /></p>
 									</div>
 									<div class="attribute-description attribute-description-calcium" style="display:none;">
 										<p>Calcium wird zur Bildung der Knochen und Zähne gebraucht. Auch für die Muskeln und die Blutgerinnung ist Calcium wichtig.</p>
@@ -136,8 +142,8 @@
 									<div class="attribute-description attribute-description-nitrat" style="display:none;">
 										<p>Nitrat wird im Körper in giftiges Nitrit umgewandelt. Zudem können aus Nitriten krebserregende Nitrosamine entstehen.</p>
 										<p>Das Nitrit selbst kann eine Sauerstoffunterversorgung aller Organe und Gewebe bewirken. Säuglinge sind hierfür besonders anfällig.</p> 
-										<p>Daher beträgt der Grenzwert in Mineralwasser 50 mg/l. Die im Trinkwasser der Region enthaltenen Nitratwerte liegen mit 5 bis 30 mg/l weit unter dem Grenzwert und sind daher <strong>unbedenklich</strong>.</p>
-										<p>Zum Vergleich jedoch: Bodensee-Wasser enthält nur 4 mg Nitrat pro Liter.</p> 
+										<p>Daher beträgt der Grenzwert in Mineralwasser 50 mg/l. Die im Trinkwasser der Region enthaltenen Nitratwerte liegen mit 5 bis 30 mg/l weit unter dem Grenzwert und sind daher als unbedenklich einzustufen.</p>
+										<p>Zum Vergleich: Bodensee-Wasser enthält nur 4 mg Nitrat pro Liter.</p> 
 									</div>
 									<div class="attribute-description attribute-description-sulfat" style="display:none;">
 										<p>Sulfate wirken verdauungsfördernd, ab einem Gehalt von 1200 mg/l sogar abführend.</p>
@@ -206,6 +212,10 @@
 										<tr>
 											<th>Grenzwert</th>
 											<td><span class="gauge-legal-limit"></span></td>
+										</tr>
+										<tr class="gauge-daily-dosis-container">
+											<th>Tagesbedarf</th>
+											<td><span class="gauge-daily-dosis">~</span></td>
 										</tr>
 									</table>
 								</div>

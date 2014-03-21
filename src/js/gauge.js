@@ -10,6 +10,7 @@
 		"nitrat": 60,
 		"sulfat": 240
 	};
+
 	var nutrientLegalLimits = {
 		"natrium": '200 mg/l',
 		"kalium": 'kein Grenzwert',
@@ -18,6 +19,12 @@
 		"chlorid": '250 mg/l',
 		"nitrat": '50 mg/l',
 		"sulfat": '250 mg/l'
+	};
+
+	var nutrientDailyDosis = {
+		"kalium": '~2000 mg',
+		"calcium": '~1000 mg',
+		"magnesium": '~350 mg'
 	};
 
 	var GaugeGlass = function(svg) {
@@ -257,6 +264,8 @@
 
 		d3.selectAll('.gauge-value').text(value.toString().replace(/\./g, ','));
 		d3.selectAll('.gauge-legal-limit').text(nutrientLegalLimits[attribute]);
+		d3.selectAll('.gauge-daily-dosis').text(nutrientDailyDosis[attribute]);
+		d3.selectAll('.gauge-daily-dosis-container').attr('style', (nutrientDailyDosis[attribute]) ? '' : 'display:none;');
 		d3.selectAll('.gauge-value-label').text(valueLabel);
 	};
 
