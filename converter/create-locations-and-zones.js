@@ -1,6 +1,6 @@
 var fs = require('fs'), csv = require('csv'), async = require('async'), assert = require('assert');
 
-var locations = {}, zones = {};
+var locations = {}, zones = {}, averageValues = {};
 
 var convertCsv = function(filename, finalCallback) {
 	var generateZoneId = function(line) {
@@ -106,13 +106,46 @@ var convertCsv = function(filename, finalCallback) {
 	});
 };
 
+var isRange = function(value) {
+	return value.toString().indexOf('-') > -1;
+};
+
+var getRange = function(value) {
+	var indexOfHyphen = value.indexOf('-');
+	var min = parseInt(value.substr(0, indexOfHyphen), 10);
+	var max = parseInt(value.substr(indexOfHyphen + 1), 10);
+	return [min, max];
+};
+
+var getMeanValue = function(value) {
+	if (!value || !isRange(value)) {
+		return value;
+	}
+	var minMax = getRange(value);
+	return minMax[0] + ((minMax[1] - minMax[0]) / 2);
+};
+
+var fillAverages = function() {
+	["natrium", "kalium", "calcium", "magnesium", "chlorid", "nitrat", "sulfat", "hardness"].forEach(function(attribute) {
+		var sum = 0;
+		Object.keys(zones).forEach(function(zoneId) {
+			var value = getMeanValue(zones[zoneId][attribute]);
+			if (value) {
+				sum += value;
+			}
+		});
+		averageValues[attribute] = Math.round(sum / Object.keys(zones).length * 10) / 10;
+	});
+};
+
 var writeLocationFile = function() {
 	var stringifyResult = JSON.stringify(locations, null, '\t');
 	fs.writeFile('../src/data/locations.js', 'tw.data.locations = ' + stringifyResult + ';');
 };
 var writeZonesFile = function() {
 	var stringifyResult = JSON.stringify(zones, null, '\t');
-	fs.writeFile('../src/data/zones.js', 'tw.data.zones = ' + stringifyResult + ';');
+	var averageValuesStringifyResult = JSON.stringify(averageValues, null, '\t');
+	fs.writeFile('../src/data/zones.js', 'tw.data.zones = ' + stringifyResult + '; tw.data.averageValues = ' + averageValuesStringifyResult + ';');
 };
 
 async.eachLimit(['hn.csv', 'Wasserdaten Landkreis Heilbronn.csv'], 1, convertCsv, function(err) {
@@ -121,6 +154,7 @@ async.eachLimit(['hn.csv', 'Wasserdaten Landkreis Heilbronn.csv'], 1, convertCsv
 		process.exit(1);
 	}
 
+	fillAverages();
 	writeLocationFile();
 	writeZonesFile();
 });

@@ -72,10 +72,15 @@
 				labelsToDisplay.push(limit / 4 * longLineNumber);
 			}
 		};
+		var updateAverageIndicator = function(attribute) {
+			var averageIndicatorY = calculateBarY(tw.data.averageValues[attribute]);
+			svg.select('.average-indicator').attr('x1', 36).attr('x2', 68).attr('y1', averageIndicatorY).attr('y2', averageIndicatorY);
+		};
 		this.applyAttribute = function(nutrient) {
 			limit = nutrientLimits[nutrient];
 			updateLabelsToDisplay();
 			updateLabels();
+			updateAverageIndicator(nutrient);
 			return this;
 		};
 
@@ -267,6 +272,7 @@
 		d3.selectAll('.gauge-daily-dosis').text(nutrientDailyDosis[attribute]);
 		d3.selectAll('.gauge-daily-dosis-container').attr('style', (nutrientDailyDosis[attribute]) ? '' : 'display:none;');
 		d3.selectAll('.gauge-value-label').text(valueLabel);
+		d3.selectAll('.gauge-average-value').text(tw.data.averageValues[attribute].toString().replace(/\./g, ','));
 	};
 
 	var update = function(attribute, value) {

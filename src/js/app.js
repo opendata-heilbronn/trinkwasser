@@ -23,7 +23,6 @@ var tw = {
 
 	var updateZoneInfo = function() {
 		if (zoneData) {
-			console.log(zoneData);
 			$('.zone-id').text(zoneId);
 			$('.zone-data-year').text(zoneData.year);
 			$('.zone-description').text(zoneData.description);

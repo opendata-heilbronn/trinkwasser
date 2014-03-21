@@ -142,6 +142,10 @@ svg text {
 	font-size: 20px;
 	opacity: 0.8;
 }
+.average-indicator {
+	stroke: #FF0000;
+	stroke-width: 2;
+}
 .gauge-unit {
 	fill: #98BBE0;
 	font-size: 16px;

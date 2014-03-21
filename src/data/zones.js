@@ -1415,4 +1415,13 @@ tw.data.zones = {
 		"year": "",
 		"description": ""
 	}
+}; tw.data.averageValues = {
+	"natrium": 6.7,
+	"kalium": 1.2,
+	"calcium": 58.8,
+	"magnesium": 12.8,
+	"chlorid": 13.8,
+	"nitrat": 12.7,
+	"sulfat": 40.5,
+	"hardness": 14.8
 };
