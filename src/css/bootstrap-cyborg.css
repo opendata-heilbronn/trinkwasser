@@ -5112,7 +5112,8 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: #202020;
+  background-color: #FFFFFF;
+  color: #444;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -5120,6 +5121,9 @@ button.close {
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
   outline: none;
+}
+.modal-content h4 {
+	color: #444;
 }
 .modal-backdrop {
   position: fixed;

@@ -6,6 +6,7 @@ var tw = {
 	'use strict';
 
 	var zoneData = {}, zoneId = '', attribute = null, hasSelectedFirstLocation = false, section = 'explanation';
+	var attributes = ["natrium", "kalium", "calcium", "magnesium", "chlorid", "nitrat", "sulfat"];
 
 	var generateZoneId = function(city, district, streetZone) {
 		var idParts = [];
@@ -31,11 +32,20 @@ var tw = {
 		}
 	};
 
+	var updateDisabledTabs = function() {
+		$('.nav-li-main').removeClass('disabled');
+		attributes.forEach(function(attribute) {
+			if (!zoneData[attribute]) {
+				$('a[data-toggle="tab"][data-attribute="' + attribute + '"]').parent().addClass('disabled');
+			}
+		});
+	};
+
 	var updateZone = function() {
 		var city = $('#city').val();
 		var district = $('#district').val();
 		var streetZone = $('#streetZone').val();
-		var zone = streetZone.substr(0, streetZone.indexOf('|'));
+		var zone = streetZone ? streetZone.substr(0, streetZone.indexOf('|')) : '';
 
 		$('.results').toggle(hasSelectedFirstLocation);
 		$('.choose-location').toggle(!hasSelectedFirstLocation);
@@ -47,6 +57,7 @@ var tw = {
 				zoneData = tw.data.zones[zoneId];
 				updateZoneInfo();
 				updateAttributeContent();
+				updateDisabledTabs();
 			}
 		}
 	};
