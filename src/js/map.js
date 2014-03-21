@@ -19,7 +19,12 @@
 		projection = d3.geo.mercator().center(center).scale(scale).translate(offset);
 		path = path.projection(projection);
 
-		svg.selectAll("path").data(tw.data.geoLayer.features).enter().append("path").attr("d", path);
+		var z = d3.scale.linear().domain([9, 16]).range(colorbrewer.RdBu[9]);
+
+		svg.select('.areas').selectAll("path").data(tw.data.geoLayer.features).enter().append("path").attr("d", path);
+		svg.select('.zones').selectAll("path").data(tw.data.zonesGeo.features).enter().append("path").attr("d", path).attr('stroke', function(d) {
+			return z(tw.utils.getMeanValue(d.properties.haertegrad));
+		});
 	};
 
 	var mapInstance = null;

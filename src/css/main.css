@@ -64,10 +64,13 @@ svg text {
 	display: none;
 }
 
+/* map */
 .map-img path {
-	stroke: #FFF;
 	stroke-width: 1px;
 	fill: transparent;
+}
+.areas path {
+	stroke: #2a9fd6;
 }
 
 /* gauge */
