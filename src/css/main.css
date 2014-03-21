@@ -17,6 +17,10 @@ a {
 .img-float {
 	margin-left: 14px;
 }
+.info-text-container {
+	max-width: 600px;
+	margin: 0 auto;
+}
 h1 {
 	margin-bottom: 2em;
 }
@@ -24,7 +28,7 @@ h2 {
 	margin: 2em 0 1em 0;
 }
 h4 {
-	margin: 2em 0 1em 0;
+	margin: 2.5em 0 1em 0;
 }
 .bg-gradient {
 	background: #007bc3;
@@ -50,6 +54,9 @@ svg text {
 }
 .result {
 	margin-bottom: 10em;
+}
+.attribute-description-hardness {
+	padding-top: 3em;
 }
 
 /* bar chart */

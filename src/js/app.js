@@ -106,6 +106,22 @@ var tw = {
 		updateFormStreetZones();
 	};
 
+	var stringComparator = function(a, b) {
+		a = a.toLowerCase();
+		a = a.replace(/ä/g, "a");
+		a = a.replace(/ö/g, "o");
+		a = a.replace(/ü/g, "u");
+		a = a.replace(/ß/g, "s");
+
+		b = b.toLowerCase();
+		b = b.replace(/ä/g, "a");
+		b = b.replace(/ö/g, "o");
+		b = b.replace(/ü/g, "u");
+		b = b.replace(/ß/g, "s");
+
+		return (a == b) ? 0 : (a > b) ? 1 : -1;
+	};
+
 	var updateFormStreetZones = function() {
 		var city = $('#city').val();
 		var district = $('#district').val();
@@ -119,13 +135,27 @@ var tw = {
 			$('.streetZone').html('');
 		} else {
 			var html = '';
-			Object.keys(streets).forEach(function(zone) {
-				html += '<optgroup label="' + zone + '">';
-				streets[zone].forEach(function(street) {
-					html += '<option value="' + zone + '">' + street + '</option>';
+			if (city === 'Heilbronn') {
+				var allStreets = {};
+				Object.keys(streets).forEach(function(zone) {
+					streets[zone].forEach(function(street) {
+						allStreets[street] = zone;
+					});
 				});
-				html += '</optgroup>';
-			});
+				var allStreetNames = Object.keys(allStreets);
+				allStreetNames.sort(stringComparator);
+				allStreetNames.forEach(function(streetName) {
+					html += '<option value="' + allStreets[streetName] + '">' + streetName + '</option>';
+				});
+			} else {
+				Object.keys(streets).forEach(function(zone) {
+					html += '<optgroup label="' + zone + '">';
+					streets[zone].forEach(function(street) {
+						html += '<option value="' + zone + '">' + street + '</option>';
+					});
+					html += '</optgroup>';
+				});
+			}
 			$('.streetZone').html(html);
 			$('.select-street').show();
 		}
@@ -191,6 +221,6 @@ var tw = {
 		tw.gauge.init();
 		tw.barChart.init();
 		tw.map.init();
-		$('.city').val('Erlenbach').trigger('change');
+		// $('.city').val('Erlenbach').trigger('change');
 	};
 })(tw, jQuery);

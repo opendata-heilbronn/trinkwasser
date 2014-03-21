@@ -24,7 +24,7 @@
 </head>
 <body class="bg-gradient state-1">
 	<div class="container">
-		<h1>Was steckt in meinem Leitungswasser? <small style="color:#D6E5F3">Region Heilbronn</small></h1>
+		<h1>Was steckt in meinem Leitungswasser? <small>Region Heilbronn</small></h1>
 		
 		<div class="well choose-location">
 			<form class="form-horizontal form-choose-location" role="form">
@@ -219,7 +219,7 @@
 											<td style="border:none;"><strong><span class="gauge-value"></span> °dH</strong></td>
 										</tr>
 										<tr>
-											<th>Einstufung</th>
+											<th>Bereich</th>
 											<td><span class="gauge-value-label"></span></td>
 										</tr>
 									</table>
@@ -244,8 +244,10 @@
 							</div>
 							<div class="row gauge-bar-container" style="display:none;">
 								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 attribute-description attribute-description-hardness" style="display:none;">
+									<p>Die Wasserhärte gibt an, wie weich oder hart ein Wasser ist. Je mehr Calcium und Magnesium in einem Wasser enthalten sind, desto härter ist es.</p>
+									<p>Hartes Wasser kann in Küche und Bad Kalkflecken verursachen. Wegen seinem hohen Calcium- und Magnesiumgehalt ist es gesünder als weiches Wasser. (Calcium: Aufbau von Knochen und Zähnen, Magnesium: Aufbau von Muskeln und Nerven)</p> 
+								
 									<h4>Was bedeutet die Wasserhärte für mich?</h4>
-									<img src="img/haushalt.svg" class="pull-right img-float" />
 									<p>Überall dort, wo hartes Wasser langsam fließt oder auf über 60 Grad erhitzt wird, setzt sich Kalk ab. In Küche und Bad entstehen
 										so Kalkflecken, beim Wäschewaschen ist mehr Waschmittel nötig, manche Haushaltsgeräte müssen regelmäßig entkalkt werden. Dies gilt ab
 										einem Wasserhärtegrad von 21.</p>
@@ -258,12 +260,22 @@
 									<p>Je mehr Calcium und Magnesium im Wasser sind, desto härter ist es.</p>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 attribute-description attribute-description-hardness" style="display:none;">
+									<img src="img/haushalt.svg" />
 									<h4>Warum gibt es bei uns kein weiches Trinkwasser?</h4>
 									<p>Die meisten der Heilbronner Trinkwasserbrunnen befinden sich in der Gesteinsschicht Gipskeuper, der für den sehr hohen
 										Magnesium- und Calciumgehalt im Wasser verantwortlich ist. Da diese beiden Mineralien den Härtegrad des Wassers bestimmen, gibt es in
 										Heilbronn kein weiches Wasser.</p>
 									<p>Das Heilbronner Wasser hat einen Härtegrad von bis zu 28 Grad deutscher Härte, in manchen der 40 Brunnen fließt Wasser mit 30
 										Grad deutscher Härte.</p>
+										
+									<h4>Einheit “Grad deutscher Härte”</h4>
+									<p>Die Einheit °dH (Grad deutscher Härte) ist veraltet, aber in der Praxis nach wie vor gebräuchlich. Neben °dH wird Millimol pro Liter (mmol/l) verwendet.</p>
+									<p>Bereiche:</p>
+									<ul>
+										<li>weich: weniger als 1,5 Millimol Calciumcarbonat je Liter (entspricht weniger als 8,4 Grad deutscher Härte)</li>
+										<li>mittel: 1,5 bis 2,5 Millimol Calciumcarbonat je Liter (entspricht 8,4 bis 14 Grad deutscher Härte)</li>
+										<li>hart: mehr als 2,5 Millimol Calciumcarbonat je Liter (entspricht mehr als 14 Grad deutscher Härte)</li>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -305,13 +317,77 @@
 			<div class="info-container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<div class="zone-about">
-							<h4 style="margin-top:0">Weitere Information zu <span class="zone-id"></span></h4>
-							<p class="zone-year-container">Die Daten stammen aus dem Jahr <span class="zone-data-year"></span></p>
-							<p><span class="zone-description"></span></p>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">Weitere Information zu <span class="zone-id"></span></h4>
+							</div>
+							<div class="panel-body">
+								<p class="zone-year-container">
+									Die Daten stammen aus dem Jahr <span class="zone-data-year"></span>
+								</p>
+								<p>
+									<span class="zone-description"></span>
+								</p>
+							</div>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="panel-group" id="accordion">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> Woher kommt unser Trinkwasser? </a>
+									</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<p>Im Stadtkreis gibt es etwa 40 Quellen und Brunnen, im Landkreis sind es etwa 130.</p>
+										<p>Da das Heilbronner Wasser aber sehr hart und stark mit giftigem Nitrat belastet ist, kauft die Stadt seit 43 Jahren Wasser vom
+											Bodensee (Zweckverband Bodensee-Wasserversorgung).</p>
+										<p>Zuvor deckte die Stadt den Wasserbedarf über 60 bis 70 Prozent Eigenwasser. Dies hat sich ins Gegenteil gekehrt. Der Anteil an
+											Bodenseewasser liegt heute bei 80 bis 85 Prozent.</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Warum verzichten manchen Kommunen auf die Beimischung von
+											Bodenseewasser? </a>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>Günstiger ist es für die Kommunen, wenn sie ihr Trinkwasser ausschließlich aus eigenen Quellen beziehen.</p>
+										<p>Die Gemeinde Jagsthausen beispielsweise versorgt ihre Einwohner zu 100 Prozent mit Eigenwasser.</p>
+										<blockquote>
+											<p>“Wir haben hier ordentliches Wasser, das zwar hart ist. Aber wir sehen keinen Anlass für eine Beimischung von Fremdwasser, wie
+												es andere Kommunen tun”</p>
+											<footer>Bürgermeister Roland Halter</footer>
+										</blockquote>
+										<p>Beschwerden aus der Gemeinde gäbe es keine, viele Einwohner hätten eine Enthärtungsanlage. Eine Anbindung an Bodenseewasser sei
+											im Fall von Jagsthausen mit hohen Investitionskosten verbunden und derzeit kein Thema.</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Warum schmeckt mein Trinkwasser nicht so gut wie
+											Mineralwasser? </a>
+									</h4>
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>Der Geschmack von Wasser wird durch die in ihm enthaltenen Mineralien bestimmt.</p>
+										<p>Wasser mit viel Natrium und Kalium, wird als salziger im Geschmack empfunden. Natriumarmes Wasser - wie das Heilbronner
+											Leitungswasser - hingegen schmeckt milder.</p>
+										<p>Ein unangenehmer Geschmack kann entstehen, wenn die Rohrleitungen im Gebäude verunreinigt sind. Die Stadtwerke kontrollieren
+											die Trinkwasserqualität nur bis zur jeweiligen Haustüre. Im Haus liegt die Verantwortung beim Gebäudeeigentümer.</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
