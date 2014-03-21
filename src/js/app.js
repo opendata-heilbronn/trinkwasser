@@ -151,6 +151,9 @@ var tw = {
 		$('.switch-to-section').on('click', function() {
 			$('.section').hide();
 			$('.section-' + $(this).data('section')).show();
+
+			$('.switch-to-section').removeClass('active');
+			$(this).addClass('active');
 		});
 	};
 

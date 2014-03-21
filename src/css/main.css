@@ -81,8 +81,13 @@ svg text {
 
 /* gauge */
 .gauge-glass-img {
-	height: 600px;
-	width: 136px;
+	height: 505px;
+	width: 113px;
+}
+@media (min-width: 992px) {
+	.gauge-glass-img {
+		margin-top: -105px;
+	}
 }
 .gauge-bar-img {
 	height: 136px;
@@ -90,9 +95,19 @@ svg text {
 }
 .gauge-glass {
 	stroke: #FFF;
-	stroke-width: 1.5;
+	stroke-width: 2;
 	stroke-miterlimit: 10;
 	fill: none;
+}
+.gauge-glass-description {
+	margin-top: 48px;
+	margin-right: 16px;
+	width: auto;
+	text-align: right;
+}
+.gauge-glass-description th {
+	font-weight: normal;
+	text-align: right;
 }
 .gauge-values path,
 .gauge-value,
@@ -103,17 +118,17 @@ svg text {
 	opacity: 0.8;
 }
 .gauge-lines line {
-	stroke: #001A33;
-	stroke-width: 1.6;
+	stroke: #98BBE0;
+	stroke-width: 2;
 	opacity: 0.8;
 }
 .gauge-lines text {
-	fill: #001A33;
+	fill: #98BBE0;
 	font-size: 20px;
 	opacity: 0.8;
 }
 .gauge-unit {
-	fill: #001A33;
+	fill: #98BBE0;
 	font-size: 16px;
 }
 .gauge-container {

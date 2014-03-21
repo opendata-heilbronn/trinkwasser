@@ -1,5 +1,5 @@
 tw.data.referenceWaters = {
-	"Gemminger": {
+	"Wüteria Heiligenquelle (Gemmingen)": {
 		"natrium": 40.6,
 		"kalium": 5.4,
 		"calcium": 426,
@@ -9,7 +9,7 @@ tw.data.referenceWaters = {
 		"sulfat": 1065,
 		"sources": ["http://www.wueteria.de/unser_wasser/index.php"]
 	},
-	"Teusser Naturell": {
+	"Teusser Naturell (Löwenstein) (still)": {
 		"natrium": 53,
 		"kalium": 8,
 		"calcium": 62,
@@ -18,16 +18,6 @@ tw.data.referenceWaters = {
 		"nitrat": 0.5,
 		"sulfat": 1450,
 		"sources": ["http://www.teusser.de/index.php?id=225"]
-	},
-	"Biberacher sanft": {
-		"natrium": 17.1,
-		"kalium": 8.65,
-		"calcium": 585,
-		"magnesium": 51.1,
-		"chlorid": 32.3,
-		"nitrat": 0.2,
-		"sulfat": 1359,
-		"sources": []
 	},
 	"Volvic": {
 		"natrium": 11.6,

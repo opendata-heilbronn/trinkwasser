@@ -1,17 +1,27 @@
 (function(tw, d3) {
 	'use strict';
 
+	var nutrientLimits = {
+		"natrium": 200,
+		"kalium": 12,
+		"calcium": 400,
+		"magnesium": 60,
+		"chlorid": 240,
+		"nitrat": 60,
+		"sulfat": 240
+	};
+	var nutrientLegalLimits = {
+		"natrium": '200',
+		"kalium": 'kein Grenzwert',
+		"calcium": 'kein Grenzwert',
+		"magnesium": 'kein Grenzwert',
+		"chlorid": '250',
+		"nitrat": '50',
+		"sulfat": '250'
+	};
+
 	var GaugeGlass = function(svg) {
 		var limit = 0;
-		var nutrientLimits = {
-			"natrium": 200,
-			"kalium": 12,
-			"calcium": 400,
-			"magnesium": 60,
-			"chlorid": 240,
-			"nitrat": 60,
-			"sulfat": 240
-		};
 		var yValueStop = 220, yValueMaxHeight = 602, yValueStart = yValueStop + yValueMaxHeight;
 
 		/** lines */
@@ -237,19 +247,12 @@
 	var barInstance = null;
 
 	var toggleDescription = function(attribute, value, valueLabel) {
-		var elements = document.getElementsByClassName('gauge-description');
-		for ( var i = 0; i < elements.length; ++i) {
-			elements[i].style.display = 'none';
-		}
+		d3.selectAll('.nutrient-description').attr('style', 'display:none;');
+		d3.select('.nutrient-description-' + attribute).attr('style', '');
 
-		var attributeElement = document.getElementsByClassName('gauge-description-' + attribute)[0];
-		attributeElement.style.display = '';
-		attributeElement.getElementsByClassName('value')[0].innerHTML = value.toString().replace(/\./g, ',');
-
-		var valueLabelElement = attributeElement.getElementsByClassName('value-label');
-		if (valueLabelElement[0]) {
-			valueLabelElement[0].innerHTML = valueLabel;
-		}
+		d3.selectAll('.gauge-value').text(value.toString().replace(/\./g, ','));
+		d3.selectAll('.gauge-legal-limit').text(nutrientLegalLimits[attribute]);
+		d3.selectAll('.gauge-value-label').text(valueLabel);
 	};
 
 	var update = function(attribute, value) {
