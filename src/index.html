@@ -24,44 +24,68 @@
 </head>
 <body class="bg-gradient">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-7">
-				<h1>Was steckt in meinem Leitungswasser?<br /><small style="color:#CCC">Region Heilbronn</small></h1>
-				
-				<div class="well choose-location">
-					<form class="form-horizontal form-choose-location" role="form">
-						<div class="form-group select-city">
-							<label for="city" class="col-sm-2 control-label">Ort</label>
-							<div class="col-sm-10">
-								<select id="city" class="form-control">
-									<option value="">Bitte auswählen</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group select-district" style="display:none;">
-							<label for="district" class="col-sm-2 control-label">Ortsteil</label>
-							<div class="col-sm-10">
-								<select id="district" class="form-control">
-								</select>
-							</div>
-						</div>
-						<div class="form-group select-street" style="display:none;">
-							<label for="streetZone" class="col-sm-2 control-label">Straße</label>
-							<div class="col-sm-10">
-								<select id="streetZone" class="form-control">
-								</select>
-							</div>
-						</div>
-					</form>
+		
+		<h1>Was steckt in meinem Leitungswasser?<br /><small style="color:#D6E5F3">Region Heilbronn</small></h1>
+		
+		<div class="well choose-location">
+			<form class="form-horizontal form-choose-location" role="form">
+				<div class="form-group select-city">
+					<label for="city" class="col-sm-2 control-label">Ort</label>
+					<div class="col-sm-10">
+						<select id="city" class="city form-control">
+							<option value="">Bitte auswählen</option>
+						</select>
+					</div>
 				</div>
-			</div>
-			<div class="col-lg-5">
-			</div>
+				<div class="form-group select-district" style="display:none;">
+					<label for="district" class="col-sm-2 control-label">Ortsteil</label>
+					<div class="col-sm-10">
+						<select id="district" class="district form-control">
+						</select>
+					</div>
+				</div>
+				<div class="form-group select-street" style="display:none;">
+					<label for="streetZone" class="col-sm-2 control-label">Straße</label>
+					<div class="col-sm-10">
+						<select id="streetZone" class="streetZone form-control">
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-warning">
+							<span class="glyphicon glyphicon-chevron-right"></span> Weiter
+						</button>
+					</div>
+				</div>
+			</form>
 		</div>
-
+		
 		<div class="results" style="display:none;">
-			<h2>Eigenschaften</h2>
-			<svg class="gauge-bar-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 136" preserveAspectRatio="xMinYMin meet">
+			<form class="form-inline form-choose-location-quick">
+				<div class="form-group">
+					<select class="city form-control"></select>
+				</div>
+				<div class="form-group select-district">
+					<select class="district form-control"></select>
+				</div>
+				<div class="form-group select-street">
+					<select class="streetZone form-control"></select>
+				</div>
+			</form>
+
+			<ul class="nav nav-tabs">
+				<li class="nav-li-main"><a data-toggle="tab" data-attribute="hardness">Wasserhärte</a></li>
+				<li class="nav-li-main"><a data-toggle="tab" data-attribute="natrium">Natrium</a></li>
+				<li class="nav-li-main"><a data-toggle="tab" data-attribute="kalium">Kalium</a></li>
+				<li class="nav-li-main"><a data-toggle="tab" data-attribute="calcium">Calcium</a></li>
+				<li class="nav-li-main"><a data-toggle="tab" data-attribute="magnesium">Magnesium</a></li>
+				<li class="nav-li-main"><a data-toggle="tab" data-attribute="chlorid">Chlorid</a></li>
+				<li class="nav-li-main"><a data-toggle="tab" data-attribute="nitrat">Nitrat</a></li>
+				<li class="nav-li-main"><a data-toggle="tab" data-attribute="sulfat">Sulfat</a></li>
+			</ul>
+			
+			<svg class="gauge-bar-img" style="display:none;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 136" preserveAspectRatio="xMinYMin meet">
 				<defs>
 					<pattern id="range-indicator" x="6" y="6" width="6" height="6" patternUnits="userSpaceOnUse">
 						<line class="range-indicator-bar" x1="0" x2="6" y1="6" y2="0" />
@@ -77,24 +101,12 @@
 				</g>
 			</svg>
 			
-			<h2>Was ist drin?</h2>
-		
-			<ul class="nav nav-tabs">
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="natrium">Natrium</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="kalium">Kalium</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="calcium">Calcium</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="magnesium">Magnesium</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="chlorid">Chlorid</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="nitrat">Nitrat</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="sulfat">Sulfat</a></li>
-			</ul>
-			
 			<div class="alert alert-warning result-without-value" style="display:none;">
 				Es liegen leider keine Werte für diesen Inhaltsstoff vor.
 			</div>
 			
 			<div class="result-with-value">
-				<div class="row">
+				<div class="row section section-explanation">
 					<div class="col-lg-6" style="text-align:center;">
 						<svg class="gauge-glass-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 186 837" preserveAspectRatio="xMinYMin meet">
 							<text class="gauge-unit" x="78" y="175" text-anchor="left">mg/l</text>
@@ -154,6 +166,7 @@
 							<p>Wieviel Natrium für wen geeignet ist, hängt stark vom Einzelnen ab: Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit Bluthochdruck oder Säuglinge sollten natriumarmes Wasser (weniger als 20 Milligramm pro Liter) trinken.</p>
 							<p>Ein Mangel an Natrium äußert sich in körperlicher Schwäche, Übelkeit und Muskelkrämpfen bis hin zum Kreislaufkollaps.</p>
 							<p>Empfohlen sind mindestens 550 mg Natrium pro Tag. Für eine ärztlich empfohlene natriumarme Ernährung oder für Säuglinge sind weniger als 20 mg/l Natrium geeignet.</p>
+							<p><br /></p>
 						</div>
 						<div class="gauge-description gauge-description-kalium" style="display:none;">
 							<h3>Kalium</h3>
@@ -204,40 +217,65 @@
 							<p><br /></p>
 							<p>Wirkt entgiftend auf die Leber, regt die Gallenfunktion an und aktiviert die Darmtätigkeit.</p>
 						</div>
+						<div class="gauge-description gauge-description-hardness" style="display:none;">
+							<h3>Wasserhärte</h3>
+							Wert: <strong><span class="value"></span> °dH - <span class="value-label"></span></strong><br />
+							<p><br /></p>
+						</div>
+						
+						<button type="button" class="btn btn-warning switch-to-section" data-section="compare">
+							<span class="glyphicon glyphicon-chevron-right"></span> mit Mineralwasser vergleichen
+						</button>
+						<button type="button" class="btn btn-warning switch-to-section" data-section="map">
+							<span class="glyphicon glyphicon-chevron-right"></span> <span class="current-attribute-label"></span>-Karte
+						</button>
 					</div>
 				</div>
 				
-				<p><br /><br /></p>
-				<h3>Vergleich mit Mineralwasser</h3>
-				<div class="comparison-description comparison-description-hardness" style="display:none;">
-				</div>
-				<div class="comparison-description comparison-description-natrium" style="display:none;">
-				</div>
-				<div class="comparison-description comparison-description-kalium" style="display:none;">
-				</div>
-				<div class="comparison-description comparison-description-calcium" style="display:none;">
-				</div>
-				<div class="comparison-description comparison-description-magnesium" style="display:none;">
-				</div>
-				<div class="comparison-description comparison-description-chlorid" style="display:none;">
-				</div>
-				<div class="comparison-description comparison-description-nitrat" style="display:none;">
-					<p>Die Nitratwerte im Trinkwasser in der Region Heilbronn sind allgemein höher als im Mineralwasser.</p>
-					<p>Jedoch liegen die Nitratwerte mit 5 bis 22 mg/L in der Region weit unter dem Grenzwert und sind daher unbedenklich.</p>
-				</div>
-				<div class="comparison-description comparison-description-sulfat">
+				<div class="section section-compare" style="display:none;">
+					<div class="comparison-description comparison-description-hardness" style="display:none;">
+					</div>
+					<div class="comparison-description comparison-description-natrium" style="display:none;">
+					</div>
+					<div class="comparison-description comparison-description-kalium" style="display:none;">
+					</div>
+					<div class="comparison-description comparison-description-calcium" style="display:none;">
+					</div>
+					<div class="comparison-description comparison-description-magnesium" style="display:none;">
+					</div>
+					<div class="comparison-description comparison-description-chlorid" style="display:none;">
+					</div>
+					<div class="comparison-description comparison-description-nitrat" style="display:none;">
+						<p>Die Nitratwerte im Trinkwasser in der Region Heilbronn sind allgemein höher als im Mineralwasser.</p>
+						<p>Jedoch liegen die Nitratwerte mit 5 bis 22 mg/L in der Region weit unter dem Grenzwert und sind daher unbedenklich.</p>
+					</div>
+					<div class="comparison-description comparison-description-sulfat">
+					</div>
+					
+					<svg class="bar-chart-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 350" preserveAspectRatio="xMinYMin meet">
+					</svg>
+					
+					<button type="button" class="btn btn-warning switch-to-section" data-section="explanation">
+						<span class="glyphicon glyphicon-chevron-right"></span> Was ist <span class="current-attribute-label"></span>?
+					</button>
+					<button type="button" class="btn btn-warning switch-to-section" data-section="map">
+						<span class="glyphicon glyphicon-chevron-right"></span> <span class="current-attribute-label"></span>-Karte
+					</button>
 				</div>
 				
-				<svg class="bar-chart-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 350" preserveAspectRatio="xMinYMin meet">
-				</svg>
-				
-				<p><br /><br /></p>
-				
-				<h3>Regionaler Vergleich</h3>
-				<svg class="map-img" style="width:1170px;height:1170px;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1170 1170" preserveAspectRatio="xMinYMin meet">
-					<g class="areas"></g>
-					<g class="zones"></g>
-				</svg>
+				<div class="section section-map" style="display:none;">
+					<button type="button" class="btn btn-warning switch-to-section" data-section="explanation">
+						<span class="glyphicon glyphicon-chevron-right"></span> Was ist <span class="current-attribute-label"></span>?
+					</button>
+					<button type="button" class="btn btn-warning switch-to-section" data-section="compare">
+						<span class="glyphicon glyphicon-chevron-right"></span> Mineralwasservergleich
+					</button>
+					
+					<svg class="map-img" style="width:1170px;height:1170px;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1170 1170" preserveAspectRatio="xMinYMin meet">
+						<g class="areas"></g>
+						<g class="zones"></g>
+					</svg>
+				</div>
 			</div>
 		</div>
 	</div>

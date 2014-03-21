@@ -3,8 +3,13 @@ body, html {
 	height: 100%;
 }
 body {
-	padding-top: 10px;
 	color: #FFF;
+}
+.navbar {
+	border-radius: 5px 5px 0 0;
+	border: #2a9fd6 !important;
+	margin-left: 0;
+	padding-left: 0;
 }
 a {
 	cursor: pointer;
@@ -29,6 +34,7 @@ h2 {
 .choose-location {
 	background: #2a9fd6;
 	border: none;
+	max-width: 600px;
 }
 .nav {
 	margin: 2em 0 3em 0;

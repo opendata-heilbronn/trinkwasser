@@ -5,7 +5,7 @@ var tw = {
 (function(tw, $) {
 	'use strict';
 
-	var zoneData = {}, zoneId = '', attribute = null;
+	var zoneData = {}, zoneId = '', attribute = null, hasSelectedFirstLocation = false;
 
 	var generateZoneId = function(city, district, streetZone) {
 		var idParts = [];
@@ -26,23 +26,22 @@ var tw = {
 		var district = $('#district').val();
 		var streetZone = $('#streetZone').val();
 
-		var newZoneId = generateZoneId(city, district, streetZone);
-		if (newZoneId !== zoneId) {
-			zoneId = newZoneId;
-			zoneData = tw.data.zones[zoneId];
-			updateResult();
+		$('.results').toggle(hasSelectedFirstLocation);
+		$('.choose-location').toggle(!hasSelectedFirstLocation);
+
+		if (hasSelectedFirstLocation) {
+			var newZoneId = generateZoneId(city, district, streetZone);
+			if (newZoneId !== zoneId) {
+				zoneId = newZoneId;
+				zoneData = tw.data.zones[zoneId];
+				updateResult();
+			}
 		}
+
 	};
 
 	var updateResult = function() {
-		if (zoneData && Object.keys(zoneData).length > 0) {
-			$('.results').show();
-			tw.gauge.update('hardness', zoneData['hardness']);
-		} else {
-			$('.results').hide();
-		}
-
-		if (zoneData[attribute]) {
+		if (zoneData && zoneData[attribute]) {
 			$('.result-without-value').hide();
 			$('.result-with-value').show();
 			tw.gauge.update(attribute, zoneData[attribute]);
@@ -56,9 +55,13 @@ var tw = {
 	var setupTabs = function(startAttribute) {
 		$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
 			attribute = $(e.target).data('attribute');
+			$('.current-attribute-label').text($(e.target).text());
 			updateResult();
 		});
-		$('a[data-attribute="' + startAttribute + '"]').parent().addClass('active').closest('.nav-li-main').addClass('active');
+
+		var startAttributeElement = $('a[data-attribute="' + startAttribute + '"]');
+		startAttributeElement.parent().addClass('active').closest('.nav-li-main').addClass('active');
+		$('.current-attribute-label').text(startAttributeElement.text());
 		attribute = startAttribute;
 	};
 
@@ -72,13 +75,13 @@ var tw = {
 
 	var updateFormDistricts = function() {
 		var city = $('#city').val();
-		var districts = Object.keys(tw.data.locations[city]);
+		var districts = city ? Object.keys(tw.data.locations[city]) : [];
 
 		if (districts.length < 2) {
 			$('.select-district').hide();
-			$('#district').html('');
+			$('.district').html('');
 		} else {
-			$('#district').html(generateOptionsHtml(districts));
+			$('.district').html(generateOptionsHtml(districts));
 			$('.select-district').show();
 		}
 
@@ -92,10 +95,10 @@ var tw = {
 			district = '';
 		}
 
-		var streets = tw.data.locations[city][district];
+		var streets = city ? tw.data.locations[city][district] : {};
 		if (!streets || Object.keys(streets).length <= 0) {
 			$('.select-street').hide();
-			$('#streetZone').html('');
+			$('.streetZone').html('');
 		} else {
 			var html = '';
 			Object.keys(streets).forEach(function(zone) {
@@ -105,20 +108,50 @@ var tw = {
 				});
 				html += '</optgroup>';
 			});
-			$('#streetZone').html(html);
+			$('.streetZone').html(html);
 			$('.select-street').show();
 		}
+	};
 
+	var onSubmit = function() {
+		hasSelectedFirstLocation = $('#city').val() ? true : false;
 		updateZone();
+		return false;
+	};
+
+	var setupQuickForm = function() {
+		var quickForm = $('.form-choose-location-quick');
+
+		var bindMirrorEvent = function(attribute) {
+			quickForm.find('.' + attribute).on('change', function() {
+				$('#' + attribute).val($(this).val()).trigger('change');
+			});
+			$('#' + attribute).on('change', function() {
+				quickForm.find('.' + attribute).val($(this).val());
+			});
+		};
+
+		bindMirrorEvent('city');
+		bindMirrorEvent('district');
+		bindMirrorEvent('streetZone');
+		quickForm.on('change', onSubmit);
 	};
 
 	var setupForm = function() {
 		$('#city').on('change', updateFormDistricts);
 		$('#district').on('change', updateFormStreetZones);
 		$('#streetZone').on('change', updateZone);
+		$('.form-choose-location').on('submit', onSubmit);
 
 		var cities = Object.keys(tw.data.locations);
-		$('#city').html(generateOptionsHtml(cities, true));
+		$('.city').html(generateOptionsHtml(cities, true));
+	};
+
+	var setupSectionSwitch = function() {
+		$('.switch-to-section').on('click', function() {
+			$('.section').hide();
+			$('.section-' + $(this).data('section')).show();
+		});
 	};
 
 	var completeReferenceWaters = function() {
@@ -131,10 +164,12 @@ var tw = {
 	tw.init = function() {
 		completeReferenceWaters();
 		setupForm();
+		setupQuickForm();
 		setupTabs('natrium');
+		setupSectionSwitch();
 		tw.gauge.init();
 		tw.barChart.init();
 		tw.map.init();
-		$('#city').val('Erlenbach').trigger('change');
+		$('.city').val('Erlenbach').trigger('change');
 	};
 })(tw, jQuery);

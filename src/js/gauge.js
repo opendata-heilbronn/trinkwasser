@@ -109,6 +109,16 @@
 			return "";
 		};
 
+		/** display */
+		this.show = function() {
+			document.getElementsByClassName('gauge-glass-img')[0].style.display = '';
+			return this;
+		};
+		this.hide = function() {
+			document.getElementsByClassName('gauge-glass-img')[0].style.display = 'none';
+			return this;
+		};
+
 		renderLines();
 	};
 
@@ -205,11 +215,21 @@
 		this.getValueLabel = function() {
 			var matchingPart = {}, valueX = calculateValueX(tw.utils.getMeanValue(value));
 			defs[attribute].parts.forEach(function(part) {
-				if ((part.x + part.width) >= valueX) {
+				if (part.x <= valueX && (part.x + part.width) > valueX) {
 					matchingPart = part;
 				}
 			});
 			return matchingPart.label;
+		};
+
+		/** display */
+		this.show = function() {
+			document.getElementsByClassName('gauge-bar-img')[0].style.display = '';
+			return this;
+		};
+		this.hide = function() {
+			document.getElementsByClassName('gauge-bar-img')[0].style.display = 'none';
+			return this;
 		};
 	};
 
@@ -233,12 +253,14 @@
 	};
 
 	var update = function(attribute, value) {
-		var instance = (attribute === 'hardness') ? barInstance : glassInstance;
-		instance.applyAttribute(attribute).applyValue(value);
-
-		if (attribute !== 'hardness') {
-			toggleDescription(attribute, value, instance.getValueLabel());
+		var instanceToShow = glassInstance, instanceToHide = barInstance;
+		if (attribute === 'hardness') {
+			instanceToShow = barInstance, instanceToHide = glassInstance;
 		}
+
+		instanceToHide.hide();
+		instanceToShow.show().applyAttribute(attribute).applyValue(value);
+		toggleDescription(attribute, value, instanceToShow.getValueLabel());
 	};
 
 	var init = function() {
