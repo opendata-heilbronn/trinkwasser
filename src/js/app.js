@@ -21,6 +21,17 @@ var tw = {
 		return idParts.join(' ');
 	};
 
+	var updateZoneInfo = function() {
+		if (zoneData) {
+			console.log(zoneData);
+			$('.zone-id').text(zoneId);
+			$('.zone-data-year').text(zoneData.year);
+			$('.zone-description').text(zoneData.description);
+			$('.zone-about').toggle((zoneData.year || zoneData.description) ? true : false);
+			$('.zone-year-container').toggle(zoneData.year ? true : false);
+		}
+	};
+
 	var updateZone = function() {
 		var city = $('#city').val();
 		var district = $('#district').val();
@@ -34,21 +45,28 @@ var tw = {
 			if (newZoneId !== zoneId) {
 				zoneId = newZoneId;
 				zoneData = tw.data.zones[zoneId];
-				updateResult();
+				updateZoneInfo();
+				updateAttributeContent();
 			}
 		}
-
 	};
 
-	var updateResult = function() {
-		if (zoneData && zoneData[attribute]) {
-			$('.result-without-value').hide();
-			$('.result-with-value').show();
-			tw.gauge.update(attribute, zoneData[attribute]);
-			tw.barChart.update(attribute, zoneData[attribute], zoneId);
+	var updateAttributeContent = function() {
+		if (attribute === 'info') {
+			$('.result-with-value, .result-without-value').hide();
+			$('.info-container').show();
 		} else {
-			$('.result-with-value').hide();
-			$('.result-without-value').show();
+			$('.info-container').hide();
+
+			if (zoneData && zoneData[attribute]) {
+				$('.result-without-value').hide();
+				$('.result-with-value').show();
+				tw.gauge.update(attribute, zoneData[attribute]);
+				tw.barChart.update(attribute, zoneData[attribute], zoneId);
+			} else {
+				$('.result-with-value').hide();
+				$('.result-without-value').show();
+			}
 		}
 	};
 
@@ -56,7 +74,7 @@ var tw = {
 		$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
 			attribute = $(e.target).data('attribute');
 			$('.current-attribute-label').text($(e.target).text());
-			updateResult();
+			updateAttributeContent();
 		});
 
 		var startAttributeElement = $('a[data-attribute="' + startAttribute + '"]');
