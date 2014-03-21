@@ -20,6 +20,9 @@ h1 {
 h2 {
 	margin: 2em 0 1em 0;
 }
+h4 {
+	margin: 2em 0 1em 0;
+}
 .bg-gradient {
 	background: #007bc3;
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDdiYzMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDA1NzhhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -90,8 +93,10 @@ svg text {
 	}
 }
 .gauge-bar-img {
-	height: 136px;
-	width: 600px;
+	height: 100px;
+	width: 100%;
+	max-width: 515px;
+	margin-top: 5px;
 }
 .gauge-glass {
 	stroke: #FFF;
@@ -99,15 +104,20 @@ svg text {
 	stroke-miterlimit: 10;
 	fill: none;
 }
-.gauge-glass-description {
-	margin-top: 48px;
-	margin-right: 16px;
+.gauge-description {
 	width: auto;
 	text-align: right;
 }
-.gauge-glass-description th {
+.gauge-description th {
 	font-weight: normal;
 	text-align: right;
+}
+.gauge-glass-description {
+	margin-top: 48px;
+	margin-right: 16px;
+}
+.gauge-bar-description {
+	margin-right: 14px;
 }
 .gauge-values path,
 .gauge-value,
@@ -148,7 +158,7 @@ svg text {
 }
 .gauge-bar-labels text {
 	fill: #FFF;
-	font-size: 12px;
+	font-size: 19px;
 }
 .gauge-value-indicators circle {
 	fill: #FF0000;

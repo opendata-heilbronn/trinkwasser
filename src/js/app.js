@@ -168,7 +168,7 @@ var tw = {
 		completeReferenceWaters();
 		setupForm();
 		setupQuickForm();
-		setupTabs('natrium');
+		setupTabs('hardness');
 		setupSectionSwitch();
 		tw.gauge.init();
 		tw.barChart.init();

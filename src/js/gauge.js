@@ -11,13 +11,13 @@
 		"sulfat": 240
 	};
 	var nutrientLegalLimits = {
-		"natrium": '200',
+		"natrium": '200 mg/l',
 		"kalium": 'kein Grenzwert',
 		"calcium": 'kein Grenzwert',
 		"magnesium": 'kein Grenzwert',
-		"chlorid": '250',
-		"nitrat": '50',
-		"sulfat": '250'
+		"chlorid": '250 mg/l',
+		"nitrat": '50 mg/l',
+		"sulfat": '250 mg/l'
 	};
 
 	var GaugeGlass = function(svg) {
@@ -121,11 +121,11 @@
 
 		/** display */
 		this.show = function() {
-			document.getElementsByClassName('gauge-glass-img')[0].style.display = '';
+			d3.selectAll('.gauge-glass-container').attr('style', '');
 			return this;
 		};
 		this.hide = function() {
-			document.getElementsByClassName('gauge-glass-img')[0].style.display = 'none';
+			d3.selectAll('.gauge-glass-container').attr('style', 'display:none;');
 			return this;
 		};
 
@@ -134,7 +134,7 @@
 
 	var GaugeBar = function(svg) {
 		var attribute = 'hardness', value = 0;
-		var totalWidth = 600;
+		var totalWidth = 750;
 		var defs = {
 			'hardness': {
 				'min': 0,
@@ -142,19 +142,19 @@
 				'parts': [{
 					'id': 1,
 					'x': 0,
-					'width': 180,
+					'width': 225,
 					'label': 'weich',
 					'rangeLabel': '&lt; 8,4 °dH',
 				}, {
 					'id': 2,
-					'x': 180,
-					'width': 120,
+					'x': 225,
+					'width': 150,
 					'label': 'mittel',
 					'rangeLabel': '8,4 - 14 °dH',
 				}, {
 					'id': 3,
-					'x': 300,
-					'width': 300,
+					'x': 375,
+					'width': 375,
 					'label': 'hart',
 					'rangeLabel': '&gt; 14 °dH',
 				}]
@@ -167,9 +167,11 @@
 				return (partDef.width / 2) + partDef.x;
 			};
 			var updateElements = function(d3Element) {
-				d3Element.attr('x', calculatX).attr('y', 23).attr('text-anchor', 'middle').html(function(partDef) {
-					return partDef.label + ' ' + partDef.rangeLabel;
-				});
+				d3Element.attr('x', calculatX).attr('y', 20).attr('text-anchor', 'middle').html(
+						function(partDef) {
+							return '<tspan x="' + calculatX(partDef) + '">' + partDef.rangeLabel + '</tspan><tspan x="' + calculatX(partDef)
+									+ '" dy="1.3em" style="font-weight:bold;">' + partDef.label + '</tspan>';
+						});
 			};
 
 			var barLabels = svg.select('.gauge-bar-labels').selectAll('text').data(defs[attribute].parts);
@@ -185,7 +187,7 @@
 					return partDef.width;
 				}).attr('class', function(partDef) {
 					return 'gauge-bar-' + partDef.id;
-				}).attr('y', 40).attr('height', 25);
+				}).attr('y', 60).attr('height', 36);
 			};
 
 			var bars = svg.select('.gauge-bars').selectAll('rect').data(defs[attribute].parts);
@@ -234,11 +236,11 @@
 
 		/** display */
 		this.show = function() {
-			document.getElementsByClassName('gauge-bar-img')[0].style.display = '';
+			d3.selectAll('.gauge-bar-container').attr('style', '');
 			return this;
 		};
 		this.hide = function() {
-			document.getElementsByClassName('gauge-bar-img')[0].style.display = 'none';
+			d3.selectAll('.gauge-bar-container').attr('style', 'display:none;');
 			return this;
 		};
 	};
@@ -247,8 +249,8 @@
 	var barInstance = null;
 
 	var toggleDescription = function(attribute, value, valueLabel) {
-		d3.selectAll('.nutrient-description').attr('style', 'display:none;');
-		d3.select('.nutrient-description-' + attribute).attr('style', '');
+		d3.selectAll('.attribute-description').attr('style', 'display:none;');
+		d3.selectAll('.attribute-description-' + attribute).attr('style', '');
 
 		d3.selectAll('.gauge-value').text(value.toString().replace(/\./g, ','));
 		d3.selectAll('.gauge-legal-limit').text(nutrientLegalLimits[attribute]);
