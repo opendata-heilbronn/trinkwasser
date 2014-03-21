@@ -49,6 +49,7 @@ var tw = {
 
 		$('.results').toggle(hasSelectedFirstLocation);
 		$('.choose-location').toggle(!hasSelectedFirstLocation);
+		$('body').toggleClass('state-1', !hasSelectedFirstLocation);
 
 		if (hasSelectedFirstLocation) {
 			var newZoneId = generateZoneId(city, district, zone);
@@ -87,7 +88,11 @@ var tw = {
 	};
 
 	var setupTabs = function(startAttribute) {
-		$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+		$('a[data-toggle="tab"]').on('click', function(e) {
+			if (attribute === $(e.target).data('attribute') && section !== 'explanation') {
+				$('.switch-to-section[data-section="explanation"]').trigger('click');
+			}
+		}).on('shown.bs.tab', function(e) {
 			attribute = $(e.target).data('attribute');
 			$('.current-attribute-label').text($(e.target).text());
 			updateAttributeContent();

@@ -65,6 +65,7 @@
 			limit = nutrientLimits[nutrient];
 			updateLabelsToDisplay();
 			updateLabels();
+			svg.select('.gauge-unit').text(getUnit());
 			return this;
 		};
 
@@ -113,6 +114,7 @@
 
 	var bottleInstance = null;
 	var referenceWater = null;
+	var valueLabel = '';
 	var attribute = null;
 	var selfValue = null;
 
@@ -128,6 +130,11 @@
 		return value ? value.toString().replace(/\./g, ',') : '-';
 	};
 
+	var updateDescription = function() {
+		d3.selectAll('.comparison-water-value').text(formatValue(tw.utils.getMeanValue(getValue())) + ' ' + getUnit());
+		d3.selectAll('.comparison-water-label').text(valueLabel);
+	};
+
 	var update = function(newAttribute, value) {
 		attribute = newAttribute;
 		selfValue = tw.utils.getMeanValue(value);
@@ -136,12 +143,12 @@
 		bottleInstance.updateIndicator(selfValue);
 
 		d3.selectAll('.comparison-water-value-self').text(formatValue(selfValue) + ' ' + getUnit());
-
 		d3.selectAll('.gauge-daily-dosis').text(tw.data.nutrientDailyDosis[attribute]);
 		d3.selectAll('.gauge-daily-dosis-container').attr('style', (tw.data.nutrientDailyDosis[attribute]) ? '' : 'display:none;');
 
 		if (referenceWater) {
 			bottleInstance.applyValue(getValue());
+			updateDescription();
 		}
 	};
 
@@ -151,10 +158,9 @@
 		var currentElement = d3.select(this);
 		currentElement.classed('active', true);
 		referenceWater = currentElement.attr('data-water');
+		valueLabel = currentElement.text();
 
-		d3.selectAll('.comparison-water-value').text(formatValue(tw.utils.getMeanValue(getValue())) + ' ' + getUnit());
-		d3.selectAll('.comparison-water-label').text(currentElement.text());
-
+		updateDescription();
 		bottleInstance.applyValue(getValue());
 	};
 

@@ -22,7 +22,22 @@ a {
 	margin: 0 auto;
 }
 h1 {
-	margin-bottom: 2em;
+	margin-bottom: 24px;
+}
+.state-1 h1 {
+	margin: 1.5em 0 1em 0;
+}
+.form-choose-location-quick {
+	margin-bottom: 60px;
+}
+.footer a,
+.footer {
+	color: #EEE;
+	font-size: 12px;
+}
+.footer {
+	margin: 100px 0 100px 0;
+	text-align: center;
 }
 h2 {
 	margin: 2em 0 1em 0;
@@ -41,13 +56,17 @@ h4 {
 	background: radial-gradient(ellipse at center,  #007bc3 0%,#00578a 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007bc3', endColorstr='#00578a',GradientType=1 );
 }
-.choose-location {
+.choose-location-well {
 	background: #2a9fd6;
 	border: none;
 	max-width: 600px;
+	margin-top: 100px;
 }
 .nav {
 	margin: 2em 0 3em 0;
+}
+li.nav-li-main.active a {
+	background-color: #2a9fd6 !important;
 }
 svg text {
 	fill: #FFF;
@@ -132,6 +151,7 @@ svg text {
 }
 .gauge-description th {
 	font-weight: normal;
+	max-width: 140px;
 }
 .gauge-glass-description {
 	margin-top: 48px;
@@ -140,27 +160,25 @@ svg text {
 .gauge-values path,
 .gauge-value,
 .gauge-bubbles {
-	fill: #FFF;
+	fill: #2a9fd6;
 }
 .gauge-value-2 {
 	opacity: 0.8;
 }
 .gauge-lines line {
-	stroke: #98BBE0;
+	stroke: #FFF;
 	stroke-width: 2;
-	opacity: 0.8;
 }
 .gauge-lines text {
-	fill: #98BBE0;
+	fill: #FFF;
 	font-size: 20px;
-	opacity: 0.8;
 }
 .average-indicator {
 	stroke: #FF0000;
 	stroke-width: 2;
 }
 .gauge-unit {
-	fill: #98BBE0;
+	fill: #FFF;
 	font-size: 16px;
 }
 .gauge-container {
@@ -180,7 +198,7 @@ svg text {
 }
 .gauge-bar-labels text {
 	fill: #FFF;
-	font-size: 21px;
+	font-size: 24px;
 }
 .gauge-value-indicators circle {
 	fill: #FF0000;
@@ -188,10 +206,13 @@ svg text {
 	stroke: #AAA;
 }
 .range-indicator {
-	stroke: #001A33;
+	stroke: #FFF;
 	stroke-width: 1;
 }
 .range-indicator-bar {
-	stroke: #001A33;
+	stroke: #FFF;
 	stroke-width: 1;
+}
+#hardness-range-indicator .range-indicator-bar {
+	stroke: #333;
 }

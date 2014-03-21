@@ -24,48 +24,48 @@
 </head>
 <body class="bg-gradient state-1">
 	<div class="container">
-		<div class="pull-right" style="margin-top:1.7em">
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactDialog">
-				<span class="glyphicon glyphicon-envelope"></span>
-			</button>
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutDialog">
-				<span class="glyphicon glyphicon-question-sign"></span> Über
-			</button>
+		<div class="pull-right">
+			<h1><small>Region Heilbronn</small></h1>
 		</div>
-		<h1>Was steckt in meinem Leitungswasser? <small>Region Heilbronn</small></h1>
+		<h1>Was steckt in meinem Trinkwasser?</h1>
 		
-		<div class="well choose-location">
-			<form class="form-horizontal form-choose-location" role="form">
-				<div class="form-group select-city">
-					<label for="city" class="col-sm-2 control-label">Ort</label>
-					<div class="col-sm-10">
-						<select id="city" class="city form-control">
-							<option value="">Bitte auswählen</option>
-						</select>
+		<div class="choose-location">
+			<div class="well choose-location-well">
+				<form class="form-horizontal form-choose-location" role="form">
+					<div class="form-group select-city">
+						<label for="city" class="col-sm-2 control-label">Ort</label>
+						<div class="col-sm-10">
+							<select id="city" class="city form-control">
+								<option value="">Bitte auswählen</option>
+							</select>
+						</div>
 					</div>
-				</div>
-				<div class="form-group select-district" style="display:none;">
-					<label for="district" class="col-sm-2 control-label">Ortsteil</label>
-					<div class="col-sm-10">
-						<select id="district" class="district form-control">
-						</select>
+					<div class="form-group select-district" style="display:none;">
+						<label for="district" class="col-sm-2 control-label">Ortsteil</label>
+						<div class="col-sm-10">
+							<select id="district" class="district form-control">
+							</select>
+						</div>
 					</div>
-				</div>
-				<div class="form-group select-street" style="display:none;">
-					<label for="streetZone" class="col-sm-2 control-label">Straße</label>
-					<div class="col-sm-10">
-						<select id="streetZone" class="streetZone form-control">
-						</select>
+					<div class="form-group select-street" style="display:none;">
+						<label for="streetZone" class="col-sm-2 control-label">Straße</label>
+						<div class="col-sm-10">
+							<select id="streetZone" class="streetZone form-control">
+							</select>
+						</div>
 					</div>
-				</div>
-				<div class="form-group">
-					<div class="col-sm-offset-2 col-sm-10">
-						<button type="submit" class="btn btn-warning">
-							<span class="glyphicon glyphicon-chevron-right"></span> Weiter
-						</button>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-warning">
+								<span class="glyphicon glyphicon-chevron-right"></span> Weiter
+							</button>
+						</div>
 					</div>
-				</div>
-			</form>
+				</form>
+				<br />
+			</div>
+			
+			<p><small>Derzeit sind Daten aus dem Stadt- und Landkreis Heilbronn auswählbar.</small></p>
 		</div>
 		
 		<div class="results" style="display:none;">
@@ -202,12 +202,12 @@
 										
 										<g class="gauge-lines"></g>
 										
-										<line class="average-indicator" x1="36" x2="68" y1="-100" y2="-100"></line>
+										<line class="average-indicator" x1="36" x2="68" y1="822" y2="822"></line>
 									</svg>
 									
 									<table class="table gauge-description gauge-glass-description pull-right">
 										<tr>
-											<th style="border:none;">Wert</th>
+											<th style="border:none;"><strong>Wert</strong></th>
 											<td style="border:none;"><strong><span class="gauge-value"></span> mg/l</strong></td>
 										</tr>
 										<tr>
@@ -219,7 +219,7 @@
 											<td><span class="gauge-daily-dosis">~</span></td>
 										</tr>
 										<tr>
-											<th>Durchschnitt<br /><small>im Raum Heilbronn</small></th>
+											<th>Durchschnitt<br /><small>Region Heilbronn</small></th>
 											<td><span class="gauge-average-value"></span> mg/l<br /><small>(rote Linie)</small></td>
 										</tr>
 									</table>
@@ -245,8 +245,8 @@
 										<g class="gauge-bar-labels"></g>
 										
 										<g class="gauge-value-indicators">
-											<rect class="gauge-bar-range-indicator" x="63.5" y="60" width="25" height="36" fill="url(#hardness-range-indicator)" />
-											<circle class="gauge-bar-ball" cx="63.5" cy="78" r="13" />
+											<rect class="gauge-bar-range-indicator" x="63.5" y="64" width="25" height="40" fill="url(#hardness-range-indicator)" />
+											<circle class="gauge-bar-ball" cx="63.5" cy="84" r="13" />
 										</g>
 									</svg>
 									
@@ -255,7 +255,7 @@
 									<img src="img/haushalt.svg" class="pull-right" />
 									<table class="table gauge-description gauge-bar-description">
 										<tr>
-											<th style="border:none;">Wert</th>
+											<th style="border:none;"><strong>Wert</strong></th>
 											<td style="border:none;"><strong><span class="gauge-value"></span> °dH</strong></td>
 										</tr>
 										<tr>
@@ -263,7 +263,7 @@
 											<td><span class="gauge-value-label"></span></td>
 										</tr>
 										<tr>
-											<th>Durchschnitt<br /><small>im Raum Heilbronn</small></th>
+											<th>Durchschnitt<br /><small>Region Heilbronn</small></th>
 											<td><span class="gauge-average-value"></span> °dH</td>
 										</tr>
 									</table>
@@ -275,16 +275,16 @@
 						<div class="section section-compare" style="display:none;margin-top:-32px;">
 							<div class="row">
 								<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 compare-nav">
-									<p style="font-size:16px;">Anzeigen:</p>
 									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="volvic">Volvic</button>
 									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="wueteria">Wüteria Heiligenquelle</button>
 									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="teusser">Teusser Naturell</button>
 									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="vittel">Vittel</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="self">Aktueller Ort</button>
+									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="self" style="margin-top:2em;">mein Trinkwasser</button>
+									<p style="margin-top:3em;text-align:left;font-size:12px;">Beispielhaft wurden zwei überregional bekannte sowie zwei Wasser aus dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser.</p>
 								</div>
 								<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
 									<svg class="bottle-img pull-right" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 258 837" preserveAspectRatio="xMinYMin meet">
-										<text class="gauge-unit" x="78" y="220" text-anchor="left">mg/l</text>
+										<text class="gauge-unit" x="78" y="220" text-anchor="left"></text>
 									
 										<g class="gauge-values">
 											<defs>
@@ -311,7 +311,7 @@
 										<line class="average-indicator" x1="20" x2="60" y1="819" y2="819"></line>
 									
 										<g>
-											<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M6.104,719.749l0.382,32.207c0,0,3.43,36.212,18.676,52.031
+											<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M6.104,719.749l0.382,32.207c0,0,3.43,36.212,18.676,52.031
 												c15.249,15.819,30.495,31.257,54.89,29.922c24.395-1.335,39.833-20.964,53.365-14.866c13.529,6.1,37.927,22.871,60.414,11.246
 												c22.492-11.626,56.225-20.584,56.225-94.532c0-26.871-0.57-28.969-4.193-32.589c-3.622-3.623-7.623-2.635-7.623-11.626
 												c0-5.467,9.34-2.479,10.1-19.439c0.765-16.963,0-366.307,0-366.307s0-4.384-2.477-6.099s-4.575-0.762-4.575-10.864
@@ -322,24 +322,24 @@
 												C9.536,703.548,5.722,703.548,6.104,719.749z"/>
 											<path fill="#FFFFFF" d="M177.759,155.542c0,0.842-0.854,1.524-1.902,1.524H80.555c-1.047,0-1.899-0.682-1.899-1.524v-4.701
 												c0-0.842,0.852-1.524,1.899-1.524h95.302c1.048,0,1.902,0.682,1.902,1.524V155.542z"/>
-											<path fill="#FFFFFF" d="M98.822,25.035c0,10.071,8.168,18.234,18.236,18.234c10.074,0,18.235-8.163,18.235-18.234
-												s-8.161-18.236-18.235-18.236C106.99,6.799,98.822,14.964,98.822,25.035z"/>
-											<path fill="#FFFFFF" d="M116.198,113.161c0,3.358,2.719,6.077,6.079,6.077c3.353,0,6.075-2.719,6.075-6.077
-												c0-3.357-2.723-6.079-6.075-6.079C118.917,107.082,116.198,109.803,116.198,113.161z"/>
-											<path fill="#FFFFFF" d="M134.057,72.761c0,8.205,6.658,14.858,14.86,14.858c8.206,0,14.86-6.654,14.86-14.858
-												c0-8.204-6.654-14.856-14.86-14.856C140.715,57.906,134.057,64.557,134.057,72.761z"/>
-											<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M173.188,96.629c0-0.748-0.683-1.351-1.528-1.351H84.627
+											<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M173.188,96.629c0-0.748-0.683-1.351-1.528-1.351H84.627
 												c-0.842,0-1.523,0.604-1.523,1.351v45.5c0,0.746,0.682,1.352,1.523,1.352h87.033c0.846,0,1.528-0.606,1.528-1.352V96.629z"/>
+											<path fill="#2a9fd6" d="M98.822,25.035c0,10.071,8.168,18.234,18.236,18.234c10.074,0,18.235-8.163,18.235-18.234
+												s-8.161-18.236-18.235-18.236C106.99,6.799,98.822,14.964,98.822,25.035z"/>
+											<path fill="#2a9fd6" d="M116.198,113.161c0,3.358,2.719,6.077,6.079,6.077c3.353,0,6.075-2.719,6.075-6.077
+												c0-3.357-2.723-6.079-6.075-6.079C118.917,107.082,116.198,109.803,116.198,113.161z"/>
+											<path fill="#2a9fd6" d="M134.057,72.761c0,8.205,6.658,14.858,14.86,14.858c8.206,0,14.86-6.654,14.86-14.858
+												c0-8.204-6.654-14.856-14.86-14.856C140.715,57.906,134.057,64.557,134.057,72.761z"/>
 										</g>
 									</svg>
 									
 									<table class="table gauge-description gauge-glass-description pull-right">
 										<tr>
-											<th style="border:none;max-width:140px;"><span class="comparison-water-label"></span></th>
-											<td style="border:none;"><span class="comparison-water-value"></span></strong></td>
+											<th style="border:none;"><strong class="comparison-water-label">-</strong></th>
+											<td style="border:none;"><strong class="comparison-water-value">-</strong></td>
 										</tr>
 										<tr>
-											<th>Aktueller Ort</th>
+											<th>mein Trinkwasser</th>
 											<td><span class="comparison-water-value-self"></span><br /><small>(rote Linie)</small></td>
 										</tr>
 										<tr class="gauge-daily-dosis-container">
@@ -366,7 +366,7 @@
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h4 class="panel-title">Weitere Information zu <span class="zone-id"></span></h4>
+								<h4 class="panel-title">Information zu <span class="zone-id"></span></h4>
 							</div>
 							<div class="panel-body">
 								<p class="zone-year-container">
@@ -377,8 +377,7 @@
 								</p>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					
 						<div class="panel-group" id="accordion">
 							<div class="panel panel-default">
 								<div class="panel-heading">
@@ -386,7 +385,7 @@
 										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> Woher kommt unser Trinkwasser? </a>
 									</h4>
 								</div>
-								<div id="collapseOne" class="panel-collapse collapse in">
+								<div id="collapseOne" class="panel-collapse collapse">
 									<div class="panel-body">
 										<p>Im Stadtkreis gibt es etwa 40 Quellen und Brunnen, im Landkreis sind es etwa 130.</p>
 										<p>Da das Heilbronner Wasser aber sehr hart und stark mit giftigem Nitrat belastet ist, kauft die Stadt seit 43 Jahren Wasser vom
@@ -399,8 +398,7 @@
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Warum verzichten manchen Kommunen auf die Beimischung von
-											Bodenseewasser? </a>
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Warum verzichten manche Kommunen auf die Beimischung von Bodenseewasser? </a>
 									</h4>
 								</div>
 								<div id="collapseTwo" class="panel-collapse collapse">
@@ -428,7 +426,7 @@
 									<div class="panel-body">
 										<p>Der Geschmack von Wasser wird durch die in ihm enthaltenen Mineralien bestimmt.</p>
 										<p>Wasser mit viel Natrium und Kalium, wird als salziger im Geschmack empfunden. Natriumarmes Wasser - wie das Heilbronner
-											Leitungswasser - hingegen schmeckt milder.</p>
+											Trinkwasser - hingegen schmeckt milder.</p>
 										<p>Ein unangenehmer Geschmack kann entstehen, wenn die Rohrleitungen im Gebäude verunreinigt sind. Die Stadtwerke kontrollieren
 											die Trinkwasserqualität nur bis zur jeweiligen Haustüre. Im Haus liegt die Verantwortung beim Gebäudeeigentümer.</p>
 									</div>
@@ -484,7 +482,7 @@
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"> Einheit “Grad deutscher Härte”?</a>
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"> Einheit °dH - “Grad deutscher Härte”?</a>
 									</h4>
 								</div>
 								<div id="collapseSeven" class="panel-collapse collapse">
@@ -504,6 +502,20 @@
 				</div>
 			</div>
 		</div>
+		
+		<footer class="footer">
+			<a data-toggle="modal" data-target="#contactDialog"><span class="glyphicon glyphicon-envelope"></span></a>
+			<a data-toggle="modal" data-target="#contactDialog">Kontakt</a>
+			| 
+			<a data-toggle="modal" data-target="#aboutDialog"><span class="glyphicon glyphicon-question-sign"></span></a>
+			<a data-toggle="modal" data-target="#aboutDialog">Über das Projekt</a>
+			| 
+			<a data-toggle="modal" data-target="#attributionDialog"><span class="glyphicon glyphicon-user"></span></a>
+			<a data-toggle="modal" data-target="#attributionDialog">Mitwirkende</a>
+			| 
+			<a data-toggle="modal" data-target="#imprintDialog"><span class="glyphicon glyphicon-info-sign"></span></a>
+			<a data-toggle="modal" data-target="#imprintDialog">Impressum</a>
+		</footer>
 	</div>
 
 	<div class="modal fade" id="aboutDialog" tabindex="-1">
@@ -511,43 +523,91 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title" id="myModalLabel">Über &amp; Impressum</h4>
+					<h4 class="modal-title">Über &amp; Impressum</h4>
 				</div>
 				<div class="modal-body">
-					<div style="max-height:600px;overflow:scroll;">
+					<div style="max-height:400px;overflow:scroll;">
 						<h4 style="margin-top:0;">Wie das Trinkwasser-Tool entstanden ist</h4>
 						<p>Trinkwasser gilt als das am besten kontrollierte Lebensmittel in Deutschland. Und trotzdem wissen wir sehr wenig über das Wasser, das bei uns aus dem Hahn kommt. Viele Kommunen veröffentlichen die Untersuchungsergebnisse auf ihren Webseiten. Für den Bürger sind diese Daten abrufbar - aber nicht greifbar. Was bedeutet ein Härtegrad von 9? Sind 200 Milligramm Calcium pro Liter viel oder wenig? Wie mineralreich unser Leitungswasser ist, zeigt sich erst, wenn wir es mit Wasser aus dem Handel vergleichen.</p>
 						<p>Das ist für die Region Heilbronn jetzt möglich. Die Idee dazu entstand Ende Februar beim Open Data Day in Heilbronn. Obwohl viele Daten online verfügbar waren, mussten sie zuerst in eine maschinenlesbare Form gebracht werden. Viele Kommunen veröffentlichen nur PDF-Dateien mit den Jahresdurchschnittswerten. Diese sind nicht maschinenlesbar und mussten von der Redaktion übertragen werden.  Um die Anwendung zu programmieren, ist ein einheitlicher Datensatz notwendig. Auf manchen Webseiten der Kommunen waren die gesuchten Informationen über das Trinkwasser auf Unterseiten versteckt, veraltet oder nicht vollständig. Bei vielen Städten und Gemeinden haben wir deshalb per Email die Daten abgefragt. Nur von drei Kommunen kam bisher keine Rückmeldung.</p>
 						<p>Überraschend war für uns, wie unterschiedlich das Trinkwasser in der Region zusammengesetzt ist. Teilweise differiert der Mineraliengehalt innerhalb einer Ortschaft sehr stark - nämlich dann, wenn es verschiedene Versorgungsbereiche gibt. Kommunen wie Bad Friedrichshall, Neckarsulm oder Zaberfeld sind in mehrere Gebiete eingeteilt. Dies war in der Phase der Datenerhebung eine besondere Herausforderung. Die Gebiete mussten teilweise noch den Straßen zugeordnet werden, damit der Benutzer auch die korrekten Werte für seine eigene Straße angezeigt bekommt. Zu den Trinkwasserpreisen bietet das Statistische Landesamt einen vollständigen Datensatz für alle Landkreise - für die Trinkwasserqualität gibt es einen solchen öffentlichen Datensatz leider nicht.</p>
 						<p>Der dieser Anwendung zugrundliegende Datensatz war deshalb ein aufwändiges Rechercheprojekt. Nicht weniger aufwändig waren für die Entwickler Felix Ebert, Ulrich Stech und Tom Görner Umsetzung und Visualisierung. Eine große Rolle spielten dabei Benutzerfreundlichkeit und Design. Aus trockenen Zahlen sollte eine interaktive Grafik entstehen, durch die der Benutzer einen Zugang zu seinem Trinkwasser bekommt. Für die grafischen Elemente war Heiko Nicht verantwortlich.</p> 
-						<p>Die Trinkwasser-Anwendung ist eine Beta-Version. Vor allem die Datenerhebung kann nie abgeschlossen werden. Viele Kommunen veröffentlichen bald wieder die aktuellen Jahresmittelwerte - diese sollen auch in unserer Anwendung aktualisiert werden. Wir sind dabei auf die Mitarbeit der Rathäuser angewiesen und haben einen Kontaktbereich eingerichtet. Aufgrund des großen Datensatzes kann es auch leicht zu fehlerhaften Angaben kommen. Wer Auffälligkeifen entdeckt, kann uns jederzeit kontaktieren. Wir freuen uns auch über Feedback.</p>
+						<p>Die Trinkwasser-Anwendung ist eine Beta-Version. Vor allem die Datenerhebung kann nie abgeschlossen werden. Viele Kommunen veröffentlichen bald wieder die aktuellen Jahresmittelwerte - diese sollen auch in unserer Anwendung aktualisiert werden. Wir sind dabei auf die Mitarbeit der Rathäuser angewiesen und haben einen Kontaktbereich eingerichtet. Aufgrund des großen Datensatzes kann es zu fehlerhaften Angaben kommen. Wer Auffälligkeifen entdeckt, kann uns jederzeit kontaktieren. Wir freuen uns auch über Feedback.</p>
 						<p>Datensatz und Code der Anwendung sind öffentlich zugänglich und stehen unter einer Open Source-Lizenz.</p>
-						
-						<h4>Impressum</h4>
-						<address>
-							HEILBRONNER STIMME GmbH &amp; Co. KG<br> Allee 2, 74072 Heilbronn<br> Telefon 07131 615-0<br> Fax 07131 615-200<br> E-Mail
-							servicecenter@stimme.de<br> Amtsgericht Stuttgart HRA 103208<br> Umsatzsteuer ID: DE 145800252<br> <br> phG: Heilbronner
-							Stimme Verwaltungsgesellschaft mbH<br> Amtsgericht Stuttgart HRB 103454<br> <br> Geschäftsführer:<br> Tilmann Distelbarth,
-							Bernd Herzberger<br> <br>
-							<br>
-						</address>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<div class="modal fade" id="attributionDialog" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Mitwirkende</h4>
+				</div>
+				<div class="modal-body">
+					<p><strong>Redaktionelle Umsetzung</strong></p>
+					<p>
+						Vanessa Wormer (<a target="_blank" href="https://twitter.com/remrow">@remrow</a>)<br />
+						Isabelle Müller (<a target="_blank" href="https://twitter.com/raeusper">@raeusper</a>)
+					</p>
+					
+					<p><strong>Gestaltung</strong></p>
+					<p>
+						Heiko Nicht
+					</p>
+					
+					<p><strong>Programmierung</strong></p>
+					<p>
+						Felix Ebert (<a target="_blank" href="https://twitter.com/femeb">@femeb</a>)<br />
+						Ulrich Stech<br />
+					</p>
+					
+					<p><strong>Mitarbeit</strong></p>
+					<p>
+						Alexander Walther (<a target="_blank" href="https://twitter.com/alexplus_de">@alexplus_de</a>)<br />
+						Tom Görner<br />
+						Gerd Hoffmann
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="imprintDialog" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Impressum</h4>
+				</div>
+				<div class="modal-body">
+					<address>
+						HEILBRONNER STIMME GmbH &amp; Co. KG<br> Allee 2, 74072 Heilbronn<br> Telefon 07131 615-0<br> Fax 07131 615-200<br> E-Mail
+						servicecenter@stimme.de<br> Amtsgericht Stuttgart HRA 103208<br> Umsatzsteuer ID: DE 145800252<br> <br> phG: Heilbronner
+						Stimme Verwaltungsgesellschaft mbH<br> Amtsgericht Stuttgart HRB 103454<br> <br> Geschäftsführer:<br> Tilmann Distelbarth,
+						Bernd Herzberger<br> <br>
+						<br>
+					</address>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<div class="modal fade" id="contactDialog" tabindex="-1">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title" id="myModalLabel">Kontakt</h4>
+					<h4 class="modal-title">Kontakt</h4>
 				</div>
 				<div class="modal-body">
-					<p>Die Trinkwasser-Anwendung ist eine Beta-Version. Aufgrund des großen Datensatzes kann es auch leicht zu fehlerhaften Angaben kommen.</p>
-					<p>Wer Auffälligkeifen entdeckt, kann uns jederzeit kontaktieren. Wir freuen uns auch über Feedback.</p>
+					<p>Wir freuen uns über Feedback:</p>
 					<p>E-Mail Adresse: <a href="mailto:trinkwasser@opendatalab.de">trinkwasser@opendatalab.de</a> - Vielen Dank!</p>
+					<p>Aufgrund der zahlreichen Daten kann es vereinzelt zu fehlerhaften Angaben kommen. Haben Sie einen Fehler entdeckt? Schreiben Sie uns!</p>
+					<p>Oder sind Sie Mitarbeiter einer Kommune und möchten Ihre Daten eintragen? Schicken Sie uns einfach Ihre Daten per E-Mail.</p>
 				</div>
 			</div>
 		</div>

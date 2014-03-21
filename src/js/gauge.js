@@ -193,7 +193,7 @@
 					return partDef.width;
 				}).attr('class', function(partDef) {
 					return 'gauge-bar-' + partDef.id;
-				}).attr('y', 60).attr('height', 36);
+				}).attr('y', 64).attr('height', 40);
 			};
 
 			var bars = svg.select('.gauge-bars').selectAll('rect').data(defs[attribute].parts);

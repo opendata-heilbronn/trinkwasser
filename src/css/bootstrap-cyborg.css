@@ -288,18 +288,21 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #2a9fd6;
+  color: #FFF;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #2a9fd6;
+  color: #FFF;
   text-decoration: underline;
 }
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+}
+.modal a {
+	color: #007bc3;
 }
 figure {
   margin: 0;
@@ -744,7 +747,7 @@ pre code {
     width: 750px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 989px) {
   .container {
     width: 970px;
   }
@@ -1084,7 +1087,7 @@ pre code {
     margin-left: 0%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 989px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
@@ -2011,9 +2014,7 @@ select[multiple].input-lg {
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+  outline: none;
 }
 .btn:hover,
 .btn:focus {
@@ -2080,7 +2081,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #2a9fd6;
+  background-color: transparent;
   border-color: #2a9fd6;
 }
 .btn-primary:hover,
@@ -2089,8 +2090,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #2386b4;
-  border-color: #1f79a3;
+  background-color: #2a9fd6;
+  border-color: #2a9fd6;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -5187,7 +5188,7 @@ button.close {
     width: 300px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 989px) {
   .modal-lg {
     width: 900px;
   }
@@ -5626,7 +5627,7 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 989px) and (max-width: 1199px) {
   .visible-md {
     display: block !important;
   }
@@ -5666,7 +5667,7 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 989px) and (max-width: 1199px) {
   .hidden-md {
     display: none !important;
   }
