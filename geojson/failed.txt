@@ -1,81 +1,57 @@
-Adolf-Alter Straße.xml
-Altböllingerhof.xml
 Am langen Markstein.xml
 Am Wilhelmskanal.xml
 Äußerer Wolfsgraben.xml
 Badener Hof.xml
-Béziersstraße.xml
-Bietigheimer Staße.xml
 Bismarckstraße ab Nr. 36 und 39.xml
 Bismarckstraße Nr.1-35.xml
 Brahmsstraße Nr.2,4,6,8,10,12.xml
 Bruckmannstraße ab Nr. 24.xml
 Bruckmannstraße Nr.1-23.xml
-Dörnlesstraße.xml
 Ernst-Amme-Straße.xml
 Erwim-Bannhäuser-Straße.xml
 Finkenbergstraße ab Nr. 19.xml
-Floßhafenweg.xml
+Floßhafenweg.xml								-> Ist laut gmaps beim Fruchtschuppenweg - kennt OSM nicht!
 Frankenbacher Straße Nr. 1-70.xml
 Frankenbacher Straße Nr. 4 und ab Nr. 72.xml
-Franziska-Schmitt-Weg.xml
-Frida-Schumacher-Straße.xml
-Gartengäßchen.xml
-Gerberstraß.xml
+Gartengässchen.xml								-> gibts in OSM aber findet er nicht, bei Gartenstraße
 Goethestraße Nr. 1 und 3.xml
 Gruis’sches Gäßchen.xml
 Güntershof.xml
 Hans-Bauer-Straße.xml
-Hecken.xml
-Helmuth-Hirth-Straße.xml
+Hecken.xml										-> Vorsicht, NICHT Heckenstraße
 Hermannstraße.xml
-Hipfelhof.xml
-Hoßäckerweg.xml
+Hipfelhof.xml									-> Vorsicht, NICHT Hipfelhofer Straße
 Im Schmalweinberg.xml
-Judengängle.xml
-Kehrhütttenstraße.xml
-Kirchgäßle.xml
+Judengängle.xml									-> Ist laut gmaps bei Deinenbachstraße, aber in OSM nicht benannt
 Kornacherstraße.xml
 Längelter.xml
-Leibnitzstraße.xml
 Lerchenstraße ab Nr. 54.xml
-Ludwid-Pfau-Straße.xml
-Mathias-Erzberger-Straße.xml
+Ludwidg-Pfau-Straße.xml
 Michael-Vehe-Straße ab Nr. 17.xml
-Mühlberg.xml
-Nußäckerstraße.xml
+Mühlberg.xml									-> NICHT Mühlbergstraße
 Oberes Wehr.xml
 Oststraße Nr. 20 und 24.xml
 Öhringer Straße.xml
-Östlicher Bretterweg.xml
+Östlicher Bretterweg.xml						-> ist in OSM ein Teil vom Fruchtschuppenweg
 Pfühlstraße ab Nr 52+57.xml
 Pfühlstraße bis Nr 50+55.xml
 Planstraße.xml
-Roßkampfstraße.xml
 Sandweg.xml
-Sankt-Martin-Straße.xml
 Schlachthofstraße.xml
-Schleifhöhe.xml
+Schleifhöhe.xml									-> kleines Feldwegchen in gmaps, VS Aussiedlerhof in OSM "Schleifhöfe"
 Schloßäckerweg.xml
-Schloßgasse.xml
-Schloßplatz.xml
-Schloßweg.xml
-Schwaigener Straße.xml
 Seewiesen.xml
-Sickingerstraße.xml
-Siebennußbaumstraße.xml
 Sperlingsweg.xml
-Sternberg.xml
+Sternberg.xml									-> Vorsicht, NICHT Im Sternberg
 Südbahnhof.xml
 Uhlandstraße ab Nr. 25.xml
-Unter dem Bruhweg.xml
+Unter dem Bruhweg.xml							-> In OSM möglicherweise bei Bruhweg? Gibt zwei getrennte Teilstrecken übereinander
 Unterer Hagelsberg.xml
-Victoria-Wolf-Weg.xml
 Viereckiges Stück.xml
 Wartbergsteige Nr. 88, 92, 109.xml
 Weidach.xml
 Weidemannsgasse.xml
 Wertwiesen.xml
-Westlicher Bretterweg.xml
+Westlicher Bretterweg.xml						-> Gibt es auch in gmaps nicht. Möglicherweise siehe Östlicher Bretterweg bzw Fruchtschuppenweg?
 Wollhausstraße ab Nr. 90.xml
 Ziegeleistraße ab Nr. 17+20.xml
