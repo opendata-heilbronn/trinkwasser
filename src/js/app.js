@@ -5,7 +5,7 @@ var tw = {
 (function(tw, $) {
 	'use strict';
 
-	var zoneData = {}, zoneId = '', attribute = null, hasSelectedFirstLocation = false;
+	var zoneData = {}, zoneId = '', attribute = null, hasSelectedFirstLocation = false, section = 'explanation';
 
 	var generateZoneId = function(city, district, streetZone) {
 		var idParts = [];
@@ -35,12 +35,13 @@ var tw = {
 		var city = $('#city').val();
 		var district = $('#district').val();
 		var streetZone = $('#streetZone').val();
+		var zone = streetZone.substr(0, streetZone.indexOf('|'));
 
 		$('.results').toggle(hasSelectedFirstLocation);
 		$('.choose-location').toggle(!hasSelectedFirstLocation);
 
 		if (hasSelectedFirstLocation) {
-			var newZoneId = generateZoneId(city, district, streetZone);
+			var newZoneId = generateZoneId(city, district, zone);
 			if (newZoneId !== zoneId) {
 				zoneId = newZoneId;
 				zoneData = tw.data.zones[zoneId];
@@ -60,8 +61,13 @@ var tw = {
 			if (zoneData && zoneData[attribute]) {
 				$('.result-without-value').hide();
 				$('.result-with-value').show();
-				tw.gauge.update(attribute, zoneData[attribute]);
-				tw.barChart.update(attribute, zoneData[attribute], zoneId);
+
+				if (section === 'explanation') {
+					tw.gauge.update(attribute, zoneData[attribute]);
+				}
+				if (section === 'compare') {
+					tw.comparison.update(attribute, zoneData[attribute]);
+				}
 			} else {
 				$('.result-with-value').hide();
 				$('.result-without-value').show();
@@ -144,13 +150,13 @@ var tw = {
 				var allStreetNames = Object.keys(allStreets);
 				allStreetNames.sort(stringComparator);
 				allStreetNames.forEach(function(streetName) {
-					html += '<option value="' + allStreets[streetName] + '">' + streetName + '</option>';
+					html += '<option value="' + allStreets[streetName] + '|' + streetName + '">' + streetName + '</option>';
 				});
 			} else {
 				Object.keys(streets).forEach(function(zone) {
 					html += '<optgroup label="' + zone + '">';
 					streets[zone].forEach(function(street) {
-						html += '<option value="' + zone + '">' + street + '</option>';
+						html += '<option value="' + zone + '|' + street + '">' + street + '</option>';
 					});
 					html += '</optgroup>';
 				});
@@ -201,6 +207,9 @@ var tw = {
 
 			$('.switch-to-section').removeClass('active');
 			$(this).addClass('active');
+
+			section = $(this).data('section');
+			updateAttributeContent();
 		});
 	};
 
@@ -218,8 +227,8 @@ var tw = {
 		setupTabs('hardness');
 		setupSectionSwitch();
 		tw.gauge.init();
-		tw.barChart.init();
+		tw.comparison.init();
 		tw.map.init();
-		$('.city').val('Erlenbach').trigger('change');
+		// $('.city').val('Erlenbach').trigger('change');
 	};
 })(tw, jQuery);

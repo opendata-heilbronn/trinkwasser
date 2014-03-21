@@ -13,18 +13,12 @@
 
 	var nutrientLegalLimits = {
 		"natrium": '200 mg/l',
-		"kalium": 'kein Grenzwert',
-		"calcium": 'kein Grenzwert',
-		"magnesium": 'kein Grenzwert',
+		"kalium": '-',
+		"calcium": '-',
+		"magnesium": '-',
 		"chlorid": '250 mg/l',
 		"nitrat": '50 mg/l',
 		"sulfat": '250 mg/l'
-	};
-
-	var nutrientDailyDosis = {
-		"kalium": '~2000 mg',
-		"calcium": '~1000 mg',
-		"magnesium": '~350 mg'
 	};
 
 	var GaugeGlass = function(svg) {
@@ -74,7 +68,7 @@
 		};
 		var updateAverageIndicator = function(attribute) {
 			var averageIndicatorY = calculateBarY(tw.data.averageValues[attribute]);
-			svg.select('.average-indicator').attr('x1', 36).attr('x2', 68).attr('y1', averageIndicatorY).attr('y2', averageIndicatorY);
+			svg.select('.average-indicator').transition().duration(300).ease('outCirc').attr('y1', averageIndicatorY).attr('y2', averageIndicatorY);
 		};
 		this.applyAttribute = function(nutrient) {
 			limit = nutrientLimits[nutrient];
@@ -228,7 +222,7 @@
 				value1 = range[0], value2 = range[1];
 			}
 			var value1X = calculateValueX(value1), value2X = calculateValueX(value2);
-			svg.select('.gauge-bar-range-indicator').attr('x', value2X).attr('width', (value1X - value2X));
+			svg.select('.gauge-bar-range-indicator').attr('x', value1X).attr('width', (value2X - value1X));
 		};
 		this.applyValue = function(newValue) {
 			value = newValue;
@@ -269,8 +263,8 @@
 
 		d3.selectAll('.gauge-value').text(value.toString().replace(/\./g, ','));
 		d3.selectAll('.gauge-legal-limit').text(nutrientLegalLimits[attribute]);
-		d3.selectAll('.gauge-daily-dosis').text(nutrientDailyDosis[attribute]);
-		d3.selectAll('.gauge-daily-dosis-container').attr('style', (nutrientDailyDosis[attribute]) ? '' : 'display:none;');
+		d3.selectAll('.gauge-daily-dosis').text(tw.data.nutrientDailyDosis[attribute]);
+		d3.selectAll('.gauge-daily-dosis-container').attr('style', (tw.data.nutrientDailyDosis[attribute]) ? '' : 'display:none;');
 		d3.selectAll('.gauge-value-label').text(valueLabel);
 		d3.selectAll('.gauge-average-value').text(tw.data.averageValues[attribute].toString().replace(/\./g, ','));
 	};

@@ -92,13 +92,24 @@ svg text {
 	stroke: #2a9fd6;
 }
 
+.compare-nav {
+	padding-left: 50px;
+	padding-top: 2em;
+	text-align: center;
+}
+
 /* gauge */
 .gauge-glass-img {
 	height: 505px;
 	width: 113px;
 }
+.bottle-img {
+	height: 505px;
+	width: 200px;
+}
 @media (min-width: 992px) {
-	.gauge-glass-img {
+	.gauge-glass-img,
+	.bottle-img {
 		margin-top: -105px;
 	}
 }
