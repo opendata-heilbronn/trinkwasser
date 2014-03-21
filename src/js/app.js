@@ -221,6 +221,6 @@ var tw = {
 		tw.gauge.init();
 		tw.barChart.init();
 		tw.map.init();
-		// $('.city').val('Erlenbach').trigger('change');
+		$('.city').val('Erlenbach').trigger('change');
 	};
 })(tw, jQuery);

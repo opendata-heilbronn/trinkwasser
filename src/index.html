@@ -26,6 +26,9 @@
 	<div class="container">
 		<div class="pull-right">
 			<button type="button" class="btn btn-primary" style="margin-top:1.7em">
+				<span class="glyphicon glyphicon-envelope"></span>
+			</button>
+			<button type="button" class="btn btn-primary" style="margin-top:1.7em">
 				<span class="glyphicon glyphicon-question-sign"></span> Über
 			</button>
 		</div>
@@ -77,9 +80,10 @@
 					<select class="streetZone form-control"></select>
 				</div>
 			</form>
+			
 
 			<ul class="nav nav-tabs">
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="hardness">Wasserhärte</a></li>
+				<li class="nav-li-main"><a data-toggle="tab" data-attribute="hardness">Härte</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="natrium">Natrium</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="kalium">Kalium</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="calcium">Calcium</a></li>
@@ -87,7 +91,7 @@
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="chlorid">Chlorid</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="nitrat">Nitrat</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="sulfat">Sulfat</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="info"><span class="glyphicon glyphicon-info-sign"></span> mehr Infos</a></li>
+				<li class="nav-li-main"><a data-toggle="tab" data-attribute="info"><span class="glyphicon glyphicon-info-sign"></span> Fragen und Antworten</a></li>
 			</ul>
 			
 			<div class="alert alert-warning result-without-value" style="display:none;">
@@ -112,7 +116,6 @@
 										<p>Wieviel Natrium für wen geeignet ist, hängt stark vom Einzelnen ab: Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit Bluthochdruck oder Säuglinge sollten natriumarmes Wasser (weniger als 20 Milligramm pro Liter) trinken.</p>
 										<p>Ein Mangel an Natrium äußert sich in körperlicher Schwäche, Übelkeit und Muskelkrämpfen bis hin zum Kreislaufkollaps.</p>
 										<p>Empfohlen sind mindestens 550 mg Natrium pro Tag. Für eine ärztlich empfohlene natriumarme Ernährung oder für Säuglinge sind weniger als 20 mg/l Natrium geeignet.</p>
-										<p><img src="img/sport.svg" style="margin-top:1em;" /></p>
 									</div>
 									<div class="attribute-description attribute-description-kalium" style="display:none;">
 										<p>Kalium hält den Wasser- und Elektrolythaushalt im Gleichgewicht, ist wichtig für einen regelmäßigen Herzschlag, die Nerven und
@@ -120,18 +123,15 @@
 										<p>Zu einem Kaliummangel kann es nach größeren Flüssigkeitsverlusten, z. B. durch lang andauernde Durchfallerkrankungen, Erbrechen
 											oder längere Einnahme von Entwässerungs- und Abführmitteln.</p>
 										<p>Ein zu hoher Kaliumgehalt im Blut kann zu Herzversagen führen, da Kalium die Kontraktion des Herzmuskels hemmt.</p>
-										<p><img src="img/sport.svg" style="margin-top:1em;" /></p>
 									</div>
 									<div class="attribute-description attribute-description-calcium" style="display:none;">
 										<p>Calcium wird zur Bildung der Knochen und Zähne gebraucht. Auch für die Muskeln und die Blutgerinnung ist Calcium wichtig.</p>
 										<p>An Calcium mangelt es oft, was was zu einer Verringerung der Knochenfestigkeit und damit zu Osteoporose führen kann.</p>
-										<p><img src="img/zahn.svg" style="margin-top:1em;" /><img src="img/sport.svg" style="margin-top:1em;" /></p>
 									</div>
 									<div class="attribute-description attribute-description-magnesium" style="display:none;">
 										<p>Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven auf Muskeln, für den Eiweißaufbau sowie und die
 											Knochenmineralisation. Außerdem ist es für die Aktivierung von über 300 Enzymen im Stoffwechsel verantwortlich.</p>
 										<p>Ein Zuviel an Magnesium ist sehr unwahrscheinlich. In großen Mengen bewirkt der Mineralstoff einen weicheren Stuhl.</p>
-										<p><img src="img/sport.svg" style="margin-top:1em;" /></p>
 									</div>
 									<div class="attribute-description attribute-description-chlorid" style="display:none;">
 										<p>Chlorid ist ein Bestandteil von Kochsalz und ist daher für die Regulation des Wasserhaushaltes mitverantwortlich. Auch für die
@@ -153,7 +153,6 @@
 											Sulfat zu sich nehmen (Gehalt < 240 mg/l).</p>
 										<p>Doch auch Wasser mit wenig Sulfat hat etwas Gutes: Es wird geschmacklich meist positiv empfunden. Hohe Sulfatgehalte hingegen
 											äußern sich in einem süßen bis bitterem Geschmack.</p>
-										<p><img src="img/magen.svg" style="margin-top:1em;" /></p>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6">
@@ -222,19 +221,13 @@
 							</div>
 							
 							<div class="row gauge-bar-container" style="display:none;">
-								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-									<table class="table gauge-description gauge-bar-description pull-right">
-										<tr>
-											<th style="border:none;">Wert</th>
-											<td style="border:none;"><strong><span class="gauge-value"></span> °dH</strong></td>
-										</tr>
-										<tr>
-											<th>Bereich</th>
-											<td><span class="gauge-value-label"></span></td>
-										</tr>
-									</table>
+								<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+									<p>Die Wasserhärte gibt an, wie weich oder hart ein Wasser ist. Je mehr Calcium und Magnesium in einem Wasser enthalten sind, desto härter ist es.</p>
+									<p>Hartes Wasser kann in Küche und Bad Kalkflecken verursachen. Wegen seinem hohen Calcium- und Magnesiumgehalt ist es gesünder als weiches Wasser.<br />(Calcium: Aufbau von Knochen und Zähnen, Magnesium: Aufbau von Muskeln und Nerven)</p> 
+								
 								</div>
-								<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+								<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+									<div style="padding-left:34px">
 									<svg class="gauge-bar-img pull-right" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 750 136" preserveAspectRatio="xMinYMin meet">
 										<defs>
 											<pattern id="range-indicator" x="6" y="6" width="6" height="6" patternUnits="userSpaceOnUse">
@@ -250,47 +243,95 @@
 											<circle class="gauge-bar-ball" cx="63.5" cy="78" r="13" />
 										</g>
 									</svg>
+									
+									<div class="clearfix"></div>
+									
+									<img src="img/haushalt.svg" class="pull-right" />
+									<table class="table gauge-description gauge-bar-description">
+										<tr>
+											<th style="border:none;">Wert</th>
+											<td style="border:none;"><strong><span class="gauge-value"></span> °dH</strong></td>
+										</tr>
+										<tr>
+											<th>Bereich</th>
+											<td><span class="gauge-value-label"></span></td>
+										</tr>
+									</table>
+									</div>
 								</div>
-							</div>
-							<div class="row gauge-bar-container" style="display:none;">
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 attribute-description attribute-description-hardness" style="display:none;">
-									<p>Die Wasserhärte gibt an, wie weich oder hart ein Wasser ist. Je mehr Calcium und Magnesium in einem Wasser enthalten sind, desto härter ist es.</p>
-									<p>Hartes Wasser kann in Küche und Bad Kalkflecken verursachen. Wegen seinem hohen Calcium- und Magnesiumgehalt ist es gesünder als weiches Wasser. (Calcium: Aufbau von Knochen und Zähnen, Magnesium: Aufbau von Muskeln und Nerven)</p> 
-								
-									<h4>Was bedeutet die Wasserhärte für mich?</h4>
-									<p>Überall dort, wo hartes Wasser langsam fließt oder auf über 60 Grad erhitzt wird, setzt sich Kalk ab. In Küche und Bad entstehen
-										so Kalkflecken, beim Wäschewaschen ist mehr Waschmittel nötig, manche Haushaltsgeräte müssen regelmäßig entkalkt werden. Dies gilt ab
-										einem Wasserhärtegrad von 21.</p>
-									<p>In Heilbronn liegt die Obergrenze der Wasserhärte bei 18 Grad. Gesundheitlich birgt hartes Wasser keine Gefahren, im Gegenteil:
-										wegen des hohen Calcium- und Magnesiumgehaltes ist es gesünder als weiches Wasser.</p>
-										
-									<h4>Wie entstehen die verschiedenen Härtegrade?</h4>
-									<p>Trinkwasser enthält verschiedene Mengen der Mineralstoffe Calcium und Magnesium - je nachdem ob es sich um Oberflächen-, Grund
-										oder Quellwasser handelt.</p>
-									<p>Je mehr Calcium und Magnesium im Wasser sind, desto härter ist es.</p>
-								</div>
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 attribute-description attribute-description-hardness" style="display:none;">
-									<img src="img/haushalt.svg" />
-									<h4>Warum gibt es bei uns kein weiches Trinkwasser?</h4>
-									<p>Die meisten der Heilbronner Trinkwasserbrunnen befinden sich in der Gesteinsschicht Gipskeuper, der für den sehr hohen
-										Magnesium- und Calciumgehalt im Wasser verantwortlich ist. Da diese beiden Mineralien den Härtegrad des Wassers bestimmen, gibt es in
-										Heilbronn kein weiches Wasser.</p>
-									<p>Das Heilbronner Wasser hat einen Härtegrad von bis zu 28 Grad deutscher Härte, in manchen der 40 Brunnen fließt Wasser mit 30
-										Grad deutscher Härte.</p>
-										
-									<h4>Einheit “Grad deutscher Härte”</h4>
-									<p>Die Einheit °dH (Grad deutscher Härte) ist veraltet, aber in der Praxis nach wie vor gebräuchlich. Neben °dH wird Millimol pro Liter (mmol/l) verwendet.</p>
-									<p>Bereiche:</p>
-									<ul>
-										<li>weich: weniger als 1,5 Millimol Calciumcarbonat je Liter (entspricht weniger als 8,4 Grad deutscher Härte)</li>
-										<li>mittel: 1,5 bis 2,5 Millimol Calciumcarbonat je Liter (entspricht 8,4 bis 14 Grad deutscher Härte)</li>
-										<li>hart: mehr als 2,5 Millimol Calciumcarbonat je Liter (entspricht mehr als 14 Grad deutscher Härte)</li>
-									</ul>
+								<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+									<div class="panel-group" id="accordionHardness" style="margin-top:2em;margin-bottom:10em;">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordionHardness" href="#collapseHardnessOne"> Was bedeutet die Wasserhärte für mich?</a>
+												</h4>
+											</div>
+											<div id="collapseHardnessOne" class="panel-collapse collapse in">
+												<div class="panel-body">
+													<p>Überall dort, wo hartes Wasser langsam fließt oder auf über 60 Grad erhitzt wird, setzt sich Kalk ab. In Küche und Bad entstehen
+														so Kalkflecken, beim Wäschewaschen ist mehr Waschmittel nötig, manche Haushaltsgeräte müssen regelmäßig entkalkt werden. Dies gilt ab
+														einem Wasserhärtegrad von 21.</p>
+													<p>In Heilbronn liegt die Obergrenze der Wasserhärte bei 18 Grad. Gesundheitlich birgt hartes Wasser keine Gefahren, im Gegenteil:
+														wegen des hohen Calcium- und Magnesiumgehaltes ist es gesünder als weiches Wasser.</p>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordionHardness" href="#collapseHardnessTwo"> Warum gibt es bei uns kein weiches Trinkwasser?</a>
+												</h4>
+											</div>
+											<div id="collapseHardnessTwo" class="panel-collapse collapse">
+												<div class="panel-body">
+													<p>Die meisten der Heilbronner Trinkwasserbrunnen befinden sich in der Gesteinsschicht Gipskeuper, der für den sehr hohen
+														Magnesium- und Calciumgehalt im Wasser verantwortlich ist. Da diese beiden Mineralien den Härtegrad des Wassers bestimmen, gibt es in
+														Heilbronn kein weiches Wasser.</p>
+													<p>Das Heilbronner Wasser hat einen Härtegrad von bis zu 28 Grad deutscher Härte, in manchen der 40 Brunnen fließt Wasser mit 30
+														Grad deutscher Härte.</p>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordionHardness" href="#collapseHardnessThree"> Wie entstehen die verschiedenen Härtegrade?</a>
+												</h4>
+											</div>
+											<div id="collapseHardnessThree" class="panel-collapse collapse">
+												<div class="panel-body">
+													<p>Der Geschmack von Wasser wird durch die in ihm enthaltenen Mineralien bestimmt.</p>
+													<p>Trinkwasser enthält verschiedene Mengen der Mineralstoffe Calcium und Magnesium - je nachdem ob es sich um Oberflächen-, Grund
+														oder Quellwasser handelt.</p>
+													<p>Je mehr Calcium und Magnesium im Wasser sind, desto härter ist es.</p>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordionHardness" href="#collapseHardnessFour"> Einheit “Grad deutscher Härte”?</a>
+												</h4>
+											</div>
+											<div id="collapseHardnessFour" class="panel-collapse collapse">
+												<div class="panel-body">
+													<p>Die Einheit °dH (Grad deutscher Härte) ist veraltet, aber in der Praxis nach wie vor gebräuchlich. Neben °dH wird Millimol pro Liter (mmol/l) verwendet.</p>
+													<p>Bereiche:</p>
+													<ul>
+														<li>weich: weniger als 1,5 Millimol Calciumcarbonat je Liter (entspricht weniger als 8,4 Grad deutscher Härte)</li>
+														<li>mittel: 1,5 bis 2,5 Millimol Calciumcarbonat je Liter (entspricht 8,4 bis 14 Grad deutscher Härte)</li>
+														<li>hart: mehr als 2,5 Millimol Calciumcarbonat je Liter (entspricht mehr als 14 Grad deutscher Härte)</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 						
-						<div class="section section-compare" style="display:none;">
+						<div class="section section-compare" style="display:none;margin-top:-32px;">
 							<div class="comparison-description comparison-description-hardness" style="display:none;">
 							</div>
 							<div class="comparison-description comparison-description-natrium" style="display:none;">
@@ -310,7 +351,92 @@
 							<div class="comparison-description comparison-description-sulfat">
 							</div>
 						
-							<svg class="bar-chart-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 350" preserveAspectRatio="xMinYMin meet">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align:center">
+									<div class="btn-group">
+									  <button type="button" class="btn btn-primary active">Volvic</button>
+									  <button type="button" class="btn btn-primary">Wüteria Heiligenquelle</button>
+									  <button type="button" class="btn btn-primary">Teusser Naturell</button>
+									</div>
+								
+									<h2 style="margin-top:1em">Volvic</h2>
+									<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="257.542px" height="836.668px" viewBox="0 0 257.542 836.668" enable-background="new 0 0 257.542 836.668"
+	 xml:space="preserve">
+<g>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M6.104,719.749l0.382,32.207c0,0,3.43,36.212,18.676,52.031
+		c15.249,15.819,30.495,31.257,54.89,29.922c24.395-1.335,39.833-20.964,53.365-14.866c13.529,6.1,37.927,22.871,60.414,11.246
+		c22.492-11.626,56.225-20.584,56.225-94.532c0-26.871-0.57-28.969-4.193-32.589c-3.622-3.623-7.623-2.635-7.623-11.626
+		c0-5.467,9.34-2.479,10.1-19.439c0.765-16.963,0-366.307,0-366.307s0-4.384-2.477-6.099s-4.575-0.762-4.575-10.864
+		c0-4.574,0-5.526,0-5.526s-0.571-3.241,3.052-3.623c3.618-0.38,4.953-9.147,4-17.914c-0.952-8.767-11.623-40.023-57.366-81.191
+		c-13.246-13.244-17.916-17.343-17.916-17.343H83.672c0,0-40.024,35.259-55.65,57.367c-15.628,22.109-28.971,46.123-17.154,58.128
+		c1.526,1.526,3.812,0,3.812,9.911c0,3.241-0.38,4.765-0.38,4.765s1.144,2.479-2.479,4.002c-3.621,1.526-5.146,0.573-5.146,19.06
+		s0,360.399,0,360.399s-1.142,4.955,5.719,8.956c2.859,1.335,5.526,3.813,4.956,7.625c-0.573,3.812-4.384,4.765-6.099,7.432
+		C9.536,703.548,5.722,703.548,6.104,719.749z"/>
+	<path fill="#FFFFFF" d="M177.759,155.542c0,0.842-0.854,1.524-1.902,1.524H80.555c-1.047,0-1.899-0.682-1.899-1.524v-4.701
+		c0-0.842,0.852-1.524,1.899-1.524h95.302c1.048,0,1.902,0.682,1.902,1.524V155.542z"/>
+	<path fill="#FFFFFF" d="M232.801,703.685c-3.221-3.223-6.781-2.344-6.781-10.338c0-4.859,8.305-2.204,8.982-17.284
+		c0.678-15.082-0.407-147.848-0.407-147.848l-214.461-0.101c0,16.436,0,152.186,0,152.186s-1.015,4.405,5.085,7.962
+		c2.542,1.187,4.915,3.391,4.407,6.781c-0.509,3.386-3.898,4.236-5.424,6.606c-1.524,2.372-4.915,2.372-4.576,16.776l0.341,28.638
+		c0,0,3.047,32.195,16.604,46.261c13.558,14.065,27.112,27.79,48.805,26.604c21.688-1.187,35.415-18.641,47.448-13.219
+		c12.03,5.422,33.722,20.335,53.716,9.999c19.994-10.338,49.985-18.302,49.985-84.05
+		C236.526,708.768,236.021,706.903,232.801,703.685z M94.626,716.209c-10.069,0-18.236-8.164-18.236-18.234
+		c0-10.071,8.167-18.236,18.236-18.236c10.073,0,18.236,8.165,18.236,18.236C112.863,708.045,104.7,716.209,94.626,716.209z
+		 M123.351,764.837c-3.36,0-6.079-2.719-6.079-6.077c0-3.357,2.719-6.078,6.079-6.078c3.354,0,6.077,2.721,6.077,6.078
+		C129.428,762.118,126.706,764.837,123.351,764.837z M168.546,743.735c-8.206,0-14.86-6.653-14.86-14.857
+		c0-8.205,6.654-14.856,14.86-14.856s14.856,6.651,14.856,14.856C183.403,737.082,176.752,743.735,168.546,743.735z"/>
+	<path fill="#FFFFFF" d="M98.822,25.035c0,10.071,8.168,18.234,18.236,18.234c10.074,0,18.235-8.163,18.235-18.234
+		s-8.161-18.236-18.235-18.236C106.99,6.799,98.822,14.964,98.822,25.035z"/>
+	<path fill="#FFFFFF" d="M116.198,113.161c0,3.358,2.719,6.077,6.079,6.077c3.353,0,6.075-2.719,6.075-6.077
+		c0-3.357-2.723-6.079-6.075-6.079C118.917,107.082,116.198,109.803,116.198,113.161z"/>
+	<path fill="#FFFFFF" d="M134.057,72.761c0,8.205,6.658,14.858,14.86,14.858c8.206,0,14.86-6.654,14.86-14.858
+		c0-8.204-6.654-14.856-14.86-14.856C140.715,57.906,134.057,64.557,134.057,72.761z"/>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M173.188,96.629c0-0.748-0.683-1.351-1.528-1.351H84.627
+		c-0.842,0-1.523,0.604-1.523,1.351v45.5c0,0.746,0.682,1.352,1.523,1.352h87.033c0.846,0,1.528-0.606,1.528-1.352V96.629z"/>
+</g>
+</svg>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align:center">
+									<h2 style="margin-top:66px">Trinkwasser</h2>
+									<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="257.542px" height="836.668px" viewBox="0 0 257.542 836.668" enable-background="new 0 0 257.542 836.668"
+	 xml:space="preserve">
+<g>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M6.104,719.749l0.382,32.207c0,0,3.43,36.212,18.676,52.031
+		c15.249,15.819,30.495,31.257,54.89,29.922c24.395-1.335,39.833-20.964,53.365-14.866c13.529,6.1,37.927,22.871,60.414,11.246
+		c22.492-11.626,56.225-20.584,56.225-94.532c0-26.871-0.57-28.969-4.193-32.589c-3.622-3.623-7.623-2.635-7.623-11.626
+		c0-5.467,9.34-2.479,10.1-19.439c0.765-16.963,0-366.307,0-366.307s0-4.384-2.477-6.099s-4.575-0.762-4.575-10.864
+		c0-4.574,0-5.526,0-5.526s-0.571-3.241,3.052-3.623c3.618-0.38,4.953-9.147,4-17.914c-0.952-8.767-11.623-40.023-57.366-81.191
+		c-13.246-13.244-17.916-17.343-17.916-17.343H83.672c0,0-40.024,35.259-55.65,57.367c-15.628,22.109-28.971,46.123-17.154,58.128
+		c1.526,1.526,3.812,0,3.812,9.911c0,3.241-0.38,4.765-0.38,4.765s1.144,2.479-2.479,4.002c-3.621,1.526-5.146,0.573-5.146,19.06
+		s0,360.399,0,360.399s-1.142,4.955,5.719,8.956c2.859,1.335,5.526,3.813,4.956,7.625c-0.573,3.812-4.384,4.765-6.099,7.432
+		C9.536,703.548,5.722,703.548,6.104,719.749z"/>
+	<path fill="#FFFFFF" d="M177.759,155.542c0,0.842-0.854,1.524-1.902,1.524H80.555c-1.047,0-1.899-0.682-1.899-1.524v-4.701
+		c0-0.842,0.852-1.524,1.899-1.524h95.302c1.048,0,1.902,0.682,1.902,1.524V155.542z"/>
+	<path fill="#FFFFFF" d="M232.801,703.685c-3.221-3.223-6.781-2.344-6.781-10.338c0-4.859,8.305-2.204,8.982-17.284
+		c0.678-15.082-0.407-147.848-0.407-147.848l-214.461-0.101c0,16.436,0,152.186,0,152.186s-1.015,4.405,5.085,7.962
+		c2.542,1.187,4.915,3.391,4.407,6.781c-0.509,3.386-3.898,4.236-5.424,6.606c-1.524,2.372-4.915,2.372-4.576,16.776l0.341,28.638
+		c0,0,3.047,32.195,16.604,46.261c13.558,14.065,27.112,27.79,48.805,26.604c21.688-1.187,35.415-18.641,47.448-13.219
+		c12.03,5.422,33.722,20.335,53.716,9.999c19.994-10.338,49.985-18.302,49.985-84.05
+		C236.526,708.768,236.021,706.903,232.801,703.685z M94.626,716.209c-10.069,0-18.236-8.164-18.236-18.234
+		c0-10.071,8.167-18.236,18.236-18.236c10.073,0,18.236,8.165,18.236,18.236C112.863,708.045,104.7,716.209,94.626,716.209z
+		 M123.351,764.837c-3.36,0-6.079-2.719-6.079-6.077c0-3.357,2.719-6.078,6.079-6.078c3.354,0,6.077,2.721,6.077,6.078
+		C129.428,762.118,126.706,764.837,123.351,764.837z M168.546,743.735c-8.206,0-14.86-6.653-14.86-14.857
+		c0-8.205,6.654-14.856,14.86-14.856s14.856,6.651,14.856,14.856C183.403,737.082,176.752,743.735,168.546,743.735z"/>
+	<path fill="#FFFFFF" d="M98.822,25.035c0,10.071,8.168,18.234,18.236,18.234c10.074,0,18.235-8.163,18.235-18.234
+		s-8.161-18.236-18.235-18.236C106.99,6.799,98.822,14.964,98.822,25.035z"/>
+	<path fill="#FFFFFF" d="M116.198,113.161c0,3.358,2.719,6.077,6.079,6.077c3.353,0,6.075-2.719,6.075-6.077
+		c0-3.357-2.723-6.079-6.075-6.079C118.917,107.082,116.198,109.803,116.198,113.161z"/>
+	<path fill="#FFFFFF" d="M134.057,72.761c0,8.205,6.658,14.858,14.86,14.858c8.206,0,14.86-6.654,14.86-14.858
+		c0-8.204-6.654-14.856-14.86-14.856C140.715,57.906,134.057,64.557,134.057,72.761z"/>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M173.188,96.629c0-0.748-0.683-1.351-1.528-1.351H84.627
+		c-0.842,0-1.523,0.604-1.523,1.351v45.5c0,0.746,0.682,1.352,1.523,1.352h87.033c0.846,0,1.528-0.606,1.528-1.352V96.629z"/>
+</g>
+</svg>
+								</div>
+							</div>
+
+							<svg class="bar-chart-img" style="display:none;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 350" preserveAspectRatio="xMinYMin meet">
 							</svg>
 						</div>
 						
@@ -394,6 +520,71 @@
 											Leitungswasser - hingegen schmeckt milder.</p>
 										<p>Ein unangenehmer Geschmack kann entstehen, wenn die Rohrleitungen im Gebäude verunreinigt sind. Die Stadtwerke kontrollieren
 											die Trinkwasserqualität nur bis zur jeweiligen Haustüre. Im Haus liegt die Verantwortung beim Gebäudeeigentümer.</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"> Was bedeutet die Wasserhärte für mich?</a>
+									</h4>
+								</div>
+								<div id="collapseFour" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>Überall dort, wo hartes Wasser langsam fließt oder auf über 60 Grad erhitzt wird, setzt sich Kalk ab. In Küche und Bad entstehen
+											so Kalkflecken, beim Wäschewaschen ist mehr Waschmittel nötig, manche Haushaltsgeräte müssen regelmäßig entkalkt werden. Dies gilt ab
+											einem Wasserhärtegrad von 21.</p>
+										<p>In Heilbronn liegt die Obergrenze der Wasserhärte bei 18 Grad. Gesundheitlich birgt hartes Wasser keine Gefahren, im Gegenteil:
+											wegen des hohen Calcium- und Magnesiumgehaltes ist es gesünder als weiches Wasser.</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"> Warum gibt es bei uns kein weiches Trinkwasser?</a>
+									</h4>
+								</div>
+								<div id="collapseFive" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>Die meisten der Heilbronner Trinkwasserbrunnen befinden sich in der Gesteinsschicht Gipskeuper, der für den sehr hohen
+											Magnesium- und Calciumgehalt im Wasser verantwortlich ist. Da diese beiden Mineralien den Härtegrad des Wassers bestimmen, gibt es in
+											Heilbronn kein weiches Wasser.</p>
+										<p>Das Heilbronner Wasser hat einen Härtegrad von bis zu 28 Grad deutscher Härte, in manchen der 40 Brunnen fließt Wasser mit 30
+											Grad deutscher Härte.</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"> Wie entstehen die verschiedenen Härtegrade?</a>
+									</h4>
+								</div>
+								<div id="collapseSix" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>Der Geschmack von Wasser wird durch die in ihm enthaltenen Mineralien bestimmt.</p>
+										<p>Trinkwasser enthält verschiedene Mengen der Mineralstoffe Calcium und Magnesium - je nachdem ob es sich um Oberflächen-, Grund
+											oder Quellwasser handelt.</p>
+										<p>Je mehr Calcium und Magnesium im Wasser sind, desto härter ist es.</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"> Einheit “Grad deutscher Härte”?</a>
+									</h4>
+								</div>
+								<div id="collapseSeven" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>Die Einheit °dH (Grad deutscher Härte) ist veraltet, aber in der Praxis nach wie vor gebräuchlich. Neben °dH wird Millimol pro Liter (mmol/l) verwendet.</p>
+										<p>Bereiche:</p>
+										<ul>
+											<li>weich: weniger als 1,5 Millimol Calciumcarbonat je Liter (entspricht weniger als 8,4 Grad deutscher Härte)</li>
+											<li>mittel: 1,5 bis 2,5 Millimol Calciumcarbonat je Liter (entspricht 8,4 bis 14 Grad deutscher Härte)</li>
+											<li>hart: mehr als 2,5 Millimol Calciumcarbonat je Liter (entspricht mehr als 14 Grad deutscher Härte)</li>
+										</ul>
 									</div>
 								</div>
 							</div>

@@ -116,18 +116,13 @@ svg text {
 }
 .gauge-description {
 	width: auto;
-	text-align: right;
 }
 .gauge-description th {
 	font-weight: normal;
-	text-align: right;
 }
 .gauge-glass-description {
 	margin-top: 48px;
 	margin-right: 16px;
-}
-.gauge-bar-description {
-	margin-right: 14px;
 }
 .gauge-values path,
 .gauge-value,
@@ -168,7 +163,7 @@ svg text {
 }
 .gauge-bar-labels text {
 	fill: #FFF;
-	font-size: 19px;
+	font-size: 21px;
 }
 .gauge-value-indicators circle {
 	fill: #FF0000;
