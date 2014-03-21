@@ -24,7 +24,7 @@
 
 		var x = d3.scale.linear().range([0, width]);
 		var y = d3.scale.ordinal().rangeRoundBands([height, 0], .1);
-		var xAxis = d3.svg.axis().scale(x).orient("bottom").ticks(5);
+		var xAxis = d3.svg.axis().scale(x).orient("bottom").ticks(5).tickFormat(d3.format("d"));
 		var yAxis = d3.svg.axis().scale(y).orient("left");
 
 		var referenceData = [];
@@ -43,7 +43,7 @@
 		});
 
 		var xAxisElement = svg.append("g").attr("class", "x axis").attr("transform", "translate(0," + height + ")");
-		var xAxisTextElement = xAxisElement.append("text").attr("transform", "rotate(90)").attr("y", 5).attr("dy", -481).style("text-anchor", "middle");
+		var xAxisTextElement = xAxisElement.append("text").attr("y", 5).attr("x", width + 10).style("text-anchor", "start");
 		var yAxisElement = svg.append("g").attr("class", "y axis");
 
 		this.update = function(attribute, value, zoneLabel) {
