@@ -225,6 +225,9 @@
 			return this;
 		};
 		this.getValueLabel = function() {
+			if (attribute === 'hardness' && value > 21.3) {
+				return '(sehr) hart';
+			}
 			var matchingPart = {}, valueX = calculateValueX(tw.utils.getMeanValue(value));
 			defs[attribute].parts.forEach(function(part) {
 				if (part.x <= valueX && (part.x + part.width) > valueX) {
