@@ -21,7 +21,7 @@
 		projection = d3.geo.mercator().center(center).scale(scale).translate(offset);
 		path = path.projection(projection);
 
-		var z = d3.scale.linear().domain([9, 16]).range(colorbrewer.RdBu[9]);
+		var z = d3.scale.linear().domain([9, 16]).range(colorbrewer.Oranges[8]);
 
 		svg.select('.areas').selectAll("path").data(areaData.features).enter().append("path").attr("d", path);
 		svg.select('.zones').selectAll("path").data(zoneData.features).enter().append("path").attr("d", path).attr('stroke', function(d) {
@@ -35,7 +35,7 @@
 	};
 
 	var init = function() {
-		$.getJSON('data/gemeinden_simplify20.geojson', function(data) {
+		$.getJSON('data/gemeinden_simplify20_hn.geojson', function(data) {
 			areaData = data;
 			$.getJSON('data/hn-streets.geojson', function(hnData) {
 				zoneData = hnData;
