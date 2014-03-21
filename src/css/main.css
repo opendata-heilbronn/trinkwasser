@@ -105,12 +105,14 @@ svg text {
 }
 .bottle-img {
 	height: 505px;
-	width: 200px;
+	width: 155px;
 }
 @media (min-width: 992px) {
-	.gauge-glass-img,
-	.bottle-img {
+	.gauge-glass-img {
 		margin-top: -105px;
+	}
+	.bottle-img {
+		margin-top: -63px;
 	}
 }
 .gauge-bar-img {
