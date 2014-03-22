@@ -813,7 +813,7 @@ tw.data.zones = {
 		"sulfat": 165,
 		"hardness": 26.2,
 		"year": "2013",
-		"description": "100 % Eigenwasser<br /><br />Die Wasserversorgung der Gemeinde Jagsthausen ist eine vollkommene Eigenwasserversorgung - ohne Beimischung von Fremdwasser. “Wir haben hier ordentliches Wasser, das zwar hart ist, weil es aus der Muschelkalkschicht kommt. Aber wir sehen keinen Anlass für eine Beimischung von Fremdwasser, wie es andere Kommunen tun”, sagt Bürgermeister Roland Halter. Beschwerden aus der Gemeinde gäbe es keine, viele Einwohner hätten eine Enthärtungsanlage, so der Hinweis des Bürgermeisters. Eine Anbindung an Bodenseewasser sei im Fall von Jagsthausen mit hohen Investitionskosten verbunden und derzeit kein Thema."
+		"description": "100 % Eigenwasser"
 	},
 	"Kirchardt": {
 		"natrium": 6.8,
@@ -1367,6 +1367,66 @@ tw.data.zones = {
 		"year": "",
 		"description": "Reines Bodenseewasser"
 	},
+	"Oedheim Hochzone": {
+		"natrium": 8.2,
+		"kalium": 1.09,
+		"calcium": 99,
+		"magnesium": 19.8,
+		"chlorid": 19.4,
+		"nitrat": 17.3,
+		"sulfat": 49.5,
+		"hardness": 18.4,
+		"year": "2013",
+		"description": ""
+	},
+	"Oedheim Niederzone (bis Kocherbrücke)": {
+		"natrium": 8.2,
+		"kalium": 1.09,
+		"calcium": 99,
+		"magnesium": 19.8,
+		"chlorid": 19.4,
+		"nitrat": 17.3,
+		"sulfat": 49.5,
+		"hardness": 18.4,
+		"year": "2013",
+		"description": ""
+	},
+	"Oedheim Neudorf und Säukiesweg": {
+		"natrium": 7.8,
+		"kalium": 1.26,
+		"calcium": 87.8,
+		"magnesium": 15.9,
+		"chlorid": 22,
+		"nitrat": 20.7,
+		"sulfat": 45.3,
+		"hardness": 16,
+		"year": "2013",
+		"description": ""
+	},
+	"Oedheim Degmarn": {
+		"natrium": 5.6,
+		"kalium": 1.3,
+		"calcium": 74.2,
+		"magnesium": 17.3,
+		"chlorid": 17.4,
+		"nitrat": 20.8,
+		"sulfat": 34.6,
+		"hardness": 14.4,
+		"year": "2013",
+		"description": ""
+	},
+	"Oedheim Falkenstein": {
+		"natrium": 7.8,
+		"kalium": 1.26,
+		"calcium": 87.8,
+		"magnesium": 15.9,
+		"chlorid": 22,
+		"nitrat": 20.7,
+		"sulfat": 45.3,
+		"hardness": 16,
+		"year": "2013",
+		"description": ""
+	},
 	"Offenau": {
 		"natrium": 16.1,
 		"kalium": 2.2,
@@ -1679,14 +1739,13 @@ tw.data.zones = {
 		"year": "2012",
 		"description": "Mischwasser, 95 % Bodenseewasser, 5 % Eigenwasser"
 	}
-};
-tw.data.averageValues = {
+}; tw.data.averageValues = {
 	"natrium": 8,
 	"kalium": 1.4,
-	"calcium": 70.8,
-	"magnesium": 15.5,
-	"chlorid": 17,
-	"nitrat": 14.4,
-	"sulfat": 47.7,
-	"hardness": 14.7
+	"calcium": 71.4,
+	"magnesium": 15.6,
+	"chlorid": 17.1,
+	"nitrat": 14.6,
+	"sulfat": 47.6,
+	"hardness": 14.8
 };

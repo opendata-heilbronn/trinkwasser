@@ -1642,6 +1642,13 @@ tw.data.locations = {
 		"Weiler": {},
 		"Willsbach": {}
 	},
+	"Oedheim": {
+		"Hochzone": {},
+		"Niederzone (bis Kocherbrücke)": {},
+		"Neudorf und Säukiesweg": {},
+		"Degmarn": {},
+		"Falkenstein": {}
+	},
 	"Offenau": {},
 	"Pfaffenhofen": {
 		"Hochbehälter Ost": {},
