@@ -1561,7 +1561,7 @@ tw.data.locations = {
 	},
 	"Massenbachhausen": {},
 	"Möckmühl": {
-		"Bittelbach": {},
+		"Bittelbronn": {},
 		"Korb": {},
 		"Möckmühl": {},
 		"Ruchsen": {},

@@ -1019,7 +1019,7 @@ tw.data.zones = {
 		"year": "",
 		"description": "Eigenwasser"
 	},
-	"Möckmühl Bittelbach": {
+	"Möckmühl Bittelbronn": {
 		"natrium": 5.2,
 		"kalium": 1.4,
 		"calcium": 48,
