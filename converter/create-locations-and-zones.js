@@ -138,6 +138,32 @@ var fillAverages = function() {
 	});
 };
 
+var stringComparator = function(a, b) {
+	a = a.toLowerCase();
+	a = a.replace(/ä/g, "a");
+	a = a.replace(/ö/g, "o");
+	a = a.replace(/ü/g, "u");
+	a = a.replace(/ß/g, "s");
+
+	b = b.toLowerCase();
+	b = b.replace(/ä/g, "a");
+	b = b.replace(/ö/g, "o");
+	b = b.replace(/ü/g, "u");
+	b = b.replace(/ß/g, "s");
+
+	return (a == b) ? 0 : (a > b) ? 1 : -1;
+};
+
+var sortLocations = function() {
+	var sortedLocations = {};
+	var locationNames = Object.keys(locations);
+	locationNames.sort(stringComparator);
+	locationNames.forEach(function(locationName) {
+		sortedLocations[locationName] = locations[locationName];
+	});
+	locations = sortedLocations;
+};
+
 var writeLocationFile = function() {
 	var stringifyResult = JSON.stringify(locations, null, '\t');
 	fs.writeFile('../src/data/locations.js', 'tw.data.locations = ' + stringifyResult + ';');
@@ -155,6 +181,7 @@ async.eachLimit(['hn.csv', 'Wasserdaten Landkreis Heilbronn.csv'], 1, convertCsv
 	}
 
 	fillAverages();
+	sortLocations();
 	writeLocationFile();
 	writeZonesFile();
 });

@@ -1,23 +1,249 @@
 Stadt,Ortsteil,Straße,Zone,Härtegrad,Natrium,Kalium,Calcium,Magnesium,Chlorid,Nitrat,Sulfat,Anmerkungen,Jahresmittelwerte,Quelle
-Abstatt,Kernstadt,Ulmenring,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
-Abstatt,Kernstadt,Kastanienweg,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
-Abstatt,Kernstadt,Erlenweg,Zone 1,"15,5-15,7",,,,,,"7,8-13",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
-Abstatt,Kernstadt,Radäckerweg,Zone 1,"15,5-15,7",,,,,,"7,8-13",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
-Abstatt,Kernstadt,Weidenweg,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
-Abstatt,Kernstadt,Pappelweg,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
-Abstatt,Kernstadt,Akazienstraße,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
-Abstatt,Kernstadt,Ahornstraße,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
-Abstatt,Kernstadt,Plantanenweg,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
-Abstatt,Kernstadt,Eschenweg ,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
-Abstatt,Kernstadt,Buchenweg,Zone 1,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
-Abstatt,Kernstadt,alle anderen Str.,Zone 2,"15,7",,,,,,13,,,,
 Abstatt,Happenbach,,,"15,7",,,,,,13,,,2013,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
+Abstatt,Kernstadt,alle anderen Straßen,Zone 1,"15,7",,,,,,13,,,2013,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
+Abstatt,Kernstadt,Ahornstraße,Zone 2,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Akazienstraße,Zone 2,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Buchenweg,Zone 2,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Eschenweg ,Zone 2,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Kastanienweg,Zone 2,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Pappelweg,Zone 2,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Plantanenweg,Zone 2,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Ulmenring,Zone 2,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Weidenweg,Zone 2,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Erlenweg,Zone 3,"15,5-15,7",,,,,,"7,8-13",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Abstatt,Kernstadt,Radäckerweg,Zone 3,"15,5-15,7",,,,,,"7,8-13",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
 Abstatt,Vohenlohe,,,"15,7",,,,,,13,,,2013,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
-Bad Friedrichshall,Duttenberg,,,"12,9","14,9","2,1","68,4","14,3","27,9",10,"53,2",,2013,"Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
-Bad Friedrichshall,Hagenbach,,,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,"Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
-Bad Friedrichshall,Jagstfeld,,,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,"Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
-Bad Friedrichshall,Plattenwald,,,"11,9","5,7","1,4","64,7","12,4","14,6","16,1","37,9",,2013,"Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
-Bad Friedrichshall,Untergriesheim,,,"14,9","6,6","1,3","81,7","14,8",20,"20,4","40,1",,2013,"Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
+Bad Friedrichshall,Duttenberg,,,"12,9","14,9","2,1","68,4","14,3","27,9",10,"53,2",,2013,"Mischwasser, 50 % Bodenseewasser, 50 % Eigenwasser"
+Bad Friedrichshall,Hagenbach,,,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,"Mischwasser, 50 % Bodenseewasser, 50 % Eigenwasser"
+Bad Friedrichshall,Jagstfeld,,,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,"Mischwasser, 50 % Bodenseewasser, 50 % Eigenwasser"
+Bad Friedrichshall,Kochendorf,Ahornweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Alter Schacht,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Am Bähnle,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Am Schachtsee,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Arndtstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Badstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bahnhof Jagstfeld,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bautzenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bei den Weiden,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Beim Alten Schacht,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bergmannstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Birkenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Blumenstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bohnertstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bolzstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Breslauer Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Buchenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Buchhofweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bunsenstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Christophstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Damaschkestr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Danziger Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Deutschordenstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Dresdener Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Eichendorffstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Eichenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Erlenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Eschenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Fahräcker,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Fahrberg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Falkensteiner Weg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Farnweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Fichtestr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Fliederweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Franz-Hitze-Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Freiburger Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Friedhofstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Friedlandstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Friedrich-Ebert-St,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Friedrichshaller S,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Friedrichsplatz,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Frühmessgasse,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Ginsterweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Goethestr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Gottl.-Daimler-Str,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,H.-M.-Schleyer-Str,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Hagenbacher Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Haldenstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Hauffweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Hausäckerstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Heidelberger Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Heideweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Hermann-Löns-Weg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Heuchlinger Feld,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Heuchlinger Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Hohe Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Hohenmölsener Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Hübschjörgenstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Im Finkenschlag,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Im Holderbusch,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,In Den Tatschen,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Industriestr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Isenbütteler Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Jagstfelder Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Jagstfelder Weg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Jahnstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Joh.Gutenberg-Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Johann-Simon-Bräuninger-Weg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Josef-Gantner-Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Kanalstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Karl-Benz-Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Karl-Marx-Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Karlsbader Weg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Karlsruher Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Kelterstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Kettelerstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Kiliansplatz,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Kleiststr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Kochendorfer Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Kocherwaldstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Kolpingstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Königsberger Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Krokusweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Kurze Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Landhausstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Lerchenstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Lessingstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Lilienweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Marienstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Max-Eyth-Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Max-Planck-Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Metzgergasse,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Mittlere Keltergas,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Mozartstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Narzissenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Nelkenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Neuhofweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Nordstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Offenauer Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Ohrnberger Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Otto-Hahn-Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Pappelweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Pfarrstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Porschestr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Poststr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Raiffeisenstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Rathausplatz,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Rathausstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Reichenberger Weg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Reiterweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Resedenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Robert-Bosch-Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Robert-Koch-Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Römerstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Röntgenstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Rosenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Rostocker Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Saline,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Salinenstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Sandweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Schachtstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Schlehenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Schubertstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Schulstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Seelachstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Seetalstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Siederstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Siemensstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Sprengelbachstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Steinheckenstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Steinweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Stettiner Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Sudetenstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Theodor-Körner-Str,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Troppauer Weg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Tübinger Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Tulpenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Uhlandstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Ulmenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Ulmer Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Untere Au,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Untergriesheimer W,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Veilchenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Wacholderweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Waldauweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Waldstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Wartburgstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Wasenweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Weissdornweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Wendelinusstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Wichernstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Wilhelmstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Willenbacher Grund,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Willenbacher Str.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Wittstattweg,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Yorckstr.,Nord,16,"7,8","1,3","87,8","15,9",22,"20,7","45,3",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Albrecht-Dürer-Str,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Am Kocher,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Am Neckarkanal,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Am Turnierplatz,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Am Wasserturm,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Amorbacher Str.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bachstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bahnhofstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bergrat-Bilfinger-,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bergstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bertolt-Brecht-Weg,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Binnetstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bismarckstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bodemstall,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Brau.-Elsässer-Str,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Bremenweg,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Gartenstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Greckenstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Hannchen-Herz-Str.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Hasenmühle,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Hauptstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Haydnstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Heilbronner Str.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Heinrich-Heine Weg,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Heinrich-Heine Weg,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Hermann-Hesse-Weg,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Hölderlinstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Kirchbrunnenstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Knappenstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Kochergasse,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Koppenrain,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Krautgartenweg,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Lange Str.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Lenauweg,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Lindenweg,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Ludwig-Thoma-Str.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Mittlere Str.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Moltkestr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Mörikestr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Mühlgasse,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Mühlstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Neckarsulmer Str.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Neuenstadter Str.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Nibelungenstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Oedheimer Str.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Oststr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Panoramastr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Pfaffenäcker,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Pfaffenäcker,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Rainstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Remmelesweg,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Richard-Wagner-Str,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Riedweg,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Salzstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Schachtanlage,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Schafgrube,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Schillerstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Schlossstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Schultheiß-Seeber-,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Seilergasse,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Silcherstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Spitalstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Steigerstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Südstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Theodor-Storm-Weg,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Viktor-Scheffel-St,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Wächterstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Walderseeweg,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Zehn Morgen,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Kochendorf,Zeppelinstr.,Süd,"17,4",6,"1,2","91,8","20,2","26,4","37,3","45,4",,2013,Mischwasser
+Bad Friedrichshall,Plattenwald,,,"11,9","5,7","1,4","64,7","12,4","14,6","16,1","37,9",,2013,"Mischwasser, 50 % Bodenseewasser, 50 % Eigenwasser"
+Bad Friedrichshall,Untergriesheim,,,"14,9","6,6","1,3","81,7","14,8",20,"20,4","40,1",,2013,"Mischwasser, 50 % Bodenseewasser, 50 % Eigenwasser"
 Bad Rappenau,Babstadt,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
 Bad Rappenau,Bonfeld ,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
 Bad Rappenau,Fürfeld ,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
@@ -27,8 +253,8 @@ Bad Rappenau,Kernstadt,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",
 Bad Rappenau,Obergimpern ,,,"12,1","17,9","2,5","67,2","11,8","30,5","14,4","47,9",,2014,Mischwasser
 Bad Rappenau,Treschklingen,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
 Bad Rappenau,Wollenberg ,,,"12,1","17,9","2,5","67,2","11,8","30,5","14,4","47,9",,2014,Mischwasser
-Bad Wimpfen,,,,,,,,,,,,,,
-Beilstein,,,,,,,,,,,,,,
+Bad Wimpfen,,,,"13,7","5,6","2,2","74,3","15,4","13,8","12,3","35,1",,2013,Mischwasser
+Beilstein,,,,,,,,,,,,wird nachgereicht,,
 Brackenheim,Botenheim,,,"13,21","12,4","1,8",102,"24,9","25,7","25,6",105,,2012,"Hochbehälter Muckenloch, Mischwasser"
 Brackenheim,Brackenheim,,,"13,21","12,4","1,8",102,"24,9","25,7","25,6",105,"Bereiche etwas unklar, http://www.brackenheim.de/index.php?id=495",2012,"Hochbehälter Muckenloch, Mischwasser"
 Brackenheim,Dürrenzimmern,,,"13,21","12,4","1,8",102,"24,9","25,7","25,6",105,,2012,"Hochbehälter Muckenloch, Mischwasser"
@@ -38,8 +264,8 @@ Brackenheim,Neipperg,,,9,"5,4","1,4",50,8,"7,2","4,3",33,,2013,Reines Bodenseewa
 Brackenheim,Stocksberg Haberschlacht,,,9,"5,4","1,4",50,8,"7,2","4,3",33,,2013,Reines Bodenseewasser
 Brackenheim,Stocksberg Stockheim,,,9,"5,4","1,4",50,8,"7,2","4,3",33,,2013,Reines Bodenseewasser
 Cleebronn,,,,"25,3","12,2","2,1","120,3","36,7","11,4","7,9",247,Grenzwert Sulfat 250!,2012,Mischwasser
-Eberstadt,,,,23-25,13,2-3,100-120,34-37,29,19-20,137-145,,2013,"Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
-Ellhofen,,,,"14,9","7,3",2,"75,6","18,8","12,8","11,3","73,1",,2013,
+Eberstadt,,,,23-25,13,2-3,100-120,34-37,29,19-20,137-145,,2013,"Mischwasser, 50 % Bodenseewasser, 50 % Eigenwasser"
+Ellhofen,,,,"14,9","7,3",2,"75,6","18,8","12,8","11,3","73,1",,2013,"Mischwasser, 80 % NOW (Zweckverband Wasserversorgung Nordostwürttemberg), 20 % Eigenwasser"
 Eppingen,Adelshofen,,,"20,1","6,8","1,6",106,"22,8","30,5","29,9","45,7",,2014,Mischwasser
 Eppingen,Elsenz,,,"20,1","6,8","1,6",106,"22,8","30,5","29,9","45,7",,2014,Mischwasser
 Eppingen,Kernstadt,,,"20,1","6,8","1,6",106,"22,8","30,5","29,9","45,7",,2014,Mischwasser
@@ -48,11 +274,16 @@ Eppingen,Mühlbach,,,"18,5","5,91","1,48","90,8","25,1","22,2","27,4","41,8",,20
 Eppingen,Richen,,,"20,1","6,8","1,6",106,"22,8","30,5","29,9","45,7",,2014,Mischwasser
 Eppingen,Rohrbach,,,"20,1","6,8","1,6",106,"22,8","30,5","29,9","45,7",,2014,Mischwasser
 Erlenbach,,,,"17,1","7,1","1,7","87,4",21,"11,3","9,7",121,,2012,"Mischwasser, 80 % NOW (Zweckverband Wasserversorgung Nordostwürttemberg), 20 % Eigenwasser"
-Flein,,,,9,"5,2","1,4",48,8,7,"4,2",34,,2012,100 % Bodenseewasser
+Flein,,,,9,"5,2","1,4",48,8,7,"4,2",34,,2012,Reines Bodenseewasser
 Gemmingen ,,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
 Gochsen,,,,22,12,"1,4",105,31,46,22,34,,2013,Eigenwasser
 Güglingen,,,,"16,3",7,"1,5","80,7","21,7",17,"17,5","55,3",,2013,"Mischwasser, 60 % Eigenwasser, 40 % Bodenseewasser"
-Gundelsheim,,,,,,,,,,,,2 mal angefragt,,
+Gundelsheim,Bachenau    ,,,9,,,48,8,,"4,5",34,,2013,Reines Bodenseewasser
+Gundelsheim,Böttingen,,,10,7,"1,9",63,"6,9",14,19,"7,4",,2013,Eigenwasser
+Gundelsheim,Gundelsheim,,,11,"6,9","2,2",60,"9,8",13,16,"7,5",,2013,Eigenwasser
+Gundelsheim,Höchstberg,,,9,17,"1,1",56,4,28,"8,1","4,6",,2013,Eigenwasser
+Gundelsheim,Obergriesh,,,9,,,48,8,,"4,5",34,,2013,Reines Bodenseewasser
+Gundelsheim,Tiefenbach   ,,,9,,,48,8,,"4,5",34,,2013,Reines Bodenseewasser
 Haßmersheim ,Haßmersheim ,,,"12,9","23,7","2,9","71,6","12,5","39,2","19,9","55,7",,2014,Mischwasser
 Haßmersheim ,Hochhausen,,,9,"5,2","1,4",48,8,7,"4,2",35,,2014,Mischwasser
 Haßmersheim ,Neckarmühlbach,,,"12,9","23,7","2,9","71,6","12,5","39,2","19,9","55,7",,2014,Mischwasser
@@ -62,7 +293,7 @@ Ilsfeld,Auenstein,,,"15,7",,,,,,13,,,2013,"Haupthochbehälter Stettenfels, Misch
 Ilsfeld,Helfenberg,,,"15,7",,,,,,13,,,2013,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
 Ilsfeld,Ilsfeld,,,"18,1","7,9","2,5","92,5","22,7","28,6","21,3","67,4",,2012,"Mischwasser, 60% Bodenseewasser, 40% Eigenwasser"
 Ilsfeld,Raststätten Wunnenstein,,,"15,7",,,,,,13,,,2013,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
-Ilsfeld,Schozach,,,,,,,,,,,,2012,Reines Bodenseewasser
+Ilsfeld,Schozach,,,"9,6","6,1","1,6","54,2","8,9","7,3","4,1","33,7",,2013,Reines Bodenseewasser
 Ilsfeld,Wüstenhausen,,,"15,7",,,,,,13,,,2013,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
 Ittlingen,,,,"20,1","6,8","1,6",106,"22,8","30,5","29,9","45,7",,2014,Mischwasser
 Jagsthausen,,,,"26,2",11,"1,5",146,25,25,"30,6",165,Info-Text!,2013,100 % Eigenwasser
@@ -131,7 +362,8 @@ Lampoldshausen,,Züttlinger Straße ,Hochzone,21,"9,1","1,5",106,25,21,17,27,,20
 Lampoldshausen,,Brunnenstraße,Niederzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
 Lampoldshausen,,Gochsener Straße,Niederzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
 Lampoldshausen,,Kochersteinsfelder Straße bis Nr. 40,Niederzone,19,"8,6","1,1",95,23,19,16,27,,2013,Eigenwasser
-Langenbrettach,,,,18-20,,,,,,,,2mal angefragt,,
+Langenbrettach,Brettach,,,"20,01",20,2,104,"23,7","38,9","20,8","45,4",,2013,"50% Eigenwasser, 50% Bodenseewasser"
+Langenbrettach,Langenbeutingen,,,"21,2",17,2,108,"26,3","37,6","22,6","54,9",,2013,"50% Eigenwasser, 50% Bodenseewasser"
 Lauffen am Neckar,,,,9,"5,2","1,4",48,8,"7,1","4,5",35,,2013,Bodenseewasser
 Lehrensteinsfeld,,,,9,,,,,,,,2mal angefragt,,
 Leingarten,,,,25,13,"6,5",128,33,45,27,93,,2013,"Mischwasser, 74% Eigenwasser, 26% Bodensee"
@@ -141,20 +373,18 @@ Löwenstein,Kernstadt,,,14,k.A.,k.A.,59,25,,8,21,Restl. Werte bei Herr Mögerle 
 Löwenstein,Reißach,,,14,k.A.,k.A.,61,24,,8,30,,k. A.,Mischwasser
 Löwenstein,Rittelhof,,,9,k.A.,k.A.,48,"7,7",,"4,8 ",36,,k. A.,100 % Bodenseewasser
 Löwenstein,Seemühle,,,9,k.A.,k.A.,48,"7,7",,"4,8 ",36,,k. A.,100 % Bodenseewasser
-Massenbach,,,,24,,,,,,,,angefragt (Schwaigern),,
-Massenbachhausen,,,,24,,,,,,,,2mal angefragt,,
-Möckmühl,,,,17-18,,,,,,,,2mal angefragt,,
-Möckmühl,Korb,,,17-18,,,,,,,,,,
-Möckmühl,Ruchsen,,,17-18,,,,,,,,,,
-Möckmühl,Züttlingen,,,17-18,,,,,,,,,,
-Möckmühl,Siegelbach,,,9,,,,,,,,,,
-Möckmühl,Bittelbach,,,9,,,,,,,,,,
+Massenbachhausen,,,,24,"5,78","0,87","126,1","32,3","45,8","34,2","47,8",,,Eigenwasser
+Möckmühl,Bittelbach,,,9,"5,2","1,4",48,8,"7,1","4,5",35,,2013,Reines Bodenseewasser
+Möckmühl,Korb,,,17-18,12,"1,7",113,15,26,11,95,,2013,Mischwasser
+Möckmühl,Möckmühl,,,17-18,12,"1,7",113,15,26,11,95,,2013,Mischwasser
+Möckmühl,Ruchsen,,,17-18,12,"1,7",113,15,26,11,95,,2013,Mischwasser
+Möckmühl,Siegelbach,,,9,"5,2","1,4",48,8,"7,1","4,5",35,,2013,Reines Bodenseewasser
+Möckmühl,Züttlingen,,,17-18,12,"1,7",113,15,26,11,95,,2013,Mischwasser
 Neckarbischofsheim,Helmhof ,,,"12,1","17,9","2,5","67,2","11,8","30,5","14,4","47,9",,2014,Mischwasser
 Neckarbischofsheim,Kernstadt,,,"12,7","7,1","1,1","65,3","15,7","15,4","17,4","16,3",,2014,Mischwasser
 Neckarbischofsheim,Untergimpern,,,"12,1","17,9","2,5","67,2","11,8","30,5","14,4","47,9",,2014,Mischwasser
 Neckarsulm,Amorbach,,,"16,1","7,1","1,5","83,1","19,6",,"10,8","80,3",,2013,"Mischwasser, 70 % Bodenseewasser, 30 % Eigenwasser"
 Neckarsulm,Dahenfeld,,,"11,6","6,3","1,5","62,9","12,1",,"6,2","47,4",,2013,
-Neckarsulm,Obereisesheim,,,"17,9",23,3,100,17,,"8,2","94,3",,2013,
 Neckarsulm,Kernstadt,Amselweg,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
 Neckarsulm,Kernstadt,Christian-Rieker-Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
 Neckarsulm,Kernstadt,Damaschkestr.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
@@ -177,8 +407,8 @@ Neckarsulm,Kernstadt,Im Vogelsang,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,
 Neckarsulm,Kernstadt,Kochendorfer Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
 Neckarsulm,Kernstadt,Martin-Fischel-Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
 Neckarsulm,Kernstadt,Neuenstädter Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
-Neckarsulm,Kernstadt,NSU-Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
 Neckarsulm,Kernstadt,NSU-Einfahrbahn,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
+Neckarsulm,Kernstadt,NSU-Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
 Neckarsulm,Kernstadt,Pfarrgasse,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
 Neckarsulm,Kernstadt,Plattenwaldweg,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
 Neckarsulm,Kernstadt,Schwalbenweg,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
@@ -192,40 +422,50 @@ Neckarsulm,Kernstadt,Viktor-Brunner-Str.,Zone 1,"12,9","6,7","1,3","68,7","14,2"
 Neckarsulm,Kernstadt,Wachterstraße,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
 Neckarsulm,Kernstadt,Weidachstraße,Zone 1,"12,9","6,7","1,3","68,7","14,2",,7,53,,2013,
 Neckarsulm,Kernstadt,alle anderen Straßen,Zone 2,"16,1","7,1","1,5","83,1","19,6",,"10,8","80,3",,2013,
-Neckarwestheim,,,,9,"5,2","1,4",48,8,7,"4,2",34,,2012,100 % Bodenseewasser
-Neudenau-Stadt,,,,21,"7,7","1,5",122,16,17,19,67,,,
-Neuenstadt am Kocher,,,,"20,5","6,89","2,2",101,"27,7",k.A.,"20,7","47,9",,2012,"75% Eigenwasser, 25% Bodenseewasser"
+Neckarsulm,Obereisesheim,,,"17,9",23,3,100,17,,"8,2","94,3",,2013,
+Neckarwestheim,,,,9,"5,2","1,4",48,8,7,"4,2",34,,2012,Reines Bodenseewasser
+Neudenau,Herbolzheim,,,14,"8,8","1,9",77,15,16,16,59,,2013,
+Neudenau,Kreßbach,,,17,30,"2,3",95,16,37,20,93,,2013,
+Neudenau,Neudenau,,,14,"8,8","1,9",77,15,16,16,59,,2013,
+Neudenau,Reichertshausen,,,9,"5,4","1,4",50,8,"7,2","4,3",33,,2013,
+Neudenau,Siglingen,,,17,30,"2,3",95,16,37,20,93,,2013,
+Neuenstadt am Kocher,Neuenstadt am Kocher,,,"20,5","6,89","2,2",101,"27,7",k.A.,"20,7","47,9",,2012,"75% Eigenwasser, 25% Bodenseewasser"
 Neuenstadt am Kocher,Stein,,,"16,5",7,"1,8",98,12,k.A.,16,74,,2012,"55% Eigenwasser, 45% Bodenseewasser"
-Nordheim,,,,14,7,2,70,17,16,13,35,,k. A.,Mischwasser
-Obersulm,Affaltrach,,,"9,4",,,"51,8","9,5",,"4,4",33,,k.A.,100 % Bodenseewasser
-Obersulm,Eichelberg,,,"11,9",,,"55,8","17,6",,"5,9",29,,k.A.,"Mischwasser, 50 % Eigenwasser, 50 % Bodenseewasser"
-Obersulm,Eschenau,,,"9,4",,,"51,8","9,5",,"4,4",33,,k.A.,100 % Bodenseewasser
-Obersulm,Sülzbach,,,"9,4",,,"51,8","9,5",,"4,4",33,,k.A.,100 % Bodenseewasser
-Obersulm,Weiler,,,"11,9",,,"55,8","17,6",,"5,9",29,,k.A.,"Mischwasser, 50 % Eigenwasser, 50 % Bodenseewasser"
-Obersulm,Willsbach,,,"9,4",,,"51,8","9,5",,"4,4",33,,k.A.,100 % Bodenseewasser
+Nordheim,,,,14,7,2,70,17,16,13,35,,,Mischwasser
+Obersulm,Affaltrach,,,"9,4",,,"51,8","9,5",,"4,4",33,,,Reines Bodenseewasser
+Obersulm,Eichelberg,,,"11,9",,,"55,8","17,6",,"5,9",29,,,"Mischwasser, 50 % Eigenwasser, 50 % Bodenseewasser"
+Obersulm,Eschenau,,,"9,4",,,"51,8","9,5",,"4,4",33,,,Reines Bodenseewasser
+Obersulm,Sülzbach,,,"9,4",,,"51,8","9,5",,"4,4",33,,,Reines Bodenseewasser
+Obersulm,Weiler,,,"11,9",,,"55,8","17,6",,"5,9",29,,,"Mischwasser, 50 % Eigenwasser, 50 % Bodenseewasser"
+Obersulm,Willsbach,,,"9,4",,,"51,8","9,5",,"4,4",33,,,Reines Bodenseewasser
 Offenau,,,,"12,9","16,1","2,2","68,8","14,1","30,7","13,9","48,5",,2014,Mischwasser
-Pfaffenhofen,,,,,,,,,,,,2mal angefragt,,
+Pfaffenhofen,Hochbehälter Ost,,,"15,7","3,6","0,8",67,26,"6,9","5,8",35,Genaue Zuteilung wird nachgereicht,2012,Eigene Tiefbrunnen
+Pfaffenhofen,Hochbehälter Tegernbach,,,"13,2","4,1","0,8",57,23,"2,4","0,2",20,,2012,Eigene Tiefbrunnen
+Pfaffenhofen,Hochbehälter West,,,"17,7","3,8","0,7",62,24,9,11,27,,2012,Eigene Tiefbrunnen
 Roigheim,,,,"10,9","5,4","1,2","69,7","5,2","14,6","21,5","27,4",,2013,Eigene Quellen
-Schwaigern,,,,"21,56",,,,,,19,,2mal angefragt,,
+Schwaigern,Massenbach,,,24,"5,78","0,87","126,1","32,3","45,8","34,2","47,8",,,Eigenwasser
+Schwaigern,Niederhofen,,,"21,56","7,5","2,1",110,"26,5","24,4",19,"86,2",,,"Mischwasser, 40% Bodenseewasser, 60% Eigenwasser"
+Schwaigern,Schwaigern,,,"21,56","7,5","2,1",110,"26,5","24,4",19,"86,2",,,"Mischwasser, 40% Bodenseewasser, 60% Eigenwasser"
+Schwaigern,Stetten,,,"21,56","7,5","2,1",110,"26,5","24,4",19,"86,2",,,"Mischwasser, 40% Bodenseewasser, 60% Eigenwasser"
 Siegelsbach,,,,"12,1","17,9","2,5","67,2","11,8","30,5","14,4","47,9",,2014,Mischwasser
-Siegelsbach,,,,"12,1","17,9","2,5","67,2","11,8","30,5","14,4","47,9",,2014,Mischwasser
-Talheim,,,,9,"5,2","1,4",48,8,7,"4,2",34,,2012,100 % Bodenseewasser
-Untereisesheim,,,, 15,"5,9","1,4 ",84,17 ,15,18 ,35,,2013,100 % Bodenseewasser
+Talheim,,,,9,"5,2","1,4",48,8,7,"4,2",34,,2012,Reines Bodenseewasser
+Untereisesheim,,,, 15,"5,9","1,4 ",84,17 ,15,18 ,35,,2013,Reines Bodenseewasser
 Untergruppenbach,Donnbronn,,,"9,2",,,,,,6,,,2013,"Hochbehälter Egelsee, Reines Bodenseewasser"
-Untergruppenbach,Obergruppenbach,,,"15,8","7,5",2,83,18,18,15,65,,,
-Untergruppenbach,Oberheinriet,,,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
-Untergruppenbach,Untergruppenbach,,,"14,9","5,3","1,6",80,17,16,13,52,,,
-Untergruppenbach,Unterheinriet,,,"15,5",,,,,,"7,8",,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Untergruppenbach,Obergruppenbach,,,"15,8","7,5",2,83,18,18,15,65,,2013,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein."
+Untergruppenbach,Oberheinriet,,,"15,5",7,"2,1",79,19,"8,4","8,6",82,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+Untergruppenbach,Untergruppenbach,,,"14,9","5,3","1,6",80,17,16,13,52,,,"Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein."
+Untergruppenbach,Unterheinriet,,,"15,5",7,"2,1",79,19,"8,4","8,6",82,,2013,"Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
 Untergruppenbach,Vorhof,,,"14,6",,,,,,11,,,2013,"Pumpwerk Vorhof, Quellwasser aus der Heumadenquelle"
-Weinsberg,Grantschen,,,"8,5-9",5-6,1-2,48-52,7-9,8-9,5-7,32,,2013,Bodenseewasser
-Weinsberg,,,,"8,5-9",5-6,1-2,48-52,7-9,8-9,5-7,32,,2010,Bodenseewasser
+Weinsberg,Grantschen,,,"8,5-9",5-6,1-2,48-52,7-9,8-9,5-7,32,,2013,Reines Bodenseewasser
+Weinsberg,Weinsberg,,,"8,5-9",5-6,1-2,48-52,7-9,8-9,5-7,32,,2010,Reines Bodenseewasser
 Widdern,,,,,,,,,,,,angefragt,,
 Wüstenrot,,,,15-17,,,,,,,,2mal angefragt,,
-Zaberfeld,Michelbach,,,9,,,,,,,,,,
-Zaberfeld,Ochsenburg,,,"21,1",,,,,,,,,,
-Zaberfeld,Zaberfeld,Alle anderen Str.,Zone 2,"9,3",,,,,,,,,,
-Zaberfeld,Zaberfeld,Am Spitzenberg,Zone 1,"19,1",,,,,,,,,,
-Zaberfeld,Zaberfeld,Bahnhofstraße,Zone 1,"19,1",,,,,,,,,,
-Zaberfeld,Zaberfeld,Hauptstraße,Zone 1,"19,1",,,,,,,,,,
-Zaberfeld,Zaberfeld,Leonbronner Straße,Zone 1,"19,1",,,,,,,,,,
-Zaberfeld,Zaberfeld,Sonnengasse,Zone 1,"19,1",,,,,,,,,,
+Zaberfeld,Leonbronn,,,"22,2","12,9","2,88","96,8","37,5","46,4","29,8","44,2",,2013,Eigenwasser
+Zaberfeld,Michelbach,,,9,"5,2","1,4",48,8,7,"4,2",34,,2012,Reines Bodenseewasser
+Zaberfeld,Ochsenburg,,,"22,2","12,9","2,88","96,8","37,5","46,4","29,8","44,2",,2013,Eigenwasser
+Zaberfeld,Zaberfeld,Am Spitzenberg,Zone 1,"19,8","11,9","2,62","87,9","32,5",41,"25,7","44,3",,2013,"Mischwasser, 95 % Eigenwasser, 5 % Bodenseewasser"
+Zaberfeld,Zaberfeld,Bahnhofstraße,Zone 1,"19,8","11,9","2,62","87,9","32,5",41,"25,7","44,3",,2013,"Mischwasser, 95 % Eigenwasser, 5 % Bodenseewasser"
+Zaberfeld,Zaberfeld,Hauptstraße,Zone 1,"19,8","11,9","2,62","87,9","32,5",41,"25,7","44,3",,2013,"Mischwasser, 95 % Eigenwasser, 5 % Bodenseewasser"
+Zaberfeld,Zaberfeld,Leonbronner Straße,Zone 1,"19,8","11,9","2,62","87,9","32,5",41,"25,7","44,3",,2013,"Mischwasser, 95 % Eigenwasser, 5 % Bodenseewasser"
+Zaberfeld,Zaberfeld,Sonnengasse,Zone 1,"19,8","11,9","2,62","87,9","32,5",41,"25,7","44,3",,2013,"Mischwasser, 95 % Eigenwasser, 5 % Bodenseewasser"
+Zaberfeld,Zaberfeld,Alle anderen Str.,Zone 2,"9,3",5,"1,4",48,8,7,4,34,,2012,"Mischwasser, 95 % Bodenseewasser, 5 % Eigenwasser"

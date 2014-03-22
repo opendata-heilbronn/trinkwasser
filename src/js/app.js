@@ -241,7 +241,7 @@ var tw = {
 		completeReferenceWaters();
 		setupForm();
 		setupQuickForm();
-		setupTabs('hardness');
+		setupTabs('natrium');
 		setupSectionSwitch();
 		tw.gauge.init();
 		tw.comparison.init();

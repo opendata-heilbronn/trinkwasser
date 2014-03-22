@@ -1,4 +1,319 @@
 tw.data.locations = {
+	"Abstatt": {
+		"Happenbach": {},
+		"Kernstadt": {
+			"Zone 1": [
+				"alle anderen Straßen"
+			],
+			"Zone 2": [
+				"Ahornstraße",
+				"Akazienstraße",
+				"Buchenweg",
+				"Eschenweg",
+				"Kastanienweg",
+				"Pappelweg",
+				"Plantanenweg",
+				"Ulmenring",
+				"Weidenweg"
+			],
+			"Zone 3": [
+				"Erlenweg",
+				"Radäckerweg"
+			]
+		},
+		"Vohenlohe": {}
+	},
+	"Bad Friedrichshall": {
+		"Duttenberg": {},
+		"Hagenbach": {},
+		"Jagstfeld": {},
+		"Kochendorf": {
+			"Nord": [
+				"Ahornweg",
+				"Alter Schacht",
+				"Am Bähnle",
+				"Am Schachtsee",
+				"Arndtstr.",
+				"Badstr.",
+				"Bahnhof Jagstfeld",
+				"Bautzenweg",
+				"Bei den Weiden",
+				"Beim Alten Schacht",
+				"Bergmannstr.",
+				"Birkenweg",
+				"Blumenstr.",
+				"Bohnertstr.",
+				"Bolzstr.",
+				"Breslauer Str.",
+				"Buchenweg",
+				"Buchhofweg",
+				"Bunsenstr.",
+				"Christophstr.",
+				"Damaschkestr.",
+				"Danziger Str.",
+				"Deutschordenstr.",
+				"Dresdener Str.",
+				"Eichendorffstr.",
+				"Eichenweg",
+				"Erlenweg",
+				"Eschenweg",
+				"Fahräcker",
+				"Fahrberg",
+				"Falkensteiner Weg",
+				"Farnweg",
+				"Fichtestr.",
+				"Fliederweg",
+				"Franz-Hitze-Str.",
+				"Freiburger Str.",
+				"Friedhofstr.",
+				"Friedlandstr.",
+				"Friedrich-Ebert-St",
+				"Friedrichshaller S",
+				"Friedrichsplatz",
+				"Frühmessgasse",
+				"Ginsterweg",
+				"Goethestr.",
+				"Gottl.-Daimler-Str",
+				"H.-M.-Schleyer-Str",
+				"Hagenbacher Str.",
+				"Haldenstr.",
+				"Hauffweg",
+				"Hausäckerstr.",
+				"Heidelberger Str.",
+				"Heideweg",
+				"Hermann-Löns-Weg",
+				"Heuchlinger Feld",
+				"Heuchlinger Str.",
+				"Hohe Str.",
+				"Hohenmölsener Str.",
+				"Hübschjörgenstr.",
+				"Im Finkenschlag",
+				"Im Holderbusch",
+				"In Den Tatschen",
+				"Industriestr.",
+				"Isenbütteler Str.",
+				"Jagstfelder Str.",
+				"Jagstfelder Weg",
+				"Jahnstr.",
+				"Joh.Gutenberg-Str.",
+				"Johann-Simon-Bräuninger-Weg",
+				"Josef-Gantner-Str.",
+				"Kanalstr.",
+				"Karl-Benz-Str.",
+				"Karl-Marx-Str.",
+				"Karlsbader Weg",
+				"Karlsruher Str.",
+				"Kelterstr.",
+				"Kettelerstr.",
+				"Kiliansplatz",
+				"Kleiststr.",
+				"Kochendorfer Str.",
+				"Kocherwaldstr.",
+				"Kolpingstr.",
+				"Königsberger Str.",
+				"Krokusweg",
+				"Kurze Str.",
+				"Landhausstr.",
+				"Lerchenstr.",
+				"Lessingstr.",
+				"Lilienweg",
+				"Marienstr.",
+				"Max-Eyth-Str.",
+				"Max-Planck-Str.",
+				"Metzgergasse",
+				"Mittlere Keltergas",
+				"Mozartstr.",
+				"Narzissenweg",
+				"Nelkenweg",
+				"Neuhofweg",
+				"Nordstr.",
+				"Offenauer Str.",
+				"Ohrnberger Str.",
+				"Otto-Hahn-Str.",
+				"Pappelweg",
+				"Pfarrstr.",
+				"Porschestr.",
+				"Poststr.",
+				"Raiffeisenstr.",
+				"Rathausplatz",
+				"Rathausstr.",
+				"Reichenberger Weg",
+				"Reiterweg",
+				"Resedenweg",
+				"Robert-Bosch-Str.",
+				"Robert-Koch-Str.",
+				"Römerstr.",
+				"Röntgenstr.",
+				"Rosenweg",
+				"Rostocker Str.",
+				"Saline",
+				"Salinenstr.",
+				"Sandweg",
+				"Schachtstr.",
+				"Schlehenweg",
+				"Schubertstr.",
+				"Schulstr.",
+				"Seelachstr.",
+				"Seetalstr.",
+				"Siederstr.",
+				"Siemensstr.",
+				"Sprengelbachstr.",
+				"Steinheckenstr.",
+				"Steinweg",
+				"Stettiner Str.",
+				"Sudetenstr.",
+				"Theodor-Körner-Str",
+				"Troppauer Weg",
+				"Tübinger Str.",
+				"Tulpenweg",
+				"Uhlandstr.",
+				"Ulmenweg",
+				"Ulmer Str.",
+				"Untere Au",
+				"Untergriesheimer W",
+				"Veilchenweg",
+				"Wacholderweg",
+				"Waldauweg",
+				"Waldstr.",
+				"Wartburgstr.",
+				"Wasenweg",
+				"Weissdornweg",
+				"Wendelinusstr.",
+				"Wichernstr.",
+				"Wilhelmstr.",
+				"Willenbacher Grund",
+				"Willenbacher Str.",
+				"Wittstattweg",
+				"Yorckstr."
+			],
+			"Süd": [
+				"Albrecht-Dürer-Str",
+				"Am Kocher",
+				"Am Neckarkanal",
+				"Am Turnierplatz",
+				"Am Wasserturm",
+				"Amorbacher Str.",
+				"Bachstr.",
+				"Bahnhofstr.",
+				"Bergrat-Bilfinger-",
+				"Bergstr.",
+				"Bertolt-Brecht-Weg",
+				"Binnetstr.",
+				"Bismarckstr.",
+				"Bodemstall",
+				"Brau.-Elsässer-Str",
+				"Bremenweg",
+				"Gartenstr.",
+				"Greckenstr.",
+				"Hannchen-Herz-Str.",
+				"Hasenmühle",
+				"Hauptstr.",
+				"Haydnstr.",
+				"Heilbronner Str.",
+				"Heinrich-Heine Weg",
+				"Heinrich-Heine Weg",
+				"Hermann-Hesse-Weg",
+				"Hölderlinstr.",
+				"Kirchbrunnenstr.",
+				"Knappenstr.",
+				"Kochergasse",
+				"Koppenrain",
+				"Krautgartenweg",
+				"Lange Str.",
+				"Lenauweg",
+				"Lindenweg",
+				"Ludwig-Thoma-Str.",
+				"Mittlere Str.",
+				"Moltkestr.",
+				"Mörikestr.",
+				"Mühlgasse",
+				"Mühlstr.",
+				"Neckarsulmer Str.",
+				"Neuenstadter Str.",
+				"Nibelungenstr.",
+				"Oedheimer Str.",
+				"Oststr.",
+				"Panoramastr.",
+				"Pfaffenäcker",
+				"Pfaffenäcker",
+				"Rainstr.",
+				"Remmelesweg",
+				"Richard-Wagner-Str",
+				"Riedweg",
+				"Salzstr.",
+				"Schachtanlage",
+				"Schafgrube",
+				"Schillerstr.",
+				"Schlossstr.",
+				"Schultheiß-Seeber-",
+				"Seilergasse",
+				"Silcherstr.",
+				"Spitalstr.",
+				"Steigerstr.",
+				"Südstr.",
+				"Theodor-Storm-Weg",
+				"Viktor-Scheffel-St",
+				"Wächterstr.",
+				"Walderseeweg",
+				"Zehn Morgen",
+				"Zeppelinstr."
+			]
+		},
+		"Plattenwald": {},
+		"Untergriesheim": {}
+	},
+	"Bad Rappenau": {
+		"Babstadt": {},
+		"Bonfeld": {},
+		"Fürfeld": {},
+		"Grombach": {},
+		"Heinsheim": {},
+		"Kernstadt": {},
+		"Obergimpern": {},
+		"Treschklingen": {},
+		"Wollenberg": {}
+	},
+	"Bad Wimpfen": {},
+	"Brackenheim": {
+		"Botenheim": {},
+		"Brackenheim": {},
+		"Dürrenzimmern": {},
+		"Hausen": {},
+		"Meimsheim": {},
+		"Neipperg": {},
+		"Stocksberg Haberschlacht": {},
+		"Stocksberg Stockheim": {}
+	},
+	"Cleebronn": {},
+	"Eberstadt": {},
+	"Ellhofen": {},
+	"Eppingen": {
+		"Adelshofen": {},
+		"Elsenz": {},
+		"Kernstadt": {},
+		"Kleingartach": {},
+		"Mühlbach": {},
+		"Richen": {},
+		"Rohrbach": {}
+	},
+	"Erlenbach": {},
+	"Flein": {},
+	"Gemmingen": {},
+	"Gochsen": {},
+	"Güglingen": {},
+	"Gundelsheim": {
+		"Bachenau": {},
+		"Böttingen": {},
+		"Gundelsheim": {},
+		"Höchstberg": {},
+		"Obergriesh": {},
+		"Tiefenbach": {}
+	},
+	"Haßmersheim": {
+		"Haßmersheim": {},
+		"Hochhausen": {},
+		"Neckarmühlbach": {}
+	},
 	"Heilbronn": {
 		"": {
 			"9": [
@@ -1136,78 +1451,6 @@ tw.data.locations = {
 			]
 		}
 	},
-	"Abstatt": {
-		"Kernstadt": {
-			"Zone 1": [
-				"Ulmenring",
-				"Kastanienweg",
-				"Erlenweg",
-				"Radäckerweg",
-				"Weidenweg",
-				"Pappelweg",
-				"Akazienstraße",
-				"Ahornstraße",
-				"Plantanenweg",
-				"Eschenweg",
-				"Buchenweg"
-			],
-			"Zone 2": [
-				"alle anderen Str."
-			]
-		},
-		"Happenbach": {},
-		"Vohenlohe": {}
-	},
-	"Bad Friedrichshall": {
-		"Duttenberg": {},
-		"Hagenbach": {},
-		"Jagstfeld": {},
-		"Plattenwald": {},
-		"Untergriesheim": {}
-	},
-	"Bad Rappenau": {
-		"Babstadt": {},
-		"Bonfeld": {},
-		"Fürfeld": {},
-		"Grombach": {},
-		"Heinsheim": {},
-		"Kernstadt": {},
-		"Obergimpern": {},
-		"Treschklingen": {},
-		"Wollenberg": {}
-	},
-	"Brackenheim": {
-		"Botenheim": {},
-		"Brackenheim": {},
-		"Dürrenzimmern": {},
-		"Hausen": {},
-		"Meimsheim": {},
-		"Neipperg": {},
-		"Stocksberg Haberschlacht": {},
-		"Stocksberg Stockheim": {}
-	},
-	"Cleebronn": {},
-	"Eberstadt": {},
-	"Ellhofen": {},
-	"Eppingen": {
-		"Adelshofen": {},
-		"Elsenz": {},
-		"Kernstadt": {},
-		"Kleingartach": {},
-		"Mühlbach": {},
-		"Richen": {},
-		"Rohrbach": {}
-	},
-	"Erlenbach": {},
-	"Flein": {},
-	"Gemmingen": {},
-	"Gochsen": {},
-	"Güglingen": {},
-	"Haßmersheim": {
-		"Haßmersheim": {},
-		"Hochhausen": {},
-		"Neckarmühlbach": {}
-	},
 	"Hüffenhardt": {},
 	"Ilsfeld": {
 		"Abstetterhof": {},
@@ -1215,6 +1458,7 @@ tw.data.locations = {
 		"Helfenberg": {},
 		"Ilsfeld": {},
 		"Raststätten Wunnenstein": {},
+		"Schozach": {},
 		"Wüstenhausen": {}
 	},
 	"Ittlingen": {},
@@ -1300,7 +1544,10 @@ tw.data.locations = {
 			]
 		}
 	},
-	"Langenbrettach": {},
+	"Langenbrettach": {
+		"Brettach": {},
+		"Langenbeutingen": {}
+	},
 	"Lauffen am Neckar": {},
 	"Lehrensteinsfeld": {},
 	"Leingarten": {},
@@ -1312,14 +1559,14 @@ tw.data.locations = {
 		"Rittelhof": {},
 		"Seemühle": {}
 	},
-	"Massenbach": {},
 	"Massenbachhausen": {},
 	"Möckmühl": {
+		"Bittelbach": {},
 		"Korb": {},
+		"Möckmühl": {},
 		"Ruchsen": {},
-		"Züttlingen": {},
 		"Siegelbach": {},
-		"Bittelbach": {}
+		"Züttlingen": {}
 	},
 	"Neckarbischofsheim": {
 		"Helmhof": {},
@@ -1329,7 +1576,6 @@ tw.data.locations = {
 	"Neckarsulm": {
 		"Amorbach": {},
 		"Dahenfeld": {},
-		"Obereisesheim": {},
 		"Kernstadt": {
 			"Zone 1": [
 				"Amselweg",
@@ -1354,8 +1600,8 @@ tw.data.locations = {
 				"Kochendorfer Str.",
 				"Martin-Fischel-Str.",
 				"Neuenstädter Str.",
-				"NSU-Str.",
 				"NSU-Einfahrbahn",
+				"NSU-Str.",
 				"Pfarrgasse",
 				"Plattenwaldweg",
 				"Schwalbenweg",
@@ -1372,11 +1618,19 @@ tw.data.locations = {
 			"Zone 2": [
 				"alle anderen Straßen"
 			]
-		}
+		},
+		"Obereisesheim": {}
 	},
 	"Neckarwestheim": {},
-	"Neudenau-Stadt": {},
+	"Neudenau": {
+		"Herbolzheim": {},
+		"Kreßbach": {},
+		"Neudenau": {},
+		"Reichertshausen": {},
+		"Siglingen": {}
+	},
 	"Neuenstadt am Kocher": {
+		"Neuenstadt am Kocher": {},
 		"Stein": {}
 	},
 	"Nordheim": {},
@@ -1389,8 +1643,18 @@ tw.data.locations = {
 		"Willsbach": {}
 	},
 	"Offenau": {},
+	"Pfaffenhofen": {
+		"Hochbehälter Ost": {},
+		"Hochbehälter Tegernbach": {},
+		"Hochbehälter West": {}
+	},
 	"Roigheim": {},
-	"Schwaigern": {},
+	"Schwaigern": {
+		"Massenbach": {},
+		"Niederhofen": {},
+		"Schwaigern": {},
+		"Stetten": {}
+	},
 	"Siegelsbach": {},
 	"Talheim": {},
 	"Untereisesheim": {},
@@ -1403,22 +1667,24 @@ tw.data.locations = {
 		"Vorhof": {}
 	},
 	"Weinsberg": {
-		"Grantschen": {}
+		"Grantschen": {},
+		"Weinsberg": {}
 	},
 	"Wüstenrot": {},
 	"Zaberfeld": {
+		"Leonbronn": {},
 		"Michelbach": {},
 		"Ochsenburg": {},
 		"Zaberfeld": {
-			"Zone 2": [
-				"Alle anderen Str."
-			],
 			"Zone 1": [
 				"Am Spitzenberg",
 				"Bahnhofstraße",
 				"Hauptstraße",
 				"Leonbronner Straße",
 				"Sonnengasse"
+			],
+			"Zone 2": [
+				"Alle anderen Str."
 			]
 		}
 	}

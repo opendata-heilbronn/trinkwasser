@@ -47,30 +47,6 @@ tw.data.zones = {
 		"year": "2013",
 		"description": ""
 	},
-	"Abstatt Kernstadt Zone 1": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": 7.8,
-		"sulfat": "",
-		"hardness": 15.5,
-		"year": "2013",
-		"description": "Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
-	},
-	"Abstatt Kernstadt Zone 2": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": 13,
-		"sulfat": "",
-		"hardness": 15.7,
-		"year": "",
-		"description": ""
-	},
 	"Abstatt Happenbach": {
 		"natrium": "",
 		"kalium": "",
@@ -82,6 +58,42 @@ tw.data.zones = {
 		"hardness": 15.7,
 		"year": "2013",
 		"description": "Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
+	},
+	"Abstatt Kernstadt Zone 1": {
+		"natrium": "",
+		"kalium": "",
+		"calcium": "",
+		"magnesium": "",
+		"chlorid": "",
+		"nitrat": 13,
+		"sulfat": "",
+		"hardness": 15.7,
+		"year": "2013",
+		"description": "Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
+	},
+	"Abstatt Kernstadt Zone 2": {
+		"natrium": "",
+		"kalium": "",
+		"calcium": "",
+		"magnesium": "",
+		"chlorid": "",
+		"nitrat": 7.8,
+		"sulfat": "",
+		"hardness": 15.5,
+		"year": "2013",
+		"description": "Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
+	},
+	"Abstatt Kernstadt Zone 3": {
+		"natrium": "",
+		"kalium": "",
+		"calcium": "",
+		"magnesium": "",
+		"chlorid": "",
+		"nitrat": "7.8-13",
+		"sulfat": "",
+		"hardness": "15.5-15.7",
+		"year": "2013",
+		"description": "Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
 	},
 	"Abstatt Vohenlohe": {
 		"natrium": "",
@@ -105,7 +117,7 @@ tw.data.zones = {
 		"sulfat": 53.2,
 		"hardness": 12.9,
 		"year": "2013",
-		"description": "Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
+		"description": "Mischwasser, 50 % Bodenseewasser, 50 % Eigenwasser"
 	},
 	"Bad Friedrichshall Hagenbach": {
 		"natrium": 7.8,
@@ -117,7 +129,7 @@ tw.data.zones = {
 		"sulfat": 45.3,
 		"hardness": 16,
 		"year": "2013",
-		"description": "Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
+		"description": "Mischwasser, 50 % Bodenseewasser, 50 % Eigenwasser"
 	},
 	"Bad Friedrichshall Jagstfeld": {
 		"natrium": 7.8,
@@ -129,7 +141,31 @@ tw.data.zones = {
 		"sulfat": 45.3,
 		"hardness": 16,
 		"year": "2013",
-		"description": "Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
+		"description": "Mischwasser, 50 % Bodenseewasser, 50 % Eigenwasser"
+	},
+	"Bad Friedrichshall Kochendorf Nord": {
+		"natrium": 7.8,
+		"kalium": 1.3,
+		"calcium": 87.8,
+		"magnesium": 15.9,
+		"chlorid": 22,
+		"nitrat": 20.7,
+		"sulfat": 45.3,
+		"hardness": 16,
+		"year": "2013",
+		"description": "Mischwasser"
+	},
+	"Bad Friedrichshall Kochendorf Süd": {
+		"natrium": 6,
+		"kalium": 1.2,
+		"calcium": 91.8,
+		"magnesium": 20.2,
+		"chlorid": 26.4,
+		"nitrat": 37.3,
+		"sulfat": 45.4,
+		"hardness": 17.4,
+		"year": "2013",
+		"description": "Mischwasser"
 	},
 	"Bad Friedrichshall Plattenwald": {
 		"natrium": 5.7,
@@ -141,7 +177,7 @@ tw.data.zones = {
 		"sulfat": 37.9,
 		"hardness": 11.9,
 		"year": "2013",
-		"description": "Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
+		"description": "Mischwasser, 50 % Bodenseewasser, 50 % Eigenwasser"
 	},
 	"Bad Friedrichshall Untergriesheim": {
 		"natrium": 6.6,
@@ -153,7 +189,7 @@ tw.data.zones = {
 		"sulfat": 40.1,
 		"hardness": 14.9,
 		"year": "2013",
-		"description": "Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
+		"description": "Mischwasser, 50 % Bodenseewasser, 50 % Eigenwasser"
 	},
 	"Bad Rappenau Babstadt": {
 		"natrium": 16.1,
@@ -261,6 +297,18 @@ tw.data.zones = {
 		"sulfat": 47.9,
 		"hardness": 12.1,
 		"year": "2014",
+		"description": "Mischwasser"
+	},
+	"Bad Wimpfen": {
+		"natrium": 5.6,
+		"kalium": 2.2,
+		"calcium": 74.3,
+		"magnesium": 15.4,
+		"chlorid": 13.8,
+		"nitrat": 12.3,
+		"sulfat": 35.1,
+		"hardness": 13.7,
+		"year": "2013",
 		"description": "Mischwasser"
 	},
 	"Brackenheim Botenheim": {
@@ -381,7 +429,7 @@ tw.data.zones = {
 		"sulfat": "137-145",
 		"hardness": "23-25",
 		"year": "2013",
-		"description": "Mischwasser, 50 % Bodensee, 50 % Eigenwasser"
+		"description": "Mischwasser, 50 % Bodenseewasser, 50 % Eigenwasser"
 	},
 	"Ellhofen": {
 		"natrium": 7.3,
@@ -393,7 +441,7 @@ tw.data.zones = {
 		"sulfat": 73.1,
 		"hardness": 14.9,
 		"year": "2013",
-		"description": ""
+		"description": "Mischwasser, 80 % NOW (Zweckverband Wasserversorgung Nordostwürttemberg), 20 % Eigenwasser"
 	},
 	"Eppingen Adelshofen": {
 		"natrium": 6.8,
@@ -501,7 +549,7 @@ tw.data.zones = {
 		"sulfat": 34,
 		"hardness": 9,
 		"year": "2012",
-		"description": "100 % Bodenseewasser"
+		"description": "Reines Bodenseewasser"
 	},
 	"Gemmingen": {
 		"natrium": 16.1,
@@ -538,6 +586,78 @@ tw.data.zones = {
 		"hardness": 16.3,
 		"year": "2013",
 		"description": "Mischwasser, 60 % Eigenwasser, 40 % Bodenseewasser"
+	},
+	"Gundelsheim Bachenau": {
+		"natrium": "",
+		"kalium": "",
+		"calcium": 48,
+		"magnesium": 8,
+		"chlorid": "",
+		"nitrat": 4.5,
+		"sulfat": 34,
+		"hardness": 9,
+		"year": "2013",
+		"description": "Reines Bodenseewasser"
+	},
+	"Gundelsheim Böttingen": {
+		"natrium": 7,
+		"kalium": 1.9,
+		"calcium": 63,
+		"magnesium": 6.9,
+		"chlorid": 14,
+		"nitrat": 19,
+		"sulfat": 7.4,
+		"hardness": 10,
+		"year": "2013",
+		"description": "Eigenwasser"
+	},
+	"Gundelsheim": {
+		"natrium": 6.9,
+		"kalium": 2.2,
+		"calcium": 60,
+		"magnesium": 9.8,
+		"chlorid": 13,
+		"nitrat": 16,
+		"sulfat": 7.5,
+		"hardness": 11,
+		"year": "2013",
+		"description": "Eigenwasser"
+	},
+	"Gundelsheim Höchstberg": {
+		"natrium": 17,
+		"kalium": 1.1,
+		"calcium": 56,
+		"magnesium": 4,
+		"chlorid": 28,
+		"nitrat": 8.1,
+		"sulfat": 4.6,
+		"hardness": 9,
+		"year": "2013",
+		"description": "Eigenwasser"
+	},
+	"Gundelsheim Obergriesh": {
+		"natrium": "",
+		"kalium": "",
+		"calcium": 48,
+		"magnesium": 8,
+		"chlorid": "",
+		"nitrat": 4.5,
+		"sulfat": 34,
+		"hardness": 9,
+		"year": "2013",
+		"description": "Reines Bodenseewasser"
+	},
+	"Gundelsheim Tiefenbach": {
+		"natrium": "",
+		"kalium": "",
+		"calcium": 48,
+		"magnesium": 8,
+		"chlorid": "",
+		"nitrat": 4.5,
+		"sulfat": 34,
+		"hardness": 9,
+		"year": "2013",
+		"description": "Reines Bodenseewasser"
 	},
 	"Haßmersheim": {
 		"natrium": 23.7,
@@ -647,6 +767,18 @@ tw.data.zones = {
 		"year": "2013",
 		"description": "Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
 	},
+	"Ilsfeld Schozach": {
+		"natrium": 6.1,
+		"kalium": 1.6,
+		"calcium": 54.2,
+		"magnesium": 8.9,
+		"chlorid": 7.3,
+		"nitrat": 4.1,
+		"sulfat": 33.7,
+		"hardness": 9.6,
+		"year": "2013",
+		"description": "Reines Bodenseewasser"
+	},
 	"Ilsfeld Wüstenhausen": {
 		"natrium": "",
 		"kalium": "",
@@ -743,17 +875,29 @@ tw.data.zones = {
 		"year": "2013",
 		"description": "Eigenwasser"
 	},
-	"Langenbrettach": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": "",
-		"sulfat": "",
-		"hardness": "18-20",
-		"year": "",
-		"description": ""
+	"Langenbrettach Brettach": {
+		"natrium": 20,
+		"kalium": 2,
+		"calcium": 104,
+		"magnesium": 23.7,
+		"chlorid": 38.9,
+		"nitrat": 20.8,
+		"sulfat": 45.4,
+		"hardness": 20.01,
+		"year": "2013",
+		"description": "50% Eigenwasser, 50% Bodenseewasser"
+	},
+	"Langenbrettach Langenbeutingen": {
+		"natrium": 17,
+		"kalium": 2,
+		"calcium": 108,
+		"magnesium": 26.3,
+		"chlorid": 37.6,
+		"nitrat": 22.6,
+		"sulfat": 54.9,
+		"hardness": 21.2,
+		"year": "2013",
+		"description": "50% Eigenwasser, 50% Bodenseewasser"
 	},
 	"Lauffen am Neckar": {
 		"natrium": 5.2,
@@ -863,101 +1007,89 @@ tw.data.zones = {
 		"year": "k. A.",
 		"description": "100 % Bodenseewasser"
 	},
-	"Massenbach": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": "",
-		"sulfat": "",
-		"hardness": 24,
-		"year": "",
-		"description": ""
-	},
 	"Massenbachhausen": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": "",
-		"sulfat": "",
+		"natrium": 5.78,
+		"kalium": 0.87,
+		"calcium": 126.1,
+		"magnesium": 32.3,
+		"chlorid": 45.8,
+		"nitrat": 34.2,
+		"sulfat": 47.8,
 		"hardness": 24,
 		"year": "",
-		"description": ""
-	},
-	"Möckmühl": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": "",
-		"sulfat": "",
-		"hardness": "17-18",
-		"year": "",
-		"description": ""
-	},
-	"Möckmühl Korb": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": "",
-		"sulfat": "",
-		"hardness": "17-18",
-		"year": "",
-		"description": ""
-	},
-	"Möckmühl Ruchsen": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": "",
-		"sulfat": "",
-		"hardness": "17-18",
-		"year": "",
-		"description": ""
-	},
-	"Möckmühl Züttlingen": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": "",
-		"sulfat": "",
-		"hardness": "17-18",
-		"year": "",
-		"description": ""
-	},
-	"Möckmühl Siegelbach": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": "",
-		"sulfat": "",
-		"hardness": 9,
-		"year": "",
-		"description": ""
+		"description": "Eigenwasser"
 	},
 	"Möckmühl Bittelbach": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": "",
-		"sulfat": "",
+		"natrium": 5.2,
+		"kalium": 1.4,
+		"calcium": 48,
+		"magnesium": 8,
+		"chlorid": 7.1,
+		"nitrat": 4.5,
+		"sulfat": 35,
 		"hardness": 9,
-		"year": "",
-		"description": ""
+		"year": "2013",
+		"description": "Reines Bodenseewasser"
+	},
+	"Möckmühl Korb": {
+		"natrium": 12,
+		"kalium": 1.7,
+		"calcium": 113,
+		"magnesium": 15,
+		"chlorid": 26,
+		"nitrat": 11,
+		"sulfat": 95,
+		"hardness": "17-18",
+		"year": "2013",
+		"description": "Mischwasser"
+	},
+	"Möckmühl": {
+		"natrium": 12,
+		"kalium": 1.7,
+		"calcium": 113,
+		"magnesium": 15,
+		"chlorid": 26,
+		"nitrat": 11,
+		"sulfat": 95,
+		"hardness": "17-18",
+		"year": "2013",
+		"description": "Mischwasser"
+	},
+	"Möckmühl Ruchsen": {
+		"natrium": 12,
+		"kalium": 1.7,
+		"calcium": 113,
+		"magnesium": 15,
+		"chlorid": 26,
+		"nitrat": 11,
+		"sulfat": 95,
+		"hardness": "17-18",
+		"year": "2013",
+		"description": "Mischwasser"
+	},
+	"Möckmühl Siegelbach": {
+		"natrium": 5.2,
+		"kalium": 1.4,
+		"calcium": 48,
+		"magnesium": 8,
+		"chlorid": 7.1,
+		"nitrat": 4.5,
+		"sulfat": 35,
+		"hardness": 9,
+		"year": "2013",
+		"description": "Reines Bodenseewasser"
+	},
+	"Möckmühl Züttlingen": {
+		"natrium": 12,
+		"kalium": 1.7,
+		"calcium": 113,
+		"magnesium": 15,
+		"chlorid": 26,
+		"nitrat": 11,
+		"sulfat": 95,
+		"hardness": "17-18",
+		"year": "2013",
+		"description": "Mischwasser"
 	},
 	"Neckarbischofsheim Helmhof": {
 		"natrium": 17.9,
@@ -1019,18 +1151,6 @@ tw.data.zones = {
 		"year": "2013",
 		"description": ""
 	},
-	"Neckarsulm Obereisesheim": {
-		"natrium": 23,
-		"kalium": 3,
-		"calcium": 100,
-		"magnesium": 17,
-		"chlorid": "",
-		"nitrat": 8.2,
-		"sulfat": 94.3,
-		"hardness": 17.9,
-		"year": "2013",
-		"description": ""
-	},
 	"Neckarsulm Kernstadt Zone 1": {
 		"natrium": 6.7,
 		"kalium": 1.3,
@@ -1055,6 +1175,18 @@ tw.data.zones = {
 		"year": "2013",
 		"description": ""
 	},
+	"Neckarsulm Obereisesheim": {
+		"natrium": 23,
+		"kalium": 3,
+		"calcium": 100,
+		"magnesium": 17,
+		"chlorid": "",
+		"nitrat": 8.2,
+		"sulfat": 94.3,
+		"hardness": 17.9,
+		"year": "2013",
+		"description": ""
+	},
 	"Neckarwestheim": {
 		"natrium": 5.2,
 		"kalium": 1.4,
@@ -1065,18 +1197,66 @@ tw.data.zones = {
 		"sulfat": 34,
 		"hardness": 9,
 		"year": "2012",
-		"description": "100 % Bodenseewasser"
+		"description": "Reines Bodenseewasser"
 	},
-	"Neudenau-Stadt": {
-		"natrium": 7.7,
-		"kalium": 1.5,
-		"calcium": 122,
+	"Neudenau Herbolzheim": {
+		"natrium": 8.8,
+		"kalium": 1.9,
+		"calcium": 77,
+		"magnesium": 15,
+		"chlorid": 16,
+		"nitrat": 16,
+		"sulfat": 59,
+		"hardness": 14,
+		"year": "2013",
+		"description": ""
+	},
+	"Neudenau Kreßbach": {
+		"natrium": 30,
+		"kalium": 2.3,
+		"calcium": 95,
 		"magnesium": 16,
-		"chlorid": 17,
-		"nitrat": 19,
-		"sulfat": 67,
-		"hardness": 21,
-		"year": "",
+		"chlorid": 37,
+		"nitrat": 20,
+		"sulfat": 93,
+		"hardness": 17,
+		"year": "2013",
+		"description": ""
+	},
+	"Neudenau": {
+		"natrium": 8.8,
+		"kalium": 1.9,
+		"calcium": 77,
+		"magnesium": 15,
+		"chlorid": 16,
+		"nitrat": 16,
+		"sulfat": 59,
+		"hardness": 14,
+		"year": "2013",
+		"description": ""
+	},
+	"Neudenau Reichertshausen": {
+		"natrium": 5.4,
+		"kalium": 1.4,
+		"calcium": 50,
+		"magnesium": 8,
+		"chlorid": 7.2,
+		"nitrat": 4.3,
+		"sulfat": 33,
+		"hardness": 9,
+		"year": "2013",
+		"description": ""
+	},
+	"Neudenau Siglingen": {
+		"natrium": 30,
+		"kalium": 2.3,
+		"calcium": 95,
+		"magnesium": 16,
+		"chlorid": 37,
+		"nitrat": 20,
+		"sulfat": 93,
+		"hardness": 17,
+		"year": "2013",
 		"description": ""
 	},
 	"Neuenstadt am Kocher": {
@@ -1112,7 +1292,7 @@ tw.data.zones = {
 		"nitrat": 13,
 		"sulfat": 35,
 		"hardness": 14,
-		"year": "k. A.",
+		"year": "",
 		"description": "Mischwasser"
 	},
 	"Obersulm Affaltrach": {
@@ -1124,8 +1304,8 @@ tw.data.zones = {
 		"nitrat": 4.4,
 		"sulfat": 33,
 		"hardness": 9.4,
-		"year": "k.A.",
-		"description": "100 % Bodenseewasser"
+		"year": "",
+		"description": "Reines Bodenseewasser"
 	},
 	"Obersulm Eichelberg": {
 		"natrium": "",
@@ -1136,7 +1316,7 @@ tw.data.zones = {
 		"nitrat": 5.9,
 		"sulfat": 29,
 		"hardness": 11.9,
-		"year": "k.A.",
+		"year": "",
 		"description": "Mischwasser, 50 % Eigenwasser, 50 % Bodenseewasser"
 	},
 	"Obersulm Eschenau": {
@@ -1148,8 +1328,8 @@ tw.data.zones = {
 		"nitrat": 4.4,
 		"sulfat": 33,
 		"hardness": 9.4,
-		"year": "k.A.",
-		"description": "100 % Bodenseewasser"
+		"year": "",
+		"description": "Reines Bodenseewasser"
 	},
 	"Obersulm Sülzbach": {
 		"natrium": "",
@@ -1160,8 +1340,8 @@ tw.data.zones = {
 		"nitrat": 4.4,
 		"sulfat": 33,
 		"hardness": 9.4,
-		"year": "k.A.",
-		"description": "100 % Bodenseewasser"
+		"year": "",
+		"description": "Reines Bodenseewasser"
 	},
 	"Obersulm Weiler": {
 		"natrium": "",
@@ -1172,7 +1352,7 @@ tw.data.zones = {
 		"nitrat": 5.9,
 		"sulfat": 29,
 		"hardness": 11.9,
-		"year": "k.A.",
+		"year": "",
 		"description": "Mischwasser, 50 % Eigenwasser, 50 % Bodenseewasser"
 	},
 	"Obersulm Willsbach": {
@@ -1184,8 +1364,8 @@ tw.data.zones = {
 		"nitrat": 4.4,
 		"sulfat": 33,
 		"hardness": 9.4,
-		"year": "k.A.",
-		"description": "100 % Bodenseewasser"
+		"year": "",
+		"description": "Reines Bodenseewasser"
 	},
 	"Offenau": {
 		"natrium": 16.1,
@@ -1199,6 +1379,42 @@ tw.data.zones = {
 		"year": "2014",
 		"description": "Mischwasser"
 	},
+	"Pfaffenhofen Hochbehälter Ost": {
+		"natrium": 3.6,
+		"kalium": 0.8,
+		"calcium": 67,
+		"magnesium": 26,
+		"chlorid": 6.9,
+		"nitrat": 5.8,
+		"sulfat": 35,
+		"hardness": 15.7,
+		"year": "2012",
+		"description": "Eigene Tiefbrunnen"
+	},
+	"Pfaffenhofen Hochbehälter Tegernbach": {
+		"natrium": 4.1,
+		"kalium": 0.8,
+		"calcium": 57,
+		"magnesium": 23,
+		"chlorid": 2.4,
+		"nitrat": 0.2,
+		"sulfat": 20,
+		"hardness": 13.2,
+		"year": "2012",
+		"description": "Eigene Tiefbrunnen"
+	},
+	"Pfaffenhofen Hochbehälter West": {
+		"natrium": 3.8,
+		"kalium": 0.7,
+		"calcium": 62,
+		"magnesium": 24,
+		"chlorid": 9,
+		"nitrat": 11,
+		"sulfat": 27,
+		"hardness": 17.7,
+		"year": "2012",
+		"description": "Eigene Tiefbrunnen"
+	},
 	"Roigheim": {
 		"natrium": 5.4,
 		"kalium": 1.2,
@@ -1211,17 +1427,53 @@ tw.data.zones = {
 		"year": "2013",
 		"description": "Eigene Quellen"
 	},
-	"Schwaigern": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
+	"Schwaigern Massenbach": {
+		"natrium": 5.78,
+		"kalium": 0.87,
+		"calcium": 126.1,
+		"magnesium": 32.3,
+		"chlorid": 45.8,
+		"nitrat": 34.2,
+		"sulfat": 47.8,
+		"hardness": 24,
+		"year": "",
+		"description": "Eigenwasser"
+	},
+	"Schwaigern Niederhofen": {
+		"natrium": 7.5,
+		"kalium": 2.1,
+		"calcium": 110,
+		"magnesium": 26.5,
+		"chlorid": 24.4,
 		"nitrat": 19,
-		"sulfat": "",
+		"sulfat": 86.2,
 		"hardness": 21.56,
 		"year": "",
-		"description": ""
+		"description": "Mischwasser, 40% Bodenseewasser, 60% Eigenwasser"
+	},
+	"Schwaigern": {
+		"natrium": 7.5,
+		"kalium": 2.1,
+		"calcium": 110,
+		"magnesium": 26.5,
+		"chlorid": 24.4,
+		"nitrat": 19,
+		"sulfat": 86.2,
+		"hardness": 21.56,
+		"year": "",
+		"description": "Mischwasser, 40% Bodenseewasser, 60% Eigenwasser"
+	},
+	"Schwaigern Stetten": {
+		"natrium": 7.5,
+		"kalium": 2.1,
+		"calcium": 110,
+		"magnesium": 26.5,
+		"chlorid": 24.4,
+		"nitrat": 19,
+		"sulfat": 86.2,
+		"hardness": 21.56,
+		"year": "",
+		"description": "Mischwasser, 40% Bodenseewasser, 60% Eigenwasser"
 	},
 	"Siegelsbach": {
 		"natrium": 17.9,
@@ -1245,7 +1497,7 @@ tw.data.zones = {
 		"sulfat": 34,
 		"hardness": 9,
 		"year": "2012",
-		"description": "100 % Bodenseewasser"
+		"description": "Reines Bodenseewasser"
 	},
 	"Untereisesheim": {
 		"natrium": 5.9,
@@ -1257,7 +1509,7 @@ tw.data.zones = {
 		"sulfat": 35,
 		"hardness": 15,
 		"year": "2013",
-		"description": "100 % Bodenseewasser"
+		"description": "Reines Bodenseewasser"
 	},
 	"Untergruppenbach Donnbronn": {
 		"natrium": "",
@@ -1280,17 +1532,17 @@ tw.data.zones = {
 		"nitrat": 15,
 		"sulfat": 65,
 		"hardness": 15.8,
-		"year": "",
-		"description": ""
+		"year": "2013",
+		"description": "Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein."
 	},
 	"Untergruppenbach Oberheinriet": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": 7.8,
-		"sulfat": "",
+		"natrium": 7,
+		"kalium": 2.1,
+		"calcium": 79,
+		"magnesium": 19,
+		"chlorid": 8.4,
+		"nitrat": 8.6,
+		"sulfat": 82,
 		"hardness": 15.5,
 		"year": "2013",
 		"description": "Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
@@ -1305,16 +1557,16 @@ tw.data.zones = {
 		"sulfat": 52,
 		"hardness": 14.9,
 		"year": "",
-		"description": ""
+		"description": "Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein."
 	},
 	"Untergruppenbach Unterheinriet": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": 7.8,
-		"sulfat": "",
+		"natrium": 7,
+		"kalium": 2.1,
+		"calcium": 79,
+		"magnesium": 19,
+		"chlorid": 8.4,
+		"nitrat": 8.6,
+		"sulfat": 82,
 		"hardness": 15.5,
 		"year": "2013",
 		"description": "Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumadenquelle"
@@ -1341,7 +1593,7 @@ tw.data.zones = {
 		"sulfat": 32,
 		"hardness": "8.5-9",
 		"year": "2013",
-		"description": "Bodenseewasser"
+		"description": "Reines Bodenseewasser"
 	},
 	"Weinsberg": {
 		"natrium": "5-6",
@@ -1353,7 +1605,7 @@ tw.data.zones = {
 		"sulfat": 32,
 		"hardness": "8.5-9",
 		"year": "2010",
-		"description": "Bodenseewasser"
+		"description": "Reines Bodenseewasser"
 	},
 	"Wüstenrot": {
 		"natrium": "",
@@ -1367,61 +1619,73 @@ tw.data.zones = {
 		"year": "",
 		"description": ""
 	},
+	"Zaberfeld Leonbronn": {
+		"natrium": 12.9,
+		"kalium": 2.88,
+		"calcium": 96.8,
+		"magnesium": 37.5,
+		"chlorid": 46.4,
+		"nitrat": 29.8,
+		"sulfat": 44.2,
+		"hardness": 22.2,
+		"year": "2013",
+		"description": "Eigenwasser"
+	},
 	"Zaberfeld Michelbach": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": "",
-		"sulfat": "",
+		"natrium": 5.2,
+		"kalium": 1.4,
+		"calcium": 48,
+		"magnesium": 8,
+		"chlorid": 7,
+		"nitrat": 4.2,
+		"sulfat": 34,
 		"hardness": 9,
-		"year": "",
-		"description": ""
+		"year": "2012",
+		"description": "Reines Bodenseewasser"
 	},
 	"Zaberfeld Ochsenburg": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": "",
-		"sulfat": "",
-		"hardness": 21.1,
-		"year": "",
-		"description": ""
-	},
-	"Zaberfeld Zone 2": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": "",
-		"sulfat": "",
-		"hardness": 9.3,
-		"year": "",
-		"description": ""
+		"natrium": 12.9,
+		"kalium": 2.88,
+		"calcium": 96.8,
+		"magnesium": 37.5,
+		"chlorid": 46.4,
+		"nitrat": 29.8,
+		"sulfat": 44.2,
+		"hardness": 22.2,
+		"year": "2013",
+		"description": "Eigenwasser"
 	},
 	"Zaberfeld Zone 1": {
-		"natrium": "",
-		"kalium": "",
-		"calcium": "",
-		"magnesium": "",
-		"chlorid": "",
-		"nitrat": "",
-		"sulfat": "",
-		"hardness": 19.1,
-		"year": "",
-		"description": ""
+		"natrium": 11.9,
+		"kalium": 2.62,
+		"calcium": 87.9,
+		"magnesium": 32.5,
+		"chlorid": 41,
+		"nitrat": 25.7,
+		"sulfat": 44.3,
+		"hardness": 19.8,
+		"year": "2013",
+		"description": "Mischwasser, 95 % Eigenwasser, 5 % Bodenseewasser"
+	},
+	"Zaberfeld Zone 2": {
+		"natrium": 5,
+		"kalium": 1.4,
+		"calcium": 48,
+		"magnesium": 8,
+		"chlorid": 7,
+		"nitrat": 4,
+		"sulfat": 34,
+		"hardness": 9.3,
+		"year": "2012",
+		"description": "Mischwasser, 95 % Bodenseewasser, 5 % Eigenwasser"
 	}
 }; tw.data.averageValues = {
-	"natrium": 6.7,
-	"kalium": 1.2,
-	"calcium": 58.8,
-	"magnesium": 12.8,
-	"chlorid": 13.8,
-	"nitrat": 12.7,
-	"sulfat": 40.5,
-	"hardness": 14.8
+	"natrium": 8,
+	"kalium": 1.4,
+	"calcium": 70.8,
+	"magnesium": 15.5,
+	"chlorid": 17,
+	"nitrat": 14.4,
+	"sulfat": 47.7,
+	"hardness": 14.7
 };

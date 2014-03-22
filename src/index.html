@@ -83,7 +83,6 @@
 			
 
 			<ul class="nav nav-tabs">
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="hardness">Härte</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="natrium">Natrium</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="kalium">Kalium</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="calcium">Calcium</a></li>
@@ -91,6 +90,7 @@
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="chlorid">Chlorid</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="nitrat">Nitrat</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="sulfat">Sulfat</a></li>
+				<li class="nav-li-main"><a data-toggle="tab" data-attribute="hardness">Härte</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="info"><span class="glyphicon glyphicon-info-sign"></span> Fragen und Antworten</a></li>
 			</ul>
 			
@@ -229,43 +229,41 @@
 								<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
 									<p>Die Wasserhärte gibt an, wie weich oder hart ein Wasser ist. Je mehr Calcium und Magnesium in einem Wasser enthalten sind, desto härter ist es.</p>
 									<p>Hartes Wasser kann in Küche und Bad Kalkflecken verursachen. Wegen seinem hohen Calcium- und Magnesiumgehalt ist es gesünder als weiches Wasser.<br />(Calcium: Aufbau von Knochen und Zähnen, Magnesium: Aufbau von Muskeln und Nerven)</p> 
-								
 								</div>
 								<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-									<div style="padding-left:34px">
-									<svg class="gauge-bar-img pull-right" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 750 136" preserveAspectRatio="xMinYMin meet">
-										<defs>
-											<pattern id="hardness-range-indicator" x="6" y="6" width="6" height="6" patternUnits="userSpaceOnUse">
-												<line class="range-indicator-bar" x1="0" x2="6" y1="6" y2="0" />
-											</pattern>
-										</defs>
+									<div style="padding-right:34px">
+										<img src="img/haushalt.svg" class="pull-right" />
+										<table class="table table-gauge-description gauge-description gauge-bar-description">
+											<tr>
+												<th style="border:none;"><strong>Wert</strong></th>
+												<td style="border:none;"><strong><span class="gauge-value"></span> °dH</strong></td>
+											</tr>
+											<tr>
+												<th>Bereich</th>
+												<td><span class="gauge-value-label"></span></td>
+											</tr>
+											<tr>
+												<th>Durchschnitt<br /><small>Region Heilbronn</small></th>
+												<td><span class="gauge-average-value"></span> °dH</td>
+											</tr>
+										</table>
 										
-										<g class="gauge-bars"></g>
-										<g class="gauge-bar-labels"></g>
-										
-										<g class="gauge-value-indicators">
-											<rect class="gauge-bar-range-indicator" x="63.5" y="64" width="25" height="40" fill="url(#hardness-range-indicator)" />
-											<circle class="gauge-bar-ball" cx="63.5" cy="84" r="13" />
-										</g>
-									</svg>
-									
-									<div class="clearfix"></div>
-									
-									<img src="img/haushalt.svg" class="pull-right" />
-									<table class="table table-gauge-description gauge-description gauge-bar-description">
-										<tr>
-											<th style="border:none;"><strong>Wert</strong></th>
-											<td style="border:none;"><strong><span class="gauge-value"></span> °dH</strong></td>
-										</tr>
-										<tr>
-											<th>Bereich</th>
-											<td><span class="gauge-value-label"></span></td>
-										</tr>
-										<tr>
-											<th>Durchschnitt<br /><small>Region Heilbronn</small></th>
-											<td><span class="gauge-average-value"></span> °dH</td>
-										</tr>
-									</table>
+										<p><br /></p>
+										<svg class="gauge-bar-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 750 136" preserveAspectRatio="xMinYMin meet">
+											<defs>
+												<pattern id="hardness-range-indicator" x="6" y="6" width="6" height="6" patternUnits="userSpaceOnUse">
+													<line class="range-indicator-bar" x1="0" x2="6" y1="6" y2="0" />
+												</pattern>
+											</defs>
+											
+											<g class="gauge-bars"></g>
+											<g class="gauge-bar-labels"></g>
+											
+											<g class="gauge-value-indicators">
+												<rect class="gauge-bar-range-indicator" x="63.5" y="64" width="25" height="40" fill="url(#hardness-range-indicator)" />
+												<circle class="gauge-bar-ball" cx="63.5" cy="84" r="13" />
+											</g>
+										</svg>
 									</div>
 								</div>
 							</div>
