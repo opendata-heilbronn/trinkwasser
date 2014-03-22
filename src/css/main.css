@@ -25,10 +25,10 @@ h1 {
 	margin-bottom: 24px;
 }
 .state-1 h1 {
-	margin: 1.5em 0 1em 0;
+	margin: 1.5em 0 0.75em 0;
 }
 .form-choose-location-quick {
-	margin-bottom: 60px;
+	margin: 10px 0 60px 0;
 }
 .footer a,
 .footer {
@@ -114,7 +114,6 @@ svg text {
 .compare-nav {
 	padding-left: 50px;
 	padding-top: 2em;
-	text-align: center;
 }
 
 /* gauge */
@@ -126,7 +125,7 @@ svg text {
 	height: 505px;
 	width: 155px;
 }
-@media (min-width: 992px) {
+@media (min-width: 989px) {
 	.gauge-glass-img {
 		margin-top: -105px;
 	}

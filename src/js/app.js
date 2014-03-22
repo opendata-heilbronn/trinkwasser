@@ -246,6 +246,10 @@ var tw = {
 		tw.gauge.init();
 		tw.comparison.init();
 		tw.map.init();
+
+		if (window.location.href.indexOf('embed') > -1) {
+			$('h1').hide();
+		}
 		// $('.city').val('Erlenbach').trigger('change');
 	};
 })(tw, jQuery);
