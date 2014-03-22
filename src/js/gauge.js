@@ -257,11 +257,10 @@
 	var glassInstance = null;
 	var barInstance = null;
 
-	var toggleDescription = function(attribute, value, valueLabel) {
+	var toggleDescription = function(attribute, valueLabel) {
 		d3.selectAll('.attribute-description').attr('style', 'display:none;');
 		d3.selectAll('.attribute-description-' + attribute).attr('style', '');
 
-		d3.selectAll('.gauge-value').text(value.toString().replace(/\./g, ','));
 		d3.selectAll('.gauge-legal-limit').text(nutrientLegalLimits[attribute]);
 		d3.selectAll('.gauge-daily-dosis').text(tw.data.nutrientDailyDosis[attribute]);
 		d3.selectAll('.gauge-daily-dosis-container').attr('style', (tw.data.nutrientDailyDosis[attribute]) ? '' : 'display:none;');
@@ -269,15 +268,21 @@
 		d3.selectAll('.gauge-average-value').text(tw.data.averageValues[attribute].toString().replace(/\./g, ','));
 	};
 
-	var update = function(attribute, value) {
+	var update = function(attribute) {
 		var instanceToShow = glassInstance, instanceToHide = barInstance;
 		if (attribute === 'hardness') {
 			instanceToShow = barInstance, instanceToHide = glassInstance;
 		}
 
 		instanceToHide.hide();
-		instanceToShow.show().applyAttribute(attribute).applyValue(value);
-		toggleDescription(attribute, value, instanceToShow.getValueLabel());
+		instanceToShow.show().applyAttribute(attribute);
+		toggleDescription(attribute, instanceToShow.getValueLabel());
+	};
+
+	var updateValue = function(attribute, value) {
+		var instance = (attribute === 'hardness') ? barInstance : glassInstance;
+		instance.applyValue(value);
+		d3.selectAll('.gauge-value').text(value.toString().replace(/\./g, ','));
 	};
 
 	var init = function() {
@@ -288,6 +293,7 @@
 
 	tw.gauge = {
 		'init': init,
-		'update': update
+		'update': update,
+		'updateValue': updateValue
 	};
 })(tw, d3);

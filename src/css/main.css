@@ -146,10 +146,10 @@ svg text {
 	stroke-miterlimit: 10;
 	fill: none;
 }
-.gauge-description {
+.table-gauge-description {
 	width: auto;
 }
-.gauge-description th {
+.table-gauge-description th {
 	font-weight: normal;
 	max-width: 140px;
 }

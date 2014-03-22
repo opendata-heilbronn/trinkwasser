@@ -74,8 +74,9 @@ var tw = {
 				$('.result-without-value').hide();
 				$('.result-with-value').show();
 
+				tw.gauge.update(attribute);
 				if (section === 'explanation') {
-					tw.gauge.update(attribute, zoneData[attribute]);
+					tw.gauge.updateValue(attribute, zoneData[attribute]);
 				}
 				if (section === 'compare') {
 					tw.comparison.update(attribute, zoneData[attribute]);
@@ -182,10 +183,10 @@ var tw = {
 		}
 	};
 
-	var onSubmit = function() {
+	var onSubmit = function(e) {
+		e.preventDefault();
 		hasSelectedFirstLocation = $('#city').val() ? true : false;
 		updateZone();
-		return false;
 	};
 
 	var setupQuickForm = function() {

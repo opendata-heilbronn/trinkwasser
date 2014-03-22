@@ -118,8 +118,7 @@
 										<p>Empfohlen sind mindestens 550 mg Natrium pro Tag. Für eine ärztlich empfohlene natriumarme Ernährung oder für Säuglinge sind weniger als 20 mg/l Natrium geeignet.</p>
 									</div>
 									<div class="attribute-description attribute-description-kalium" style="display:none;">
-										<p>Kalium hält den Wasser- und Elektrolythaushalt im Gleichgewicht, ist wichtig für einen regelmäßigen Herzschlag, die Nerven und
-											reguliert den Blutdruck.</p>
+										<p>Kalium hält den Wasser- und Elektrolythaushalt im Gleichgewicht, reguliert den Blutdruck und ist wichtig für einen regelmäßigen Herzschlag sowie die Nerven.</p>
 										<p>Zu einem Kaliummangel kann es nach größeren Flüssigkeitsverlusten, z. B. durch lang andauernde Durchfallerkrankungen, Erbrechen
 											oder längere Einnahme von Entwässerungs- und Abführmitteln.</p>
 										<p>Ein zu hoher Kaliumgehalt im Blut kann zu Herzversagen führen, da Kalium die Kontraktion des Herzmuskels hemmt.</p>
@@ -205,7 +204,7 @@
 										<line class="average-indicator" x1="36" x2="68" y1="822" y2="822"></line>
 									</svg>
 									
-									<table class="table gauge-description gauge-glass-description pull-right">
+									<table class="table table-gauge-description gauge-description gauge-glass-description pull-right">
 										<tr>
 											<th style="border:none;"><strong>Wert</strong></th>
 											<td style="border:none;"><strong><span class="gauge-value"></span> mg/l</strong></td>
@@ -214,13 +213,13 @@
 											<th>Grenzwert</th>
 											<td><span class="gauge-legal-limit"></span></td>
 										</tr>
-										<tr class="gauge-daily-dosis-container">
-											<th>Tagesbedarf</th>
-											<td><span class="gauge-daily-dosis">~</span></td>
-										</tr>
 										<tr>
 											<th>Durchschnitt<br /><small>Region Heilbronn</small></th>
 											<td><span class="gauge-average-value"></span> mg/l<br /><small>(rote Linie)</small></td>
+										</tr>
+										<tr class="gauge-daily-dosis-container">
+											<th>Tagesbedarf</th>
+											<td><span class="gauge-daily-dosis">~</span></td>
 										</tr>
 									</table>
 								</div>
@@ -253,7 +252,7 @@
 									<div class="clearfix"></div>
 									
 									<img src="img/haushalt.svg" class="pull-right" />
-									<table class="table gauge-description gauge-bar-description">
+									<table class="table table-gauge-description gauge-description gauge-bar-description">
 										<tr>
 											<th style="border:none;"><strong>Wert</strong></th>
 											<td style="border:none;"><strong><span class="gauge-value"></span> °dH</strong></td>
@@ -280,7 +279,7 @@
 									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="teusser">Teusser Naturell</button>
 									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="vittel">Vittel</button>
 									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="self" style="margin-top:2em;">mein Trinkwasser</button>
-									<p style="margin-top:3em;text-align:left;font-size:12px;">Beispielhaft wurden zwei überregional bekannte sowie zwei Wasser aus dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser.</p>
+									<p style="margin-top:3em;text-align:left;font-size:12px;">Beispielhaft wurden zwei überregional bekannte Wasser sowie zwei Wasser aus dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser.</p>
 								</div>
 								<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
 									<svg class="bottle-img pull-right" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 258 837" preserveAspectRatio="xMinYMin meet">
@@ -333,20 +332,50 @@
 										</g>
 									</svg>
 									
-									<table class="table gauge-description gauge-glass-description pull-right">
-										<tr>
-											<th style="border:none;"><strong class="comparison-water-label">-</strong></th>
-											<td style="border:none;"><strong class="comparison-water-value">-</strong></td>
-										</tr>
-										<tr>
-											<th>mein Trinkwasser</th>
-											<td><span class="comparison-water-value-self"></span><br /><small>(rote Linie)</small></td>
-										</tr>
-										<tr class="gauge-daily-dosis-container">
-											<th>Tagesbedarf</th>
-											<td><span class="gauge-daily-dosis">~</span></td>
-										</tr>
-									</table>
+									<div class="gauge-description gauge-glass-description pull-right" style="max-width:215px">
+										<table class="table table-gauge-description">
+											<tr>
+												<th style="border:none;"><strong class="comparison-water-label">-</strong></th>
+												<td style="border:none;"><strong class="comparison-water-value">-</strong></td>
+											</tr>
+											<tr>
+												<th>mein Trinkwasser</th>
+												<td><span class="comparison-water-value-self"></span><br /><small>(rote Linie)</small></td>
+											</tr>
+											<tr class="gauge-daily-dosis-container">
+												<th>Tagesbedarf</th>
+												<td><span class="gauge-daily-dosis">~</span></td>
+											</tr>
+										</table>
+										
+										<p><br /></p>
+										<div class="attribute-description attribute-description-natrium" style="display:none;">
+											<p>Natrium reguliert den Wasserhaushalt.</p>
+											<p>Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit Bluthochdruck oder Säuglinge sollten natriumarmes Wasser trinken.<br /><em>(weniger als 20 mg/l)</em></p>
+										</div>
+										<div class="attribute-description attribute-description-kalium" style="display:none;">
+											<p>Kalium hält den Wasser- und Elektrolythaushalt im Gleichgewicht, reguliert den Blutdruck und ist wichtig für einen regelmäßigen Herzschlag sowie die Nerven.</p>
+										</div>
+										<div class="attribute-description attribute-description-calcium" style="display:none;">
+											<p>Calcium wird zur Bildung der Knochen und Zähne gebraucht.</p>
+											<p>Auch für die Muskeln und die Blutgerinnung ist Calcium wichtig.</p>
+										</div>
+										<div class="attribute-description attribute-description-magnesium" style="display:none;">
+											<p>Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven auf Muskeln, für den Eiweißaufbau sowie und die
+												Knochenmineralisation.</p>
+										</div>
+										<div class="attribute-description attribute-description-chlorid" style="display:none;">
+											<p>Chlorid ist für Regulation des Wasserhaushaltes, die Nerven, das Herz und die Muskeln sowie den Säure-Basenhaushalt wichtig.</p>
+											<p>Da Chlorid ein Bestandteil von Kochsalz ist, wird über die Nahrung meist mehr als genügend Chlorid aufgenommen.</p>
+										</div>
+										<div class="attribute-description attribute-description-nitrat" style="display:none;">
+											<p>Nitrat wird im Körper in giftiges Nitrit umgewandelt. Zudem können aus Nitriten krebserregende Nitrosamine entstehen.</p>
+											<p>Das Nitrit selbst kann eine Sauerstoffunterversorgung aller Organe und Gewebe bewirken. Säuglinge sind hierfür besonders anfällig.</p>
+										</div>
+										<div class="attribute-description attribute-description-sulfat" style="display:none;">
+											<p>Sulfate wirken verdauungsfördernd, ab einem Gehalt von 1200 mg/l sogar abführend.</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

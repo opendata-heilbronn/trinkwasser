@@ -143,8 +143,6 @@
 		bottleInstance.updateIndicator(selfValue);
 
 		d3.selectAll('.comparison-water-value-self').text(formatValue(selfValue) + ' ' + getUnit());
-		d3.selectAll('.gauge-daily-dosis').text(tw.data.nutrientDailyDosis[attribute]);
-		d3.selectAll('.gauge-daily-dosis-container').attr('style', (tw.data.nutrientDailyDosis[attribute]) ? '' : 'display:none;');
 
 		if (referenceWater) {
 			bottleInstance.applyValue(getValue());
