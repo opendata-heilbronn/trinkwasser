@@ -25,9 +25,9 @@
 <body class="bg-gradient state-1">
 	<div class="container">
 		<div class="pull-right">
-			<h1><small>Region Heilbronn</small></h1>
+			<h1 style="display:none"><small>Region Heilbronn</small></h1>
 		</div>
-		<h1>Was steckt in meinem Leitungswasser?</h1>
+		<h1 style="display:none">Was steckt in meinem Leitungswasser?</h1>
 		
 		<div class="choose-location">
 			<div class="well choose-location-well">
@@ -141,7 +141,7 @@
 									<div class="attribute-description attribute-description-nitrat" style="display:none;">
 										<p>Nitrat wird im Körper in giftiges Nitrit umgewandelt. Zudem können aus Nitriten krebserregende Nitrosamine entstehen.</p>
 										<p>Das Nitrit selbst kann eine Sauerstoffunterversorgung aller Organe und Gewebe bewirken. Säuglinge sind hierfür besonders anfällig.</p> 
-										<p>Daher beträgt der Grenzwert in Mineralwasser 50 mg/l. Die im Trinkwasser der Region enthaltenen Nitratwerte liegen mit 5 bis 30 mg/l weit unter dem Grenzwert und sind daher als unbedenklich einzustufen.</p>
+										<p>Daher beträgt der Grenzwert in Mineralwasser 50 mg/l. Die im Trinkwasser der Region enthaltenen Nitratwerte liegen mit 5 bis 38 mg/l unter dem Grenzwert und sind daher als unbedenklich einzustufen.</p>
 										<p>Zum Vergleich: Bodensee-Wasser enthält nur 4 mg Nitrat pro Liter.</p> 
 									</div>
 									<div class="attribute-description attribute-description-sulfat" style="display:none;">
@@ -204,7 +204,7 @@
 										<line class="average-indicator" x1="36" x2="68" y1="822" y2="822"></line>
 									</svg>
 									
-									<table class="table table-gauge-description gauge-description gauge-glass-description pull-right">
+									<table class="table table-gauge-description gauge-description gauge-glass-description pull-right" style="max-width:200px">
 										<tr>
 											<th style="border:none;"><strong class="highlight">Wert</strong></th>
 											<td style="border:none;"><strong class="highlight"><span class="gauge-value"></span> mg/l</strong></td>
@@ -382,7 +382,11 @@
 						</div>
 						
 						<div class="section section-map" style="display:none;">
-							<svg class="map-img" style="width:100%;height:1170px;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1170 1170" preserveAspectRatio="xMinYMin meet">
+							<div class="alert alert-warning">Die Karte steht derzeit nur für die Stadt Heilbronn zur Verfügung und befindet sich noch in einem experimentellen Stadium.</div>
+							
+							<p>Die Straßen mit den niedrigsten Werten sind tiefblau, die Straßen mit den höchsten Werten rot eingefärbt.</p>
+						
+							<svg class="map-img" style="width:600px;height:1170px;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1170 1170" preserveAspectRatio="xMinYMin meet">
 								<g class="areas"></g>
 								<g class="zones"></g>
 							</svg>

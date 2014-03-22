@@ -21,18 +21,37 @@
 		projection = d3.geo.mercator().center(center).scale(scale).translate(offset);
 		path = path.projection(projection);
 
-		var z = d3.scale.linear().domain([9, 16]).range(colorbrewer.Oranges[8]);
-
 		svg.select('.areas').selectAll("path").data(areaData.features).enter().append("path").attr("d", path);
+
+		var z = d3.scale.linear().domain([9, 16]).range(['#2166ac', '#b2182b']);
 		svg.select('.zones').selectAll("path").data(zoneData.features).enter().append("path").attr("d", path).attr('stroke', function(d) {
 			return z(tw.utils.getMeanValue(d.properties.haertegrad));
 		});
+
+		var hnZones = {
+			'14-18': tw.data.zones['Heilbronn 14-18'],
+			'14': tw.data.zones['Heilbronn 14'],
+			'10': tw.data.zones['Heilbronn 10'],
+			'9': tw.data.zones['Heilbronn 9'],
+		};
+
+		this.update = function(attribute) {
+			var values = [];
+			Object.keys(hnZones).forEach(function(hnZone) {
+				values.push(tw.utils.getMeanValue(hnZones[hnZone][attribute]));
+			});
+
+			z = d3.scale.linear().domain([d3.min(values), d3.max(values)]).range(['#2166ac', '#b2182b']);
+			svg.select('.zones').selectAll('path').transition().duration(300).ease('outCirc').attr('stroke', function(d) {
+				var hnZone = hnZones[d.properties.haertegrad];
+				if (hnZone) {
+					return z(tw.utils.getMeanValue(hnZone[attribute]));
+				}
+			});
+		};
 	};
 
 	var mapInstance = null;
-
-	var update = function() {
-	};
 
 	var init = function() {
 		$.getJSON('data/gemeinden_simplify20_hn.geojson', function(data) {
@@ -43,6 +62,12 @@
 			});
 		});
 		return this;
+	};
+
+	var update = function(attribute) {
+		if (mapInstance) {
+			mapInstance.update(attribute);
+		}
 	};
 
 	tw.map = {

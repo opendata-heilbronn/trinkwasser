@@ -81,6 +81,9 @@ var tw = {
 				if (section === 'compare') {
 					tw.comparison.update(attribute, zoneData[attribute]);
 				}
+				if (section === 'map') {
+					tw.map.update(attribute);
+				}
 			} else {
 				$('.result-with-value').hide();
 				$('.result-without-value').show();
@@ -243,9 +246,10 @@ var tw = {
 		tw.comparison.init();
 		tw.map.init();
 
-		if (window.location.href.indexOf('embed') > -1) {
-			$('h1').hide();
+		if (window.location.href.indexOf('embed') < 0) {
+			$('h1').show();
 		}
 		// $('.city').val('Erlenbach').trigger('change');
+		// $('.switch-to-section[data-section="map"]').trigger('click');
 	};
 })(tw, jQuery);

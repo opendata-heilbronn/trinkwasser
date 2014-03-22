@@ -107,11 +107,14 @@ svg text {
 
 /* map */
 .map-img path {
-	stroke-width: 1px;
+	stroke-width: 3px;
 	fill: transparent;
 }
 .areas path {
 	stroke: #2a9fd6;
+	fill: #FFF;
+}
+.zones path {
 }
 
 .compare-nav {
