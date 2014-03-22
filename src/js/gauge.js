@@ -230,7 +230,7 @@
 			updateRangeIndicatorPosition();
 			return this;
 		};
-		this.getValueLabel = function() {
+		this.getValueLabel = function(value) {
 			if (attribute === 'hardness' && value > 21.3) {
 				return '(sehr) hart';
 			}
@@ -257,14 +257,13 @@
 	var glassInstance = null;
 	var barInstance = null;
 
-	var toggleDescription = function(attribute, valueLabel) {
+	var toggleDescription = function(attribute) {
 		d3.selectAll('.attribute-description').attr('style', 'display:none;');
 		d3.selectAll('.attribute-description-' + attribute).attr('style', '');
 
 		d3.selectAll('.gauge-legal-limit').text(nutrientLegalLimits[attribute]);
 		d3.selectAll('.gauge-daily-dosis').text(tw.data.nutrientDailyDosis[attribute]);
 		d3.selectAll('.gauge-daily-dosis-container').attr('style', (tw.data.nutrientDailyDosis[attribute]) ? '' : 'display:none;');
-		d3.selectAll('.gauge-value-label').text(valueLabel);
 		d3.selectAll('.gauge-average-value').text(tw.data.averageValues[attribute].toString().replace(/\./g, ','));
 	};
 
@@ -276,13 +275,14 @@
 
 		instanceToHide.hide();
 		instanceToShow.show().applyAttribute(attribute);
-		toggleDescription(attribute, instanceToShow.getValueLabel());
+		toggleDescription(attribute);
 	};
 
 	var updateValue = function(attribute, value) {
 		var instance = (attribute === 'hardness') ? barInstance : glassInstance;
 		instance.applyValue(value);
 		d3.selectAll('.gauge-value').text(value.toString().replace(/\./g, ','));
+		d3.selectAll('.gauge-value-label').text(instance.getValueLabel(value));
 	};
 
 	var init = function() {

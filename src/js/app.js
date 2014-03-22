@@ -26,7 +26,7 @@ var tw = {
 		if (zoneData) {
 			$('.zone-id').text(zoneId);
 			$('.zone-data-year').text(zoneData.year);
-			$('.zone-description').text(zoneData.description);
+			$('.zone-description').html(zoneData.description);
 			$('.zone-about').toggle((zoneData.year || zoneData.description) ? true : false);
 			$('.zone-year-container').toggle(zoneData.year ? true : false);
 		}

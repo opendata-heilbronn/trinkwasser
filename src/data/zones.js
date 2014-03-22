@@ -813,7 +813,7 @@ tw.data.zones = {
 		"sulfat": 165,
 		"hardness": 26.2,
 		"year": "2013",
-		"description": "100 % Eigenwasser"
+		"description": "100 % Eigenwasser<br /><br />Die Wasserversorgung der Gemeinde Jagsthausen ist eine vollkommene Eigenwasserversorgung - ohne Beimischung von Fremdwasser. “Wir haben hier ordentliches Wasser, das zwar hart ist, weil es aus der Muschelkalkschicht kommt. Aber wir sehen keinen Anlass für eine Beimischung von Fremdwasser, wie es andere Kommunen tun”, sagt Bürgermeister Roland Halter. Beschwerden aus der Gemeinde gäbe es keine, viele Einwohner hätten eine Enthärtungsanlage, so der Hinweis des Bürgermeisters. Eine Anbindung an Bodenseewasser sei im Fall von Jagsthausen mit hohen Investitionskosten verbunden und derzeit kein Thema."
 	},
 	"Kirchardt": {
 		"natrium": 6.8,
@@ -1679,7 +1679,8 @@ tw.data.zones = {
 		"year": "2012",
 		"description": "Mischwasser, 95 % Bodenseewasser, 5 % Eigenwasser"
 	}
-}; tw.data.averageValues = {
+};
+tw.data.averageValues = {
 	"natrium": 8,
 	"kalium": 1.4,
 	"calcium": 70.8,
