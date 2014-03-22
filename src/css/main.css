@@ -30,6 +30,9 @@ h1 {
 .form-choose-location-quick {
 	margin: 10px 0 60px 0;
 }
+.highlight {
+	color: #FFBE17;
+}
 .footer a,
 .footer {
 	color: #EEE;
