@@ -5,8 +5,8 @@
 		"hardness": 180,
 		"natrium": 120,
 		"kalium": 12,
-		"calcium": 500,
-		"magnesium": 800,
+		"calcium": 600,
+		"magnesium": 120,
 		"chlorid": 240,
 		"nitrat": 60,
 		"sulfat": 1600
