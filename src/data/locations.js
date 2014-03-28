@@ -274,6 +274,44 @@ tw.data.locations = {
 		"Wollenberg": {}
 	},
 	"Bad Wimpfen": {},
+	"Beilstein": {
+		"Beilstein": {
+			"Hochbehälter Rad (Beilstein West)": [
+				"Stadtkern",
+				"Oberstenfelder Straße",
+				"Gewerbegebiet",
+				"Wohngebiet West I",
+				"Wohngebiet West II",
+				"Wohngebiet West III"
+			],
+			"Hochbehälter Langhans (Beilstein Ost)": [
+				"Schmidhausener Straße",
+				"Berliner Straße",
+				"Breslauer Straße",
+				"Kirschenrain",
+				"Kreppgartenstraße",
+				"Königsberger Straße",
+				"Danziger Straße,",
+				"Wohngebiete Obere Au",
+				"Burgäcker",
+				"Landgraben",
+				"Löchle",
+				"Ob dem Weiler,",
+				"Schloßstraße",
+				"Amselweg",
+				"Im Ruhl",
+				"Jettenbach",
+				"Gagernberg"
+			]
+		},
+		"Billensbach": {},
+		"Maad": {},
+		"Kaisersbach": {},
+		"Etzlenswenden": {},
+		"Farnersberg": {},
+		"Stocksberg": {},
+		"Klingen": {}
+	},
 	"Brackenheim": {
 		"Botenheim": {},
 		"Brackenheim": {},
@@ -1561,7 +1599,7 @@ tw.data.locations = {
 	},
 	"Massenbachhausen": {},
 	"Möckmühl": {
-		"Bittelbronn": {},
+		"Bittelbach": {},
 		"Korb": {},
 		"Möckmühl": {},
 		"Ruchsen": {},

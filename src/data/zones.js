@@ -311,6 +311,114 @@ tw.data.zones = {
 		"year": "2013",
 		"description": "Mischwasser"
 	},
+	"Beilstein Hochbehälter Rad (Beilstein West)": {
+		"natrium": 9,
+		"kalium": 1.7,
+		"calcium": 94.9,
+		"magnesium": 21,
+		"chlorid": 27.6,
+		"nitrat": 27.1,
+		"sulfat": 23.5,
+		"hardness": 18.1,
+		"year": "2013",
+		"description": "Mischwasser"
+	},
+	"Beilstein Hochbehälter Langhans (Beilstein Ost)": {
+		"natrium": 7.4,
+		"kalium": 1.5,
+		"calcium": 81.9,
+		"magnesium": 38.1,
+		"chlorid": 14.6,
+		"nitrat": 21.5,
+		"sulfat": 34.9,
+		"hardness": 20.2,
+		"year": "2013",
+		"description": "Eigenwasser"
+	},
+	"Beilstein Billensbach": {
+		"natrium": 4.4,
+		"kalium": 1.1,
+		"calcium": 70.2,
+		"magnesium": 35.4,
+		"chlorid": 5.7,
+		"nitrat": 25.8,
+		"sulfat": 16.1,
+		"hardness": 18,
+		"year": "2013",
+		"description": ""
+	},
+	"Beilstein Maad": {
+		"natrium": 4.4,
+		"kalium": 1.1,
+		"calcium": 70.2,
+		"magnesium": 35.4,
+		"chlorid": 5.7,
+		"nitrat": 25.8,
+		"sulfat": 16.1,
+		"hardness": 18,
+		"year": "2013",
+		"description": ""
+	},
+	"Beilstein Kaisersbach": {
+		"natrium": 6.1,
+		"kalium": 1.2,
+		"calcium": 65.3,
+		"magnesium": 34.1,
+		"chlorid": 6.5,
+		"nitrat": 18.3,
+		"sulfat": 18.1,
+		"hardness": 17,
+		"year": "2013",
+		"description": ""
+	},
+	"Beilstein Etzlenswenden": {
+		"natrium": 6.3,
+		"kalium": 1.7,
+		"calcium": 65.1,
+		"magnesium": 34,
+		"chlorid": 6.6,
+		"nitrat": 18.1,
+		"sulfat": 18.2,
+		"hardness": 16.9,
+		"year": "2013",
+		"description": ""
+	},
+	"Beilstein Farnersberg": {
+		"natrium": 6.3,
+		"kalium": 1.7,
+		"calcium": 65.1,
+		"magnesium": 34,
+		"chlorid": 6.6,
+		"nitrat": 18.1,
+		"sulfat": 18.2,
+		"hardness": 16.9,
+		"year": "2013",
+		"description": ""
+	},
+	"Beilstein Stocksberg": {
+		"natrium": 17,
+		"kalium": 1.3,
+		"calcium": 57,
+		"magnesium": 28.9,
+		"chlorid": 33.1,
+		"nitrat": 8.5,
+		"sulfat": 13.4,
+		"hardness": 14.6,
+		"year": "2013",
+		"description": ""
+	},
+	"Beilstein Klingen": {
+		"natrium": 4.3,
+		"kalium": 0.82,
+		"calcium": 65.6,
+		"magnesium": 33.8,
+		"chlorid": 4.8,
+		"nitrat": 20.1,
+		"sulfat": 18.7,
+		"hardness": 17,
+		"year": "2013",
+		"description": ""
+	},
 	"Brackenheim Botenheim": {
 		"natrium": 12.4,
 		"kalium": 1.8,
@@ -813,7 +921,7 @@ tw.data.zones = {
 		"sulfat": 165,
 		"hardness": 26.2,
 		"year": "2013",
-		"description": "100 % Eigenwasser"
+		"description": "100 % Eigenwasser.\n\nDie Wasserversorgung der Gemeinde Jagsthausen ist eine vollkommene Eigenwasserversorgung - ohne Beimischung von Fremdwasser. “Wir haben hier ordentliches Wasser, das zwar hart ist, weil es aus der Muschelkalkschicht kommt. Aber wir sehen keinen Anlass für eine Beimischung von Fremdwasser, wie es andere Kommunen tun”, sagt Bürgermeister Roland Halter. Beschwerden aus der Gemeinde gäbe es keine, viele Einwohner hätten eine Enthärtungsanlage, so der Hinweis des Bürgermeisters. Eine Anbindung an Bodenseewasser sei im Fall von Jagsthausen mit hohen Investitionskosten verbunden und derzeit kein Thema."
 	},
 	"Kirchardt": {
 		"natrium": 6.8,
@@ -1019,7 +1127,7 @@ tw.data.zones = {
 		"year": "",
 		"description": "Eigenwasser"
 	},
-	"Möckmühl Bittelbronn": {
+	"Möckmühl Bittelbach": {
 		"natrium": 5.2,
 		"kalium": 1.4,
 		"calcium": 48,
@@ -1743,9 +1851,9 @@ tw.data.zones = {
 	"natrium": 8,
 	"kalium": 1.4,
 	"calcium": 71.4,
-	"magnesium": 15.6,
-	"chlorid": 17.1,
-	"nitrat": 14.6,
-	"sulfat": 47.6,
-	"hardness": 14.8
+	"magnesium": 16.6,
+	"chlorid": 16.9,
+	"nitrat": 14.9,
+	"sulfat": 46,
+	"hardness": 14.9
 };
