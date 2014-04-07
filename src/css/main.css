@@ -154,7 +154,7 @@ svg text {
 .gauge-description li {
 	margin-bottom: 1em;
 }
-.gauge-glass-description {
+.gauge-description {
 	margin-top: 48px;
 	margin-right: 16px;
 }
@@ -233,7 +233,7 @@ svg text {
 		height: 350px;
 		width: 80px;
 	}
-	.gauge-description {
+	.gauge-glass-description {
 		font-size: 12px;
 	}
 	.bottle-img {
