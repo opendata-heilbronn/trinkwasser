@@ -113,8 +113,8 @@
 	};
 
 	var bottleInstance = null;
-	var referenceWater = null;
-	var valueLabel = '';
+	var referenceWater = 'volvic';
+	var valueLabel = 'Volvic';
 	var attribute = null;
 	var selfValue = null;
 

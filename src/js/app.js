@@ -95,6 +95,8 @@ var tw = {
 		$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
 			attribute = $(e.target).data('attribute');
 			$('.current-attribute-label').text($(e.target).text());
+			section = 'explanation';
+			updateSection();
 			updateAttributeContent();
 		});
 
@@ -216,15 +218,18 @@ var tw = {
 		$('.city').html(generateOptionsHtml(cities, true));
 	};
 
+	var updateSection = function() {
+		$('.section').hide();
+		$('.section-' + section).show();
+		if ($('body').scrollTop() > $('.result-with-value').offset().top) {
+			$('body').scrollTop($('.result-with-value').offset().top);
+		}
+	};
+
 	var setupSectionSwitch = function() {
 		$('.switch-to-section').on('click', function() {
-			$('.section').hide();
-			$('.section-' + $(this).data('section')).show();
-
-			$('.switch-to-section').removeClass('active');
-			$(this).addClass('active');
-
 			section = $(this).data('section');
+			updateSection();
 			updateAttributeContent();
 		});
 	};

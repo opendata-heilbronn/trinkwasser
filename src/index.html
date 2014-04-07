@@ -24,7 +24,7 @@
 </head>
 <body class="bg-gradient state-1">
 	<div class="container">
-		<div class="pull-right">
+		<div class="pull-right hidden-xs">
 			<h1 style="display:none"><small>Region Heilbronn</small></h1>
 		</div>
 		<h1 style="display:none">Was steckt in meinem Leitungswasser?</h1>
@@ -82,7 +82,7 @@
 			</form>
 			
 
-			<ul class="nav nav-tabs">
+			<ul class="nav nav-tabs responsive">
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="natrium">Natrium</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="kalium">Kalium</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="calcium">Calcium</a></li>
@@ -100,17 +100,10 @@
 			
 			<div class="result-with-value">
 				<div class="row">
-					<div class="col-lg-3 col-md-3">
-						<ul class="nav nav-pills nav-stacked" style="margin-top:0">
-							<li class="active switch-to-section" data-section="explanation"><a><span class="current-attribute-label"></span>-Wert</a></li>
-							<li class="switch-to-section" data-section="compare"><a>Vergleich mit Mineralwasser</a></li>
-							<li class="switch-to-section" data-section="map"><a>Karte</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-9 col-md-9">
+					<div class="col-lg-12 col-md-12">
 						<div class="section section-explanation">
 							<div class="row gauge-glass-container" style="display:none;">
-								<div class="col-lg-6 col-md-6">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-7">
 									<div class="attribute-description attribute-description-natrium" style="display:none;">
 										<p>Natrium reguliert den Wasserhaushalt.</p>
 										<p>Wieviel Natrium für wen geeignet ist, hängt stark vom Einzelnen ab: Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit Bluthochdruck oder Säuglinge sollten natriumarmes Wasser (weniger als 20 Milligramm pro Liter) trinken.</p>
@@ -153,8 +146,10 @@
 										<p>Doch auch Wasser mit wenig Sulfat hat etwas Gutes: Es wird geschmacklich meist positiv empfunden. Hohe Sulfatgehalte hingegen
 											äußern sich in einem süßen bis bitterem Geschmack.</p>
 									</div>
+									<br />
+									<p><button type="button" class="btn btn-warning switch-to-section hidden-xs hidden-sm" data-section="compare"><span class="glyphicon glyphicon-chevron-right"></span> Vergleich mit Mineralwasser</button></p>
 								</div>
-								<div class="col-lg-6 col-md-6">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-5">
 									<svg class="gauge-glass-img pull-right" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 186 837" preserveAspectRatio="xMinYMin meet">
 										<text class="gauge-unit" x="78" y="175" text-anchor="left">mg/l</text>
 									
@@ -204,24 +199,12 @@
 										<line class="average-indicator" x1="36" x2="68" y1="822" y2="822"></line>
 									</svg>
 									
-									<table class="table table-gauge-description gauge-description gauge-glass-description pull-right" style="max-width:200px">
-										<tr>
-											<th style="border:none;"><strong class="highlight">Wert</strong></th>
-											<td style="border:none;"><strong class="highlight"><span class="gauge-value"></span> mg/l</strong></td>
-										</tr>
-										<tr>
-											<th>Grenzwert</th>
-											<td><span class="gauge-legal-limit"></span></td>
-										</tr>
-										<tr>
-											<th>Durchschnitt<br /><small>Region Heilbronn</small></th>
-											<td><span class="gauge-average-value"></span> mg/l<br /><small>(rote Linie)</small></td>
-										</tr>
-										<tr class="gauge-daily-dosis-container">
-											<th>Tagesbedarf</th>
-											<td><span class="gauge-daily-dosis">~</span></td>
-										</tr>
-									</table>
+									<ul class="gauge-description gauge-glass-description pull-right list-unstyled" style="max-width:200px;">
+										<li class="highlight"><strong>Wert: <span class="gauge-value"></span> mg/l</strong></li>
+										<li>Grenzwert: <span class="gauge-legal-limit"></span></li>
+										<li>Durchschnitt: <span class="gauge-average-value"></span> mg/l<br /><small>(Region Heilbronn, rote Linie)</small></li>
+										<li class="gauge-daily-dosis-container">Tagesbedarf: <span class="gauge-daily-dosis">~</span></li>
+									</ul>
 								</div>
 							</div>
 							
@@ -232,7 +215,7 @@
 								</div>
 								<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
 									<div style="padding-right:34px">
-										<img src="img/haushalt.svg" class="pull-right" />
+										<img src="img/haushalt.svg" class="pull-right hidden-xs" />
 										<table class="table table-gauge-description gauge-description gauge-bar-description">
 											<tr>
 												<th style="border:none;"><strong class="highlight">Wert</strong></th>
@@ -267,22 +250,23 @@
 									</div>
 								</div>
 							</div>
+							
+							<p><br /></p>
+							<p><button type="button" class="btn btn-warning switch-to-section hidden-md hidden-lg" data-section="compare"><span class="glyphicon glyphicon-chevron-right"></span> Vergleich mit Mineralwasser</button></p>
 						</div>
 						
 						<div class="section section-compare" style="display:none;margin-top:-32px;">
 							<div class="row">
-								<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 compare-nav">
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="volvic">Volvic</button>
+								<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 compare-nav">
+									<button type="button" class="btn btn-primary btn-lg btn-block active" data-water="volvic">Volvic</button>
 									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="wueteria">Wüteria Heiligenquelle</button>
 									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="teusser">Teusser Naturell</button>
 									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="vittel">Vittel</button>
 									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="self" style="margin-top:2em;">mein Leitungswasser</button>
 									
 									<p><br /></p>
-									<p><br /></p>
-									<p><small>Beispielhaft wurden zwei überregional bekannte Wasser sowie zwei Wasser aus dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser.</small></p>
 								</div>
-								<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
 									<svg class="bottle-img pull-right" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 258 837" preserveAspectRatio="xMinYMin meet">
 										<text class="gauge-unit" x="78" y="220" text-anchor="left"></text>
 									
@@ -333,7 +317,7 @@
 										</g>
 									</svg>
 									
-									<div class="gauge-description gauge-glass-description pull-right" style="max-width:215px;margin-top:38px;">
+									<div class="gauge-description gauge-glass-description pull-right" style="max-width:200px;margin-top:38px;">
 										<table class="table table-gauge-description">
 											<tr>
 												<th style="border:none;"><strong class="comparison-water-label highlight">-</strong></th>
@@ -379,6 +363,11 @@
 									</div>
 								</div>
 							</div>
+							<p><br /></p>
+							<p><br /></p>
+							<p><button type="button" class="btn btn-warning switch-to-section" data-section="explanation"><span class="glyphicon glyphicon-chevron-left"></span> Zurück</button></p>
+							<p><br /></p>
+							<p><small>Beispielhaft wurden zwei überregional bekannte Wasser sowie zwei Wasser aus dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser.</small></p>
 						</div>
 						
 						<div class="section section-map" style="display:none;">
