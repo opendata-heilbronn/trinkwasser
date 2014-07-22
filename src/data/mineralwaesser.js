@@ -38,7 +38,27 @@ tw.data.referenceWaters = {
 		"nitrat": 0.1,
 		"sulfat": 120,
 		"sources": ["http://books.google.de/books?id=lzEoGWyqMBwC&pg=PA198&lpg=PA198&dq=volvic+nitratgehalt&source=bl&ots=pJEE0i9HwK&sig=OI_PeSr_QGBCfpeVCu70N4ohy8g&hl=de&ei=4-yvSuHrJ8jK_gbV0p3ZDA&sa=X&oi=book_result&ct=result&resnum=6#v=onepage&q&f=false"]
-	}
+	},
+	"Krumbach Classic": {
+		"natrium": 9.1,
+		"kalium": 2.3,
+		"calcium": 87,
+		"magnesium": 23.3,
+		"chlorid": 6.4,
+		"nitrat": 0.3,
+		"sulfat": 19,
+		"sources": ["http://www.krumbach-mineralwasser.de/sortiment-sanfter-geschmack-hat-viele-sorten1.html?pid=31&id=sort_classic"]
+	},
+	"Krumbach Medium": {
+		"natrium": 9.1,
+		"kalium": 2.3,
+		"calcium": 87,
+		"magnesium": 23.3,
+		"chlorid": 6.4,
+		"nitrat": 0.3,
+		"sulfat": 19,
+		"sources": ["http://www.krumbach-mineralwasser.de/sortiment-sanfter-geschmack-hat-viele-sorten1.html?pid=31&id=sort_classic"]
+	},
 };
 
 tw.data.nutrientDailyDosis = {
