@@ -59,6 +59,15 @@ tw.data.referenceWaters = {
 		"sulfat": 19,
 		"sources": ["http://www.krumbach-mineralwasser.de/sortiment-sanfter-geschmack-hat-viele-sorten1.html?pid=31&id=sort_classic"]
 	},
+	"Apollinaris Selection": {
+		"natrium": 0.47,
+		"kalium": 0.03,
+		"calcium": 0.09,
+		"magnesium": 0.12,
+		"chlorid": 0.13,
+		"sulfat": 0.1,
+		"sources": ["http://www.apollinaris.de/de_de/#/produkte/gastronomie/selektion"]
+	},
 };
 
 tw.data.nutrientDailyDosis = {
