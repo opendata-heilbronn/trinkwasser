@@ -1,7 +1,12 @@
 {
   "name": "trinkwasser-heilbronn",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "gulp": "^3.8.8",
+    "gulp-connect": "^2.0.6",
+    "karma": "^0.12.23",
+    "proxy-middleware": "^0.5.1"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",
