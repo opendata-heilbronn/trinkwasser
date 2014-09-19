@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var plumber = require('gulp-plumber');
 var less = require('gulp-less');
 var connect = require('gulp-connect');
 
@@ -7,7 +8,14 @@ var connect = require('gulp-connect');
  */
 gulp.task('compile-less', function () {
     return gulp.src('src/css/*.less')
+        .pipe(plumber({
+            errorHandler: function (err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
         .pipe(less())
+        .pipe(plumber.stop())
         .pipe(gulp.dest('src/css'));
 });
 gulp.task('build-src', ['compile-less']);
