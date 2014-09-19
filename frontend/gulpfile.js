@@ -1,43 +1,51 @@
-// load modules
 var gulp = require('gulp');
+var less = require('gulp-less');
 var connect = require('gulp-connect');
 
 /**
- * development http server
+ * build tasks
  */
-var buildServerMiddlewares = function (backendUrl) {
-    return function () {
-        return [ (function () {
-            var url = require('url');
-            var proxy = require('proxy-middleware');
-            var options = url.parse(backendUrl);
-            options.route = '/api';
-            return proxy(options);
-        })() ];
-    };
-};
-
-var serve = function (backendUrl) {
-    return function () {
-        connect.server({
-            root: 'src',
-            livereload: true,
-            port: 8081,
-            middleware: buildServerMiddlewares(backendUrl)
-        });
-    };
-};
-
-gulp.task('serve', serve('http://localhost:8080/api'));
+gulp.task('compile-less', function () {
+    return gulp.src('src/css/*.less')
+        .pipe(less())
+        .pipe(gulp.dest('src/css'));
+});
+gulp.task('build-src', ['compile-less']);
 
 /**
- * watch configuration - enables livereload, which speeds up development
+ * development server
+ */
+gulp.task('serve', function () {
+    connect.server({
+        root: 'src',
+        livereload: true,
+        port: 8081,
+        middleware: function () {
+            return [ (function () {
+                var url = require('url');
+                var proxy = require('proxy-middleware');
+                var options = url.parse('http://localhost:8080/api');
+                options.route = '/api';
+                return proxy(options);
+            })() ];
+        }
+    });
+});
+
+/**
+ * livereload
  */
 gulp.task('watch-files', function () {
+    gulp.watch(['./src/css/**/*.less'], ['compile-less'], function () {
+        gulp.src('./src/css/*.css').pipe(connect.reload());
+    });
     gulp.watch(['./src/**/*.html', './src/css/*.css', './src/js/**/*.js'], function (event) {
         gulp.src(event.path).pipe(connect.reload());
     });
 });
 
-gulp.task('watch', ['serve', 'watch-files']);
+/**
+ * task groups
+ */
+gulp.task('watch', ['build-src', 'serve', 'watch-files']);
 gulp.task('default', ['watch']);
