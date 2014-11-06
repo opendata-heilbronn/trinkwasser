@@ -1,6 +1,7 @@
 tw.data.locations = {
 	"Abstatt": {
 		"Happenbach": {},
+		"Gewerbegebiet Abstatt": {},
 		"Kernstadt": {
 			"Zone 1": [
 				"alle anderen Straßen"
@@ -1599,7 +1600,7 @@ tw.data.locations = {
 	},
 	"Massenbachhausen": {},
 	"Möckmühl": {
-		"Bittelbach": {},
+		"Bittelbronn": {},
 		"Korb": {},
 		"Möckmühl": {},
 		"Ruchsen": {},
