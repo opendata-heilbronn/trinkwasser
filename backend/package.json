@@ -1,9 +1,11 @@
 {
   "name": "trinkwasser-heilbronn-backend",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "mongodb": "^1.4.19"
+  },
   "devDependencies": {},
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
   }
 }
