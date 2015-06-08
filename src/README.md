@@ -45,10 +45,12 @@ Dein Fork ist dann bereits online abrufbar - die URL dazu findest du bei GitHub 
 
 Um `grunt deploy` aufrufen zu können muss node.js installiert sein und einmal im Hauptverzeichnis `npm install` ausgeführt werden.
 
+Oder lade ganz einfach alle Dateien in src/ auf einen Webserver deiner Wahl hoch.
+
 
 ## Frontend lokal aufrufen
 
 In den meisten Fällen genügt es, die index.html einfach mit dem Browser zu öffnen.
 
-Wenn du node.js installiert hast kannst du aber auch im Hauptverzeichnis `npm install` aufrufen und anschließend `grunt devserver`, um einen lokalen Entwicklungsserver zu starten (leider noch ohne Livereload .. das Projekt ist schon etwas älter)
+Wenn du node.js installiert hast kannst du aber auch im Hauptverzeichnis `npm install` aufrufen und anschließend `grunt devserver`, um einen lokalen Entwicklungsserver zu starten (leider noch ohne Livereload)
 
