@@ -56,7 +56,7 @@ tw.data.zones = {
 		"nitrat": 5.9,
 		"sulfat": 71,
 		"hardness": 15.8,
-		"year": "2014",
+		"year": "2015",
 		"description": "Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumahdenquelle"
 	},
 	"Abstatt Gewerbegebiet Abstatt": {
@@ -68,7 +68,7 @@ tw.data.zones = {
 		"nitrat": 5.9,
 		"sulfat": 71,
 		"hardness": 15.8,
-		"year": "2014",
+		"year": "2015",
 		"description": "Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumahdenquelle"
 	},
 	"Abstatt Kernstadt Zone 1": {
@@ -80,7 +80,7 @@ tw.data.zones = {
 		"nitrat": 10,
 		"sulfat": 49,
 		"hardness": 15.2,
-		"year": "2014",
+		"year": "2015",
 		"description": "Haupthochbehälter Stettenfels,Mischwasser aus Bodenseewasser und Pumpwerk Auenstein."
 	},
 	"Abstatt Kernstadt Zone 2": {
@@ -92,7 +92,7 @@ tw.data.zones = {
 		"nitrat": 5.9,
 		"sulfat": 71,
 		"hardness": 15.8,
-		"year": "2014",
+		"year": "2015",
 		"description": "Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumahdenquelle"
 	},
 	"Abstatt Kernstadt Zone 3": {
@@ -104,7 +104,7 @@ tw.data.zones = {
 		"nitrat": "10-5.9",
 		"sulfat": "49-71",
 		"hardness": "15.2-15.8",
-		"year": "2014",
+		"year": "2015",
 		"description": "Ein Teil der Staßen hat Wasser vom Haupthochbehälter Stettenfels,Mischwasser aus Bodenseewasser und PW Auenstein,\nder andere Teil hat Wasser vom HB Unterheinriet/Happenbach, Mischwasser aus Bodenseewasser und Heumahdenqelle."
 	},
 	"Abstatt Vohenlohe": {
@@ -116,7 +116,7 @@ tw.data.zones = {
 		"nitrat": 10,
 		"sulfat": 49,
 		"hardness": 15.2,
-		"year": "2014",
+		"year": "2015",
 		"description": "Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein."
 	},
 	"Bad Friedrichshall Duttenberg": {
@@ -836,7 +836,7 @@ tw.data.zones = {
 		"nitrat": 10,
 		"sulfat": 49,
 		"hardness": 15.2,
-		"year": "2014",
+		"year": "2015",
 		"description": "Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
 	},
 	"Ilsfeld Auenstein": {
@@ -848,7 +848,7 @@ tw.data.zones = {
 		"nitrat": 10,
 		"sulfat": 49,
 		"hardness": 15.2,
-		"year": "2014",
+		"year": "2015",
 		"description": "Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
 	},
 	"Ilsfeld Helfenberg": {
@@ -860,7 +860,7 @@ tw.data.zones = {
 		"nitrat": 10,
 		"sulfat": 49,
 		"hardness": 15.2,
-		"year": "2014",
+		"year": "2015",
 		"description": "Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
 	},
 	"Ilsfeld": {
@@ -884,7 +884,7 @@ tw.data.zones = {
 		"nitrat": 10,
 		"sulfat": 49,
 		"hardness": 15.2,
-		"year": "2014",
+		"year": "2015",
 		"description": "Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
 	},
 	"Ilsfeld Schozach": {
@@ -908,7 +908,7 @@ tw.data.zones = {
 		"nitrat": 10,
 		"sulfat": 49,
 		"hardness": 15.2,
-		"year": "2014",
+		"year": "2015",
 		"description": "Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein"
 	},
 	"Ittlingen": {
@@ -1700,7 +1700,7 @@ tw.data.zones = {
 		"nitrat": 4.1,
 		"sulfat": 26,
 		"hardness": 9.3,
-		"year": "2014",
+		"year": "2015",
 		"description": "Hochbehälter Egelsee, Reines Bodenseewasser"
 	},
 	"Untergruppenbach Obergruppenbach": {
@@ -1712,7 +1712,7 @@ tw.data.zones = {
 		"nitrat": 10,
 		"sulfat": 49,
 		"hardness": 15.2,
-		"year": "2014",
+		"year": "2015",
 		"description": "Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein."
 	},
 	"Untergruppenbach Oberheinriet": {
@@ -1724,31 +1724,31 @@ tw.data.zones = {
 		"nitrat": 5.9,
 		"sulfat": 71,
 		"hardness": 15.8,
-		"year": "2014",
+		"year": "2015",
 		"description": "Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumahdenquelle"
 	},
 	"Untergruppenbach": {
-		"natrium": 6.8,
-		"kalium": 1.7,
-		"calcium": 83,
+		"natrium": 5.1,
+		"kalium": 1.2,
+		"calcium": 81,
 		"magnesium": 17,
-		"chlorid": 17,
-		"nitrat": 13,
-		"sulfat": 68,
-		"hardness": 15.5,
+		"chlorid": 15,
+		"nitrat": 10,
+		"sulfat": 49,
+		"hardness": 15.2,
 		"year": "2014",
 		"description": "Haupthochbehälter Stettenfels, Mischwasser aus Bodenseewasser und Pumpwerk Auenstein."
 	},
 	"Untergruppenbach Unterheinriet": {
-		"natrium": 8,
-		"kalium": 2.3,
-		"calcium": 79,
-		"magnesium": 18,
-		"chlorid": 9,
-		"nitrat": 8.3,
-		"sulfat": 84,
-		"hardness": 15.3,
-		"year": "2014",
+		"natrium": 6,
+		"kalium": 1.6,
+		"calcium": 82,
+		"magnesium": 18.7,
+		"chlorid": 7.8,
+		"nitrat": 5.9,
+		"sulfat": 71,
+		"hardness": 15.8,
+		"year": "2015",
 		"description": "Hochbehälter Unterheinriet, Mischwasser aus Bodenseewasser und Quellwasser der Heumahdenquelle"
 	},
 	"Untergruppenbach Vorhof": {
@@ -1758,9 +1758,9 @@ tw.data.zones = {
 		"magnesium": 17,
 		"chlorid": 7.7,
 		"nitrat": 10,
-		"sulfat": 23,
+		"sulfat": 15,
 		"hardness": 14.9,
-		"year": "2014",
+		"year": "2015",
 		"description": "Hochbehälter Vorhof,Quellwasser aus der Heumahdenquelle, enthärtet durch Nanofiltration"
 	},
 	"Weinsberg Grantschen": {
@@ -1865,7 +1865,7 @@ tw.data.zones = {
 	"calcium": 77.4,
 	"magnesium": 17.9,
 	"chlorid": 18,
-	"nitrat": 14.7,
-	"sulfat": 49.4,
+	"nitrat": 14.6,
+	"sulfat": 49.2,
 	"hardness": 14.9
 };
