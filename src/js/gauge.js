@@ -283,11 +283,11 @@
 		if(attribute === 'hardness') {
 			instance = barInstance;
 			var raValue = 'n/a';
-			if(zoneData['magnesium'] && zoneData['calcium'] && zoneData['hardness']) {
-				var mgValue = zoneData['magnesium'] / 4.34;
-				var calciumValue = zoneData['calcium'] / 7.15;
+			if(zoneData['magnesium'] && zoneData['calcium'] && value) {
+				var mgValue = tw.utils.getMeanValue(zoneData['magnesium']) / 4.34;
+				var calciumValue = tw.utils.getMeanValue(zoneData['calcium']) / 7.15;
 				var notCarbonatValue = (mgValue / 7) + (calciumValue / 3.5);
-				var carbonatValue = value - notCarbonatValue;
+				var carbonatValue = tw.utils.getMeanValue(value) - notCarbonatValue;
 				raValue = Math.round((carbonatValue - notCarbonatValue) * 100) / 100;
 			}
 			d3.selectAll('.gauge-value-ra').text(raValue.toString().replace(/\./g, ','));
