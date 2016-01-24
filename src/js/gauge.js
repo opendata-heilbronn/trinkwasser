@@ -278,8 +278,22 @@
 		toggleDescription(attribute);
 	};
 
-	var updateValue = function(attribute, value) {
-		var instance = (attribute === 'hardness') ? barInstance : glassInstance;
+	var updateValue = function(attribute, value, zoneData) {
+		var instance;
+		if(attribute === 'hardness') {
+			instance = barInstance;
+			var raValue = 'n/a';
+			if(zoneData['magnesium'] && zoneData['calcium'] && zoneData['hardness']) {
+				var mgValue = zoneData['magnesium'] / 4.34;
+				var calciumValue = zoneData['calcium'] / 7.15;
+				var notCarbonatValue = (mgValue / 7) + (calciumValue / 3.5);
+				var carbonatValue = value - notCarbonatValue;
+				raValue = Math.round((carbonatValue - notCarbonatValue) * 100) / 100;
+			}
+			d3.selectAll('.gauge-value-ra').text(raValue.toString().replace(/\./g, ','));
+		} else {
+			instance = glassInstance;
+		}
 		instance.applyValue(value);
 		d3.selectAll('.gauge-value').text(value.toString().replace(/\./g, ','));
 		d3.selectAll('.gauge-value-label').text(instance.getValueLabel(value));

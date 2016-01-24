@@ -76,7 +76,7 @@ var tw = {
 
 				tw.gauge.update(attribute);
 				if (section === 'explanation') {
-					tw.gauge.updateValue(attribute, zoneData[attribute]);
+					tw.gauge.updateValue(attribute, zoneData[attribute], zoneData);
 				}
 				if (section === 'compare') {
 					tw.comparison.update(attribute, zoneData[attribute]);
