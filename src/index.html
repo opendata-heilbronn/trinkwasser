@@ -260,14 +260,21 @@
 						</div>
 						
 						<div class="section section-compare" style="display:none;margin-top:-32px;">
+
 							<div class="row">
 								<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 compare-nav">
-									<button type="button" class="btn btn-primary btn-lg btn-block active" data-water="volvic">Volvic</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="wueteria">Wüteria Heiligenquelle</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="teusser">Teusser Naturell</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="vittel">Vittel</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="self" style="margin-top:2em;">mein Leitungswasser</button>
+									<p>Wählen Sie ein Mineralwasser aus der Liste aus und vergleichen Sie es mit den Werten von Ihrem Leitungswasser.</p>
 									
+									<form class="form-horizontal form-choose-water" role="form">
+										<div class="form-group select-water">
+											<label for="water" class="col-sm-4 control-label">Mineralwasser</label>
+											<div class="col-sm-8">
+												<select id="water" class="water form-control">
+													<option value="Volvic">Volvic</option>
+												</select>
+											</div>
+										</div>
+									</form>
 									<p><br /></p>
 								</div>
 								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
@@ -376,8 +383,6 @@
 							<p><br /></p>
 							<p><br /></p>
 							<p><button type="button" class="btn btn-warning switch-to-section" data-section="explanation"><span class="glyphicon glyphicon-chevron-left"></span> Zurück</button></p>
-							<p><br /></p>
-							<p><small>Beispielhaft wurden zwei überregional bekannte Wasser sowie zwei Wasser aus dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser.</small></p>
 						</div>
 						
 						<div class="section section-map" style="display:none;">

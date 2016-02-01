@@ -218,6 +218,13 @@ var tw = {
 		$('.city').html(generateOptionsHtml(cities, true));
 	};
 
+	var setupCompareForm = function() {
+		var waters = Object.keys(tw.data.referenceWaters);
+		waters.sort();
+
+		$('.water').html(generateOptionsHtml(waters));
+	};
+
 	var updateSection = function() {
 		$('.section').hide();
 		$('.section-' + section).show();
@@ -245,6 +252,7 @@ var tw = {
 		completeReferenceWaters();
 		setupForm();
 		setupQuickForm();
+		setupCompareForm();
 		setupTabs('natrium');
 		setupSectionSwitch();
 		tw.gauge.init();

@@ -113,13 +113,12 @@
 	};
 
 	var bottleInstance = null;
-	var referenceWater = 'volvic';
-	var valueLabel = 'Volvic';
+	var referenceWater = 'Vittel';
 	var attribute = null;
 	var selfValue = null;
 
 	var getValue = function() {
-		return (referenceWater === 'self') ? selfValue : tw.data.referenceWaters[referenceWater][attribute];
+		return tw.data.referenceWaters[referenceWater][attribute];
 	};
 
 	var getUnit = function() {
@@ -132,7 +131,7 @@
 
 	var updateDescription = function() {
 		d3.selectAll('.comparison-water-value').text(formatValue(tw.utils.getMeanValue(getValue())) + ' ' + getUnit());
-		d3.selectAll('.comparison-water-label').text(valueLabel);
+		d3.selectAll('.comparison-water-label').text(referenceWater);
 	};
 
 	var update = function(newAttribute, value) {
@@ -151,12 +150,7 @@
 	};
 
 	var updateReferenceWater = function() {
-		d3.select('.compare-nav').selectAll('button').classed('active', false);
-
-		var currentElement = d3.select(this);
-		currentElement.classed('active', true);
-		referenceWater = currentElement.attr('data-water');
-		valueLabel = currentElement.text();
+		referenceWater = $('#water option:selected').text();
 
 		updateDescription();
 		bottleInstance.applyValue(getValue());
@@ -164,7 +158,9 @@
 
 	var init = function() {
 		bottleInstance = new Bottle(d3.select('.bottle-img'));
-		d3.select('.compare-nav').selectAll('button').on('click', updateReferenceWater);
+		$('#water').on('change', updateReferenceWater);
+		$("#water option[value='" + referenceWater + "']").attr('selected', true);
+
 		return this;
 	};
 
