@@ -56,7 +56,7 @@ module.exports = function(grunt) {
 					dot: true,
 					cwd: 'src/',
 					dest: 'dist/',
-					src: ['*.{ico,txt,html}', 'img/{,*/}*.{jpg,png,svg,gif}', 'data/*.geojson', 'fonts/*']
+					src: ['*.{ico,txt}', 'img/{,*/}*.{jpg,png,svg,gif}', 'data/*.geojson', 'fonts/*']
 				}]
 			}
 		},
@@ -103,7 +103,46 @@ module.exports = function(grunt) {
 				base: 'dist'
 			},
 			src: ['**']
-		}
+		},
+    abideCreate: {
+      default: { // Target name.
+        options: {
+          template: 'lang/templates/LC_MESSAGES/messages.pot', // (default: 'locale/templates/LC_MESSAGES/messages.pot')
+          languages: ['en', 'fr', 'es', 'nl', 'de'],
+          localeDir: 'lang/locale',
+        }
+      }
+    },
+    abideExtract: {
+      js: {
+        src: 'src/js/**/*.js',
+        dest: 'lang/templates/LC_MESSAGES/messages.pot',
+        options: {
+          language: 'JavaScript',
+        }
+      },
+      html: {
+        src: 'src/*.html',
+        dest: 'lang/templates/LC_MESSAGES/messages.pot',
+        options: {
+          keyword: '_',
+          language: 'swig',
+        }
+      },
+    },
+    statici18n: {
+      options: {
+        localeDir: 'lang/locale'
+      },
+      build: {
+        files: [{
+          expand: true,
+          cwd: 'src',
+          src: '*.html',
+          dest: 'dist'
+        }]
+      }
+    }
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -119,9 +158,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-usemin');
 	grunt.loadNpmTasks('grunt-devserver');
 	grunt.loadNpmTasks('grunt-gh-pages');
-
+  grunt.loadNpmTasks('grunt-i18n-abide');
+  grunt.loadNpmTasks('hernanex3-grunt-static-i18n');
 	grunt.registerTask('dataupdate', ['jsonmin:dist']);
-	grunt.registerTask('build', ['clean:dist', 'useminPrepare', 'imagemin', 'concat', 'cssmin', 'uglify', 'copy:dist', 'rev', 'usemin']);
+	grunt.registerTask('build', ['clean:dist', 'useminPrepare', 'imagemin', 'concat', 'cssmin', 'uglify', 'copy:dist','statici18n', 'rev', 'usemin']);
 	grunt.registerTask('deploy', ['build', 'gh-pages']);
 	grunt.registerTask('default', ['build']);
+  grunt.registerTask('i18n-init', ['abideExtract', 'abideCreate']);
+  grunt.registerTask('i18n', ['statici18n']);
 };
