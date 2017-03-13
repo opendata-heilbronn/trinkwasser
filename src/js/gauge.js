@@ -115,7 +115,8 @@
 			var value1 = value, value2 = 0;
 			if (tw.utils.isRange(value)) {
 				var minMax = tw.utils.getRange(value);
-				value1 = minMax[0], value2 = minMax[1];
+				value1 = minMax[0];
+				value2 = minMax[1];
 			}
 
 			updateBars(value1, value2);
@@ -175,8 +176,10 @@
 			var updateElements = function(d3Element) {
 				d3Element.attr('x', calculatX).attr('y', 20).attr('text-anchor', 'middle').html(
 						function(partDef) {
-							return '<tspan x="' + calculatX(partDef) + '">' + partDef.rangeLabel + '</tspan><tspan x="' + calculatX(partDef)
-									+ '" dy="1.3em" style="font-weight:bold;">' + partDef.label + '</tspan>';
+							return '<tspan x="' + calculatX(partDef) + '">' +
+							partDef.rangeLabel +
+							'</tspan><tspan x="' + calculatX(partDef)	+
+							'" dy="1.3em" style="font-weight:bold;">' + partDef.label + '</tspan>';
 						});
 			};
 
@@ -219,7 +222,8 @@
 			var value1 = value, value2 = value;
 			if (tw.utils.isRange(value)) {
 				var range = tw.utils.getRange(value);
-				value1 = range[0], value2 = range[1];
+				value1 = range[0];
+				value2 = range[1];
 			}
 			var value1X = calculateValueX(value1), value2X = calculateValueX(value2);
 			svg.select('.gauge-bar-range-indicator').attr('x', value1X).attr('width', (value2X - value1X));
@@ -270,7 +274,8 @@
 	var update = function(attribute) {
 		var instanceToShow = glassInstance, instanceToHide = barInstance;
 		if (attribute === 'hardness') {
-			instanceToShow = barInstance, instanceToHide = glassInstance;
+			instanceToShow = barInstance;
+			instanceToHide = glassInstance;
 		}
 
 		instanceToHide.hide();
@@ -283,9 +288,9 @@
 		if(attribute === 'hardness') {
 			instance = barInstance;
 			var raValue = 'n/a';
-			if(zoneData['magnesium'] && zoneData['calcium'] && value) {
-				var mgValue = tw.utils.getMeanValue(zoneData['magnesium']) / 4.34;
-				var calciumValue = tw.utils.getMeanValue(zoneData['calcium']) / 7.15;
+			if(zoneData.magnesium && zoneData.calcium && value) {
+				var mgValue = tw.utils.getMeanValue(zoneData.magnesium) / 4.34;
+				var calciumValue = tw.utils.getMeanValue(zoneData.calcium) / 7.15;
 				var notCarbonatValue = (mgValue / 7) + (calciumValue / 3.5);
 				var carbonatValue = tw.utils.getMeanValue(value) - notCarbonatValue;
 				raValue = Math.round((carbonatValue - notCarbonatValue) * 100) / 100;

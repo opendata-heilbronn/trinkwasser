@@ -107,7 +107,7 @@ var tw = {
 	};
 
 	var generateOptionsHtml = function(values, withEmptyOption) {
-		var html = withEmptyOption ? '<option value="">Bitte auswählen</option>' : '';
+		var html = withEmptyOption ? '<option value="">' + _('Bitte auswählen') + '</option>' : '';
 		values.forEach(function(value) {
 			html += '<option value="' + value + '">' + value + '</option>';
 		});
