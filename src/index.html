@@ -202,8 +202,8 @@
 									<ul class="gauge-description gauge-glass-description pull-right list-unstyled" style="max-width:200px;">
 										<li class="highlight"><strong>_('Wert:') <span class="gauge-value"></span> _('mg/l')</strong></li>
 										<li>_('Grenzwert:') <span class="gauge-legal-limit"></span></li>
-										<li>_('Durchschnitt:') <span class="gauge-average-value"></span> _('mg/l')<br /><small>_('(Region Heilbronn, rote Linie)')</small></li>
-										<li class="gauge-daily-dosis-container">_('Tagesbedarf:') <span class="gauge-daily-dosis">~</span></li>
+										<li>_('Durchschnitt:') <span class="gauge-average-value"></span> mg/l<br /><small>_('(Region Heilbronn, rote Linie)')</small></li>
+										<li class="gauge-daily-dosis-container">_('Tagesbedarf:') <span class="gauge-daily-dosis">_('~')</span></li>
 									</ul>
 								</div>
 							</div>
@@ -256,17 +256,17 @@
 							</div>
 
 							<p><br /></p>
-							<p><button type="button" class="btn btn-warning switch-to-section hidden-md hidden-lg hidden-sm" data-section="compare"><span class="glyphicon glyphicon-chevron-right"></span> Vergleich mit Mineralwasser</button></p>
+							<p><button type="button" class="btn btn-warning switch-to-section hidden-md hidden-lg hidden-sm" data-section="compare"><span class="glyphicon glyphicon-chevron-right"></span> _('Vergleich mit Mineralwasser')</button></p>
 						</div>
 
 						<div class="section section-compare" style="display:none;margin-top:-32px;">
 							<div class="row">
 								<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 compare-nav">
-									<button type="button" class="btn btn-primary btn-lg btn-block active" data-water="volvic">Volvic</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="wueteria">Wüteria Heiligenquelle</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="teusser">Teusser Naturell</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="vittel">Vittel</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="self" style="margin-top:2em;">mein Leitungswasser</button>
+									<button type="button" class="btn btn-primary btn-lg btn-block active" data-water="volvic">_('Volvic')</button>
+									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="wueteria">_('Wüteria Heiligenquelle')</button>
+									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="teusser">_('Teusser Naturell')</button>
+									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="vittel">_('Vittel')</button>
+									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="self" style="margin-top:2em;">_('mein Leitungswasser')</button>
 
 									<p><br /></p>
 								</div>
@@ -281,41 +281,45 @@
 														<td style="border:none;min-width:80px;"><strong class="comparison-water-value highlight">-</strong></td>
 													</tr>
 													<tr>
-														<th>mein Leitungswasser</th>
-														<td><span class="comparison-water-value-self"></span><br /><small>(rote Linie)</small></td>
+														<th>_('mein Leitungswasser')</th>
+														<td><span class="comparison-water-value-self"></span><br /><small>_('(rote Linie)')</small></td>
 													</tr>
 													<tr class="gauge-daily-dosis-container">
-														<th>Tagesbedarf</th>
-														<td><span class="gauge-daily-dosis">~</span></td>
+														<th>_('Tagesbedarf')</th>
+														<td><span class="gauge-daily-dosis">_('~')</span></td>
 													</tr>
 												</table>
 
 												<br /><br />
 												<div class="attribute-description attribute-description-natrium" style="display:none;">
-													<p>Natrium reguliert den Wasserhaushalt.</p>
-													<p>Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit Bluthochdruck oder Säuglinge sollten natriumarmes Wasser trinken.<br /><em>(weniger als 20 mg/l)</em></p>
+													<p>_('Natrium reguliert den Wasserhaushalt.')</p>
+													<p>
+                            _('Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit Bluthochdruck oder Säuglinge sollten natriumarmes Wasser trinken.')
+                            <br />
+                            <em>_('(weniger als 20 mg/l)')</em>
+                          </p>
 												</div>
 												<div class="attribute-description attribute-description-kalium" style="display:none;">
-													<p>Kalium hält den Wasser- und Elektrolythaushalt im Gleichgewicht, reguliert den Blutdruck und ist wichtig für einen regelmäßigen Herzschlag sowie die Nerven.</p>
+													<p>_('Kalium hält den Wasser- und Elektrolythaushalt im Gleichgewicht, reguliert den Blutdruck und ist wichtig für einen regelmäßigen Herzschlag sowie die Nerven.')</p>
 												</div>
 												<div class="attribute-description attribute-description-calcium" style="display:none;">
-													<p>Calcium wird zur Bildung der Knochen und Zähne gebraucht.</p>
-													<p>Auch für die Muskeln und die Blutgerinnung ist Calcium wichtig.</p>
+													<p>_('Calcium wird zur Bildung der Knochen und Zähne gebraucht.')</p>
+													<p>_('Auch für die Muskeln und die Blutgerinnung ist Calcium wichtig.')</p>
 												</div>
 												<div class="attribute-description attribute-description-magnesium" style="display:none;">
-													<p>Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven auf Muskeln, für den Eiweißaufbau sowie und die
-														Knochenmineralisation.</p>
+													<p>_('Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven auf Muskeln, für den Eiweißaufbau sowie und die
+														Knochenmineralisation.')</p>
 												</div>
 												<div class="attribute-description attribute-description-chlorid" style="display:none;">
-													<p>Chlorid ist für Regulation des Wasserhaushaltes, die Nerven, das Herz und die Muskeln sowie den Säure-Basenhaushalt wichtig.</p>
-													<p>Da Chlorid ein Bestandteil von Kochsalz ist, wird über die Nahrung meist mehr als genügend Chlorid aufgenommen.</p>
+													<p>_('Chlorid ist für Regulation des Wasserhaushaltes, die Nerven, das Herz und die Muskeln sowie den Säure-Basenhaushalt wichtig.')</p>
+													<p>_('Da Chlorid ein Bestandteil von Kochsalz ist, wird über die Nahrung meist mehr als genügend Chlorid aufgenommen.')</p>
 												</div>
 												<div class="attribute-description attribute-description-nitrat" style="display:none;">
-													<p>Nitrat wird im Körper in giftiges Nitrit umgewandelt. Zudem können aus Nitriten krebserregende Nitrosamine entstehen.</p>
-													<p>Das Nitrit selbst kann eine Sauerstoffunterversorgung aller Organe und Gewebe bewirken. Säuglinge sind hierfür besonders anfällig.</p>
+													<p>_('Nitrat wird im Körper in giftiges Nitrit umgewandelt. Zudem können aus Nitriten krebserregende Nitrosamine entstehen.')</p>
+													<p>_('Das Nitrit selbst kann eine Sauerstoffunterversorgung aller Organe und Gewebe bewirken. Säuglinge sind hierfür besonders anfällig.')</p>
 												</div>
 												<div class="attribute-description attribute-description-sulfat" style="display:none;">
-													<p>Sulfate wirken verdauungsfördernd, ab einem Gehalt von 1200 mg/l sogar abführend.</p>
+													<p>_('Sulfate wirken verdauungsfördernd, ab einem Gehalt von 1200 mg/l sogar abführend.')</p>
 												</div>
 											</div>
 										</div>
@@ -375,15 +379,15 @@
 							</div>
 							<p><br /></p>
 							<p><br /></p>
-							<p><button type="button" class="btn btn-warning switch-to-section" data-section="explanation"><span class="glyphicon glyphicon-chevron-left"></span> Zurück</button></p>
+							<p><button type="button" class="btn btn-warning switch-to-section" data-section="explanation"><span class="glyphicon glyphicon-chevron-left"></span> _('Zurück')</button></p>
 							<p><br /></p>
-							<p><small>Beispielhaft wurden zwei überregional bekannte Wasser sowie zwei Wasser aus dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser.</small></p>
+							<p><small>_('Beispielhaft wurden zwei überregional bekannte Wasser sowie zwei Wasser aus dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser.')</small></p>
 						</div>
 
 						<div class="section section-map" style="display:none;">
-							<div class="alert alert-warning">Die Karte steht derzeit nur für die Stadt Heilbronn zur Verfügung und befindet sich noch in einem experimentellen Stadium.</div>
+							<div class="alert alert-warning">_('Die Karte steht derzeit nur für die Stadt Heilbronn zur Verfügung und befindet sich noch in einem experimentellen Stadium.')</div>
 
-							<p>Die Straßen mit den niedrigsten Werten sind tiefblau, die Straßen mit den höchsten Werten rot eingefärbt.</p>
+							<p>_('Die Straßen mit den niedrigsten Werten sind tiefblau, die Straßen mit den höchsten Werten rot eingefärbt.')</p>
 
 							<svg class="map-img" style="width:600px;height:600px;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1170 1170" preserveAspectRatio="xMinYMin meet">
 								<g class="areas"></g>
@@ -399,11 +403,11 @@
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h4 class="panel-title">Information zu <span class="zone-id"></span></h4>
+								<h4 class="panel-title">_('Information zu') <span class="zone-id"></span></h4>
 							</div>
 							<div class="panel-body">
 								<p class="zone-year-container">
-									Die Daten stammen aus dem Jahr <span class="zone-data-year"></span>
+									_('Die Daten stammen aus dem Jahr') <span class="zone-data-year"></span>
 								</p>
 								<p>
 									<span class="zone-description"></span>
@@ -415,7 +419,7 @@
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> Woher kommt unser Trinkwasser? </a>
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> _('Woher kommt unser Trinkwasser?') </a>
 									</h4>
 								</div>
 								<div id="collapseOne" class="panel-collapse collapse">

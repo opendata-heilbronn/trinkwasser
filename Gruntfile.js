@@ -93,11 +93,6 @@ module.exports = function(grunt) {
 				}]
 			}
 		},
-		devserver: {
-			options: {
-				port: 8091
-			}
-		},
 		'gh-pages': {
 			options: {
 				base: 'dist'
@@ -122,7 +117,7 @@ module.exports = function(grunt) {
         }
       },
       html: {
-        src: 'src/*.html',
+        src: 'src/index.html',
         dest: 'lang/templates/LC_MESSAGES/messages.pot',
         options: {
           keyword: '_',
@@ -138,7 +133,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'src',
-          src: '*.html',
+          src: 'index.html',
           dest: 'dist'
         }]
       }
