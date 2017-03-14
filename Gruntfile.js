@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 			tasks: ['jshint']
 		},
 		useminPrepare: {
-			html: ['src/*.html'],
+			html: ['dist/**/index.html'],
 			options: {
 				dest: 'dist/'
 			}
@@ -56,9 +56,21 @@ module.exports = function(grunt) {
 					dot: true,
 					cwd: 'src/',
 					dest: 'dist/',
-					src: ['*.{ico,txt}', 'img/{,*/}*.{jpg,png,svg,gif}', 'data/*.geojson', 'fonts/*']
+					src: ['*.{ico,txt}', 'img/{,*/}*.{jpg,png,svg,gif}', 'data/*.geojson', 'fonts/*', 'css/*', 'js/*', 'lib/*', 'data/*.js']
 				}]
-			}
+			},
+      redirect: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: 'src/',
+          dest: 'dist/',
+          src: ['redirect.html'],
+          rename: function(dest, src) {
+              return dest + 'index.html';
+            }
+        }]
+      }
 		},
 		clean: {
 			dist: {
@@ -135,6 +147,11 @@ module.exports = function(grunt) {
           cwd: 'src',
           src: 'index.html',
           dest: 'dist'
+        }, {
+          expand: true,
+          cwd: 'src',
+          src: 'js/app.js',
+          dest: 'dist'
         }]
       }
     }
@@ -151,14 +168,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-jsonmin');
 	grunt.loadNpmTasks('grunt-rev');
 	grunt.loadNpmTasks('grunt-usemin');
-	grunt.loadNpmTasks('grunt-devserver');
 	grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-i18n-abide');
   grunt.loadNpmTasks('hernanex3-grunt-static-i18n');
 	grunt.registerTask('dataupdate', ['jsonmin:dist']);
-	grunt.registerTask('build', ['clean:dist', 'useminPrepare', 'imagemin', 'concat', 'cssmin', 'uglify', 'copy:dist','statici18n', 'rev', 'usemin']);
+	grunt.registerTask('build', ['clean:dist', 'i18n', 'imagemin', 'jsonmin', 'uglify', 'copy:dist', 'copy:redirect']);
 	grunt.registerTask('deploy', ['build', 'gh-pages']);
 	grunt.registerTask('default', ['build']);
-  grunt.registerTask('i18n-init', ['abideExtract', 'abideCreate']);
   grunt.registerTask('i18n', ['statici18n']);
 };

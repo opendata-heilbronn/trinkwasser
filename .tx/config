@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[trinkwasser.messagespot]
+source_file = lang/templates/LC_MESSAGES/messages.pot
+source_lang = de
+type = PO
+file_filter = lang/locale/<lang>/LC_MESSAGES/messages.po

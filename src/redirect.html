@@ -11,7 +11,7 @@
 
 <body>
     <script>
-        var langcodes = ["fr", "es"];
+        var langcodes = ["fr", "es", "nl", "de", "en"];
 
         // Browser Language Redirect script
         // copyright 3rd January 2006, Stephen Chapman
@@ -25,7 +25,8 @@
         var dest = window.location.href;
         for (i = langcodes.length - 1; i >= 0; i--) {
             if (lang == langcodes[i]) {
-                dest = dest.substr(0, dest.lastIndexOf('.')) + '-' + lang.substr(0, 2) + dest.substr(dest.lastIndexOf('.'));
+                //dest = dest.substr(0, dest.lastIndexOf('.')) + '-' + lang.substr(0, 2) + dest.substr(dest.lastIndexOf('.'));
+                dest = lang.substr(0, 2) + '/';
                 window.location.replace ? window.location.replace(dest) : window.location = dest;
             }
         }
