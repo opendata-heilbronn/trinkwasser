@@ -6,11 +6,18 @@
     module.exports.get = function(req, res, next) {
         var params = req.swagger.params;
         var wueteria = new vendor.model({
+          code: 'wueteria',
           name: 'Wüteria Mineralquellen GmbH & Co. KG',
           url: 'http://wueteria.de',
           country: "Germany"
         });
-        var prod = new product.model({
+        var teusser = new vendor.model({
+          code: 'teuser',
+          name: 'Teusser Mineralbrunnen Karl Rössle GmbH & Co KG',
+          url: 'http://wueteria.de',
+          country: "Germany"
+        });
+        var heiligenquelleclassic = new product.model({
           name: 'HEILIGENQUELLE CLASSIC',
           natrium: 10.7,
           kalium: 2.6,
@@ -23,8 +30,22 @@
           sources: ['http://wueteria.de/unser-wasser/unsere-mineralwasserquellen/'],
           vendor: wueteria
         });
-        var output = wueteria.toObject();
-        output.products = [prod.toObject()];
+        var teussernaturell = new product.model({
+          name: 'Teusser Naturell',
+          natrium: 53,
+          kalium: 7,
+          calcium: 537,
+          nitrat: 0.5,
+          magnesium: 92,
+          fluorid: 0.21,
+          chlorid: 27,
+          sulfat: 1462,
+          hydrogene: 357,
+          sources: ['http://www.teusser.de/index.php?id=225'],
+          vendor: teusser
+        });
+
+        var output = [heiligenquelleclassic.toObject(), teussernaturell.toObject()];
         res.setHeader('content-type', 'application/json');
         res.setHeader('charset','utf-8');
         res.end(JSON.stringify(output, null, 2));
