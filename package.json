@@ -1,8 +1,13 @@
 {
   "name": "trinkwasser-heilbronn",
   "version": "1.0.0",
+  "description": "This is a the API for Trinkwasser/Drinking water.  Information about the project can be found on [Github](https://github.com/codeforeurope/trinkwasser) ",
   "dependencies": {
-    "http-server": "^0.9.0"
+    "connect": "^3.2.0",
+    "js-yaml": "^3.3.0",
+    "mongoose": "^4.9.0",
+    "serve-static": "^1.12.1",
+    "swagger-tools": "0.10.1"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -25,7 +30,7 @@
     "hernanex3-grunt-static-i18n": "^0.3.3"
   },
   "scripts": {
-    "start": "grunt && ./node_modules/.bin/http-server ./dist"
+    "start": "grunt && node index.js"
   },
   "engines": {
     "node": ">=0.8.0"

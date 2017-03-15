@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 			},
 			assets: {
 				files: [{
-					src: ['dist/{css,js}/*.{js,css}']
+					src: ['client/{css,js}/*.{js,css}']
 				}]
 			}
 		},
@@ -37,16 +37,16 @@ module.exports = function(grunt) {
 			tasks: ['jshint']
 		},
 		useminPrepare: {
-			html: ['dist/**/index.html'],
+			html: ['client/**/index.html'],
 			options: {
-				dest: 'dist/'
+				dest: 'client/'
 			}
 		},
 		usemin: {
-			html: ['dist/**/*.html'],
-			css: ['dist/**/*.css'],
+			html: ['client/**/*.html'],
+			css: ['client/**/*.css'],
 			options: {
-				dirs: ['dist/']
+				dirs: ['client/']
 			}
 		},
 		copy: {
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 					expand: true,
 					dot: true,
 					cwd: 'src/',
-					dest: 'dist/',
+					dest: 'client/',
 					src: ['*.{ico,txt}', 'img/{,*/}*.{jpg,png,svg,gif}', 'data/*.geojson', 'fonts/*', 'css/*', 'js/*', 'lib/*', 'data/*.js']
 				}]
 			},
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
           expand: true,
           dot: true,
           cwd: 'src/',
-          dest: 'dist/',
+          dest: 'client/',
           src: ['redirect.html'],
           rename: function(dest, src) {
               return dest + 'index.html';
@@ -76,7 +76,7 @@ module.exports = function(grunt) {
 			dist: {
 				files: [{
 					dot: true,
-					src: ['dist/{css,js,img}']
+					src: ['client/{css,js,img}']
 				}]
 			}
 		},
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd: 'src/img',
 					src: '{,*/}*.{png,jpg,jpeg}',
-					dest: 'dist/img'
+					dest: 'client/img'
 				}]
 			}
 		},
@@ -100,7 +100,7 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd: 'src/data',
 					src: ['**/*.json'],
-					dest: 'dist/data',
+					dest: 'data',
 					ext: '.json'
 				}]
 			}
@@ -146,12 +146,12 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'src',
           src: 'index.html',
-          dest: 'dist'
+          dest: 'client'
         }, {
           expand: true,
           cwd: 'src',
           src: 'js/app.js',
-          dest: 'dist'
+          dest: 'client'
         }]
       }
     }

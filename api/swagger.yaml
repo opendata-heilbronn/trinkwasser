@@ -1,0 +1,253 @@
+---
+swagger: "2.0"
+info:
+  description: "This is a the API for Trinkwasser/Drinking water.\n\nInformation\
+    \ about the project can be found on [Github](https://github.com/codeforeurope/trinkwasser)\n"
+  version: "1.0.0"
+  title: "Trinkwasser API"
+  contact:
+    name: "info@codefor.eu"
+  license:
+    name: "MIT"
+    url: "https://raw.githubusercontent.com/codeforeurope/trinkwasser/master/LICENSE"
+basePath: "/api"
+schemes:
+- "https"
+- "http"
+paths:
+  /pumpingstation:
+    get:
+      tags:
+      - "pumpingstation"
+      summary: "Get a Pumpingstation"
+      description: "Multiple parameters can be provided"
+      operationId: "get"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "status"
+        in: "query"
+        description: "Status values that need to be considered for filter"
+        required: false
+        type: "array"
+        items:
+          type: "string"
+        collectionFormat: "multi"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Pumpingstation"
+        400:
+          description: "Invalid status value"
+      x-swagger-router-controller: "Pumpingstation"
+    post:
+      tags:
+      - "pumpingstation"
+      summary: "Add a new pumpingstation to the database"
+      description: ""
+      operationId: "post"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Pumpingstation object that needs to be added to the database"
+        required: false
+        schema:
+          $ref: "#/definitions/Pumpingstation"
+      responses:
+        405:
+          description: "Invalid input"
+      x-swagger-router-controller: "Pumpingstation"
+    put:
+      tags:
+      - "pumpingstation"
+      summary: "Update an existing pumpingstation"
+      description: ""
+      operationId: "put"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Pet object that needs to be added to the store"
+        required: false
+        schema:
+          $ref: "#/definitions/Pumpingstation"
+      responses:
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Pet not found"
+        405:
+          description: "Validation exception"
+      x-swagger-router-controller: "Pumpingstation"
+  /vendor:
+    get:
+      tags:
+      - "vendor"
+      summary: "Get a vendor"
+      description: "Multiple parameters can be provided"
+      operationId: "get"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "status"
+        in: "query"
+        description: "Status values that need to be considered for filter"
+        required: false
+        type: "array"
+        items:
+          type: "string"
+        collectionFormat: "multi"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Vendor"
+        400:
+          description: "Invalid status value"
+      x-swagger-router-controller: "Vendor"
+    post:
+      tags:
+      - "vendor"
+      summary: "Add a new vendor to the database"
+      description: ""
+      operationId: "post"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Vendor object that needs to be added to the database"
+        required: false
+        schema:
+          $ref: "#/definitions/Vendor"
+      responses:
+        405:
+          description: "Invalid input"
+      x-swagger-router-controller: "Vendor"
+    put:
+      tags:
+      - "vendor"
+      summary: "Update an existing vendor"
+      description: ""
+      operationId: "put"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Pet object that needs to be added to the store"
+        required: false
+        schema:
+          $ref: "#/definitions/Vendor"
+      responses:
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Pet not found"
+        405:
+          description: "Validation exception"
+      x-swagger-router-controller: "Vendor"
+definitions:
+  Category:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+  Pumpingstation:
+    type: "object"
+    required:
+    - "name"
+    - "photoUrls"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      category:
+        $ref: "#/definitions/Category"
+      name:
+        type: "string"
+        example: "doggie"
+      photoUrls:
+        type: "array"
+        items:
+          type: "string"
+      tags:
+        type: "array"
+        items:
+          $ref: "#/definitions/Tag"
+      status:
+        type: "string"
+        description: "pet status in the store"
+  Vendor:
+    type: "object"
+    required:
+    - "name"
+    - "country"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      category:
+        $ref: "#/definitions/Category"
+      name:
+        type: "string"
+        example: "doggie"
+      country:
+        type: "array"
+        items:
+          type: "string"
+      products:
+        type: "array"
+        items:
+          $ref: "#/definitions/Product"
+  Tag:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+  Product:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      petId:
+        type: "integer"
+        format: "int64"
+      quantity:
+        type: "integer"
+        format: "int32"
+      shipDate:
+        type: "string"
+        format: "date-time"
+      status:
+        type: "string"
+        description: "Order Status"
+      complete:
+        type: "boolean"
