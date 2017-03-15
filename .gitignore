@@ -8,6 +8,8 @@ Thumbs.db
 .rbenv-version
 .rvmrc
 dist
+client
+data
 libpeerconnection.log
 node_modules
 .grunt
