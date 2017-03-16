@@ -10,12 +10,32 @@ Online-Version: http://opendatalab.de/projects/trinkwasser/
 
 This project uses transifex for translation. Translations can be found or created at https://www.transifex.com/codeforeurope/trinkwasser/languages/
 Please install the transifex client to pull languages.
+Install your login credentials to ~/.transifexrc
+
+```
+[https://www.transifex.com]
+hostname = https://www.transifex.com
+password = pwd
+token = 
+username = username
+
+```
+## To pull down locale
+```shell
+tx pull -a
+```
+## After editing localisation changes in lang/locale/{in} 
+```shell
+tx push
+```
 
 
 # Run
+```shell
+npm install --dev #if set to normally install production dependencies only
+```
 
 ```bash
-tx pull -a
 npm install
 npm start
 ```
