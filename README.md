@@ -25,8 +25,10 @@ username = username
 tx pull -a
 ```
 ## After editing localisation changes in lang/locale/{in} 
+### If you not in the language team for it won't let you write 
+### Delete the other languages before saving the .po file you edited and executing..
 ```shell
-tx push
+tx push -t
 ```
 
 
