@@ -42,6 +42,11 @@ npm install
 npm start
 ```
 
+# Git before pushing your changes please do a pull request
+```shell 
+git pull https://github.com/codeforeurope/trinkwasser.git master
+```
+
 # Sources:
 
 * Stadtwerke Heilbronn: https://www.stadtwerke-heilbronn.de/index/hsw/Wasserh%C3%A4rte.html
