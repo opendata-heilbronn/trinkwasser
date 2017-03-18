@@ -10,7 +10,7 @@
     "swagger-tools": "0.10.1"
   },
   "devDependencies": {
-    "standard": "^9.0.1"
+    "standard": "^9.0.1",
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.4.0",
     "grunt-contrib-concat": "~0.1.3",

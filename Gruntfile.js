@@ -56,7 +56,7 @@ module.exports = function(grunt) {
 					dot: true,
 					cwd: 'src/',
 					dest: 'client/',
-					src: ['*.{ico,txt}', 'img/{,*/}*.{jpg,png,svg,gif}', 'data/*.geojson', 'fonts/*', 'css/*', 'js/*', 'lib/*', 'data/*.js']
+					src: ['*.{ico,txt}', 'img/{,*/}*.{jpg,png,svg,gif}', 'data/*.geojson', 'fonts/*', 'css/*', 'js/*', 'lib/*']
 				}]
 			},
       redirect: {
@@ -172,7 +172,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-i18n-abide');
   grunt.loadNpmTasks('hernanex3-grunt-static-i18n');
 	grunt.registerTask('dataupdate', ['jsonmin:dist']);
-	grunt.registerTask('build', ['clean:dist', 'i18n', 'imagemin', 'jsonmin', 'uglify', 'copy:dist', 'copy:redirect']);
+	grunt.registerTask('build', ['clean:dist', 'i18n', 'imagemin', 'uglify', 'copy:dist', 'copy:redirect']);
 	grunt.registerTask('deploy', ['build', 'gh-pages']);
 	grunt.registerTask('default', ['build']);
   grunt.registerTask('i18n', ['statici18n']);

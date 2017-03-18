@@ -9,7 +9,7 @@ Thumbs.db
 .rvmrc
 dist
 client
-data
+/data
 libpeerconnection.log
 node_modules
 .grunt
