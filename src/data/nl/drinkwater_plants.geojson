@@ -1,0 +1,1928 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/58/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.926529659882223, 52.22539357022041]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/59/0",
+            "ijzer_ug_l": 31,
+            "toc_mg_l": 4.4,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.422676724256115, 52.47600236186411]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/60/0",
+            "koper_ug_l": 23.5,
+            "toc_mg_l": 0.9,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.919601261672301, 51.951734610730924]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/61/0",
+            "koper_ug_l": 14.6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.84163583087459, 52.00958698440824]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/62/0",
+            "ijzer_ug_l": 48,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.209688861264326, 52.11126751983351]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/63/0",
+            "ijzer_ug_l": 93,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.219977277710081, 52.13168529809859]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/64/0",
+            "toc_mg_l": 1.2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.730446431758681, 52.41981194297414]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/65/0",
+            "toc_mg_l": 0.7,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.191231617009582, 52.05910759320831]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/66/0",
+            "koper_ug_l": 17.1,
+            "toc_mg_l": 3.6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.64936239543324, 51.95964791496323]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/67/0",
+            "toc_mg_l": 1.6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.307133511310583, 51.98796745244527]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/68/0",
+            "ijzer_ug_l": 39,
+            "toc_mg_l": 2.7,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.231862844068235, 51.94744533081842]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/69/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.855163837538781, 52.397814423364274]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/70/0",
+            "ijzer_ug_l": 40,
+            "toc_mg_l": 1.2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.021006192427858, 52.084497521378076]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/71/0",
+            "koper_ug_l": 10.2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.898878856774377, 51.79273090745142]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/72/0",
+            "ijzer_ug_l": 59,
+            "toc_mg_l": 2.1,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.14754101453788, 52.26866826607429]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/73/0",
+            "ijzer_ug_l": 35,
+            "koper_ug_l": 22,
+            "toc_mg_l": 1.8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.192423116327397, 52.239159378101775]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/74/0",
+            "ijzer_ug_l": 31,
+            "toc_mg_l": 1.5,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.143712147044913, 52.301948664389705]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/75/0",
+            "koper_ug_l": 22.4,
+            "lood_ug_l": 0.683,
+            "toc_mg_l": 1.6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.503340020262565, 51.88022395030652]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/76/0",
+            "koper_ug_l": 17.9,
+            "toc_mg_l": 1.7,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.326662153768381, 51.93974800936095]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/77/0",
+            "koper_ug_l": 15.1,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.328901844979184, 52.04101019707838]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/78/0",
+            "ijzer_ug_l": 14,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.305546195167135, 52.06032072967417]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/79/0",
+            "toc_mg_l": 1.8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.605005600160847, 51.87094521946454]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/80/0",
+            "koper_ug_l": 7.51,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.687540056682284, 52.05367389806796]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/81/0",
+            "ijzer_ug_l": 33,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.091894038473891, 52.03891480461143]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/82/0",
+            "koper_ug_l": 5.64,
+            "toc_mg_l": 0.7,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.073157613601402, 52.49903202872216]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/83/0",
+            "toc_mg_l": 2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.8750493757254, 52.24916118137262]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/84/0",
+            "toc_mg_l": 0.7,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.96729246945907, 52.377095646021374]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/85/0",
+            "toc_mg_l": 3.4,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.341465478703368, 52.29368656575294]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/86/0",
+            "ijzer_ug_l": 22,
+            "koper_ug_l": 21.2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.796613774332809, 51.944137850826515]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/87/0",
+            "ijzer_ug_l": 23,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.467153218604458, 52.32838478556656]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/88/0",
+            "toc_mg_l": 3,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.568508374400012, 52.231951109349716]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/89/0",
+            "ijzer_ug_l": 18,
+            "toc_mg_l": 2.8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.1389206722742, 52.13154259915974]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/90/0",
+            "ijzer_ug_l": 30,
+            "toc_mg_l": 4.6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.535208707740156, 52.47316828693033]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/91/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.655689682683704, 52.333724133840484]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/1/0",
+            "ijzer_ug_l": 21,
+            "toc_mg_l": 4.5,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.363460310150149, 51.531006667552546]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/2/0",
+            "toc_mg_l": 2.5,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.311154082272424, 51.47878514587964]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/3/0",
+            "toc_mg_l": 6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.908777617336891, 51.645921025426716]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/4/0",
+            "toc_mg_l": 2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.868076919936775, 51.598428056622055]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/5/0",
+            "toc_mg_l": 2.5,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.586466852931751, 51.29067494483514]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/6/0",
+            "toc_mg_l": 1.5,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.476330542398848, 51.41077506182289]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/7/0",
+            "ijzer_ug_l": 38,
+            "toc_mg_l": 3,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.100892091177064, 51.740835220909986]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/8/0",
+            "ijzer_ug_l": 22,
+            "toc_mg_l": 2.2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.242833479851873, 51.61076232874006]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/9/0",
+            "toc_mg_l": 3.3,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.690970862394428, 51.4842465463335]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/10/0",
+            "toc_mg_l": 1.2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.558378038763549, 51.52268228406805]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/11/0",
+            "toc_mg_l": 3.2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.397548942478037, 51.78126345549157]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/12/0",
+            "toc_mg_l": 2.7,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.493529053406494, 51.68471547806435]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/13/0",
+            "koper_ug_l": 21,
+            "toc_mg_l": 1.6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.52840642361549, 51.8000094320967]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/14/0",
+            "toc_mg_l": 3.4,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.410183506604192, 51.72111103237476]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/15/0",
+            "toc_mg_l": 1.6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.254643456305647, 51.53140695037214]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/16/0",
+            "ijzer_ug_l": 16,
+            "toc_mg_l": 2.2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.832020564185587, 51.6340017014767]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/17/0",
+            "toc_mg_l": 1.8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.86376629613634, 51.542948254010334]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/18/0",
+            "ijzer_ug_l": 20,
+            "toc_mg_l": 2.9,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.473063755808314, 51.51034176201686]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/19/0",
+            "toc_mg_l": 3.8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.545703213869943, 51.50688755723737]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/20/0",
+            "toc_mg_l": 1.6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.397449402319125, 51.60099030414932]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/21/0",
+            "toc_mg_l": 3.2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.557033884732383, 51.56243089180698]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/22/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.68794338132002, 51.33330640346721]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/23/0",
+            "toc_mg_l": 1.9,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.433199464676066, 51.52792234503541]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/24/0",
+            "ijzer_ug_l": 26,
+            "koper_ug_l": 14,
+            "kwik_ug_l": 0.04,
+            "toc_mg_l": 2.2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.003711491397681, 51.54805743957768]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/25/0",
+            "toc_mg_l": 3.2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.581191309269512, 51.614689999809116]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/26/0",
+            "toc_mg_l": 1.5,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.311410043853869, 51.43651934048025]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/27/0",
+            "toc_mg_l": 2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.95127477388542, 51.594101511554626]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/28/0",
+            "koper_ug_l": 8,
+            "toc_mg_l": 3.8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.764405261632201, 51.436949200472014]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/29/0",
+            "ijzer_ug_l": 30,
+            "toc_mg_l": 2.3,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.186429496794841, 51.68563473095591]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/30/0",
+            "toc_mg_l": 2.32,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.38280647739079, 52.17696402621869]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/31/0",
+            "toc_mg_l": 2.59,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.200536875222076, 52.04852941915739]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/32/0",
+            "toc_mg_l": 2.08,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.343642468928356, 52.1011199624161]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/33/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.713129475337964, 51.79595658577411]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/34/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.412209346964908, 51.83474123859774]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/35/0",
+            "toc_mg_l": 1.8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [3.752674600736011, 51.295192370973666]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/36/0",
+            "toc_mg_l": 1.1,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [3.700011484840317, 51.69226156015039]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/37/0",
+            "ijzer_ug_l": 11,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.292005990558931, 51.52670003378003]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/38/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.361680613227843, 51.44058604991984]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/39/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.536945849009412, 51.913912968957845]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/40/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.325940718781848, 51.400263849687626]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/41/0",
+            "toc_mg_l": 1.8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [3.950944855602265, 51.83000307510052]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/42/0",
+            "toc_mg_l": 0.9,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.805535061356235, 51.937121287121734]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/43/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.64336373293432, 51.85975014750187]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/44/0",
+            "ijzer_ug_l": 13,
+            "toc_mg_l": 5.7,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.86404272536076, 52.09514059407751]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/45/0",
+            "toc_mg_l": 1.4,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.642660259321937, 51.893506977769896]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/46/0",
+            "toc_mg_l": 1.1,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.041821309558166, 51.95836616115029]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/47/0",
+            "toc_mg_l": 1.1,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.671892022430059, 51.882452833149145]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/48/0",
+            "toc_mg_l": 1.8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.596679610709276, 51.88520671227438]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/49/0",
+            "toc_mg_l": 1.3,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.265018481046401, 52.7505245101512]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/50/0",
+            "toc_mg_l": 1.09,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.681871566120576, 52.67974746374411]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/51/0",
+            "koper_ug_l": 0.7,
+            "toc_mg_l": 1.09,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.207052184696933, 52.258395438885906]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/52/0",
+            "toc_mg_l": 1.28,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.612067500184769, 52.52922250538068]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/53/0",
+            "toc_mg_l": 2.9,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.562401220294123, 52.36099735509363]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/54/0",
+            "ijzer_ug_l": 20,
+            "toc_mg_l": 2.1,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.812502475794639, 53.459492264601565]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/55/0",
+            "ijzer_ug_l": 78,
+            "toc_mg_l": 2.3,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.625775711005593, 53.45079741135636]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/56/0",
+            "ijzer_ug_l": 18,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.365291427685424, 52.14123899065732]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/57/0",
+            "ijzer_ug_l": 45,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.410588379398017, 52.16415786991955]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/92/0",
+            "koper_ug_l": 8.15,
+            "toc_mg_l": 1.1,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.793482041044219, 52.28647583457045]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/93/0",
+            "toc_mg_l": 1.9,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.181464558891959, 52.77265188065217]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/94/0",
+            "toc_mg_l": 3,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.352217177076813, 52.04605717705461]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/95/0",
+            "toc_mg_l": 1.2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.540833961115087, 52.23734823843464]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/96/0",
+            "ijzer_ug_l": 36,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.858472487582042, 51.809978453158465]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/97/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.872755334880121, 52.125859797330506]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/98/0",
+            "ijzer_ug_l": 36,
+            "koper_ug_l": 41,
+            "toc_mg_l": 0.8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.435360171890377, 52.23021111849015]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/99/0",
+            "toc_mg_l": 2.4,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.558757596700738, 52.389796306964506]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/100/0",
+            "ijzer_ug_l": 64,
+            "toc_mg_l": 1.9,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.074011984050457, 52.01544159287207]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/101/0",
+            "ijzer_ug_l": 29,
+            "koper_ug_l": 52.2,
+            "toc_mg_l": 1.5,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.203466597743921, 52.23996493714457]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/102/0",
+            "ijzer_ug_l": 22,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.442913840875226, 52.00910347669806]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/103/0",
+            "ijzer_ug_l": 38,
+            "koper_ug_l": 5.37,
+            "toc_mg_l": 1.5,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.957724527448654, 52.06540881641895]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/104/0",
+            "ijzer_ug_l": 38,
+            "toc_mg_l": 1.8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.142906468296336, 52.20390386232247]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/105/0",
+            "ijzer_ug_l": 33,
+            "toc_mg_l": 1.9,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.919299431293508, 51.97448116294765]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/106/0",
+            "ijzer_ug_l": 14,
+            "toc_mg_l": 0.6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.794635358294555, 52.45286191882936]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/107/0",
+            "ijzer_ug_l": 16,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.234290207095884, 51.90000101335677]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/108/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.436870005441468, 52.36082935342895]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/109/0",
+            "toc_mg_l": 3.8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.997995421396583, 53.21721196298533]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/148/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.526106158086909, 52.86197592060838]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/110/0",
+            "koper_ug_l": 9.48,
+            "toc_mg_l": 3.6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.050777476556934, 52.90061541321965]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/111/0",
+            "toc_mg_l": 3.2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.603507158736973, 52.09298852031492]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/112/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.850782068138812, 51.97854172013717]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/113/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.933365268576762, 52.006949830781814]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/114/0",
+            "koper_ug_l": 10.3,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.628550628827441, 52.234458993442246]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/115/0",
+            "ijzer_ug_l": 38,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.560381090262893, 51.97168814068272]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/116/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.980130601169265, 52.12896382822211]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/117/0",
+            "ijzer_ug_l": 21,
+            "toc_mg_l": 2.5,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.147900839402253, 53.483484756979706]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/118/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.306124910932533, 52.143460226400265]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/119/0",
+            "toc_mg_l": 2.9,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.695627606943766, 52.907004210410626]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/120/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.722341774827812, 52.27153848241548]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/121/0",
+            "ijzer_ug_l": 35,
+            "toc_mg_l": 4.1,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.01711806070949, 52.67927018644722]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/122/0",
+            "ijzer_ug_l": 49,
+            "toc_mg_l": 3.3,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.215449453832826, 53.38064948726608]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/123/0",
+            "toc_mg_l": 2.4,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.309472443147016, 52.94023644636141]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/124/0",
+            "ijzer_ug_l": 62,
+            "toc_mg_l": 2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.1279665494025, 52.00568572746891]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/125/0",
+            "ijzer_ug_l": 37,
+            "toc_mg_l": 1.3,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.08578247076112, 52.2542193095771]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/126/0",
+            "toc_mg_l": 0.9,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.545796460898302, 52.02437938341661]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/127/0",
+            "toc_mg_l": 1.7,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.298791933368589, 51.787972029235895]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/128/0",
+            "toc_mg_l": 1.8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.058752897431386, 53.297165687585995]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/129/0",
+            "toc_mg_l": 3.6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.347258646911195, 52.120702943409206]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/130/0",
+            "toc_mg_l": 1.5,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.229023450195264, 51.84497501394778]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/131/0",
+            "ijzer_ug_l": 20,
+            "koper_ug_l": 9.29,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.710974792920073, 51.967774496448406]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/132/0",
+            "toc_mg_l": 2.2,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.872013109022599, 52.333696223587324]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/133/0",
+            "koper_ug_l": 6.77,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.008024738863889, 52.45418331668707]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/134/0",
+            "ijzer_ug_l": 37,
+            "toc_mg_l": 4.7,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.404733888713378, 52.55974527101921]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/135/0",
+            "ijzer_ug_l": 20,
+            "toc_mg_l": 1,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.457955980631233, 52.08055069572569]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/136/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.247100459916253, 52.09846500884377]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/137/0",
+            "ijzer_ug_l": 23,
+            "koper_ug_l": 49.2,
+            "toc_mg_l": 1.6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.373395000948955, 51.914739875657]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/138/0",
+            "toc_mg_l": 3.3,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.207235161116473, 52.12922063145797]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/139/0",
+            "koper_ug_l": 1.8,
+            "toc_mg_l": 3.23,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.016238739381083, 52.30738360295217]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/140/0",
+            "toc_mg_l": 1.05,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [4.545363994354523, 52.31755267125774]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/141/0",
+            "ijzer_ug_l": 30,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.719693817197805, 53.09858289516176]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/142/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.412754258123459, 53.15687148763282]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/143/0",
+            "ijzer_ug_l": 40,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.665229566000082, 53.150401366695164]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/144/0",
+            "ijzer_ug_l": 30,
+            "koper_ug_l": 6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.617510989117259, 53.141896059519986]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/145/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.617510989117259, 53.141896059519986]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/146/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [7.128217344171521, 52.96256546397613]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/147/0",
+            "koper_ug_l": 9,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.594584816536852, 53.002401754306895]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/149/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.740459780438653, 52.68672084665441]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/150/0",
+            "koper_ug_l": 36,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.782803614602465, 52.964259431229486]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/151/0",
+            "koper_ug_l": 6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.497365095028681, 52.72428993834433]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/152/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.775393919168393, 52.76244663892857]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/153/0",
+            "koper_ug_l": 34,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.357941117060578, 52.84548879552429]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/154/0",
+            "koper_ug_l": 6,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.881080817520695, 52.7811212594622]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/155/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.296101870727489, 52.726895851703425]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/156/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.876496936644518, 52.81632177141938]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/157/0",
+            "ijzer_ug_l": 40,
+            "koper_ug_l": 58,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.466572397415601, 52.67604016212295]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/158/0",
+            "toc_mg_l": 1.8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.895223158085606, 51.20982501925511]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/159/0",
+            "ijzer_ug_l": 28,
+            "toc_mg_l": 3,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.993990704166459, 51.481715989154246]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/160/0",
+            "ijzer_ug_l": 21,
+            "toc_mg_l": 2.4,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.119008434854666, 51.400277884672086]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/161/0",
+            "koper_ug_l": 6,
+            "toc_mg_l": 1.3,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.163295306587777, 51.47352167795343]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/162/0",
+            "toc_mg_l": 1.4,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.210330600796802, 51.463760863963905]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/163/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.906401431606607, 51.185954955942286]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/164/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.76296260593337, 51.206103178397576]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/165/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.833225385646838, 51.30940652066772]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/166/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.896717354952788, 51.08667010878067]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/167/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.905624963010967, 51.74910669064374]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/168/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.806821393723756, 51.088827914442966]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/169/0",
+            "ijzer_ug_l": 17,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.004459985075603, 50.979177602365425]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/170/0",
+            "koper_ug_l": 8,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.852997044705618, 50.99741417478925]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/171/0",
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [5.84426390166202, 51.05048354950437]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "inspireid": "http://data.rivm.nl/inspire/so/hh/drinkwater-location/172/0",
+            "koper_ug_l": 10,
+            "versionid": 0
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [6.206869567128277, 51.351421673745605]
+        }
+    }]
+}
