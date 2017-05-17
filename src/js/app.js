@@ -110,29 +110,6 @@ var tw = {
     attribute = startAttribute
   }
 
-  var generateOptionsHtml = function (values, withEmptyOption) {
-    var html = withEmptyOption ? '<option value="">' + "_('Bitte auswählen')" + '</option>' : ''
-    values.forEach(function (value) {
-      html += '<option value="' + value + '">' + value + '</option>'
-    })
-    return html
-  }
-
-  var updateFormDistricts = function () {
-    var city = $('#city').val()
-    var districts = city ? Object.keys(tw.data.locations[city]) : []
-
-    if (districts.length < 2) {
-      $('.select-district').hide()
-      $('.district').html('')
-    } else {
-      $('.district').html(generateOptionsHtml(districts))
-      $('.select-district').show()
-    }
-
-    updateFormStreetZones()
-  }
-
   var stringComparator = function (a, b) {
     a = a.toLowerCase()
     a = a.replace(/ä/g, 'a')
@@ -149,49 +126,10 @@ var tw = {
     return (a === b) ? 0 : (a > b) ? 1 : -1
   }
 
-  var updateFormStreetZones = function () {
-    var city = $('#city').val()
-    var district = $('#district').val()
-    if (!district) {
-      district = ''
-    }
-
-    var streets = city ? tw.data.locations[city][district] : {}
-    if (!streets || Object.keys(streets).length <= 0) {
-      $('.select-street').hide()
-      $('.streetZone').html('')
-    } else {
-      var html = ''
-      if (city === 'Heilbronn') {
-        var allStreets = {}
-        Object.keys(streets).forEach(function (zone) {
-          streets[zone].forEach(function (street) {
-            allStreets[street] = zone
-          })
-        })
-        var allStreetNames = Object.keys(allStreets)
-        allStreetNames.sort(stringComparator)
-        allStreetNames.forEach(function (streetName) {
-          html += '<option value="' + allStreets[streetName] + '|' + streetName + '">' + streetName + '</option>'
-        })
-      } else {
-        Object.keys(streets).forEach(function (zone) {
-          html += '<optgroup label="' + zone + '">'
-          streets[zone].forEach(function (street) {
-            html += '<option value="' + zone + '|' + street + '">' + street + '</option>'
-          })
-          html += '</optgroup>'
-        })
-      }
-      $('.streetZone').html(html)
-      $('.select-street').show()
-    }
-  }
-
   var onSubmit = function (e) {
-    e.preventDefault()
-    hasSelectedFirstLocation = !!$('#city').val()
-    updateZone()
+    e.preventDefault();
+    hasSelectedFirstLocation = !!$('#city').val();
+    updateZone();
   }
 
   var setupQuickForm = function () {
@@ -207,19 +145,33 @@ var tw = {
     }
 
     bindMirrorEvent('city')
-    bindMirrorEvent('district')
-    bindMirrorEvent('streetZone')
     quickForm.on('change', onSubmit)
   }
 
   var setupForm = function () {
-    $('#city').on('change', updateFormDistricts)
-    $('#district').on('change', updateFormStreetZones)
-    $('#streetZone').on('change', updateZone)
+    $('#city').autocomplete({
+      paramName: 'q',
+      serviceUrl: 'http://open.mapquestapi.com/nominatim/v1/search.php',
+      minChars: 4,
+      params: {
+        key:"BJlOjYiGd1RjyCk1VVDE3YLjDruBpngY",
+        format:"json",
+        addressdetails:"1",
+        limit: 3
+      },
+      transformResult: function(response) {
+        response = JSON.parse(response);
+        return {
+            suggestions: $.map(response, function(result) {
+                return { value: result.display_name, data: result };
+            })
+        };
+      },
+      onSelect: function (suggestion) {
+        alert('You selected: ' + suggestion.value );
+      }
+    });
     $('.form-choose-location').on('submit', onSubmit)
-
-    var cities = Object.keys(tw.data.locations)
-    $('.city').html(generateOptionsHtml(cities, true))
   }
 
   var updateSection = function () {
@@ -239,10 +191,12 @@ var tw = {
   }
 
   var completeReferenceWaters = function () {
-    Object.keys(tw.data.referenceWaters).forEach(function (name) {
-      var values = tw.data.referenceWaters[name]
-      values.hardness = Math.round(((0.14 * values.calcium) + (0.23 * values.magnesium)) * 10) / 10
-    })
+    if(tw.data.referenceWaters){
+      Object.keys(tw.data.referenceWaters).forEach(function (name) {
+        var values = tw.data.referenceWaters[name]
+        values.hardness = Math.round(((0.14 * values.calcium) + (0.23 * values.magnesium)) * 10) / 10
+      });
+    }
   }
 
   tw.init = function () {
@@ -258,7 +212,5 @@ var tw = {
     if (window.location.href.indexOf('embed') < 0) {
       $('h1').show()
     }
-// $('.city').val('Erlenbach').trigger('change');
-// $('.switch-to-section[data-section="map"]').trigger('click');
   }
 })(tw, jQuery)

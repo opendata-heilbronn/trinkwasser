@@ -8,7 +8,7 @@ Thumbs.db
 .rbenv-version
 .rvmrc
 dist
-client
+build
 /data
 libpeerconnection.log
 node_modules

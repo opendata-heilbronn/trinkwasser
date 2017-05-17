@@ -55,13 +55,13 @@
   var mapInstance = null
 
   var init = function () {
-    $.getJSON('data/gemeinden_simplify20_hn.geojson', function (data) {
-      areaData = data
-      $.getJSON('data/hn-streets.geojson', function (hnData) {
-        zoneData = hnData
-        mapInstance = new Map(d3.select('.map-img'))
-      })
-    })
+    // $.getJSON('data/gemeinden_simplify20_hn.geojson', function (data) {
+    //   areaData = data
+    //   $.getJSON('data/hn-streets.geojson', function (hnData) {
+    //     zoneData = hnData
+    //     mapInstance = new Map(d3.select('.map-img'))
+    //   })
+    // })
     return this
   }
 

@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 			},
 			assets: {
 				files: [{
-					src: ['client/{css,js}/*.{js,css}']
+					src: ['build/{css,js}/*.{js,css}']
 				}]
 			}
 		},
@@ -37,16 +37,16 @@ module.exports = function(grunt) {
 			tasks: ['jshint']
 		},
 		useminPrepare: {
-			html: ['client/**/index.html'],
+			html: ['build/**/index.html'],
 			options: {
-				dest: 'client/'
+				dest: 'build/'
 			}
 		},
 		usemin: {
-			html: ['client/**/*.html'],
-			css: ['client/**/*.css'],
+			html: ['build/**/*.html'],
+			css: ['build/**/*.css'],
 			options: {
-				dirs: ['client/']
+				dirs: ['build/']
 			}
 		},
 		copy: {
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 					expand: true,
 					dot: true,
 					cwd: 'src/',
-					dest: 'client/',
+					dest: 'build/',
 					src: ['*.{ico,txt}', 'img/{,*/}*.{jpg,png,svg,gif}', 'data/*.geojson', 'fonts/*', 'css/*', 'js/*', 'lib/*']
 				}]
 			},
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
           expand: true,
           dot: true,
           cwd: 'src/',
-          dest: 'client/',
+          dest: 'build/',
           src: ['redirect.html'],
           rename: function(dest, src) {
               return dest + 'index.html';
@@ -76,7 +76,7 @@ module.exports = function(grunt) {
 			dist: {
 				files: [{
 					dot: true,
-					src: ['client/{css,js,img}']
+					src: ['build/{css,js,img}']
 				}]
 			}
 		},
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd: 'src/img',
 					src: '{,*/}*.{png,jpg,jpeg}',
-					dest: 'client/img'
+					dest: 'build/img'
 				}]
 			}
 		},
@@ -146,12 +146,12 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'src',
           src: 'index.html',
-          dest: 'client'
+          dest: 'build'
         }, {
           expand: true,
           cwd: 'src',
           src: 'js/app.js',
-          dest: 'client'
+          dest: 'build'
         }]
       }
     }

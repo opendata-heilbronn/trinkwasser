@@ -34,28 +34,12 @@
 				<form class="form-horizontal form-choose-location" role="form">
 					<div class="form-group select-city">
 						<label for="city" class="col-sm-2 control-label">_('Ort')</label>
-						<div class="col-sm-10">
-							<select id="city" class="city form-control">
-								<option value="">_('Bitte auswählen')</option>
-							</select>
+						<div class="col-sm-7">
+							<input id="city" type="text" class="city form-control" placeholder="_('Bitte auswählen')">
+							</input>
+							
 						</div>
-					</div>
-					<div class="form-group select-district" style="display:none;">
-						<label for="district" class="col-sm-2 control-label">_('Ortsteil')</label>
-						<div class="col-sm-10">
-							<select id="district" class="district form-control">
-							</select>
-						</div>
-					</div>
-					<div class="form-group select-street" style="display:none;">
-						<label for="streetZone" class="col-sm-2 control-label">_('Straße')</label>
-						<div class="col-sm-10">
-							<select id="streetZone" class="streetZone form-control">
-							</select>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-offset-2 col-sm-10">
+						<div class="col-sm-3">
 							<button type="submit" class="btn btn-warning">
 								<span class="glyphicon glyphicon-chevron-right"></span> _('Weiter')
 							</button>
@@ -565,10 +549,6 @@
 			|
 			<a data-toggle="modal" data-target="#imprintDialog"><span class="glyphicon glyphicon-info-sign"></span></a>
 			<a data-toggle="modal" data-target="#imprintDialog">_('Impressum')</a>
-			|
-			<a href="../docs"><span class="glyphicon glyphicon-edit"></span></a>
-			<a href="../docs">_('Swagger Api Docs')</a>
-
 		</footer>
 	</div>
 
@@ -678,14 +658,12 @@
 
 	<!-- build:js js/tw.min.js -->
 	<script src="../lib/jquery.js"></script>
+	<script src="../lib/jquery.autocomplete.min.js"></script>
 	<script src="../lib/bootstrap.js"></script>
 	<script src="../lib/d3.js"></script>
 	<script src="../lib/colorbrewer.js"></script>
 	<script src="js/app.js"></script>
 	<script src="../js/utils.js"></script>
-	<script src="../data/locations.js"></script>
-	<script src="../data/zones.js"></script>
-	<script src="../data/mineralwaesser.js"></script>
 	<script src="../js/gauge.js"></script>
 	<script src="../js/comparison.js"></script>
 	<script src="../js/map.js"></script>
