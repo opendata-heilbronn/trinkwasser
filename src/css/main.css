@@ -215,6 +215,13 @@ svg text {
 	stroke: #333;
 }
 
+.autocomplete-suggestions { border: 1px solid #fff; background: #FFF; overflow: auto; border-radius: 0 0 4px 4px;}
+.autocomplete-suggestion { padding: 6px; white-space: nowrap; overflow: hidden; color: #555; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: bold; color: #555; }
+.autocomplete-group { padding: 8px 12px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
 @media (max-width: 767px) {
 	h1 {
 		font-size: 20px;

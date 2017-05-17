@@ -40,7 +40,7 @@
 							
 						</div>
 						<div class="col-sm-3">
-							<button type="submit" class="btn btn-warning">
+							<button id="city-btn" type="submit" class="btn btn-warning disabled">
 								<span class="glyphicon glyphicon-chevron-right"></span> _('Weiter')
 							</button>
 						</div>
@@ -53,19 +53,7 @@
 		</div>
 
 		<div class="results" style="display:none;">
-			<form class="form-inline form-choose-location-quick">
-				<div class="form-group">
-					<select class="city form-control"></select>
-				</div>
-				<div class="form-group select-district">
-					<select class="district form-control"></select>
-				</div>
-				<div class="form-group select-street">
-					<select class="streetZone form-control"></select>
-				</div>
-			</form>
-
-
+			<h2 id="current-location"></h2>
 			<ul class="nav nav-tabs responsive">
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="natrium">_('Natrium')</a></li>
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="kalium">_('Kalium')</a></li>

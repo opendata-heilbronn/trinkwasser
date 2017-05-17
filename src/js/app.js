@@ -168,7 +168,10 @@ var tw = {
         };
       },
       onSelect: function (suggestion) {
-        alert('You selected: ' + suggestion.value );
+        console.log('Your lat/lon is approx: ' + suggestion.data.lat + "," + suggestion.data.lon );
+        $('#city-btn').prop('disabled', false);
+        $('#city-btn').removeClass('disabled');
+        $('#current-location').text(suggestion.data.display_name);
       }
     });
     $('.form-choose-location').on('submit', onSubmit)
@@ -208,7 +211,7 @@ var tw = {
     tw.gauge.init()
     tw.comparison.init()
     tw.map.init()
-
+    $('#city-btn').prop('disabled', true);
     if (window.location.href.indexOf('embed') < 0) {
       $('h1').show()
     }
