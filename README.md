@@ -1,10 +1,8 @@
 # Drinking water visualization: Hardness, contents and cost
 
-* In the converter/ folder, you find raw data and small scripts that will process the rawdata int a model for the website
+* In the converter/ folder, you find raw data and small scripts that will process the rawdata into a model for the website
 * In the src/ folder, you will find HTML, CSS und JavaScript that will visualize the drinkingwater information.
-* When you run `grunt gh-pages` the online version will be renewed.
-
-Online-Version: http://opendatalab.de/projects/trinkwasser/
+* When you use grunt, a build directory will be created with translated sections for all supported languages.
 
 # i18n
 
