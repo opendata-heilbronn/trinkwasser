@@ -29,11 +29,7 @@ tx pull -a
 tx push
 ```
 
-
 # Run
-```shell
-npm install --dev #if set to normally install production dependencies only
-```
 
 ```bash
 npm install
