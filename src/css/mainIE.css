@@ -1,0 +1,101 @@
+.navbar {
+	/* border: #2a9fd6 !important; */
+	border: #9cbc4f !important;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: #9cbc4f;
+}
+.nav-tabs {
+  border-bottom: 1px solid #9cbc4f;
+}
+.nav-tabs > li > a:hover {
+  border-color: transparent transparent #9cbc4f;
+}
+
+/* text color besides the test tube */
+.highlight {
+	color: #FFBE17;
+}
+
+.bg-gradient {
+	background: #2f4f4f;
+	background: -moz-radial-gradient(center, ellipse cover, #436060 0%, #2f4f4f 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, #436060 0%, #2f4f4f 100%);
+	background: -o-radial-gradient(center, ellipse cover, #436060 0%, #2f4f4f 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #436060 0%, #2f4f4f 100%);
+	background: radial-gradient(ellipse at center, #436060 0%, #2f4f4f 100%);
+	background: radial-gradient(ellipse at center, #436060 0%, #2f4f4f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#436060', endColorstr='#2f4f4f',GradientType=1 );
+}
+.choose-location-well {
+	/* background: #2a9fd6;*/
+	background: #008b8b;
+}
+
+.btn-warning {
+/*	background-color: #ff8800;
+    border-color: #ff8800; */
+		background-color: #d0b808;
+		border-color: #d0b808;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+/*	background-color: #d67200;
+    border-color: #c26700; */
+		background-color: #bba507;
+		border-color: #bba507;
+}
+
+li.nav-li-main.active a {
+	/* background-color: #2a9fd6 !important; */
+	background-color: #9cbc4f !important;
+}
+
+.btn-primary {
+    border-color: #9cbc4f;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-color: #9cbc4f;
+  border-color: #9cbc4f;
+}
+
+.panel-default {
+    border-color: #9cbc4f;
+}
+.panel-default > .panel-heading {
+    background-color: #9cbc4f;
+    border-color: #9cbc4f;
+}
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+    border-top-color: #9cbc4f;
+}
+blockquote {
+    border-left: 5px solid #9cbc4f;
+}
+
+/* map */
+.areas path {
+/* stroke: #2a9fd6; */
+	stroke: #9cbc4f;
+}
+
+/* gauge top bubbles */
+.gauge-top path:nth-last-child(-n+3){
+	fill: #9cbc4f;
+}
+
+.gauge-values path,
+.gauge-value,
+.gauge-bubbles {
+	/* fill: #2a9fd6; */
+	fill: #9cbc4f;
+}
