@@ -1,154 +1,131 @@
-var tw = {
-  data: {}
-};
+// Initialize our namespace
+var tw = tw || { data: {}};
 
 (function (tw, $) {
-  'use strict'
-
-  var zoneData = {}
-  var zoneId = ''
-  var attribute = null
-  var hasSelectedFirstLocation = false
-  var section = 'explanation'
-  var attributes = ['natrium', 'kalium', 'calcium', 'magnesium', 'chlorid', 'nitrat', 'sulfat']
-
-  var generateZoneId = function (city, district, streetZone) {
-    var idParts = []
-    var addIdPart = function (value) {
-      if (value && idParts.indexOf(value) < 0) {
-        idParts.push(value)
-      }
+  'use strict';
+  tw.data.nutrientDailyDosis = {
+    "Kalium": '~ 2000 mg',
+    "Calcium": '~ 1000 mg',
+    "Magnesium": '~ 350 mg'
+  };
+  var defs = {
+    'hardness': {
+      'min': 0,
+      'max': 28,
+      'parts': [{
+        'id': 1,
+        'x': 0,
+        'width': 225,
+        'label': 'weich',
+        'rangeLabel': '&lt; 8,4 °dH'
+      }, {
+        'id': 2,
+        'x': 225,
+        'width': 150,
+        'label': 'mittel',
+        'rangeLabel': '8,4 - 14 °dH'
+      }, {
+        'id': 3,
+        'x': 375,
+        'width': 375,
+        'label': 'hart',
+        'rangeLabel': '&gt; 14 °dH'
+      },
+      ]
     }
+  };
 
-    addIdPart(city)
-    addIdPart(district)
-    addIdPart(streetZone)
-    return idParts.join(' ')
-  }
-
-  var updateZoneInfo = function () {
-    if (zoneData) {
-      $('.zone-id').text(zoneId)
-      $('.zone-data-year').text(zoneData.year)
-      $('.zone-description').html(zoneData.description)
-      $('.zone-about').toggle(!!((zoneData.year || zoneData.description)))
-      $('.zone-year-container').toggle(!!zoneData.year)
-    }
-  }
-
-  var updateDisabledTabs = function () {
-    $('.nav-li-main').removeClass('disabled')
-    attributes.forEach(function (attribute) {
-      if (!zoneData[attribute]) {
-        $('a[data-toggle="tab"][data-attribute="' + attribute + '"]').parent().addClass('disabled')
-      }
-    })
-  }
-
-  var updateZone = function () {
-    var city = $('#city').val()
-    var district = $('#district').val()
-    var streetZone = $('#streetZone').val()
-    var zone = streetZone ? streetZone.substr(0, streetZone.indexOf('|')) : ''
-
-    $('.results').toggle(hasSelectedFirstLocation)
-    $('.choose-location').toggle(!hasSelectedFirstLocation)
-    $('body').toggleClass('state-1', !hasSelectedFirstLocation)
-
-    if (hasSelectedFirstLocation) {
-      var newZoneId = generateZoneId(city, district, zone)
-      if (newZoneId !== zoneId) {
-        zoneId = newZoneId
-        zoneData = tw.data.zones[zoneId]
-        updateZoneInfo()
-        updateAttributeContent()
-        updateDisabledTabs()
-      }
-    }
-  }
+  var areaData = null;
+  var zoneData = null;
+  var mapInstance = null;
+  var zoneId = '';
+  var attribute = null;
+  var hasSelectedFirstLocation = false;
+  var section = 'explanation';
 
   var updateAttributeContent = function () {
+    var hit;
     if (attribute === 'info') {
-      $('.result-with-value, .result-without-value').hide()
-      $('.info-container').show()
+      $('.result-with-value, .result-without-value').hide();
+      $('.info-container').show();
     } else {
-      $('.info-container').hide()
-
-      if (zoneData && zoneData[attribute]) {
-        $('.result-without-value').hide()
-        $('.result-with-value').show()
-
-        tw.gauge.update(attribute)
-        if (section === 'explanation') {
-          tw.gauge.updateValue(attribute, zoneData[attribute], zoneData)
+      $('.info-container').hide();
+      for (var i = 0; i < tw.data.report.observations.length; i++) {
+        if(tw.data.report.observations[i].code === attribute){
+          hit = true;
+          $('.result-without-value').hide();
+          $('.result-with-value').show();
+          tw.gauge.update(attribute);
+          if (section === 'explanation') {
+            tw.gauge.updateValue(attribute, tw.data.report.observations[i].value, tw.data.report);
+          }
+          if (section === 'compare') {
+            tw.comparison.update(attribute, tw.data.report.observations[i].value);
+          }
+          if (section === 'map') {
+            tw.map.update(attribute);
+          }
+          continue;
         }
-        if (section === 'compare') {
-          tw.comparison.update(attribute, zoneData[attribute])
-        }
-        if (section === 'map') {
-          tw.map.update(attribute)
-        }
-      } else {
-        $('.result-with-value').hide()
-        $('.result-without-value').show()
+      }
+      if(!hit){
+        $('.result-with-value').hide();
+        $('.result-without-value').show();
       }
     }
-  }
+  };
 
   var setupTabs = function (startAttribute) {
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-      attribute = $(e.target).data('attribute')
-      $('.current-attribute-label').text($(e.target).text())
-      section = 'explanation'
-      updateSection()
-      updateAttributeContent()
-    })
+      attribute = $(e.target).data('attribute');
+      $('.current-attribute-label').text($(e.target).text());
+      section = 'explanation';
+      updateSection();
+      updateAttributeContent();
+    });
 
-    var startAttributeElement = $('a[data-attribute="' + startAttribute + '"]')
-    startAttributeElement.parent().addClass('active').closest('.nav-li-main').addClass('active')
-    $('.current-attribute-label').text(startAttributeElement.text())
-    attribute = startAttribute
-  }
+    var startAttributeElement = $('a[data-attribute="' + startAttribute + '"]');
+    startAttributeElement.parent().addClass('active').closest('.nav-li-main').addClass('active');
+    $('.current-attribute-label').text(startAttributeElement.text());
+    attribute = startAttribute;
+  };
 
   var stringComparator = function (a, b) {
-    a = a.toLowerCase()
-    a = a.replace(/ä/g, 'a')
-    a = a.replace(/ö/g, 'o')
-    a = a.replace(/ü/g, 'u')
-    a = a.replace(/ß/g, 's')
+    a = a.toLowerCase();
+    a = a.replace(/ä/g, 'a');
+    a = a.replace(/ö/g, 'o');
+    a = a.replace(/ü/g, 'u');
+    a = a.replace(/ß/g, 's');
 
-    b = b.toLowerCase()
-    b = b.replace(/ä/g, 'a')
-    b = b.replace(/ö/g, 'o')
-    b = b.replace(/ü/g, 'u')
-    b = b.replace(/ß/g, 's')
+    b = b.toLowerCase();
+    b = b.replace(/ä/g, 'a');
+    b = b.replace(/ö/g, 'o');
+    b = b.replace(/ü/g, 'u');
+    b = b.replace(/ß/g, 's');
 
-    return (a === b) ? 0 : (a > b) ? 1 : -1
-  }
+    return (a === b) ? 0 : (a > b) ? 1 : -1;
+  };
 
-  var onSubmit = function (e) {
-    e.preventDefault();
-    hasSelectedFirstLocation = !!$('#city').val();
-    updateZone();
-  }
-
-  var setupQuickForm = function () {
-    var quickForm = $('.form-choose-location-quick')
-
-    var bindMirrorEvent = function (attribute) {
-      quickForm.find('.' + attribute).on('change', function () {
-        $('#' + attribute).val($(this).val()).trigger('change')
-      })
-      $('#' + attribute).on('change', function () {
-        quickForm.find('.' + attribute).val($(this).val())
-      })
+  /**
+   * Set the label for an attribute
+   *
+   * @param {*} attribute
+   * @param {*} value
+   */
+  var setAttributeLabel = function(attribute, value){
+    // @todo i18n this one.
+    if (attribute === 'hardness' && value > 21.3) {
+      return '(sehr) hart';
     }
+  };
 
-    bindMirrorEvent('city')
-    quickForm.on('change', onSubmit)
-  }
-
-  var setupForm = function () {
+  /**
+   * This function binds the nominatim geocoder from mapquest to the input with id 'city'.
+   * A user can then start typing (autocomplete) and select the right address from the dropdown.
+   * Once the address is selected, the next button becomes active and the selected location is set
+   * for the next screen in the display.
+   */
+  var startGeocoder = function () {
     $('#city').autocomplete({
       paramName: 'q',
       serviceUrl: 'http://open.mapquestapi.com/nominatim/v1/search.php',
@@ -168,52 +145,68 @@ var tw = {
         };
       },
       onSelect: function (suggestion) {
-        console.log('Your lat/lon is approx: ' + suggestion.data.lat + "," + suggestion.data.lon );
         $('#city-btn').prop('disabled', false);
         $('#city-btn').removeClass('disabled');
         $('#current-location').text(suggestion.data.display_name);
+        $('#current-location-lat').val(suggestion.data.lat);
+        $('#current-location-lon').val(suggestion.data.lon);
       }
     });
-    $('.form-choose-location').on('submit', onSubmit)
-  }
+  };
+
+  /**
+   * When the submit button is pressed, the value from the input with id city is used to
+   * get information on the waterquality for the given location.
+   */
+  $('.form-choose-location').on('submit', function (e) {
+    e.preventDefault();
+    var lat = $('#current-location-lat').val();
+    var lon = $('#current-location-lon').val();
+
+    tw.utils.getReport(lat, lon, function(data){
+      tw.data.report = data;
+      tw.gauge.init();
+      setupTabs("info");
+      tw.utils.getLimits('EU', function(data){
+        tw.data.limits = data;
+        tw.utils.getAverages(function(data){
+          tw.data.averages = data;
+          tw.utils.getProducts(function(data){
+            tw.data.products = data;
+            tw.comparison.init();
+          });
+        });
+        $('.results').toggle(true);
+      });
+    });
+  });
 
   var updateSection = function () {
-    $('.section').hide()
-    $('.section-' + section).show()
+    $('.section').hide();
+    $('.section-' + section).show();
     if ($('body').scrollTop() > $('.result-with-value').offset().top) {
-      $('body').scrollTop($('.result-with-value').offset().top)
+      $('body').scrollTop($('.result-with-value').offset().top);
     }
-  }
+  };
 
   var setupSectionSwitch = function () {
     $('.switch-to-section').on('click', function () {
-      section = $(this).data('section')
-      updateSection()
-      updateAttributeContent()
-    })
-  }
+      section = $(this).data('section');
+      updateSection();
+      updateAttributeContent();
+    });
+  };
 
-  var completeReferenceWaters = function () {
-    if(tw.data.referenceWaters){
-      Object.keys(tw.data.referenceWaters).forEach(function (name) {
-        var values = tw.data.referenceWaters[name]
-        values.hardness = Math.round(((0.14 * values.calcium) + (0.23 * values.magnesium)) * 10) / 10
-      });
-    }
-  }
-
+  /**
+   * Initialize the application
+   */
   tw.init = function () {
-    completeReferenceWaters()
-    setupForm()
-    setupQuickForm()
-    setupTabs('natrium')
-    setupSectionSwitch()
-    tw.gauge.init()
-    tw.comparison.init()
-    tw.map.init()
+    startGeocoder();
+    setupSectionSwitch();
+    tw.map.init();
     $('#city-btn').prop('disabled', true);
     if (window.location.href.indexOf('embed') < 0) {
-      $('h1').show()
+      $('h1').show();
     }
-  }
-})(tw, jQuery)
+  };
+})(tw, jQuery);

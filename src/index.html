@@ -37,7 +37,7 @@
 						<div class="col-sm-7">
 							<input id="city" type="text" class="city form-control" placeholder="_('Bitte auswählen')">
 							</input>
-							
+
 						</div>
 						<div class="col-sm-3">
 							<button id="city-btn" type="submit" class="btn btn-warning disabled">
@@ -45,24 +45,18 @@
 							</button>
 						</div>
 					</div>
+					<!-- fields to keep the current location lat/lon available will be updated once a user selects an address from the autocomplete -->
+					<input type="hidden" id="current-location-lat"></input>
+					<input type="hidden" id="current-location-lon"></input>
 				</form>
 				<br />
 			</div>
-
-			<p><small>_('Derzeit sind Daten aus dem Stadt- und Landkreis Heilbronn auswählbar.')</small></p>
 		</div>
 
 		<div class="results" style="display:none;">
+			<!-- current-location will be updated once a user selects an address from the autocomplete -->
 			<h2 id="current-location"></h2>
-			<ul class="nav nav-tabs responsive">
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="natrium">_('Natrium')</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="kalium">_('Kalium')</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="calcium">_('Calcium')</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="magnesium">_('Magnesium')</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="chlorid">_('Chlorid')</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="nitrat">_('Nitrat')</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="sulfat">_('Sulfat')</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="hardness">_('Härte')</a></li>
+			<ul id="observations" class="nav nav-tabs responsive">
 				<li class="nav-li-main"><a data-toggle="tab" data-attribute="info"><span class="glyphicon glyphicon-info-sign"></span> _('Fragen und Antworten')</a></li>
 			</ul>
 
@@ -161,13 +155,13 @@
 
 										<g class="gauge-lines"></g>
 
-										<line class="average-indicator" x1="36" x2="68" y1="822" y2="822"></line>
+										<line class="average-indicator" x1="36" x2="148" y1="822" y2="822"></line>
 									</svg>
 
 									<ul class="gauge-description gauge-glass-description pull-right list-unstyled" style="max-width:200px;">
-										<li class="highlight"><strong>_('Wert:') <span class="gauge-value"></span> _('mg/l')</strong></li>
+										<li class="highlight">_('Wert:') <span class="gauge-value"></span></li>
+										<li class="highlight-red">_('Durchschnitt:') <span class="gauge-average-value"></span></li>
 										<li>_('Grenzwert:') <span class="gauge-legal-limit"></span></li>
-										<li>_('Durchschnitt:') <span class="gauge-average-value"></span> mg/l<br /><small>_('(Region Heilbronn, rote Linie)')</small></li>
 										<li class="gauge-daily-dosis-container">_('Tagesbedarf:') <span class="gauge-daily-dosis">_('~')</span></li>
 									</ul>
 								</div>
@@ -226,15 +220,7 @@
 
 						<div class="section section-compare" style="display:none;margin-top:-32px;">
 							<div class="row">
-								<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 compare-nav">
-									<button type="button" class="btn btn-primary btn-lg btn-block active" data-water="volvic">_('Volvic')</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="wueteria">_('Wüteria Heiligenquelle')</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="teusser">_('Teusser Naturell')</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="vittel">_('Vittel')</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="self" style="margin-top:2em;">_('mein Leitungswasser')</button>
-
-									<p><br /></p>
-								</div>
+								<div id="products" class="col-lg-5 col-md-5 col-sm-5 col-xs-12 compare-nav"></div>
 								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
 									<div class="row">
 										<div class="col-lg-3 col-md-3 hidden-sm hidden-xs"></div>
@@ -242,15 +228,15 @@
 											<div class="gauge-description gauge-glass-description" style="margin-top:38px;">
 												<table class="table table-gauge-description">
 													<tr>
-														<th style="border:none;"><strong class="comparison-water-label highlight">-</strong></th>
-														<td style="border:none;min-width:80px;"><strong class="comparison-water-value highlight">-</strong></td>
+														<td style="border:none;"><span class="comparison-water-label highlight">-</span></td>
+														<td style="border:none;min-width:80px;"><span class="comparison-water-value highlight">-</span></td>
 													</tr>
 													<tr>
-														<th>_('mein Leitungswasser')</th>
-														<td><span class="comparison-water-value-self"></span><br /><small>_('(rote Linie)')</small></td>
+														<td><span class="highlight-red">_('mein Leitungswasser')</span></td>
+														<td><span class="comparison-water-value-self highlight-red"></span></td>
 													</tr>
 													<tr class="gauge-daily-dosis-container">
-														<th>_('Tagesbedarf')</th>
+														<td>_('Tagesbedarf')</td>
 														<td><span class="gauge-daily-dosis">_('~')</span></td>
 													</tr>
 												</table>
@@ -650,7 +636,8 @@
 	<script src="../lib/bootstrap.js"></script>
 	<script src="../lib/d3.js"></script>
 	<script src="../lib/colorbrewer.js"></script>
-	<script src="js/app.js"></script>
+	<script src="../js/config.js"></script>
+	<script src="../js/app.js"></script>
 	<script src="../js/utils.js"></script>
 	<script src="../js/gauge.js"></script>
 	<script src="../js/comparison.js"></script>

@@ -1,4 +1,4 @@
 var tw = tw || { data: {}};
 tw.config = {
-	api_endpoint: "__API_ENDPOINT__"
+	api_endpoint: "http://localhost:8081/api"
 };

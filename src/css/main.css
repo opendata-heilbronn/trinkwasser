@@ -14,6 +14,10 @@ body {
 a {
 	cursor: pointer;
 }
+.vendor-small {
+	font-size: 65%;
+	color: #ccc;
+}
 .img-float {
 	margin-left: 14px;
 }
@@ -32,6 +36,9 @@ h1 {
 }
 .highlight {
 	color: #FFBE17;
+}
+.highlight-red {
+	color: #FF0000;
 }
 .footer a,
 .footer {
@@ -155,6 +162,7 @@ svg text {
 	margin-top: 48px;
 	margin-right: 16px;
 }
+
 .gauge-values path,
 .gauge-value,
 .gauge-bubbles {

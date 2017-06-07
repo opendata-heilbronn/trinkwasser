@@ -13,7 +13,7 @@ COPY config-docker.js /app/src/js/config.js
 RUN npm install .
 
 #Image configuration
-ADD start.sh /start.sh
+COPY start.sh /start.sh
 RUN chmod 755 /*.sh
 
 EXPOSE 8080

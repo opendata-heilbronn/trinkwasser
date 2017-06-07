@@ -147,11 +147,6 @@ module.exports = function(grunt) {
           cwd: 'src',
           src: 'index.html',
           dest: 'build'
-        }, {
-          expand: true,
-          cwd: 'src',
-          src: 'js/app.js',
-          dest: 'build'
         }]
       }
     }
