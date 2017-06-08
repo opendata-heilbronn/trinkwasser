@@ -10,6 +10,7 @@ ENV API_ENDPOINT http://localhost:8081/api
 # Install
 COPY . /app
 COPY config-docker.js /app/src/js/config.js
+RUN npm install -g grunt
 RUN npm install .
 
 #Image configuration
