@@ -10,7 +10,7 @@ ENV API_ENDPOINT http://www.transparentwater.io/api
 # Install
 COPY . /app
 COPY config-docker.js /app/src/js/config.js
-RUN npm install -g grunt
+RUN npm install -g grunt http-server
 RUN npm install .
 
 #Image configuration
