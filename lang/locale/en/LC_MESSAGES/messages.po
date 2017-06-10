@@ -645,11 +645,11 @@ msgstr ""
 
 #: src/index.html:140
 msgid "Über &amp; Impressum"
-msgstr ""
+msgstr "About the project"
 
 #: src/index.html:141
 msgid "Wie das Trinkwasser-Tool entstanden ist"
-msgstr ""
+msgstr "Why Transparentwater?"
 
 #: src/index.html:142
 msgid ""
@@ -662,6 +662,9 @@ msgid ""
 "Leitungswasser ist, zeigt sich erst, wenn wir es mit Wasser aus dem Handel "
 "vergleichen."
 msgstr ""
+"Drinking water is essential to life and information about the quality should "
+"be accessible to all. Information about water quality is scattered. We want "
+"to provide a single source for information, usable and understandable by all."
 
 #: src/index.html:143
 msgid ""
@@ -734,33 +737,33 @@ msgstr ""
 
 #: src/index.html:150 src/index.html:159
 msgid "Code for Germany"
-msgstr ""
+msgstr "Code For Europe"
 
 #: src/index.html:151 src/index.html:160
 msgid ""
 "um gemeinsam Open Data Projekten umzusetzen - wir würden uns über deinen "
 "Besuch freuen!"
-msgstr ""
+msgstr "the european developer network."
 
 #: src/index.html:153
 msgid "Redaktionelle Umsetzung"
-msgstr ""
+msgstr "Communication"
 
 #: src/index.html:154
 msgid "Gestaltung"
-msgstr ""
+msgstr "Realisation"
 
 #: src/index.html:155
 msgid "Programmierung"
-msgstr ""
+msgstr "Development"
 
 #: src/index.html:156
 msgid "Mitarbeit"
-msgstr ""
+msgstr "Support"
 
 #: src/index.html:157
 msgid "In Heilbronn treffen wir uns regelmäßig im Rahmen von"
-msgstr ""
+msgstr "This project is made by"
 
 #: src/index.html:162
 msgid "IF-Core IT Services GmbH"

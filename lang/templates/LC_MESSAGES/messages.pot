@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-10 11:06+0000\n"
+"POT-Creation-Date: 2017-06-10 14:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1367,5 +1367,11 @@ msgstr ""
 
 #: src/index.html:121
 #: src/index.html:120
+#: src/index.html:119
 msgid "API"
+msgstr ""
+
+#: src/index.html:139
+#: src/index.html:138
+msgid "http://codefor.eu"
 msgstr ""

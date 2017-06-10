@@ -8,6 +8,7 @@
     <meta name="description" content="_('Weißt du eigentlich, wie gut das Trinkwasser an deinem Wohnort ist? Hier kannst du es herausfinden - für den Stadt- und Landkreis Heilbronn')" />
     <title>_('Was steckt in meinem Leitungswasser?')</title>
     <!-- build:css css/tw.min.css -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
     <link href="../css/bootstrap-cyborg.css" rel="stylesheet" />
     <link href="../css/main.css" rel="stylesheet" />
     <!-- endbuild -->
@@ -32,7 +33,7 @@
           <input id="city" type="text" class="city form-control" placeholder="_('Bitte auswählen')">
 					<span class="input-group-btn">
 					  <button id="city-btn" type="submit" class="btn btn-default disabled">
-						  <span class="glyphicon glyphicon-search"></span>
+						  <span class="fa fa-search"></span>
 					  </button>
 					</span>
 				</div>
@@ -47,7 +48,7 @@
 			<!-- current-location will be updated once a user selects an address from the autocomplete -->
 			<!--<h2 id="current-location"></h2>-->
 			<ul id="observations" class="nav nav-tabs responsive">
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="info"><span class="glyphicon glyphicon-info-sign"></span> _('Fragen und Antworten')</a></li>
+				<li class="nav-li-main"><a data-toggle="tab" data-attribute="info"><span class="fa fa-info"></span> _('Fragen und Antworten')</a></li>
 			</ul>
 
 			<div class="alert alert-warning result-without-value" style="display:none;">
@@ -96,7 +97,7 @@
 										<p>_('Doch auch Wasser mit wenig Sulfat hat etwas Gutes: Es wird geschmacklich meist positiv empfunden. Hohe Sulfatgehalte hingegen äußern sich in einem süßen bis bitterem Geschmack.')</p>
 									</div>
 									<br />
-									<p><button type="button" class="btn btn-warning switch-to-section hidden-xs" data-section="compare"><span class="glyphicon glyphicon-chevron-right"></span> _('Vergleich mit Mineralwasser')</button></p>
+									<p><button type="button" class="btn btn-warning switch-to-section hidden-xs" data-section="compare"><span class="fa fa-chevron-right"></span> _('Vergleich mit Mineralwasser')</button></p>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-5">
 									<svg class="gauge-glass-img pull-right" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 186 837" preserveAspectRatio="xMinYMin meet">
@@ -205,7 +206,7 @@
 							</div>
 
 							<p><br /></p>
-							<p><button type="button" class="btn btn-warning switch-to-section hidden-md hidden-lg hidden-sm" data-section="compare"><span class="glyphicon glyphicon-chevron-right"></span> _('Vergleich mit Mineralwasser')</button></p>
+							<p><button type="button" class="btn btn-warning switch-to-section hidden-md hidden-lg hidden-sm" data-section="compare"><span class="fa fa-chevron-right"></span> _('Vergleich mit Mineralwasser')</button></p>
 						</div>
 
 						<div class="section section-compare" style="display:none;margin-top:-32px;">
@@ -319,7 +320,7 @@
 							</div>
 							<p><br /></p>
 							<p><br /></p>
-							<p><button type="button" class="btn btn-warning switch-to-section" data-section="explanation"><span class="glyphicon glyphicon-chevron-left"></span> _('Zurück')</button></p>
+							<p><button type="button" class="btn btn-warning switch-to-section" data-section="explanation"><span class="fa fa-chevron-left"></span> _('Zurück')</button></p>
 							<p><br /></p>
 							<p><small>_('Beispielhaft wurden zwei überregional bekannte Wasser sowie zwei Wasser aus dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser.')</small></p>
 						</div>
@@ -502,19 +503,18 @@
 		</div>
 
 		<footer class="footer">
-			<a data-toggle="modal" data-target="#contactDialog"><span class="glyphicon glyphicon-envelope"></span></a>
+			<a data-toggle="modal" data-target="#contactDialog"><span class="fa fa-envelope"></span></a>
 			<a data-toggle="modal" data-target="#contactDialog">_('Kontakt')</a>
 			|
-			<a data-toggle="modal" data-target="#aboutDialog"><span class="glyphicon glyphicon-question-sign"></span></a>
+			<a data-toggle="modal" data-target="#aboutDialog"><span class="fa fa-question"></span></a>
 			<a data-toggle="modal" data-target="#aboutDialog">_('Über das Projekt')</a>
 			|
-			<a data-toggle="modal" data-target="#attributionDialog"><span class="glyphicon glyphicon-user"></span></a>
+			<a data-toggle="modal" data-target="#attributionDialog"><span class="fa fa-user"></span></a>
 			<a data-toggle="modal" data-target="#attributionDialog">_('Mitwirkende')</a>
 			|
-			<a data-toggle="modal" data-target="#imprintDialog"><span class="glyphicon glyphicon-info-sign"></span></a>
-			<a data-toggle="modal" data-target="#imprintDialog">_('Impressum')</a>
+			<a title="github" href="https://github.com/codeforeurope/transparent-water"><span class="fa fa-github"></span> Github</a>
 			|
-			<a id="api-docs" href="/docs"><span class="glyphicon glyphicon-wrench"></span> _('API')</a>
+			<a id="api-docs" href="/docs"><span class="fa fa-wrench"></span> _('API')</a>
 		</footer>
 	</div>
 
@@ -551,29 +551,31 @@
 				<div class="modal-body">
 					<p><strong>_('Redaktionelle Umsetzung')</strong></p>
 					<p>
-						Vanessa Wormer (<a target="_blank" href="https://twitter.com/remrow">@remrow</a>)<br />
-						Isabelle Müller (<a target="_blank" href="https://twitter.com/isa_mue">@isa_mue</a>)
+						Vanessa Wormer <a target="_blank" href="https://twitter.com/remrow"><i class="fa fa-twitter" aria-hidden="true"></i></a><br />
+						Isabelle Müller <a target="_blank" href="https://twitter.com/isa_mue"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 					</p>
 
 					<p><strong>_('Gestaltung')</strong></p>
 					<p>
-						Heiko Nicht (<a target="_blank" href="https://twitter.com/HeikoNicht">@HeikoNicht</a>)
+						Heiko Nicht <a target="_blank" href="https://twitter.com/HeikoNicht"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 					</p>
 
 					<p><strong>_('Programmierung')</strong></p>
 					<p>
-						Felix Ebert (<a target="_blank" href="https://twitter.com/femeb">@femeb</a>)<br />
-						Ulrich Stech<br />
+						Felix Ebert <a target="_blank" href="https://twitter.com/femeb"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a target="_blank" href="https://github.com/felixebert"><i class="fa fa-github" aria-hidden="true"></i></a><br />
+						Ulrich Stech <a target="_blank" href="https://github.com/masterX244"><i class="fa fa-github" aria-hidden="true"></i></a><br />
+            Duncan Healy <a target="_blank" href="https://github.com/duncanhealy"><i class="fa fa-github" aria-hidden="true"></i></a><br />
+            Milo van der Linden <a target="_blank" href="https://github.com/milovanderlinden"><i class="fa fa-github" aria-hidden="true"></i></a><br />
 					</p>
 
 					<p><strong>_('Mitarbeit')</strong></p>
 					<p>
-						Alexander Walther (<a target="_blank" href="https://twitter.com/alexplus_de">@alexplus_de</a>)<br />
+						Alexander Walther <a target="_blank" href="https://twitter.com/alexplus_de"><i class="fa fa-twitter" aria-hidden="true"></i></a><br />
 						Tom Görner<br />
 						Gerd Hoffmann
 					</p>
 					<br />
-					<p>_('In Heilbronn treffen wir uns regelmäßig im Rahmen von') <a href="_('http://codefor.de')">_('Code for Germany')</a>, _('um gemeinsam Open Data Projekten umzusetzen - wir würden uns über deinen Besuch freuen!')</p>
+					<p>_('In Heilbronn treffen wir uns regelmäßig im Rahmen von') <a href="_('http://codefor.eu')">_('Code for Germany')</a>, _('um gemeinsam Open Data Projekten umzusetzen - wir würden uns über deinen Besuch freuen!')</p>
 				</div>
 			</div>
 		</div>
@@ -623,9 +625,9 @@
 	</div>
 
 	<!-- build:js js/tw.min.js -->
-	<script src="../lib/jquery.js"></script>
+	<script src="../lib/jquery-3.2.1.min.js"></script>
 	<script src="../lib/jquery.autocomplete.min.js"></script>
-	<script src="../lib/bootstrap.js"></script>
+	<script src="../lib/bootstrap.min.js"></script>
 	<script src="../lib/d3.js"></script>
 	<script src="../lib/colorbrewer.js"></script>
 	<script src="../js/config.js"></script>

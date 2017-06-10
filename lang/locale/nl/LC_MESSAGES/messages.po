@@ -649,11 +649,11 @@ msgstr ""
 
 #: src/index.html:140
 msgid "Über &amp; Impressum"
-msgstr ""
+msgstr "Over het project"
 
 #: src/index.html:141
 msgid "Wie das Trinkwasser-Tool entstanden ist"
-msgstr ""
+msgstr "Hoe Transparentwater is ontstaan"
 
 #: src/index.html:142
 msgid ""
@@ -666,7 +666,10 @@ msgid ""
 "Leitungswasser ist, zeigt sich erst, wenn wir es mit Wasser aus dem Handel "
 "vergleichen."
 msgstr ""
-
+"Drinkwater is essentieel voor leven en informatie over de kwaliteit dient "
+"toegankelijk te zijn voor iedereen. Informatie over water kwaliteit is "
+"verspreid en vaak onduidelijk . Wij willen het centrale punt voor informatie "
+"aanbieden, toegankelijk en te begrijpen voor iedereen."
 #: src/index.html:143
 msgid ""
 "Das ist für die Region Heilbronn jetzt möglich. Die Idee dazu entstand Ende "
@@ -744,15 +747,15 @@ msgstr "Code For Europe"
 msgid ""
 "um gemeinsam Open Data Projekten umzusetzen - wir würden uns über deinen "
 "Besuch freuen!"
-msgstr ""
+msgstr "het europese ontwikkelaarsnetwerk."
 
 #: src/index.html:153
 msgid "Redaktionelle Umsetzung"
-msgstr ""
+msgstr "Communicatie"
 
 #: src/index.html:154
 msgid "Gestaltung"
-msgstr ""
+msgstr "Realisatie"
 
 #: src/index.html:155
 msgid "Programmierung"
@@ -760,11 +763,11 @@ msgstr "Ontwikkeling"
 
 #: src/index.html:156
 msgid "Mitarbeit"
-msgstr ""
+msgstr "Ondersteuning"
 
 #: src/index.html:157
 msgid "In Heilbronn treffen wir uns regelmäßig im Rahmen von"
-msgstr ""
+msgstr "Dit project is ontwikkeld door"
 
 #: src/index.html:162
 msgid "IF-Core IT Services GmbH"
