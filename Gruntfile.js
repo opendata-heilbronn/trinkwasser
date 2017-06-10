@@ -170,5 +170,5 @@ module.exports = function(grunt) {
 	grunt.registerTask('build', ['clean:dist', 'i18n', 'imagemin', 'uglify', 'copy:dist', 'copy:redirect']);
 	grunt.registerTask('deploy', ['build', 'gh-pages']);
 	grunt.registerTask('default', ['build']);
-  grunt.registerTask('i18n', ['statici18n']);
+  grunt.registerTask('i18n', ['abideCreate', 'abideExtract','statici18n']);
 };

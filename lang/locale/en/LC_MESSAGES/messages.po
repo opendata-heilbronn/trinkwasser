@@ -637,7 +637,7 @@ msgstr "About the project"
 
 #: src/index.html:138 src/index.html:152
 msgid "Mitwirkende"
-msgstr ""
+msgstr "Team"
 
 #: src/index.html:139 src/index.html:161
 msgid "Impressum"

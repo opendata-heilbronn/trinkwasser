@@ -5,7 +5,7 @@ RUN mkdir -p /app
 WORKDIR /app
 
 # Variables
-ENV API_ENDPOINT http://localhost:8081/api
+ENV API_ENDPOINT http://www.transparentwater.io/api
 
 # Install
 COPY . /app

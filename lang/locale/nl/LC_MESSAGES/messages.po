@@ -28,11 +28,11 @@ msgstr ""
 
 #: src/index.html:3 src/index.html:60
 msgid "Region Heilbronn"
-msgstr "Nederland"
+msgstr "Nederlands"
 
 #: src/index.html:5
 msgid "Ort"
-msgstr "Woonplaats"
+msgstr "Adres"
 
 #: src/index.html:6
 msgid "Bitte auswählen"
@@ -641,7 +641,7 @@ msgstr "Over het project"
 
 #: src/index.html:138 src/index.html:152
 msgid "Mitwirkende"
-msgstr "Met hulp van:"
+msgstr "Team"
 
 #: src/index.html:139 src/index.html:161
 msgid "Impressum"

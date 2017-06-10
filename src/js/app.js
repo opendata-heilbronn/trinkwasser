@@ -160,6 +160,10 @@ var tw = tw || { data: {}};
    */
   $('.form-choose-location').on('submit', function (e) {
     e.preventDefault();
+    // change the display of the choose-location-well
+    $('.choose-location-well').attr('class','choose-location-well-small');
+    // Make the page title smaller
+    $('.state-1').toggleClass('state-1');
     var lat = $('#current-location-lat').val();
     var lon = $('#current-location-lon').val();
 
@@ -203,6 +207,8 @@ var tw = tw || { data: {}};
   tw.init = function () {
     startGeocoder();
     setupSectionSwitch();
+    //Set the API docs link to the right location
+    $('#api-docs').attr('href', tw.config.api_doc);
     tw.map.init();
     $('#city-btn').prop('disabled', true);
     if (window.location.href.indexOf('embed') < 0) {
