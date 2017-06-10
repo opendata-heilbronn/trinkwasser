@@ -24,6 +24,6 @@
     "standard": "^9.0.1"
   },
   "scripts": {
-    "start": "node_modules/.bin/grunt && node_modules/.bin/http-server build"
+    "start": "grunt && http-server build"
   }
 }
