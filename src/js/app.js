@@ -1,260 +1,218 @@
-var tw = {
-	data: {}
-};
+// Initialize our namespace
+var tw = tw || { data: {}};
 
-(function(tw, $) {
-	'use strict';
+(function (tw, $) {
+  'use strict';
+  tw.data.nutrientDailyDosis = {
+    "Kalium": '~ 2000 mg',
+    "Calcium": '~ 1000 mg',
+    "Magnesium": '~ 350 mg'
+  };
+  var defs = {
+    'hardness': {
+      'min': 0,
+      'max': 28,
+      'parts': [{
+        'id': 1,
+        'x': 0,
+        'width': 225,
+        'label': 'weich',
+        'rangeLabel': '&lt; 8,4 °dH'
+      }, {
+        'id': 2,
+        'x': 225,
+        'width': 150,
+        'label': 'mittel',
+        'rangeLabel': '8,4 - 14 °dH'
+      }, {
+        'id': 3,
+        'x': 375,
+        'width': 375,
+        'label': 'hart',
+        'rangeLabel': '&gt; 14 °dH'
+      },
+      ]
+    }
+  };
 
-	var zoneData = {}, zoneId = '', attribute = null, hasSelectedFirstLocation = false, section = 'explanation';
-	var attributes = ["natrium", "kalium", "calcium", "magnesium", "chlorid", "nitrat", "sulfat"];
+  var areaData = null;
+  var zoneData = null;
+  var mapInstance = null;
+  var zoneId = '';
+  var attribute = null;
+  var hasSelectedFirstLocation = false;
+  var section = 'explanation';
 
-	var generateZoneId = function(city, district, streetZone) {
-		var idParts = [];
-		var addIdPart = function(value) {
-			if (value && idParts.indexOf(value) < 0) {
-				idParts.push(value);
-			}
-		};
+  var updateAttributeContent = function () {
+    var hit;
+    if (attribute === 'info') {
+      $('.result-with-value, .result-without-value').hide();
+      $('.info-container').show();
+    } else {
+      $('.info-container').hide();
+      for (var i = 0; i < tw.data.report.observations.length; i++) {
+        if(tw.data.report.observations[i].code === attribute){
+          hit = true;
+          $('.result-without-value').hide();
+          $('.result-with-value').show();
+          tw.gauge.update(attribute);
+          if (section === 'explanation') {
+            tw.gauge.updateValue(attribute, tw.data.report.observations[i].value, tw.data.report);
+          }
+          if (section === 'compare') {
+            tw.comparison.update(attribute, tw.data.report.observations[i].value);
+          }
+          if (section === 'map') {
+            tw.map.update(attribute);
+          }
+          continue;
+        }
+      }
+      if(!hit){
+        $('.result-with-value').hide();
+        $('.result-without-value').show();
+      }
+    }
+  };
 
-		addIdPart(city);
-		addIdPart(district);
-		addIdPart(streetZone);
-		return idParts.join(' ');
-	};
+  var setupTabs = function (startAttribute) {
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+      attribute = $(e.target).data('attribute');
+      $('.current-attribute-label').text($(e.target).text());
+      section = 'explanation';
+      updateSection();
+      updateAttributeContent();
+    });
 
-	var updateZoneInfo = function() {
-		if (zoneData) {
-			$('.zone-id').text(zoneId);
-			$('.zone-data-year').text(zoneData.year);
-			$('.zone-description').html(zoneData.description);
-			$('.zone-about').toggle((zoneData.year || zoneData.description) ? true : false);
-			$('.zone-year-container').toggle(zoneData.year ? true : false);
-		}
-	};
+    var startAttributeElement = $('a[data-attribute="' + startAttribute + '"]');
+    startAttributeElement.parent().addClass('active').closest('.nav-li-main').addClass('active');
+    $('.current-attribute-label').text(startAttributeElement.text());
+    attribute = startAttribute;
+  };
 
-	var updateDisabledTabs = function() {
-		$('.nav-li-main').removeClass('disabled');
-		attributes.forEach(function(attribute) {
-			if (!zoneData[attribute]) {
-				$('a[data-toggle="tab"][data-attribute="' + attribute + '"]').parent().addClass('disabled');
-			}
-		});
-	};
+  var stringComparator = function (a, b) {
+    a = a.toLowerCase();
+    a = a.replace(/ä/g, 'a');
+    a = a.replace(/ö/g, 'o');
+    a = a.replace(/ü/g, 'u');
+    a = a.replace(/ß/g, 's');
 
-	var updateZone = function() {
-		var city = $('#city').val();
-		var district = $('#district').val();
-		var streetZone = $('#streetZone').val();
-		var zone = streetZone ? streetZone.substr(0, streetZone.indexOf('|')) : '';
+    b = b.toLowerCase();
+    b = b.replace(/ä/g, 'a');
+    b = b.replace(/ö/g, 'o');
+    b = b.replace(/ü/g, 'u');
+    b = b.replace(/ß/g, 's');
 
-		$('.results').toggle(hasSelectedFirstLocation);
-		$('.choose-location').toggle(!hasSelectedFirstLocation);
-		$('body').toggleClass('state-1', !hasSelectedFirstLocation);
+    return (a === b) ? 0 : (a > b) ? 1 : -1;
+  };
 
-		if (hasSelectedFirstLocation) {
-			var newZoneId = generateZoneId(city, district, zone);
-			if (newZoneId !== zoneId) {
-				zoneId = newZoneId;
-				zoneData = tw.data.zones[zoneId];
-				updateZoneInfo();
-				updateAttributeContent();
-				updateDisabledTabs();
-			}
-		}
-	};
+  /**
+   * Set the label for an attribute
+   *
+   * @param {*} attribute
+   * @param {*} value
+   */
+  var setAttributeLabel = function(attribute, value){
+    // @todo i18n this one.
+    if (attribute === 'hardness' && value > 21.3) {
+      return '(sehr) hart';
+    }
+  };
 
-	var updateAttributeContent = function() {
-		if (attribute === 'info') {
-			$('.result-with-value, .result-without-value').hide();
-			$('.info-container').show();
-		} else {
-			$('.info-container').hide();
+  /**
+   * This function binds the nominatim geocoder from mapquest to the input with id 'city'.
+   * A user can then start typing (autocomplete) and select the right address from the dropdown.
+   * Once the address is selected, the next button becomes active and the selected location is set
+   * for the next screen in the display.
+   */
+  var startGeocoder = function () {
+    $('#city').autocomplete({
+      paramName: 'q',
+      serviceUrl: 'http://open.mapquestapi.com/nominatim/v1/search.php',
+      minChars: 4,
+      params: {
+        key:"BJlOjYiGd1RjyCk1VVDE3YLjDruBpngY",
+        format:"json",
+        addressdetails:"1",
+        limit: 3
+      },
+      transformResult: function(response) {
+        response = JSON.parse(response);
+        return {
+            suggestions: $.map(response, function(result) {
+                return { value: result.display_name, data: result };
+            })
+        };
+      },
+      onSelect: function (suggestion) {
+        $('#city-btn').prop('disabled', false);
+        $('#city-btn').removeClass('disabled');
+        $('#current-location').text(suggestion.data.display_name);
+        $('#current-location-lat').val(suggestion.data.lat);
+        $('#current-location-lon').val(suggestion.data.lon);
+      }
+    });
+  };
 
-			if (zoneData && zoneData[attribute]) {
-				$('.result-without-value').hide();
-				$('.result-with-value').show();
+  /**
+   * When the submit button is pressed, the value from the input with id city is used to
+   * get information on the waterquality for the given location.
+   */
+  $('.form-choose-location').on('submit', function (e) {
+    e.preventDefault();
+    // change the display of the choose-location-well
+    $('.choose-location-well').attr('class','choose-location-well-small');
+    // Make the page title smaller
+    $('.state-1').toggleClass('state-1');
+    var lat = $('#current-location-lat').val();
+    var lon = $('#current-location-lon').val();
 
-				tw.gauge.update(attribute);
-				if (section === 'explanation') {
-					tw.gauge.updateValue(attribute, zoneData[attribute], zoneData);
-				}
-				if (section === 'compare') {
-					tw.comparison.update(attribute, zoneData[attribute]);
-				}
-				if (section === 'map') {
-					tw.map.update(attribute);
-				}
-			} else {
-				$('.result-with-value').hide();
-				$('.result-without-value').show();
-			}
-		}
-	};
+    tw.utils.getReport(lat, lon, function(data){
+      tw.data.report = data;
+      tw.gauge.init();
+      setupTabs("info");
+      tw.utils.getLimits('EU', function(data){
+        tw.data.limits = data;
+        tw.utils.getAverages(function(data){
+          tw.data.averages = data;
+          tw.utils.getProducts(function(data){
+            tw.data.products = data;
+            tw.comparison.init();
+          });
+        });
+        $('.results').toggle(true);
+      });
+    });
+  });
 
-	var setupTabs = function(startAttribute) {
-		$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
-			attribute = $(e.target).data('attribute');
-			$('.current-attribute-label').text($(e.target).text());
-			section = 'explanation';
-			updateSection();
-			updateAttributeContent();
-		});
+  var updateSection = function () {
+    $('.section').hide();
+    $('.section-' + section).show();
+    if ($('body').scrollTop() > $('.result-with-value').offset().top) {
+      $('body').scrollTop($('.result-with-value').offset().top);
+    }
+  };
 
-		var startAttributeElement = $('a[data-attribute="' + startAttribute + '"]');
-		startAttributeElement.parent().addClass('active').closest('.nav-li-main').addClass('active');
-		$('.current-attribute-label').text(startAttributeElement.text());
-		attribute = startAttribute;
-	};
+  var setupSectionSwitch = function () {
+    $('.switch-to-section').on('click', function () {
+      section = $(this).data('section');
+      updateSection();
+      updateAttributeContent();
+    });
+  };
 
-	var generateOptionsHtml = function(values, withEmptyOption) {
-		var html = withEmptyOption ? '<option value="">Bitte auswählen</option>' : '';
-		values.forEach(function(value) {
-			html += '<option value="' + value + '">' + value + '</option>';
-		});
-		return html;
-	};
-
-	var updateFormDistricts = function() {
-		var city = $('#city').val();
-		var districts = city ? Object.keys(tw.data.locations[city]) : [];
-
-		if (districts.length < 2) {
-			$('.select-district').hide();
-			$('.district').html('');
-		} else {
-			$('.district').html(generateOptionsHtml(districts));
-			$('.select-district').show();
-		}
-
-		updateFormStreetZones();
-	};
-
-	var stringComparator = function(a, b) {
-		a = a.toLowerCase();
-		a = a.replace(/ä/g, "a");
-		a = a.replace(/ö/g, "o");
-		a = a.replace(/ü/g, "u");
-		a = a.replace(/ß/g, "s");
-
-		b = b.toLowerCase();
-		b = b.replace(/ä/g, "a");
-		b = b.replace(/ö/g, "o");
-		b = b.replace(/ü/g, "u");
-		b = b.replace(/ß/g, "s");
-
-		return (a == b) ? 0 : (a > b) ? 1 : -1;
-	};
-
-	var updateFormStreetZones = function() {
-		var city = $('#city').val();
-		var district = $('#district').val();
-		if (!district) {
-			district = '';
-		}
-
-		var streets = city ? tw.data.locations[city][district] : {};
-		if (!streets || Object.keys(streets).length <= 0) {
-			$('.select-street').hide();
-			$('.streetZone').html('');
-		} else {
-			var html = '';
-			if (city === 'Heilbronn') {
-				var allStreets = {};
-				Object.keys(streets).forEach(function(zone) {
-					streets[zone].forEach(function(street) {
-						allStreets[street] = zone;
-					});
-				});
-				var allStreetNames = Object.keys(allStreets);
-				allStreetNames.sort(stringComparator);
-				allStreetNames.forEach(function(streetName) {
-					html += '<option value="' + allStreets[streetName] + '|' + streetName + '">' + streetName + '</option>';
-				});
-			} else {
-				Object.keys(streets).forEach(function(zone) {
-					html += '<optgroup label="' + zone + '">';
-					streets[zone].forEach(function(street) {
-						html += '<option value="' + zone + '|' + street + '">' + street + '</option>';
-					});
-					html += '</optgroup>';
-				});
-			}
-			$('.streetZone').html(html);
-			$('.select-street').show();
-		}
-	};
-
-	var onSubmit = function(e) {
-		e.preventDefault();
-		hasSelectedFirstLocation = $('#city').val() ? true : false;
-		updateZone();
-	};
-
-	var setupQuickForm = function() {
-		var quickForm = $('.form-choose-location-quick');
-
-		var bindMirrorEvent = function(attribute) {
-			quickForm.find('.' + attribute).on('change', function() {
-				$('#' + attribute).val($(this).val()).trigger('change');
-			});
-			$('#' + attribute).on('change', function() {
-				quickForm.find('.' + attribute).val($(this).val());
-			});
-		};
-
-		bindMirrorEvent('city');
-		bindMirrorEvent('district');
-		bindMirrorEvent('streetZone');
-		quickForm.on('change', onSubmit);
-	};
-
-	var setupForm = function() {
-		$('#city').on('change', updateFormDistricts);
-		$('#district').on('change', updateFormStreetZones);
-		$('#streetZone').on('change', updateZone);
-		$('.form-choose-location').on('submit', onSubmit);
-
-		var cities = Object.keys(tw.data.locations);
-		$('.city').html(generateOptionsHtml(cities, true));
-	};
-
-	var updateSection = function() {
-		$('.section').hide();
-		$('.section-' + section).show();
-		if ($('body').scrollTop() > $('.result-with-value').offset().top) {
-			$('body').scrollTop($('.result-with-value').offset().top);
-		}
-	};
-
-	var setupSectionSwitch = function() {
-		$('.switch-to-section').on('click', function() {
-			section = $(this).data('section');
-			updateSection();
-			updateAttributeContent();
-		});
-	};
-
-	var completeReferenceWaters = function() {
-		Object.keys(tw.data.referenceWaters).forEach(function(name) {
-			var values = tw.data.referenceWaters[name];
-			values.hardness = Math.round(((0.14 * values.calcium) + (0.23 * values.magnesium)) * 10) / 10;
-		});
-	};
-
-	tw.init = function() {
-		completeReferenceWaters();
-		setupForm();
-		setupQuickForm();
-		setupTabs('natrium');
-		setupSectionSwitch();
-		tw.gauge.init();
-		tw.comparison.init();
-		tw.map.init();
-
-		if (window.location.href.indexOf('embed') < 0) {
-			$('h1').show();
-		}
-		// $('.city').val('Erlenbach').trigger('change');
-		// $('.switch-to-section[data-section="map"]').trigger('click');
-	};
+  /**
+   * Initialize the application
+   */
+  tw.init = function () {
+    startGeocoder();
+    setupSectionSwitch();
+    //Set the API docs link to the right location
+    $('#api-docs').attr('href', tw.config.api_doc);
+    tw.map.init();
+    $('#city-btn').prop('disabled', true);
+    if (window.location.href.indexOf('embed') < 0) {
+      $('h1').show();
+    }
+  };
 })(tw, jQuery);

@@ -1,0 +1,1377 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-12 07:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+#: src/index.html:1 src/index.html:4
+#: src/index.html:1
+#: src/index.html:4
+#: src/index.html:2
+msgid "Was steckt in meinem Leitungswasser?"
+msgstr "Was steckt in meinem Leitungswasser?"
+
+#: src/index.html:2
+#: src/index.html:1
+msgid ""
+"Weißt du eigentlich, wie gut das Trinkwasser an deinem Wohnort ist? Hier "
+"kannst du es herausfinden - für den Stadt- und Landkreis Heilbronn"
+msgstr ""
+"Weißt du eigentlich, wie gut das Trinkwasser an deinem Wohnort ist? Hier "
+"kannst du es herausfinden - für den Stadt- und Landkreis Heilbronn"
+
+#: src/index.html:3 src/index.html:60
+#: src/index.html:3
+#: src/index.html:47
+#: src/index.html:46
+msgid "Region Heilbronn"
+msgstr "Deutsch"
+
+#: src/index.html:5
+#: src/index.html:6
+msgid "Ort"
+msgstr "Adresse"
+
+#: src/index.html:6
+#: src/index.html:5
+msgid "Bitte auswählen"
+msgstr "Bitte auswählen"
+
+#: src/index.html:7
+msgid "Ortsteil"
+msgstr "Ortsteil"
+
+#: src/index.html:8
+msgid "Straße"
+msgstr "Straße"
+
+#: src/index.html:9
+#: src/index.html:7
+#: src/index.html:6
+msgid "Weiter"
+msgstr "Weiter"
+
+#: src/index.html:10
+msgid "Derzeit sind Daten aus dem Stadt- und Landkreis Heilbronn auswählbar."
+msgstr "Derzeit sind Daten aus dem Stadt- und Landkreis Heilbronn auswählbar."
+
+#: src/index.html:11
+msgid "Natrium"
+msgstr "Natrium"
+
+#: src/index.html:12
+msgid "Kalium"
+msgstr "Kalium"
+
+#: src/index.html:13
+msgid "Calcium"
+msgstr "Calcium"
+
+#: src/index.html:14
+msgid "Magnesium"
+msgstr "Magnesium"
+
+#: src/index.html:15
+msgid "Chlorid"
+msgstr "Chlorid"
+
+#: src/index.html:16
+msgid "Nitrat"
+msgstr "Nitrat"
+
+#: src/index.html:17
+msgid "Sulfat"
+msgstr "Sulfat"
+
+#: src/index.html:18
+msgid "Härte"
+msgstr "Härte"
+
+#: src/index.html:19
+#: src/index.html:8
+#: src/index.html:7
+msgid "Fragen und Antworten"
+msgstr "Fragen und Antworten"
+
+#: src/index.html:20
+#: src/index.html:9
+#: src/index.html:8
+msgid "Es liegen leider keine Werte für diesen Inhaltsstoff vor."
+msgstr "Es liegen leider keine Werte für diesen Inhaltsstoff vor."
+
+#: src/index.html:21 src/index.html:72
+#: src/index.html:10
+#: src/index.html:53
+#: src/index.html:9
+#: src/index.html:52
+msgid "Natrium reguliert den Wasserhaushalt."
+msgstr "Natrium reguliert den Wasserhaushalt."
+
+#: src/index.html:22
+#: src/index.html:11
+#: src/index.html:10
+msgid ""
+"Wieviel Natrium für wen geeignet ist, hängt stark vom Einzelnen ab: "
+"Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit "
+"Bluthochdruck oder Säuglinge sollten natriumarmes Wasser (weniger als 20 "
+"Milligramm pro Liter) trinken."
+msgstr ""
+"Wieviel Natrium für wen geeignet ist, hängt stark vom Einzelnen ab: "
+"Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit "
+"Bluthochdruck oder Säuglinge sollten natriumarmes Wasser (weniger als 20 "
+"Milligramm pro Liter) trinken."
+
+#: src/index.html:23
+#: src/index.html:12
+#: src/index.html:11
+msgid ""
+"Ein Mangel an Natrium äußert sich in körperlicher Schwäche, Übelkeit und "
+"Muskelkrämpfen bis hin zum Kreislaufkollaps."
+msgstr ""
+"Ein Mangel an Natrium äußert sich in körperlicher Schwäche, Übelkeit und "
+"Muskelkrämpfen bis hin zum Kreislaufkollaps."
+
+#: src/index.html:24
+#: src/index.html:13
+#: src/index.html:12
+msgid ""
+"Empfohlen sind mindestens 550 mg Natrium pro Tag. Für eine ärztlich "
+"empfohlene natriumarme Ernährung oder für Säuglinge sind weniger als 20 "
+"mg/l Natrium geeignet."
+msgstr ""
+"Empfohlen sind mindestens 550 mg Natrium pro Tag. Für eine ärztlich "
+"empfohlene natriumarme Ernährung oder für Säuglinge sind weniger als 20 "
+"mg/l Natrium geeignet."
+
+#: src/index.html:25 src/index.html:75
+#: src/index.html:14
+#: src/index.html:56
+#: src/index.html:13
+#: src/index.html:55
+msgid ""
+"Kalium hält den Wasser- und Elektrolythaushalt im Gleichgewicht, reguliert "
+"den Blutdruck und ist wichtig für einen regelmäßigen Herzschlag sowie die "
+"Nerven."
+msgstr ""
+"Kalium hält den Wasser- und Elektrolythaushalt im Gleichgewicht, reguliert "
+"den Blutdruck und ist wichtig für einen regelmäßigen Herzschlag sowie die "
+"Nerven."
+
+#: src/index.html:26
+#: src/index.html:15
+#: src/index.html:14
+msgid ""
+"Zu einem Kaliummangel kann es nach größeren Flüssigkeitsverlusten, z. B. "
+"durch lang andauernde Durchfallerkrankungen, Erbrechen oder längere "
+"Einnahme von Entwässerungs- und Abführmitteln."
+msgstr ""
+"Zu einem Kaliummangel kann es nach größeren Flüssigkeitsverlusten, z. B. "
+"durch lang andauernde Durchfallerkrankungen, Erbrechen oder längere "
+"Einnahme von Entwässerungs- und Abführmitteln."
+
+#: src/index.html:27
+#: src/index.html:16
+#: src/index.html:15
+msgid ""
+"Ein zu hoher Kaliumgehalt im Blut kann zu Herzversagen führen, da Kalium "
+"die Kontraktion des Herzmuskels hemmt."
+msgstr ""
+"Ein zu hoher Kaliumgehalt im Blut kann zu Herzversagen führen, da Kalium "
+"die Kontraktion des Herzmuskels hemmt."
+
+#: src/index.html:28
+#: src/index.html:17
+#: src/index.html:16
+msgid ""
+"Calcium wird zur Bildung der Knochen und Zähne gebraucht. Auch für die "
+"Muskeln und die Blutgerinnung ist Calcium wichtig."
+msgstr ""
+"Calcium wird zur Bildung der Knochen und Zähne gebraucht. Auch für die "
+"Muskeln und die Blutgerinnung ist Calcium wichtig."
+
+#: src/index.html:29
+#: src/index.html:18
+#: src/index.html:17
+msgid ""
+"An Calcium mangelt es oft, was was zu einer Verringerung der "
+"Knochenfestigkeit und damit zu Osteoporose führen kann."
+msgstr ""
+"An Calcium mangelt es oft, was was zu einer Verringerung der "
+"Knochenfestigkeit und damit zu Osteoporose führen kann."
+
+#: src/index.html:30
+#: src/index.html:19
+#: src/index.html:18
+msgid ""
+"Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven "
+"auf Muskeln, für den Eiweißaufbau sowie und die Knochenmineralisation. "
+"Außerdem ist es für die Aktivierung von über 300 Enzymen im Stoffwechsel "
+"verantwortlich."
+msgstr ""
+"Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven "
+"auf Muskeln, für den Eiweißaufbau sowie und die Knochenmineralisation. "
+"Außerdem ist es für die Aktivierung von über 300 Enzymen im Stoffwechsel "
+"verantwortlich."
+
+#: src/index.html:31
+#: src/index.html:20
+#: src/index.html:19
+msgid ""
+"Ein Zuviel an Magnesium ist sehr unwahrscheinlich. In großen Mengen bewirkt "
+"der Mineralstoff einen weicheren Stuhl."
+msgstr ""
+"Ein Zuviel an Magnesium ist sehr unwahrscheinlich. In großen Mengen bewirkt "
+"der Mineralstoff einen weicheren Stuhl."
+
+#: src/index.html:32
+#: src/index.html:21
+#: src/index.html:20
+msgid ""
+"Chlorid ist ein Bestandteil von Kochsalz und ist daher für die Regulation "
+"des Wasserhaushaltes mitverantwortlich. Auch für die Nerven, das Herz und "
+"die Muskeln sowie den Säure-Basenhaushalt ist Chlorid wichtig."
+msgstr ""
+"Chlorid ist ein Bestandteil von Kochsalz und ist daher für die Regulation "
+"des Wasserhaushaltes mitverantwortlich. Auch für die Nerven, das Herz und "
+"die Muskeln sowie den Säure-Basenhaushalt ist Chlorid wichtig."
+
+#: src/index.html:33
+#: src/index.html:22
+#: src/index.html:21
+msgid ""
+"Da es in vielen Lebensmitteln vorkommt, wird meist mehr als genügend "
+"Chlorid aufgenommen. Eine dauerhafte Überversorgung mit Chlorid kann zu "
+"Bluthochdruck führen."
+msgstr ""
+"Da es in vielen Lebensmitteln vorkommt, wird meist mehr als genügend "
+"Chlorid aufgenommen. Eine dauerhafte Überversorgung mit Chlorid kann zu "
+"Bluthochdruck führen."
+
+#: src/index.html:34 src/index.html:81
+#: src/index.html:23
+#: src/index.html:62
+#: src/index.html:22
+#: src/index.html:61
+msgid ""
+"Nitrat wird im Körper in giftiges Nitrit umgewandelt. Zudem können aus "
+"Nitriten krebserregende Nitrosamine entstehen."
+msgstr ""
+"Nitrat wird im Körper in giftiges Nitrit umgewandelt. Zudem können aus "
+"Nitriten krebserregende Nitrosamine entstehen."
+
+#: src/index.html:35 src/index.html:82
+#: src/index.html:24
+#: src/index.html:63
+#: src/index.html:23
+#: src/index.html:62
+msgid ""
+"Das Nitrit selbst kann eine Sauerstoffunterversorgung aller Organe und "
+"Gewebe bewirken. Säuglinge sind hierfür besonders anfällig."
+msgstr ""
+"Das Nitrit selbst kann eine Sauerstoffunterversorgung aller Organe und "
+"Gewebe bewirken. Säuglinge sind hierfür besonders anfällig."
+
+#: src/index.html:36
+#: src/index.html:25
+#: src/index.html:24
+msgid ""
+"Daher beträgt der Grenzwert in Mineralwasser 50 mg/l. Die im Trinkwasser "
+"der Region enthaltenen Nitratwerte liegen mit 5 bis 38 mg/l unter dem "
+"Grenzwert und sind daher als unbedenklich einzustufen."
+msgstr ""
+"Daher beträgt der Grenzwert in Mineralwasser 50 mg/l. Die im Trinkwasser "
+"der Region enthaltenen Nitratwerte liegen mit 5 bis 38 mg/l unter dem "
+"Grenzwert und sind daher als unbedenklich einzustufen."
+
+#: src/index.html:37
+#: src/index.html:26
+#: src/index.html:25
+msgid "Zum Vergleich: Bodensee-Wasser enthält nur 4 mg Nitrat pro Liter."
+msgstr "Zum Vergleich: Bodensee-Wasser enthält nur 4 mg Nitrat pro Liter."
+
+#: src/index.html:38 src/index.html:83
+#: src/index.html:27
+#: src/index.html:64
+#: src/index.html:26
+#: src/index.html:63
+msgid ""
+"Sulfate wirken verdauungsfördernd, ab einem Gehalt von 1200 mg/l sogar "
+"abführend."
+msgstr ""
+"Sulfate wirken verdauungsfördernd, ab einem Gehalt von 1200 mg/l sogar "
+"abführend."
+
+#: src/index.html:39
+#: src/index.html:28
+#: src/index.html:27
+msgid ""
+"Enthält ein Mineralwasser mehr als 1200 mg/l und gleichzeitig hohe "
+"Kontentrationen an Mineralstoffen wie Magnesium, Calcium, Flourid, "
+"Hydrogencarbonat sowie Kohlendioxid, wird es als Heilwasser bezeichnet."
+msgstr ""
+"Enthält ein Mineralwasser mehr als 1200 mg/l und gleichzeitig hohe "
+"Kontentrationen an Mineralstoffen wie Magnesium, Calcium, Flourid, "
+"Hydrogencarbonat sowie Kohlendioxid, wird es als Heilwasser bezeichnet."
+
+#: src/index.html:40
+#: src/index.html:29
+#: src/index.html:28
+msgid ""
+"Säuglinge und Patienten mit Erkrankungen des Verdauungstraktes und Neigung "
+"zur Bildung von Harnsäuresteinen sollten jedoch wenig Sulfat zu sich nehmen "
+"(Gehalt < 240 mg/l)."
+msgstr ""
+"Säuglinge und Patienten mit Erkrankungen des Verdauungstraktes und Neigung "
+"zur Bildung von Harnsäuresteinen sollten jedoch wenig Sulfat zu sich nehmen "
+"(Gehalt < 240 mg/l)."
+
+#: src/index.html:41
+#: src/index.html:30
+#: src/index.html:29
+msgid ""
+"Doch auch Wasser mit wenig Sulfat hat etwas Gutes: Es wird geschmacklich "
+"meist positiv empfunden. Hohe Sulfatgehalte hingegen äußern sich in einem "
+"süßen bis bitterem Geschmack."
+msgstr ""
+"Doch auch Wasser mit wenig Sulfat hat etwas Gutes: Es wird geschmacklich "
+"meist positiv empfunden. Hohe Sulfatgehalte hingegen äußern sich in einem "
+"süßen bis bitterem Geschmack."
+
+#: src/index.html:42 src/index.html:62
+#: src/index.html:31
+#: src/index.html:49
+#: src/index.html:30
+#: src/index.html:48
+msgid "Vergleich mit Mineralwasser"
+msgstr "Vergleich mit Mineralwasser"
+
+#: src/index.html:43 src/index.html:45
+#: src/index.html:32
+#: src/index.html:31
+msgid "mg/l"
+msgstr "mg/l"
+
+#: src/index.html:44
+#: src/index.html:33
+#: src/index.html:32
+msgid "Wert:"
+msgstr "Wert:"
+
+#: src/index.html:46
+#: src/index.html:35
+#: src/index.html:34
+msgid "Grenzwert:"
+msgstr "Grenzwert:"
+
+#: src/index.html:47
+#: src/index.html:34
+#: src/index.html:33
+msgid "Durchschnitt:"
+msgstr "Durchschnitt:"
+
+#: src/index.html:48
+msgid "(Region Heilbronn, rote Linie)"
+msgstr "(Region Heilbronn, rote Linie)"
+
+#: src/index.html:49
+#: src/index.html:36
+#: src/index.html:35
+msgid "Tagesbedarf:"
+msgstr "Tagesbedarf:"
+
+#: src/index.html:50 src/index.html:71
+#: src/index.html:37
+#: src/index.html:52
+#: src/index.html:36
+#: src/index.html:51
+msgid "~"
+msgstr "~"
+
+#: src/index.html:51
+#: src/index.html:38
+#: src/index.html:37
+msgid ""
+"Die Wasserhärte gibt an, wie weich oder hart ein Wasser ist. Je mehr "
+"Calcium und Magnesium in einem Wasser enthalten sind, desto härter ist es."
+msgstr ""
+"Die Wasserhärte gibt an, wie weich oder hart ein Wasser ist. Je mehr "
+"Calcium und Magnesium in einem Wasser enthalten sind, desto härter ist es."
+
+#: src/index.html:52
+#: src/index.html:39
+#: src/index.html:38
+msgid ""
+"Hartes Wasser kann in Küche und Bad Kalkflecken verursachen. Wegen seinem "
+"hohen Calcium- und Magnesiumgehalt ist es gesünder als weiches Wasser."
+msgstr ""
+"Hartes Wasser kann in Küche und Bad Kalkflecken verursachen. Wegen seinem "
+"hohen Calcium- und Magnesiumgehalt ist es gesünder als weiches Wasser."
+
+#: src/index.html:53
+#: src/index.html:40
+#: src/index.html:39
+msgid ""
+"(Calcium: Aufbau von Knochen und Zähnen, Magnesium: Aufbau von Muskeln und "
+"Nerven)"
+msgstr ""
+"(Calcium: Aufbau von Knochen und Zähnen, Magnesium: Aufbau von Muskeln und "
+"Nerven)"
+
+#: src/index.html:54
+#: src/index.html:41
+#: src/index.html:40
+msgid "Wert"
+msgstr "Wert"
+
+#: src/index.html:55 src/index.html:57 src/index.html:61
+#: src/index.html:42
+#: src/index.html:44
+#: src/index.html:48
+#: src/index.html:41
+#: src/index.html:43
+#: src/index.html:47
+msgid "°dH"
+msgstr "°dH"
+
+#: src/index.html:56
+#: src/index.html:43
+#: src/index.html:42
+msgid "Restalkalität"
+msgstr "Restalkalität"
+
+#: src/index.html:58
+#: src/index.html:45
+#: src/index.html:44
+msgid "Bereich"
+msgstr "Bereich"
+
+#: src/index.html:59
+#: src/index.html:46
+#: src/index.html:45
+msgid "Durchschnitt"
+msgstr "Durchschnitt"
+
+#: src/index.html:63
+msgid "Volvic"
+msgstr "Volvic"
+
+#: src/index.html:64
+msgid "Wüteria Heiligenquelle"
+msgstr "Wüteria Heiligenquelle"
+
+#: src/index.html:65
+msgid "Teusser Naturell"
+msgstr "Teusser Naturell"
+
+#: src/index.html:66
+msgid "Vittel"
+msgstr "Vittel"
+
+#: src/index.html:67 src/index.html:68
+#: src/index.html:50
+#: src/index.html:49
+msgid "mein Leitungswasser"
+msgstr "mein Leitungswasser"
+
+#: src/index.html:69
+msgid "(rote Linie)"
+msgstr "(rote Linie)"
+
+#: src/index.html:70
+#: src/index.html:51
+#: src/index.html:50
+msgid "Tagesbedarf"
+msgstr "Tagesbedarf"
+
+#: src/index.html:73
+#: src/index.html:54
+#: src/index.html:53
+msgid ""
+"Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit "
+"Bluthochdruck oder Säuglinge sollten natriumarmes Wasser trinken."
+msgstr ""
+"Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit "
+"Bluthochdruck oder Säuglinge sollten natriumarmes Wasser trinken."
+
+#: src/index.html:74
+#: src/index.html:55
+#: src/index.html:54
+msgid "(weniger als 20 mg/l)"
+msgstr "(weniger als 20 mg/l)"
+
+#: src/index.html:76
+#: src/index.html:57
+#: src/index.html:56
+msgid "Calcium wird zur Bildung der Knochen und Zähne gebraucht."
+msgstr "Calcium wird zur Bildung der Knochen und Zähne gebraucht."
+
+#: src/index.html:77
+#: src/index.html:58
+#: src/index.html:57
+msgid "Auch für die Muskeln und die Blutgerinnung ist Calcium wichtig."
+msgstr "Auch für die Muskeln und die Blutgerinnung ist Calcium wichtig."
+
+#: src/index.html:78
+#: src/index.html:59
+#: src/index.html:58
+msgid ""
+"Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven "
+"auf Muskeln, für den Eiweißaufbau sowie und die Knochenmineralisation."
+msgstr ""
+"Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven "
+"auf Muskeln, für den Eiweißaufbau sowie und die Knochenmineralisation."
+
+#: src/index.html:79
+#: src/index.html:60
+#: src/index.html:59
+msgid ""
+"Chlorid ist für Regulation des Wasserhaushaltes, die Nerven, das Herz und "
+"die Muskeln sowie den Säure-Basenhaushalt wichtig."
+msgstr ""
+"Chlorid ist für Regulation des Wasserhaushaltes, die Nerven, das Herz und "
+"die Muskeln sowie den Säure-Basenhaushalt wichtig."
+
+#: src/index.html:80
+#: src/index.html:61
+#: src/index.html:60
+msgid ""
+"Da Chlorid ein Bestandteil von Kochsalz ist, wird über die Nahrung meist "
+"mehr als genügend Chlorid aufgenommen."
+msgstr ""
+"Da Chlorid ein Bestandteil von Kochsalz ist, wird über die Nahrung meist "
+"mehr als genügend Chlorid aufgenommen."
+
+#: src/index.html:84
+#: src/index.html:65
+#: src/index.html:64
+msgid "Zurück"
+msgstr "Zurück"
+
+#: src/index.html:85
+#: src/index.html:66
+#: src/index.html:65
+msgid ""
+"Beispielhaft wurden zwei überregional bekannte Wasser sowie zwei Wasser aus "
+"dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser."
+msgstr ""
+"Beispielhaft wurden zwei überregional bekannte Wasser sowie zwei Wasser aus "
+"dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser."
+
+#: src/index.html:86
+#: src/index.html:67
+#: src/index.html:66
+msgid ""
+"Die Karte steht derzeit nur für die Stadt Heilbronn zur Verfügung und "
+"befindet sich noch in einem experimentellen Stadium."
+msgstr ""
+"Die Karte steht derzeit nur für die Stadt Heilbronn zur Verfügung und "
+"befindet sich noch in einem experimentellen Stadium."
+
+#: src/index.html:87
+#: src/index.html:68
+#: src/index.html:67
+msgid ""
+"Die Straßen mit den niedrigsten Werten sind tiefblau, die Straßen mit den "
+"höchsten Werten rot eingefärbt."
+msgstr ""
+"Die Straßen mit den niedrigsten Werten sind tiefblau, die Straßen mit den "
+"höchsten Werten rot eingefärbt."
+
+#: src/index.html:88
+#: src/index.html:69
+#: src/index.html:68
+msgid "Information zu"
+msgstr "Information zu"
+
+#: src/index.html:89
+#: src/index.html:70
+#: src/index.html:69
+msgid "Die Daten stammen aus dem Jahr"
+msgstr "Die Daten stammen aus dem Jahr"
+
+#: src/index.html:90
+#: src/index.html:71
+#: src/index.html:70
+msgid "Woher kommt unser Trinkwasser?"
+msgstr "Woher kommt unser Trinkwasser?"
+
+#: src/index.html:91
+#: src/index.html:72
+#: src/index.html:71
+msgid ""
+"Im Stadtkreis gibt es etwa 40 Quellen und Brunnen, im Landkreis sind es "
+"etwa 130."
+msgstr ""
+"Im Stadtkreis gibt es etwa 40 Quellen und Brunnen, im Landkreis sind es "
+"etwa 130."
+
+#: src/index.html:92
+#: src/index.html:73
+#: src/index.html:72
+msgid ""
+"Da das Heilbronner Wasser aber sehr hart und stark mit giftigem Nitrat "
+"belastet ist, kauft die Stadt seit 43 Jahren Wasser vom Bodensee "
+"(Zweckverband Bodensee-Wasserversorgung)."
+msgstr ""
+"Da das Heilbronner Wasser aber sehr hart und stark mit giftigem Nitrat "
+"belastet ist, kauft die Stadt seit 43 Jahren Wasser vom Bodensee "
+"(Zweckverband Bodensee-Wasserversorgung)."
+
+#: src/index.html:93
+#: src/index.html:74
+#: src/index.html:73
+msgid ""
+"Zuvor deckte die Stadt den Wasserbedarf über 60 bis 70 Prozent Eigenwasser. "
+"Dies hat sich ins Gegenteil gekehrt. Der Anteil an Bodenseewasser liegt "
+"heute bei 80 bis 85 Prozent."
+msgstr ""
+"Zuvor deckte die Stadt den Wasserbedarf über 60 bis 70 Prozent Eigenwasser. "
+"Dies hat sich ins Gegenteil gekehrt. Der Anteil an Bodenseewasser liegt "
+"heute bei 80 bis 85 Prozent."
+
+#: src/index.html:94
+#: src/index.html:75
+#: src/index.html:74
+msgid "Warum verzichten manche Kommunen auf die Beimischung von Bodenseewasser?"
+msgstr "Warum verzichten manche Kommunen auf die Beimischung von Bodenseewasser?"
+
+#: src/index.html:95
+#: src/index.html:76
+#: src/index.html:75
+msgid ""
+"Günstiger ist es für die Kommunen, wenn sie ihr Trinkwasser ausschließlich "
+"aus eigenen Quellen beziehen."
+msgstr ""
+"Günstiger ist es für die Kommunen, wenn sie ihr Trinkwasser ausschließlich "
+"aus eigenen Quellen beziehen."
+
+#: src/index.html:96
+#: src/index.html:77
+#: src/index.html:76
+msgid ""
+"Die Gemeinde Jagsthausen beispielsweise versorgt ihre Einwohner zu 100 "
+"Prozent mit Eigenwasser."
+msgstr ""
+"Die Gemeinde Jagsthausen beispielsweise versorgt ihre Einwohner zu 100 "
+"Prozent mit Eigenwasser."
+
+#: src/index.html:97
+#: src/index.html:78
+#: src/index.html:77
+msgid ""
+"Wir haben hier ordentliches Wasser, das zwar hart ist. Aber wir sehen "
+"keinen Anlass für eine Beimischung von Fremdwasser, wie es andere Kommunen "
+"tun"
+msgstr ""
+"Wir haben hier ordentliches Wasser, das zwar hart ist. Aber wir sehen "
+"keinen Anlass für eine Beimischung von Fremdwasser, wie es andere Kommunen "
+"tun"
+
+#: src/index.html:98
+#: src/index.html:79
+#: src/index.html:78
+msgid "Bürgermeister Roland Halter"
+msgstr "Bürgermeister Roland Halter"
+
+#: src/index.html:99
+#: src/index.html:80
+#: src/index.html:79
+msgid ""
+"Beschwerden aus der Gemeinde gäbe es keine, viele Einwohner hätten eine "
+"Enthärtungsanlage. Eine Anbindung an Bodenseewasser sei im Fall von "
+"Jagsthausen mit hohen Investitionskosten verbunden und derzeit kein Thema."
+msgstr ""
+"Beschwerden aus der Gemeinde gäbe es keine, viele Einwohner hätten eine "
+"Enthärtungsanlage. Eine Anbindung an Bodenseewasser sei im Fall von "
+"Jagsthausen mit hohen Investitionskosten verbunden und derzeit kein Thema."
+
+#: src/index.html:100
+#: src/index.html:81
+#: src/index.html:80
+msgid "Warum schmeckt mein Trinkwasser nicht so gut wie Mineralwasser?"
+msgstr "Warum schmeckt mein Trinkwasser nicht so gut wie Mineralwasser?"
+
+#: src/index.html:101 src/index.html:111
+#: src/index.html:82
+#: src/index.html:92
+#: src/index.html:81
+#: src/index.html:91
+msgid ""
+"Der Geschmack von Wasser wird durch die in ihm enthaltenen Mineralien "
+"bestimmt."
+msgstr ""
+"Der Geschmack von Wasser wird durch die in ihm enthaltenen Mineralien "
+"bestimmt."
+
+#: src/index.html:102
+#: src/index.html:83
+#: src/index.html:82
+msgid ""
+"Wasser mit viel Natrium und Kalium, wird als salziger im Geschmack "
+"empfunden. Natriumarmes Wasser - wie das Heilbronner Trinkwasser - hingegen "
+"schmeckt milder."
+msgstr ""
+"Wasser mit viel Natrium und Kalium, wird als salziger im Geschmack "
+"empfunden. Natriumarmes Wasser - wie das Heilbronner Trinkwasser - hingegen "
+"schmeckt milder."
+
+#: src/index.html:103
+#: src/index.html:84
+#: src/index.html:83
+msgid ""
+"Ein unangenehmer Geschmack kann entstehen, wenn die Rohrleitungen im "
+"Gebäude verunreinigt sind. Die Stadtwerke kontrollieren die "
+"Trinkwasserqualität nur bis zur jeweiligen Haustüre. Im Haus liegt die "
+"Verantwortung beim Gebäudeeigentümer."
+msgstr ""
+"Ein unangenehmer Geschmack kann entstehen, wenn die Rohrleitungen im "
+"Gebäude verunreinigt sind. Die Stadtwerke kontrollieren die "
+"Trinkwasserqualität nur bis zur jeweiligen Haustüre. Im Haus liegt die "
+"Verantwortung beim Gebäudeeigentümer."
+
+#: src/index.html:104
+#: src/index.html:85
+#: src/index.html:84
+msgid "Was bedeutet die Wasserhärte für mich?"
+msgstr "Was bedeutet die Wasserhärte für mich?"
+
+#: src/index.html:105
+#: src/index.html:86
+#: src/index.html:85
+msgid ""
+"Überall dort, wo hartes Wasser langsam fließt oder auf über 60 Grad erhitzt "
+"wird, setzt sich Kalk ab. In Küche und Bad entstehen so Kalkflecken, beim "
+"Wäschewaschen ist mehr Waschmittel nötig, manche Haushaltsgeräte müssen "
+"regelmäßig entkalkt werden. Dies gilt ab einem Wasserhärtegrad von 21."
+msgstr ""
+"Überall dort, wo hartes Wasser langsam fließt oder auf über 60 Grad erhitzt "
+"wird, setzt sich Kalk ab. In Küche und Bad entstehen so Kalkflecken, beim "
+"Wäschewaschen ist mehr Waschmittel nötig, manche Haushaltsgeräte müssen "
+"regelmäßig entkalkt werden. Dies gilt ab einem Wasserhärtegrad von 21."
+
+#: src/index.html:106
+#: src/index.html:87
+#: src/index.html:86
+msgid ""
+"In Heilbronn liegt die Obergrenze der Wasserhärte bei 18 Grad. "
+"Gesundheitlich birgt hartes Wasser keine Gefahren, im Gegenteil: wegen des "
+"hohen Calcium- und Magnesiumgehaltes ist es gesünder als weiches Wasser."
+msgstr ""
+"In Heilbronn liegt die Obergrenze der Wasserhärte bei 18 Grad. "
+"Gesundheitlich birgt hartes Wasser keine Gefahren, im Gegenteil: wegen des "
+"hohen Calcium- und Magnesiumgehaltes ist es gesünder als weiches Wasser."
+
+#: src/index.html:107
+#: src/index.html:88
+#: src/index.html:87
+msgid "Warum gibt es bei uns kein weiches Trinkwasser?"
+msgstr "Warum gibt es bei uns kein weiches Trinkwasser?"
+
+#: src/index.html:108
+#: src/index.html:89
+#: src/index.html:88
+msgid ""
+"Die meisten der Heilbronner Trinkwasserbrunnen befinden sich in der "
+"Gesteinsschicht Gipskeuper, der für den sehr hohen Magnesium- und "
+"Calciumgehalt im Wasser verantwortlich ist. Da diese beiden Mineralien den "
+"Härtegrad des Wassers bestimmen, gibt es in Heilbronn kein weiches Wasser."
+msgstr ""
+"Die meisten der Heilbronner Trinkwasserbrunnen befinden sich in der "
+"Gesteinsschicht Gipskeuper, der für den sehr hohen Magnesium- und "
+"Calciumgehalt im Wasser verantwortlich ist. Da diese beiden Mineralien den "
+"Härtegrad des Wassers bestimmen, gibt es in Heilbronn kein weiches Wasser."
+
+#: src/index.html:109
+#: src/index.html:90
+#: src/index.html:89
+msgid ""
+"Das Heilbronner Wasser hat einen Härtegrad von bis zu 28 Grad deutscher "
+"Härte, in manchen der 40 Brunnen fließt Wasser mit 30 Grad deutscher Härte."
+msgstr ""
+"Das Heilbronner Wasser hat einen Härtegrad von bis zu 28 Grad deutscher "
+"Härte, in manchen der 40 Brunnen fließt Wasser mit 30 Grad deutscher Härte."
+
+#: src/index.html:110
+#: src/index.html:91
+#: src/index.html:90
+msgid "Wie entstehen die verschiedenen Härtegrade?"
+msgstr "Wie entstehen die verschiedenen Härtegrade?"
+
+#: src/index.html:112
+#: src/index.html:93
+#: src/index.html:92
+msgid ""
+"Trinkwasser enthält verschiedene Mengen der Mineralstoffe Calcium und "
+"Magnesium - je nachdem ob es sich um Oberflächen-, Grund oder Quellwasser "
+"handelt."
+msgstr ""
+"Trinkwasser enthält verschiedene Mengen der Mineralstoffe Calcium und "
+"Magnesium - je nachdem ob es sich um Oberflächen-, Grund oder Quellwasser "
+"handelt."
+
+#: src/index.html:113
+#: src/index.html:94
+#: src/index.html:93
+msgid "Je mehr Calcium und Magnesium im Wasser sind, desto härter ist es."
+msgstr "Je mehr Calcium und Magnesium im Wasser sind, desto härter ist es."
+
+#: src/index.html:114
+#: src/index.html:95
+#: src/index.html:94
+msgid "Einheit °dH - Grad deutscher Härte?"
+msgstr "Einheit °dH - Grad deutscher Härte?"
+
+#: src/index.html:115
+#: src/index.html:96
+#: src/index.html:95
+msgid ""
+"Die Einheit °dH (Grad deutscher Härte) ist veraltet, aber in der Praxis "
+"nach wie vor gebräuchlich. Neben °dH wird Millimol pro Liter (mmol/l) "
+"verwendet."
+msgstr ""
+"Die Einheit °dH (Grad deutscher Härte) ist veraltet, aber in der Praxis "
+"nach wie vor gebräuchlich. Neben °dH wird Millimol pro Liter (mmol/l) "
+"verwendet."
+
+#: src/index.html:116
+#: src/index.html:97
+#: src/index.html:96
+msgid "Bereiche:"
+msgstr "Bereiche:"
+
+#: src/index.html:117
+#: src/index.html:98
+#: src/index.html:97
+msgid ""
+"weich: weniger als 1,5 Millimol Calciumcarbonat je Liter (entspricht "
+"weniger als 8,4 Grad deutscher Härte)"
+msgstr ""
+"weich: weniger als 1,5 Millimol Calciumcarbonat je Liter (entspricht "
+"weniger als 8,4 Grad deutscher Härte)"
+
+#: src/index.html:118
+#: src/index.html:99
+#: src/index.html:98
+msgid ""
+"mittel: 1,5 bis 2,5 Millimol Calciumcarbonat je Liter (entspricht 8,4 bis "
+"14 Grad deutscher Härte)"
+msgstr ""
+"mittel: 1,5 bis 2,5 Millimol Calciumcarbonat je Liter (entspricht 8,4 bis "
+"14 Grad deutscher Härte)"
+
+#: src/index.html:119
+#: src/index.html:100
+#: src/index.html:99
+msgid ""
+"hart: mehr als 2,5 Millimol Calciumcarbonat je Liter (entspricht mehr als "
+"14 Grad deutscher Härte)"
+msgstr ""
+"hart: mehr als 2,5 Millimol Calciumcarbonat je Liter (entspricht mehr als "
+"14 Grad deutscher Härte)"
+
+#: src/index.html:120
+#: src/index.html:101
+#: src/index.html:100
+msgid "Weiterführende Links"
+msgstr "Weiterführende Links"
+
+#: src/index.html:121
+#: src/index.html:102
+#: src/index.html:101
+msgid "http://www.stimme.de/3047311"
+msgstr "http://www.stimme.de/3047311"
+
+#: src/index.html:122
+#: src/index.html:103
+#: src/index.html:102
+msgid "Heilbronner Wasser: Reich an Mineralien (Stimme.de, 22.03.2014)"
+msgstr "Heilbronner Wasser: Reich an Mineralien (Stimme.de, 22.03.2014)"
+
+#: src/index.html:123
+#: src/index.html:104
+#: src/index.html:103
+msgid "http://www.gesetze-im-internet.de/bundesrecht/trinkwv_2001/gesamt.pdf"
+msgstr "http://www.gesetze-im-internet.de/bundesrecht/trinkwv_2001/gesamt.pdf"
+
+#: src/index.html:124
+#: src/index.html:105
+#: src/index.html:104
+msgid "Trinkwasserverordnung"
+msgstr "Trinkwasserverordnung"
+
+#: src/index.html:125
+#: src/index.html:106
+#: src/index.html:105
+msgid ""
+"http://www.mlr.baden-wuerttemberg.de/mlr/allgemein/Liste%20d%20"
+"Untersuchungsstellen-Trinkw.pdf"
+msgstr ""
+"http://www.mlr.baden-wuerttemberg.de/mlr/allgemein/Liste%20d%20"
+"Untersuchungsstellen-Trinkw.pdf"
+
+#: src/index.html:126
+#: src/index.html:107
+#: src/index.html:106
+msgid "Liste an Laboren zur Untersuchung der Trinkwasserqualität"
+msgstr "Liste an Laboren zur Untersuchung der Trinkwasserqualität"
+
+#: src/index.html:127
+#: src/index.html:108
+#: src/index.html:107
+msgid ""
+"http://www.umweltbundesamt.de/sites/default/files/medien/378/publikationen/"
+"rund_um_das_trinkwasser.pdf"
+msgstr ""
+"http://www.umweltbundesamt.de/sites/default/files/medien/378/publikationen/"
+"rund_um_das_trinkwasser.pdf"
+
+#: src/index.html:128
+#: src/index.html:109
+#: src/index.html:108
+msgid "Broschüre des Umweltbundesamts"
+msgstr "Broschüre des Umweltbundesamts"
+
+#: src/index.html:129
+#: src/index.html:110
+#: src/index.html:109
+msgid "https://www.stadtwerke-heilbronn.de/index/hsw/hsw_wasser.html"
+msgstr "https://www.stadtwerke-heilbronn.de/index/hsw/hsw_wasser.html"
+
+#: src/index.html:130
+#: src/index.html:111
+#: src/index.html:110
+msgid "Stadtwerke Heilbronn, Rubrik Wasser"
+msgstr "Stadtwerke Heilbronn, Rubrik Wasser"
+
+#: src/index.html:131
+#: src/index.html:112
+#: src/index.html:111
+msgid "Quellen"
+msgstr "Quellen"
+
+#: src/index.html:132
+#: src/index.html:113
+#: src/index.html:112
+msgid "Heilbronner Versorgungs Gmbh"
+msgstr "Heilbronner Versorgungs Gmbh"
+
+#: src/index.html:133
+#: src/index.html:114
+#: src/index.html:113
+msgid "Deutsche Gesellschaft für Ernährung"
+msgstr "Deutsche Gesellschaft für Ernährung"
+
+#: src/index.html:134
+#: src/index.html:115
+#: src/index.html:114
+msgid "Bundesinstitut für Risikobewertung"
+msgstr "Bundesinstitut für Risikobewertung"
+
+#: src/index.html:135
+#: src/index.html:116
+#: src/index.html:115
+msgid "Webseiten der Gemeinden im Landkreis Heilbronn"
+msgstr "Webseiten der Gemeinden im Landkreis Heilbronn"
+
+#: src/index.html:136 src/index.html:173
+#: src/index.html:117
+#: src/index.html:154
+#: src/index.html:116
+#: src/index.html:153
+#: src/index.html:155
+msgid "Kontakt"
+msgstr "Kontakt"
+
+#: src/index.html:137
+#: src/index.html:118
+#: src/index.html:117
+msgid "Über das Projekt"
+msgstr "Über das Projekt"
+
+#: src/index.html:138 src/index.html:152
+#: src/index.html:119
+#: src/index.html:133
+#: src/index.html:118
+#: src/index.html:132
+#: src/index.html:134
+msgid "Mitwirkende"
+msgstr "Mitwirkende"
+
+#: src/index.html:139 src/index.html:161
+#: src/index.html:120
+#: src/index.html:142
+#: src/index.html:119
+#: src/index.html:141
+#: src/index.html:143
+msgid "Impressum"
+msgstr "Impressum"
+
+#: src/index.html:140
+#: src/index.html:121
+#: src/index.html:120
+#: src/index.html:122
+msgid "Über &amp; Impressum"
+msgstr "Über &amp; Impressum"
+
+#: src/index.html:141
+#: src/index.html:122
+#: src/index.html:121
+#: src/index.html:123
+msgid "Wie das Trinkwasser-Tool entstanden ist"
+msgstr "Wie das Trinkwasser-Tool entstanden ist"
+
+#: src/index.html:142
+#: src/index.html:123
+#: src/index.html:122
+#: src/index.html:124
+msgid ""
+"Trinkwasser gilt als das am besten kontrollierte Lebensmittel in "
+"Deutschland. Und trotzdem wissen wir sehr wenig über das Wasser, das bei "
+"uns aus dem Hahn kommt. Viele Kommunen veröffentlichen die "
+"Untersuchungsergebnisse auf ihren Webseiten. Für den Bürger sind diese "
+"Daten abrufbar - aber nicht greifbar. Was bedeutet ein Härtegrad von 9? "
+"Sind 200 Milligramm Calcium pro Liter viel oder wenig? Wie mineralreich "
+"unser Leitungswasser ist, zeigt sich erst, wenn wir es mit Wasser aus dem "
+"Handel vergleichen."
+msgstr ""
+"Trinkwasser gilt als das am besten kontrollierte Lebensmittel in "
+"Deutschland. Und trotzdem wissen wir sehr wenig über das Wasser, das bei "
+"uns aus dem Hahn kommt. Viele Kommunen veröffentlichen die "
+"Untersuchungsergebnisse auf ihren Webseiten. Für den Bürger sind diese "
+"Daten abrufbar - aber nicht greifbar. Was bedeutet ein Härtegrad von 9? "
+"Sind 200 Milligramm Calcium pro Liter viel oder wenig? Wie mineralreich "
+"unser Leitungswasser ist, zeigt sich erst, wenn wir es mit Wasser aus dem "
+"Handel vergleichen."
+
+#: src/index.html:143
+#: src/index.html:124
+#: src/index.html:123
+#: src/index.html:125
+msgid ""
+"Das ist für die Region Heilbronn jetzt möglich. Die Idee dazu entstand Ende "
+"Februar beim Open Data Day in Heilbronn. Obwohl viele Daten online "
+"verfügbar waren, mussten sie zuerst in eine maschinenlesbare Form gebracht "
+"werden. Viele Kommunen veröffentlichen nur PDF-Dateien mit den "
+"Jahresdurchschnittswerten. Diese sind nicht maschinenlesbar und mussten von "
+"der Redaktion übertragen werden.  Um die Anwendung zu programmieren, ist "
+"ein einheitlicher Datensatz notwendig. Auf manchen Webseiten der Kommunen "
+"waren die gesuchten Informationen über das Trinkwasser auf Unterseiten "
+"versteckt, veraltet oder nicht vollständig. Bei vielen Städten und "
+"Gemeinden haben wir deshalb per Email die Daten abgefragt. Nur von drei "
+"Kommunen kam bisher keine Rückmeldung."
+msgstr ""
+"Das ist für die Region Heilbronn jetzt möglich. Die Idee dazu entstand Ende "
+"Februar beim Open Data Day in Heilbronn. Obwohl viele Daten online "
+"verfügbar waren, mussten sie zuerst in eine maschinenlesbare Form gebracht "
+"werden. Viele Kommunen veröffentlichen nur PDF-Dateien mit den "
+"Jahresdurchschnittswerten. Diese sind nicht maschinenlesbar und mussten von "
+"der Redaktion übertragen werden.  Um die Anwendung zu programmieren, ist "
+"ein einheitlicher Datensatz notwendig. Auf manchen Webseiten der Kommunen "
+"waren die gesuchten Informationen über das Trinkwasser auf Unterseiten "
+"versteckt, veraltet oder nicht vollständig. Bei vielen Städten und "
+"Gemeinden haben wir deshalb per Email die Daten abgefragt. Nur von drei "
+"Kommunen kam bisher keine Rückmeldung."
+
+#: src/index.html:144
+#: src/index.html:125
+#: src/index.html:124
+#: src/index.html:126
+msgid ""
+"Überraschend war für uns, wie unterschiedlich das Trinkwasser in der Region "
+"zusammengesetzt ist. Teilweise differiert der Mineraliengehalt innerhalb "
+"einer Ortschaft sehr stark - nämlich dann, wenn es verschiedene "
+"Versorgungsbereiche gibt. Kommunen wie Bad Friedrichshall, Neckarsulm oder "
+"Zaberfeld sind in mehrere Gebiete eingeteilt. Dies war in der Phase der "
+"Datenerhebung eine besondere Herausforderung. Die Gebiete mussten teilweise "
+"noch den Straßen zugeordnet werden, damit der Benutzer auch die korrekten "
+"Werte für seine eigene Straße angezeigt bekommt. Zu den Trinkwasserpreisen "
+"bietet das Statistische Landesamt einen vollständigen Datensatz für alle "
+"Landkreise - für die Trinkwasserqualität gibt es einen solchen öffentlichen "
+"Datensatz leider nicht."
+msgstr ""
+"Überraschend war für uns, wie unterschiedlich das Trinkwasser in der Region "
+"zusammengesetzt ist. Teilweise differiert der Mineraliengehalt innerhalb "
+"einer Ortschaft sehr stark - nämlich dann, wenn es verschiedene "
+"Versorgungsbereiche gibt. Kommunen wie Bad Friedrichshall, Neckarsulm oder "
+"Zaberfeld sind in mehrere Gebiete eingeteilt. Dies war in der Phase der "
+"Datenerhebung eine besondere Herausforderung. Die Gebiete mussten teilweise "
+"noch den Straßen zugeordnet werden, damit der Benutzer auch die korrekten "
+"Werte für seine eigene Straße angezeigt bekommt. Zu den Trinkwasserpreisen "
+"bietet das Statistische Landesamt einen vollständigen Datensatz für alle "
+"Landkreise - für die Trinkwasserqualität gibt es einen solchen öffentlichen "
+"Datensatz leider nicht."
+
+#: src/index.html:145
+#: src/index.html:126
+#: src/index.html:125
+#: src/index.html:127
+msgid ""
+"Der dieser Anwendung zugrundliegende Datensatz war deshalb ein aufwändiges "
+"Rechercheprojekt. Nicht weniger aufwändig waren für die Entwickler Felix "
+"Ebert, Ulrich Stech und Tom Görner Umsetzung und Visualisierung. Eine große "
+"Rolle spielten dabei Benutzerfreundlichkeit und Design. Aus trockenen "
+"Zahlen sollte eine interaktive Grafik entstehen, durch die der Benutzer "
+"einen Zugang zu seinem Trinkwasser bekommt. Für die grafischen Elemente war "
+"Heiko Nicht verantwortlich."
+msgstr ""
+"Der dieser Anwendung zugrundliegende Datensatz war deshalb ein aufwändiges "
+"Rechercheprojekt. Nicht weniger aufwändig waren für die Entwickler Felix "
+"Ebert, Ulrich Stech und Tom Görner Umsetzung und Visualisierung. Eine große "
+"Rolle spielten dabei Benutzerfreundlichkeit und Design. Aus trockenen "
+"Zahlen sollte eine interaktive Grafik entstehen, durch die der Benutzer "
+"einen Zugang zu seinem Trinkwasser bekommt. Für die grafischen Elemente war "
+"Heiko Nicht verantwortlich."
+
+#: src/index.html:146
+#: src/index.html:127
+#: src/index.html:126
+#: src/index.html:128
+msgid ""
+"Die Trinkwasser-Anwendung ist eine Beta-Version. Vor allem die "
+"Datenerhebung kann nie abgeschlossen werden. Viele Kommunen veröffentlichen "
+"bald wieder die aktuellen Jahresmittelwerte - diese sollen auch in unserer "
+"Anwendung aktualisiert werden. Wir sind dabei auf die Mitarbeit der "
+"Rathäuser angewiesen und haben einen Kontaktbereich eingerichtet. Aufgrund "
+"des großen Datensatzes kann es zu fehlerhaften Angaben kommen. Wer "
+"Auffälligkeifen entdeckt, kann uns jederzeit kontaktieren. Wir freuen uns "
+"auch über Feedback."
+msgstr ""
+"Die Trinkwasser-Anwendung ist eine Beta-Version. Vor allem die "
+"Datenerhebung kann nie abgeschlossen werden. Viele Kommunen veröffentlichen "
+"bald wieder die aktuellen Jahresmittelwerte - diese sollen auch in unserer "
+"Anwendung aktualisiert werden. Wir sind dabei auf die Mitarbeit der "
+"Rathäuser angewiesen und haben einen Kontaktbereich eingerichtet. Aufgrund "
+"des großen Datensatzes kann es zu fehlerhaften Angaben kommen. Wer "
+"Auffälligkeifen entdeckt, kann uns jederzeit kontaktieren. Wir freuen uns "
+"auch über Feedback."
+
+#: src/index.html:147
+#: src/index.html:128
+#: src/index.html:127
+#: src/index.html:129
+msgid ""
+"Datensatz und Code der Anwendung sind öffentlich zugänglich und stehen "
+"unter einer Open Source-Lizenz."
+msgstr ""
+"Datensatz und Code der Anwendung sind öffentlich zugänglich und stehen "
+"unter einer Open Source-Lizenz."
+
+#: src/index.html:148
+#: src/index.html:129
+#: src/index.html:128
+#: src/index.html:130
+msgid ""
+"Du bist an weiteren Open Data Anwendungen interessiert oder möchtest selbst "
+"mitwirken? In Heilbronn treffen wir uns regelmäßig im Rahmen von"
+msgstr ""
+"Du bist an weiteren Open Data Anwendungen interessiert oder möchtest selbst "
+"mitwirken? In Heilbronn treffen wir uns regelmäßig im Rahmen von"
+
+#: src/index.html:149 src/index.html:158
+#: src/index.html:130
+#: src/index.html:139
+#: src/index.html:129
+#: src/index.html:138
+#: src/index.html:131
+#: src/index.html:140
+msgid "http://codefor.de"
+msgstr "http://codefor.de"
+
+#: src/index.html:150 src/index.html:159
+#: src/index.html:131
+#: src/index.html:140
+#: src/index.html:130
+#: src/index.html:139
+#: src/index.html:132
+#: src/index.html:141
+msgid "Code for Germany"
+msgstr "Code for Germany"
+
+#: src/index.html:151 src/index.html:160
+#: src/index.html:132
+#: src/index.html:141
+#: src/index.html:131
+#: src/index.html:140
+#: src/index.html:133
+#: src/index.html:142
+msgid ""
+"um gemeinsam Open Data Projekten umzusetzen - wir würden uns über deinen "
+"Besuch freuen!"
+msgstr ""
+"um gemeinsam Open Data Projekten umzusetzen - wir würden uns über deinen "
+"Besuch freuen!"
+
+#: src/index.html:153
+#: src/index.html:134
+#: src/index.html:133
+#: src/index.html:135
+msgid "Redaktionelle Umsetzung"
+msgstr "Redaktionelle Umsetzung"
+
+#: src/index.html:154
+#: src/index.html:135
+#: src/index.html:134
+#: src/index.html:136
+msgid "Gestaltung"
+msgstr "Gestaltung"
+
+#: src/index.html:155
+#: src/index.html:136
+#: src/index.html:135
+#: src/index.html:137
+msgid "Programmierung"
+msgstr "Programmierung"
+
+#: src/index.html:156
+#: src/index.html:137
+#: src/index.html:136
+#: src/index.html:138
+msgid "Mitarbeit"
+msgstr "Mitarbeit"
+
+#: src/index.html:157
+#: src/index.html:138
+#: src/index.html:137
+#: src/index.html:139
+msgid "In Heilbronn treffen wir uns regelmäßig im Rahmen von"
+msgstr "In Heilbronn treffen wir uns regelmäßig im Rahmen von"
+
+#: src/index.html:162
+#: src/index.html:143
+#: src/index.html:142
+#: src/index.html:144
+msgid "IF-Core IT Services GmbH"
+msgstr "IF-Core IT Services GmbH"
+
+#: src/index.html:163
+#: src/index.html:144
+#: src/index.html:143
+#: src/index.html:145
+msgid "Clemenshaller Str. 5"
+msgstr "Clemenshaller Str. 5"
+
+#: src/index.html:164
+#: src/index.html:145
+#: src/index.html:144
+#: src/index.html:146
+msgid "74254 Offenau"
+msgstr "74254 Offenau"
+
+#: src/index.html:165
+#: src/index.html:146
+#: src/index.html:145
+#: src/index.html:147
+msgid "T. 07136 / 830 26 30"
+msgstr "T. 07136 / 830 26 30"
+
+#: src/index.html:166
+#: src/index.html:147
+#: src/index.html:146
+#: src/index.html:148
+msgid "F. 07136 / 830 26 27"
+msgstr "F. 07136 / 830 26 27"
+
+#: src/index.html:167 src/index.html:175
+#: src/index.html:148
+#: src/index.html:156
+#: src/index.html:147
+#: src/index.html:155
+#: src/index.html:149
+#: src/index.html:157
+msgid "E-Mail:"
+msgstr "E-Mail:"
+
+#: src/index.html:168
+#: src/index.html:149
+#: src/index.html:148
+#: src/index.html:150
+msgid "info"
+msgstr "info"
+
+#: src/index.html:169
+#: src/index.html:150
+#: src/index.html:149
+#: src/index.html:151
+msgid "if-core.de"
+msgstr "if-core.de"
+
+#: src/index.html:170
+#: src/index.html:151
+#: src/index.html:150
+#: src/index.html:152
+msgid "HRB 108620 (Amtsgericht Stuttgart)"
+msgstr "HRB 108620 (Amtsgericht Stuttgart)"
+
+#: src/index.html:171
+#: src/index.html:152
+#: src/index.html:151
+#: src/index.html:153
+msgid "USt-IdNr.: DE236085681"
+msgstr "USt-IdNr.: DE236085681"
+
+#: src/index.html:172
+#: src/index.html:153
+#: src/index.html:152
+#: src/index.html:154
+msgid "Geschäftsführer: Felix Ebert"
+msgstr "Geschäftsführer: Felix Ebert"
+
+#: src/index.html:174
+#: src/index.html:155
+#: src/index.html:154
+#: src/index.html:156
+msgid "Wir freuen uns über Feedback:"
+msgstr "Wir freuen uns über Feedback:"
+
+#: src/index.html:176
+#: src/index.html:157
+#: src/index.html:156
+#: src/index.html:158
+msgid "wasser"
+msgstr "wasser"
+
+#: src/index.html:177
+#: src/index.html:158
+#: src/index.html:157
+#: src/index.html:159
+msgid "opendatalab.de"
+msgstr "opendatalab.de"
+
+#: src/index.html:178
+#: src/index.html:159
+#: src/index.html:158
+#: src/index.html:160
+msgid ""
+"Aufgrund der zahlreichen Daten kann es vereinzelt zu fehlerhaften Angaben "
+"kommen. Haben Sie einen Fehler entdeckt? Schreiben Sie uns!"
+msgstr ""
+"Aufgrund der zahlreichen Daten kann es vereinzelt zu fehlerhaften Angaben "
+"kommen. Haben Sie einen Fehler entdeckt? Schreiben Sie uns!"
+
+#: src/index.html:179
+#: src/index.html:160
+#: src/index.html:159
+#: src/index.html:161
+msgid ""
+"Oder sind Sie Mitarbeiter einer Kommune und möchten Ihre Daten eintragen? "
+"Schicken Sie uns einfach Ihre Daten per E-Mail."
+msgstr ""
+"Oder sind Sie Mitarbeiter einer Kommune und möchten Ihre Daten eintragen? "
+"Schicken Sie uns einfach Ihre Daten per E-Mail."
+
+#: src/index.html:121
+#: src/index.html:120
+#: src/index.html:119
+msgid "API"
+msgstr ""
+
+#: src/index.html:139
+#: src/index.html:138
+msgid "http://codefor.eu"
+msgstr ""

@@ -1,0 +1,900 @@
+{
+    "natrium": {
+        "standard": "CAS",
+        "value": "7440-23-5",
+        "label": "Sodium",
+        "pubchem":{
+          "cid":"5360545",
+          "reference":"https://pubchem.ncbi.nlm.nih.gov/compound/5360545"
+        },
+        "description": "",
+        "type": "Mineral",
+        "translations":{
+          "en": "Natrium",
+          "de": "Natrium",
+          "nl": "Natrium"
+        }
+    },
+    "kalium": {
+        "standard": "CAS",
+        "value": "7440-09-7",
+        "label": "Potassium",
+        "description": "",
+        "pubchem":{
+          "cid": "5462222",
+          "reference": "https://pubchem.ncbi.nlm.nih.gov/compound/5462222"
+        },
+        "type": "Mineral",
+        "translations":{
+          "en": "Kalium",
+          "de": "Kalium",
+          "nl": "Kalium"
+        }
+    },
+    "calcium": {
+        "standard": "CAS",
+        "value": "7440-70-2",
+        "label": "Calcium",
+        "description": "",
+        "type": "Mineral"
+    },
+    "magnesium": {
+        "standard": "CAS",
+        "value": "7439-95-4",
+        "label": "Magnesium",
+        "description": "",
+        "type": "Mineral"
+    },
+    "fluoride": {
+        "standard": "CAS",
+        "value": "16984-48-8",
+        "label": "Fluoride",
+        "description": "",
+        "type": "Mineral"
+    },
+    "chloride": {
+        "standard": "CAS",
+        "value": "16887-00-6",
+        "label": "Chloride",
+        "description": "",
+        "type": "Mineral"
+    },
+    "sulfate": {
+        "standard": "CAS",
+        "value": "14808-79-8",
+        "label": "Sulfate",
+        "description": "",
+        "type": "Mineral"
+    },
+    "hydrogen": {
+        "standard": "CAS",
+        "value": "1333-74-0",
+        "label": "Hydrogen",
+        "description": "",
+        "type": "Mineral"
+    },
+    "nitrate": {
+        "standard": "CAS",
+        "value": "14797-55-8",
+        "label": "Nitrate",
+        "description": "",
+        "type": "Mineral"
+    },
+    "PhytoplanktonEQR_G": {
+        "standard": "EEA",
+        "value": "11-01-8",
+        "label": "PhytoplanktonEQR_G",
+        "description": "Lakes only",
+        "type": "Biology"
+    },
+    "PhytoplanktonEQR_H": {
+        "standard": "EEA",
+        "value": "11-02-9",
+        "label": "PhytoplanktonEQR_H",
+        "description": "Lakes only",
+        "type": "Biology"
+    },
+    "PhytoplanktonEQR_A": {
+        "standard": "EEA",
+        "value": "11-03-0",
+        "label": "PhytoplanktonEQR_A",
+        "description": "Lakes only",
+        "type": "Biology"
+    },
+    "PhytoplanktonEQR_E": {
+        "standard": "EEA",
+        "value": "11-04-1",
+        "label": "PhytoplanktonEQR_E",
+        "description": "Lakes only",
+        "type": "Biology"
+    },
+    "PhytoplanktonEQR": {
+        "standard": "EEA",
+        "value": "11-08-5",
+        "label": "PhytoplanktonEQR",
+        "description": "TC waters only",
+        "type": "Biology"
+    },
+    "MacroalgaeEQR": {
+        "standard": "EEA",
+        "value": "121-01-7",
+        "label": "MacroalgaeEQR",
+        "description": "TC waters only",
+        "type": "Biology"
+    },
+    "AngiospermsEQR": {
+        "standard": "EEA",
+        "value": "122-02-1",
+        "label": "AngiospermsEQR",
+        "description": "TC waters only",
+        "type": "Biology"
+    },
+    "MacrophyteEQR_G": {
+        "standard": "EEA",
+        "value": "123-01-3",
+        "label": "MacrophyteEQR_G",
+        "description": "Lakes only",
+        "type": "Biology"
+    },
+    "MacrophyteEQR_H": {
+        "standard": "EEA",
+        "value": "123-02-4",
+        "label": "MacrophyteEQR_H",
+        "description": "Lakes only",
+        "type": "Biology"
+    },
+    "MacrophyteEQR_A": {
+        "standard": "EEA",
+        "value": "123-03-5",
+        "label": "MacrophyteEQR_A",
+        "restrition": "Lakes only",
+        "type": "Biology"
+    },
+    "MacrophyteEQR_E": {
+        "standard": "EEA",
+        "value": "123-04-6",
+        "label": "MacrophyteEQR_E",
+        "description": "Lakes only",
+        "type": "Biology"
+    },
+    "PhytobenthosEQR_G": {
+        "standard": "EEA",
+        "value": "124-01-6",
+        "label": "PhytobenthosEQR_G",
+        "description": "Rivers only",
+        "type": "Biology"
+    },
+    "PhytobenthosEQR_H": {
+        "standard": "EEA",
+        "value": "124-02-7",
+        "label": "PhytobenthosEQR_H",
+        "description": "Rivers only",
+        "type": "Biology"
+    },
+    "PhytobenthosEQR_A": {
+        "standard": "EEA",
+        "value": "124-03-8",
+        "label": "PhytobenthosEQR_A",
+        "description": "Rivers only",
+        "type": "Biology"
+    },
+    "PhytobenthosEQR_E": {
+        "standard": "EEA",
+        "value": "124-04-9",
+        "label": "PhytobenthosEQR_E",
+        "description": "Rivers only",
+        "type": "Biology"
+    },
+    "InvertebrateEQR_G": {
+        "standard": "EEA",
+        "value": "13-01-4",
+        "label": "InvertebrateEQR_G",
+        "description": "Rivers only",
+        "type": "Biology"
+    },
+    "InvertebrateEQR_H": {
+        "standard": "EEA",
+        "value": "13-02-5",
+        "label": "InvertebrateEQR_H",
+        "description": "Rivers only",
+        "type": "Biology"
+    },
+    "InvertebrateEQR_A": {
+        "standard": "EEA",
+        "value": "13-03-6",
+        "label": "InvertebrateEQR_A",
+        "description": "Rivers only",
+        "type": "Biology"
+    },
+    "InvertebrateEQR_E": {
+        "standard": "EEA",
+        "value": "13-04-7",
+        "label": "InvertebrateEQR_E",
+        "description": "Rivers only",
+        "type": "Biology"
+    },
+    "InvertebrateEQR": {
+        "standard": "EEA",
+        "value": "13-05-8",
+        "label": "InvertebrateEQR",
+        "description": "TC waters only",
+        "type": "Biology"
+    },
+    "FishEQR": {
+        "standard": "EEA",
+        "value": "14-05-1",
+        "label": "FishEQR",
+        "description": "T waters only",
+        "type": "Biology"
+    },
+    "other_chemical": {
+        "standard": "EEA",
+        "value": "00-00-0",
+        "label": "Other chemical parameter",
+        "description": "",
+        "type": "Other"
+    },
+    "total_phytoplankton": {
+        "standard": "EEA",
+        "value": "11-05-2",
+        "label": "Total phytoplankton biomass",
+        "description": "",
+        "type": "Other"
+    },
+    "cyanobacteria_biomass": {
+        "standard": "EEA",
+        "value": "11-06-3",
+        "label": "Cyanobacteria biomass",
+        "description": "",
+        "type": "Other"
+    },
+    "cyanobacteria_proportion": {
+        "standard": "EEA",
+        "value": "11-07-4",
+        "label": "Cyanobacteria proportion",
+        "description": "",
+        "type": "Other"
+    },
+    "macrophyte_depth": {
+        "standard": "EEA",
+        "value": "123-05-7",
+        "label": "Macrophyte depth limit",
+        "description": "",
+        "type": "Other"
+    },
+    "charaphytes": {
+        "standard": "EEA",
+        "value": "123-06-8",
+        "label": "Charaphytes presence",
+        "description": "",
+        "type": "Other"
+    },
+    "isoetides": {
+        "standard": "EEA",
+        "value": "123-07-9",
+        "label": "Isoetides presence",
+        "description": "",
+        "type": "Other"
+    },
+    "fisheqr_g": {
+        "standard": "EEA",
+        "value": "14-01-7",
+        "label": "FishEQR_G",
+        "description": "",
+        "type": "Other"
+    },
+    "fisheqr_h": {
+        "standard": "EEA",
+        "value": "14-02-8",
+        "label": "FishEQR_H",
+        "description": "",
+        "type": "Other"
+    },
+    "fisherq_a": {
+        "standard": "EEA",
+        "value": "14-03-9",
+        "label": "FishEQR_A",
+        "description": "",
+        "type": "Other"
+    },
+    "fisheqr_e": {
+        "standard": "EEA",
+        "value": "14-04-0",
+        "label": "FishEQR_E",
+        "description": "",
+        "type": "Other"
+    },
+    "hardness": {
+        "standard": "EEA",
+        "value": "31-01-6",
+        "label": "Hardness",
+        "description": "",
+        "type": "Other"
+    },
+    "suspended_solids": {
+        "standard": "EEA",
+        "value": "31-02-7",
+        "label": "Total suspended solids",
+        "description": "",
+        "type": "Other"
+    },
+    "dissolved_solids": {
+        "standard": "EEA",
+        "value": "31-03-8",
+        "label": "Total dissolved solids",
+        "description": "",
+        "type": "Other"
+    },
+    "secchi": {
+        "standard": "EEA",
+        "value": "3111-01-1",
+        "label": "Secchi depth",
+        "description": "",
+        "type": "Other"
+    },
+    "water_temperature": {
+        "standard": "EEA",
+        "value": "3121-01-5",
+        "label": "Water temperature",
+        "description": "",
+        "type": "Other"
+    },
+    "oxygon_saturation": {
+        "standard": "EEA",
+        "value": "3131-01-9",
+        "label": "Oxygen saturation",
+        "description": "",
+        "type": "Other"
+    },
+    "dissolved_oxygen": {
+        "standard": "EEA",
+        "value": "3132-01-2",
+        "label": "Dissolved oxygen",
+        "description": "",
+        "type": "Other"
+    },
+    "bod5": {
+        "standard": "EEA",
+        "value": "3133-01-5",
+        "label": "BOD5",
+        "description": "",
+        "type": "Other"
+    },
+    "bod7": {
+        "standard": "EEA",
+        "value": "3133-02-6",
+        "label": "BOD7",
+        "description": "",
+        "type": "Other"
+    },
+    "codcr": {
+        "standard": "EEA",
+        "value": "3133-03-7",
+        "label": "CODCr",
+        "description": "",
+        "type": "Other"
+    },
+    "codmn": {
+        "standard": "EEA",
+        "value": "3133-04-8",
+        "label": "CODMn",
+        "description": "",
+        "type": "Other"
+    },
+    "dissolved_organic_carbon": {
+        "standard": "EEA",
+        "value": "3133-05-9",
+        "label": "Dissolved organic carbon (DOC)",
+        "description": "",
+        "type": "Other"
+    },
+    "total_organic_carbon": {
+        "standard": "EEA",
+        "value": "3133-06-0",
+        "label": "Total organic carbon (TOC)",
+        "description": "",
+        "type": "Other"
+    },
+    "electrical_conductivity": {
+        "standard": "EEA",
+        "value": "3142-01-6",
+        "label": "Electrical conductivity",
+        "description": "",
+        "type": "Other"
+    },
+    "chlorine": {
+        "standard": "EEA",
+        "value": "3142-02-7",
+        "label": "Chlorine Cl-",
+        "description": "",
+        "type": "Other"
+    },
+    "acid_nuetralizing_cap": {
+        "standard": "EEA",
+        "value": "3151-01-7",
+        "label": "Acid neutralizing capacity",
+        "description": "",
+        "type": "Other"
+    },
+    "ph": {
+        "standard": "EEA",
+        "value": "3152-01-0",
+        "label": "pH",
+        "description": "",
+        "type": "Other"
+    },
+    "acid_neutralizing_cap_ph": {
+        "standard": "EEA",
+        "value": "3153-01-3",
+        "label": "Acid neutralizing capacity to pH 4.5",
+        "description": "",
+        "type": "Other"
+    },
+    "kjeldahl_nitrogen": {
+        "standard": "EEA",
+        "value": "3161-01-1",
+        "label": "Kjeldahl nitrogen",
+        "description": "",
+        "type": "Other"
+    },
+    "oxidised_nitrogen_total": {
+        "standard": "EEA",
+        "value": "3161-02-2",
+        "label": "Total oxidised nitrogen",
+        "description": "",
+        "type": "Other"
+    },
+    "organic_nitrogen_total": {
+        "standard": "EEA",
+        "value": "3161-03-3",
+        "label": "Total organic nitrogen",
+        "description": "",
+        "type": "Other"
+    },
+    "organic_nitrogen_part": {
+        "standard": "EEA",
+        "value": "3161-04-4",
+        "label": "Particulate organic nitrogen",
+        "description": "",
+        "type": "Other"
+    },
+    "PhytoplanktonEQR_G": {
+        "standard": "EEA",
+        "value": "3161-05-5",
+        "label": "Total inorganic nitrogen",
+        "description": "",
+        "type": "Other"
+    },
+    "non_ionised_ammonia": {
+        "standard": "EEA",
+        "value": "31613-01-1",
+        "label": "Non-ionised ammonia",
+        "description": "",
+        "type": "Other"
+    },
+    "nitrogen_total": {
+        "standard": "EEA",
+        "value": "31615-01-7",
+        "label": "Total nitrogen",
+        "description": "",
+        "type": "Other"
+    },
+    "silicate": {
+        "standard": "EEA",
+        "value": "3163-01-7",
+        "label": "Silicate",
+        "description": "",
+        "type": "Other"
+    },
+    "chlorophyll_a": {
+        "standard": "EEA",
+        "value": "3164-01-0",
+        "label": "Chlorophyll a",
+        "description": "",
+        "type": "Other"
+    },
+    "nitrogen_phosphorus_ratio": {
+        "standard": "EEA",
+        "value": "3164-07-6",
+        "label": "Total nitrogen to total phosphorus ratio",
+        "description": "",
+        "type": "Other"
+    },
+    "nitrate_orthophosphate_ratio": {
+        "standard": "EEA",
+        "value": "3164-08-7",
+        "label": "Nitrate to orthophosphate ratio",
+        "description": "",
+        "type": "Other"
+    },
+    "cyclodiene_pesticides_total": {
+        "standard": "EEA",
+        "value": "32-02-0",
+        "label": "Total cyclodiene pesticides (aldrin + dieldrin + endrin + isodrin)",
+        "description": "",
+        "type": "Other"
+    },
+    "ddt_total": {
+        "standard": "EEA",
+        "value": "32-03-1",
+        "label": "Total DDT (DDT, p,p' + DDT, o,p' + DDE, p,p' + DDD, p,p')",
+        "description": "",
+        "type": "Other"
+    },
+    "brominated_diphenylethers": {
+        "standard": "EEA",
+        "value": "32-04-2",
+        "label": "Brominated diphenylethers (congener numbers 28 47 99 100 153 and 154)",
+        "description": "",
+        "type": "Other"
+    },
+    "benzo_anthene": {
+        "standard": "EEA",
+        "value": "32-23-5",
+        "label": "Total Benzo(b)fluor-anthene (CAS_205-99-2) + Benzo(k)fluor-anthene (CAS_207-08-9)",
+        "description": "",
+        "type": "Other"
+    },
+    "benzo_perylene": {
+        "standard": "EEA",
+        "value": "32-24-6",
+        "label": "Total Benzo(g,h,i)-perylene (CAS_191-24-2) + Indeno(1 2 3-cd)-pyrene (CAS_193-39-5)",
+        "description": "",
+        "type": "Other"
+    },
+    "alkalised_benzene": {
+        "standard": "EEA",
+        "value": "33-01-2",
+        "label": "Alkalised benzene",
+        "description": "",
+        "type": "Other"
+    },
+    "benzol": {
+        "standard": "EEA",
+        "value": "33-02-3",
+        "label": "Benzol",
+        "description": "",
+        "type": "Other"
+    },
+    "brominated_flame_retardants": {
+        "standard": "EEA",
+        "value": "33-04-5",
+        "label": "Brominated flame retardants",
+        "description": "",
+        "type": "Other"
+    },
+    "btex": {
+        "standard": "EEA",
+        "value": "33-05-6",
+        "label": "BTEX",
+        "description": "",
+        "type": "Other"
+    },
+    "chlorinated_benzene": {
+        "standard": "EEA",
+        "value": "33-06-7",
+        "label": "Chlorinated benzene",
+        "description": "",
+        "type": "Other"
+    },
+    "chlorinated_phenol": {
+        "standard": "EEA",
+        "value": "33-07-8",
+        "label": "Chlorinated phenol",
+        "description": "",
+        "type": "Other"
+    },
+    "chromium_3plus": {
+        "standard": "EEA",
+        "value": "33-08-9",
+        "label": "Chromium 3+",
+        "description": "",
+        "type": "Other"
+    },
+    "detergents": {
+        "standard": "EEA",
+        "value": "33-09-0",
+        "label": "Detergents",
+        "description": "",
+        "type": "Other"
+    },
+    "dichlorobenzene": {
+        "standard": "EEA",
+        "value": "33-10-3",
+        "label": "Dichlorobenzene",
+        "description": "",
+        "type": "Other"
+    },
+    "dichlorophenol": {
+        "standard": "EEA",
+        "value": "33-11-4",
+        "label": "Dichlorophenol",
+        "description": "",
+        "type": "Other"
+    },
+    "dox": {
+        "standard": "EEA",
+        "value": "33-13-6",
+        "label": "DOX",
+        "description": "",
+        "type": "Other"
+    },
+    "organic_chlorine": {
+        "standard": "EEA",
+        "value": "33-14-7",
+        "label": "Extractable organically bound chlorine",
+        "description": "",
+        "type": "Other"
+    },
+    "halogenated_compounds": {
+        "standard": "EEA",
+        "value": "33-15-8",
+        "label": "Halogenated organic compounds",
+        "description": "",
+        "type": "Other"
+    },
+    "hydrocarbons": {
+        "standard": "EEA",
+        "value": "33-17-0",
+        "label": "Hydrocarbons",
+        "description": "",
+        "type": "Other"
+    },
+    "xylene": {
+        "standard": "EEA",
+        "value": "33-18-1",
+        "label": "Meta xylene + para xylene",
+        "description": "",
+        "type": "Other"
+    },
+    "mono_basic_phenols": {
+        "standard": "EEA",
+        "value": "33-19-2",
+        "label": "Mono basic phenols",
+        "description": "",
+        "type": "Other"
+    },
+    "monochlorophenols": {
+        "standard": "EEA",
+        "value": "33-20-5",
+        "label": "Monochlorophenols",
+        "description": "",
+        "type": "Other"
+    },
+    "nitrobenzene": {
+        "standard": "EEA",
+        "value": "33-21-6",
+        "label": "Nitrobenzene",
+        "description": "",
+        "type": "Other"
+    },
+    "oil_fractions": {
+        "standard": "EEA",
+        "value": "33-22-7",
+        "label": "Oil fractions (C10-40)",
+        "description": "",
+        "type": "Other"
+    },
+    "petroleum_hydrocarbons": {
+        "standard": "EEA",
+        "value": "33-23-8",
+        "label": "Petroleum hydrocarbons",
+        "description": "",
+        "type": "Other"
+    },
+    "petroleum_products": {
+        "standard": "EEA",
+        "value": "33-24-9",
+        "label": "Petroleum products",
+        "description": "",
+        "type": "Other"
+    },
+    "polychlorinated": {
+        "standard": "EEA",
+        "value": "33-26-1",
+        "label": "Polychlorinated dibenzodioxins (PCDD)",
+        "description": "",
+        "type": "Other"
+    },
+    "radionuclides": {
+        "standard": "EEA",
+        "value": "33-27-2",
+        "label": "Radionuclides",
+        "description": "",
+        "type": "Other"
+    },
+    "surfactants": {
+        "standard": "EEA",
+        "value": "33-28-3",
+        "label": "Surfactants (anionic and nonionic)",
+        "description": "",
+        "type": "Other"
+    },
+    "surfactants_anionic": {
+        "standard": "EEA",
+        "value": "33-29-4",
+        "label": "Surfactants (anionic)",
+        "description": "",
+        "type": "Other"
+    },
+    "chrysene_triphenylene": {
+        "standard": "EEA",
+        "value": "33-31-8",
+        "label": "Total chrysene + triphenylene",
+        "description": "",
+        "type": "Other"
+    },
+    "ddd": {
+        "standard": "EEA",
+        "value": "33-32-9",
+        "label": "Total DDD (DDD, o,p' + DDD, p,p')",
+        "description": "",
+        "type": "Other"
+    },
+    "hydrocarbons_total": {
+        "standard": "EEA",
+        "value": "33-36-3",
+        "label": "Total hydrocarbons",
+        "description": "",
+        "type": "Other"
+    },
+    "polychlorinated biphenyls": {
+        "standard": "EEA",
+        "value": "33-38-5",
+        "label": "Polychlorinated biphenyls(7 PCB: 28 52 101 118 138 153 180)",
+        "description": "",
+        "type": "Other"
+    },
+    "dioxins_furans": {
+        "standard": "EEA",
+        "value": "33-40-9",
+        "label": "Total dioxins and furans (PCDD + PCDF)",
+        "description": "",
+        "type": "Other"
+    },
+    "tri_tetra_pentachlorophenol": {
+        "standard": "EEA",
+        "value": "33-41-0",
+        "label": "Total tri-, tetra- and pentachlorophenol",
+        "description": "",
+        "type": "Other"
+    },
+    "tri_tetrachloroethylene": {
+        "standard": "EEA",
+        "value": "33-42-1",
+        "label": "Total trichloroethylene + tetrachloroethylene",
+        "description": "",
+        "type": "Other"
+    },
+    "trihalomethanes": {
+        "standard": "EEA",
+        "value": "33-43-2",
+        "label": "Total trihalomethanes",
+        "description": "",
+        "type": "Other"
+    },
+    "halogenated_hydrocarbons": {
+        "standard": "EEA",
+        "value": "33-44-3",
+        "label": "Total highly volatile halogenated hydrocarbons",
+        "description": "",
+        "type": "Other"
+    },
+    "vhh": {
+        "standard": "EEA",
+        "value": "33-45-4",
+        "label": "Volatile halogenated hydrocarbons (VHH)",
+        "description": "",
+        "type": "Other"
+    },
+    "vox": {
+        "standard": "EEA",
+        "value": "33-46-5",
+        "label": "Volatile organic halogens (VOX)",
+        "description": "",
+        "type": "Other"
+    },
+    "heptachlor": {
+        "standard": "EEA",
+        "value": "33-50-1",
+        "label": "Heptachlor and heptachlor epoxide",
+        "description": "",
+        "type": "Other"
+    },
+    "macrolide_antibiotics": {
+        "standard": "EEA",
+        "value": "33-51-2",
+        "label": "Total macrolide antibiotics (erythromycin + clarithromycin + azithromycin)",
+        "description": "",
+        "type": "Other"
+    },
+    "neonicotiniod_insecticides": {
+        "standard": "EEA",
+        "value": "33-52-3",
+        "label": "Total neonicotinoid insecticides (imidacloprid + thiacloprid + thiamethoxam + clothianidin + acetamiprid)",
+        "description": "",
+        "type": "Other"
+    },
+    "estrone": {
+        "standard": "EEA",
+        "value": "33-53-4",
+        "label": "Total Estrone (E1) + 17beta-estradiol (E2)",
+        "description": "",
+        "type": "Other"
+    },
+    "polychlorinated_biphenyls": {
+        "standard": "EEA",
+        "value": "33-54-5",
+        "label": "Dioxin-like polychlorinated biphenyls (12 PCB-DLs: 77 81 105 114 118 123 126 156 157 167 169 189)",
+        "description": "",
+        "type": "Other"
+    },
+    "octylphenols": {
+        "standard": "EEA",
+        "value": "33-55-6",
+        "label": "Octylphenols (CAS 1806-26-4) including isomer 4-(11',33'-tetramethylbutyl)-phenol (CAS 140-66-9)",
+        "description": "",
+        "type": "Other"
+    },
+    "benzo_pah": {
+        "standard": "EEA",
+        "value": "33-56-7",
+        "label": "Total PAHs (Benzo(a)pyrene, Benzo(b)fluoranthene, Benzo(k)fluoranthene, Benzo(ghi)perylene, Indeno(123cd)pyrene)",
+        "description": "",
+        "type": "Other"
+    },
+    "hbcdd": {
+        "standard": "EEA",
+        "value": "33-57-8",
+        "label": "Hexabromocyclododecanes (HBCDD)",
+        "description": "",
+        "type": "Other"
+    },
+    "dioxins": {
+        "standard": "EEA",
+        "value": "33-58-9",
+        "label": "Dioxins and dioxin-like compounds (7 PCDDs + 10 PCDFs + 12 PCB-DLs)",
+        "description": "",
+        "type": "Other"
+    },
+    "np_npe": {
+        "standard": "EEA",
+        "value": "33-59-0",
+        "label": "Nonylphenol and nonylphenol ethoxylates (NP + NPEs)",
+        "description": "",
+        "type": "Other"
+    },
+    "organotin_compounds": {
+        "standard": "EEA",
+        "value": "33-60-3",
+        "label": "Organotin compounds (as total Sn)",
+        "description": "",
+        "type": "Other"
+    },
+    "triphenyltin": {
+        "standard": "EEA",
+        "value": "33-61-4",
+        "label": "Triphenyltin and compounds",
+        "description": "",
+        "type": "Other"
+    },
+    "pahs": {
+        "standard": "EEA",
+        "value": "33-62-5",
+        "label": "Total PAHs (4 PAHs: Benzo(a)pyrene, Benzo(b)fluoranthene, Benzo(k)fluoranthene, Indeno(123cd)pyrene)",
+        "description": "",
+        "type": "Other"
+    },
+    "brominated_diphenylethers_total": {
+        "standard": "EEA",
+        "value": "33-63-6",
+        "label": "Total brominated diphenylethers (penta-BDE + octa-BDE + deca-BDE)",
+        "description": "",
+        "type": "Other"
+    },
+    "pesticides": {
+        "standard": "EEA",
+        "value": "34-01-5",
+        "label": "Pesticides (Active substances in pesticides, including their relevant metabolites, degradation and reaction products)"
+    }
+}

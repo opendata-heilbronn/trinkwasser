@@ -1,103 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<title>Was steckt in meinem Leitungswasser?</title>
-<meta name="description" content="Weißt du eigentlich, wie gut das Trinkwasser an deinem Wohnort ist? Hier kannst du es herausfinden - für den Stadt- und Landkreis Heilbronn" />
-
-<!-- build:css css/tw.min.css -->
-<link href="css/bootstrap-cyborg.css" rel="stylesheet" />
-<link href="css/main.css" rel="stylesheet" />
-<!-- endbuild -->
-
-<!--[if gte IE 9]>
-  <style type="text/css">
-    .gradient {
-       filter: none;
-    }
-  </style>
-<![endif]-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="_('Weißt du eigentlich, wie gut das Trinkwasser an deinem Wohnort ist? Hier kannst du es herausfinden - für den Stadt- und Landkreis Heilbronn')" />
+    <title>_('Was steckt in meinem Leitungswasser?')</title>
+    <!-- build:css css/tw.min.css -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/bootstrap-cyborg.css" rel="stylesheet" />
+    <link href="../css/mainIE.css" rel="stylesheet" />
+    <!-- endbuild -->
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+          filter: none;
+        }
+      </style>
+    <![endif]-->
 </head>
 <body class="bg-gradient state-1">
 	<div class="container">
 		<div class="pull-right hidden-xs">
-			<h1 style="display:none"><small>Region Heilbronn</small></h1>
+			<h1 style="display:none"><small>_('Region Heilbronn')</small></h1>
 		</div>
-		<h1 style="display:none">Was steckt in meinem Leitungswasser?</h1>
-		
-		<div class="choose-location">
-			<div class="well choose-location-well">
-				<form class="form-horizontal form-choose-location" role="form">
-					<div class="form-group select-city">
-						<label for="city" class="col-sm-2 control-label">Ort</label>
-						<div class="col-sm-10">
-							<select id="city" class="city form-control">
-								<option value="">Bitte auswählen</option>
-							</select>
-						</div>
-					</div>
-					<div class="form-group select-district" style="display:none;">
-						<label for="district" class="col-sm-2 control-label">Ortsteil</label>
-						<div class="col-sm-10">
-							<select id="district" class="district form-control">
-							</select>
-						</div>
-					</div>
-					<div class="form-group select-street" style="display:none;">
-						<label for="streetZone" class="col-sm-2 control-label">Straße</label>
-						<div class="col-sm-10">
-							<select id="streetZone" class="streetZone form-control">
-							</select>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-offset-2 col-sm-10">
-							<button type="submit" class="btn btn-warning">
-								<span class="glyphicon glyphicon-chevron-right"></span> Weiter
-							</button>
-						</div>
-					</div>
-				</form>
-				<br />
-			</div>
-			
-			<p><small>Derzeit sind Daten aus dem Stadt- und Landkreis Heilbronn auswählbar.</small></p>
-		</div>
-		
-		<div class="results" style="display:none;">
-			<form class="form-inline form-choose-location-quick">
-				<div class="form-group">
-					<select class="city form-control"></select>
+		<h1 style="display:none">_('Was steckt in meinem Leitungswasser?')</h1>
+		<div class="well choose-location-well">
+			<form class="form-horizontal form-choose-location" role="form">
+				<label for="select-city" class="col-sm-1 control-label">_('Ort')</label>
+				<div id="select-city" class="input-group select-city">
+          <input id="city" type="text" class="city form-control" placeholder="_('Bitte auswählen')">
+					<span class="input-group-btn">
+					  <button id="city-btn" type="submit" class="btn btn-default disabled">
+						  <span class="fa fa-search"></span>
+					  </button>
+					</span>
 				</div>
-				<div class="form-group select-district">
-					<select class="district form-control"></select>
-				</div>
-				<div class="form-group select-street">
-					<select class="streetZone form-control"></select>
-				</div>
+				<!-- fields to keep the current location lat/lon available will be updated once a user selects an address from the autocomplete -->
+				<input type="hidden" id="current-location-lat"></input>
+				<input type="hidden" id="current-location-lon"></input>
 			</form>
-			
+			<br />
+		</div>
 
-			<ul class="nav nav-tabs responsive">
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="natrium">Natrium</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="kalium">Kalium</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="calcium">Calcium</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="magnesium">Magnesium</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="chlorid">Chlorid</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="nitrat">Nitrat</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="sulfat">Sulfat</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="hardness">Härte</a></li>
-				<li class="nav-li-main"><a data-toggle="tab" data-attribute="info"><span class="glyphicon glyphicon-info-sign"></span> Fragen und Antworten</a></li>
+		<div class="results" style="display:none;">
+			<!-- current-location will be updated once a user selects an address from the autocomplete -->
+			<!--<h2 id="current-location"></h2>-->
+			<ul id="observations" class="nav nav-tabs responsive">
+				<li class="nav-li-main"><a data-toggle="tab" data-attribute="info"><span class="fa fa-info"></span> _('Fragen und Antworten')</a></li>
 			</ul>
-			
+
 			<div class="alert alert-warning result-without-value" style="display:none;">
-				Es liegen leider keine Werte für diesen Inhaltsstoff vor.
+				 _('Es liegen leider keine Werte für diesen Inhaltsstoff vor.')
 			</div>
-			
+
 			<div class="result-with-value">
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
@@ -105,71 +62,64 @@
 							<div class="row gauge-glass-container" style="display:none;">
 								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-7">
 									<div class="attribute-description attribute-description-natrium" style="display:none;">
-										<p>Natrium reguliert den Wasserhaushalt.</p>
-										<p>Wieviel Natrium für wen geeignet ist, hängt stark vom Einzelnen ab: Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit Bluthochdruck oder Säuglinge sollten natriumarmes Wasser (weniger als 20 Milligramm pro Liter) trinken.</p>
-										<p>Ein Mangel an Natrium äußert sich in körperlicher Schwäche, Übelkeit und Muskelkrämpfen bis hin zum Kreislaufkollaps.</p>
-										<p>Empfohlen sind mindestens 550 mg Natrium pro Tag. Für eine ärztlich empfohlene natriumarme Ernährung oder für Säuglinge sind weniger als 20 mg/l Natrium geeignet.</p>
+										<p>_('Natrium reguliert den Wasserhaushalt.')</p>
+										<p>_('Wieviel Natrium für wen geeignet ist, hängt stark vom Einzelnen ab: Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit Bluthochdruck oder Säuglinge sollten natriumarmes Wasser (weniger als 20 Milligramm pro Liter) trinken.')</p>
+										<p>_('Ein Mangel an Natrium äußert sich in körperlicher Schwäche, Übelkeit und Muskelkrämpfen bis hin zum Kreislaufkollaps.')</p>
+										<p>_('Empfohlen sind mindestens 550 mg Natrium pro Tag. Für eine ärztlich empfohlene natriumarme Ernährung oder für Säuglinge sind weniger als 20 mg/l Natrium geeignet.')</p>
 									</div>
 									<div class="attribute-description attribute-description-kalium" style="display:none;">
-										<p>Kalium hält den Wasser- und Elektrolythaushalt im Gleichgewicht, reguliert den Blutdruck und ist wichtig für einen regelmäßigen Herzschlag sowie die Nerven.</p>
-										<p>Zu einem Kaliummangel kann es nach größeren Flüssigkeitsverlusten, z. B. durch lang andauernde Durchfallerkrankungen, Erbrechen
-											oder längere Einnahme von Entwässerungs- und Abführmitteln.</p>
-										<p>Ein zu hoher Kaliumgehalt im Blut kann zu Herzversagen führen, da Kalium die Kontraktion des Herzmuskels hemmt.</p>
+										<p>_('Kalium hält den Wasser- und Elektrolythaushalt im Gleichgewicht, reguliert den Blutdruck und ist wichtig für einen regelmäßigen Herzschlag sowie die Nerven.')</p>
+										<p>_('Zu einem Kaliummangel kann es nach größeren Flüssigkeitsverlusten, z. B. durch lang andauernde Durchfallerkrankungen, Erbrechen oder längere Einnahme von Entwässerungs- und Abführmitteln.')</p>
+										<p>_('Ein zu hoher Kaliumgehalt im Blut kann zu Herzversagen führen, da Kalium die Kontraktion des Herzmuskels hemmt.')</p>
 									</div>
 									<div class="attribute-description attribute-description-calcium" style="display:none;">
-										<p>Calcium wird zur Bildung der Knochen und Zähne gebraucht. Auch für die Muskeln und die Blutgerinnung ist Calcium wichtig.</p>
-										<p>An Calcium mangelt es oft, was was zu einer Verringerung der Knochenfestigkeit und damit zu Osteoporose führen kann.</p>
+										<p>_('Calcium wird zur Bildung der Knochen und Zähne gebraucht. Auch für die Muskeln und die Blutgerinnung ist Calcium wichtig.')</p>
+										<p>_('An Calcium mangelt es oft, was was zu einer Verringerung der Knochenfestigkeit und damit zu Osteoporose führen kann.')</p>
 									</div>
 									<div class="attribute-description attribute-description-magnesium" style="display:none;">
-										<p>Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven auf Muskeln, für den Eiweißaufbau sowie und die
-											Knochenmineralisation. Außerdem ist es für die Aktivierung von über 300 Enzymen im Stoffwechsel verantwortlich.</p>
-										<p>Ein Zuviel an Magnesium ist sehr unwahrscheinlich. In großen Mengen bewirkt der Mineralstoff einen weicheren Stuhl.</p>
+										<p>_('Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven auf Muskeln, für den Eiweißaufbau sowie und die Knochenmineralisation. Außerdem ist es für die Aktivierung von über 300 Enzymen im Stoffwechsel verantwortlich.')</p>
+										<p>_('Ein Zuviel an Magnesium ist sehr unwahrscheinlich. In großen Mengen bewirkt der Mineralstoff einen weicheren Stuhl.')</p>
 									</div>
 									<div class="attribute-description attribute-description-chlorid" style="display:none;">
-										<p>Chlorid ist ein Bestandteil von Kochsalz und ist daher für die Regulation des Wasserhaushaltes mitverantwortlich. Auch für die
-											Nerven, das Herz und die Muskeln sowie den Säure-Basenhaushalt ist Chlorid wichtig.</p>
-										<p>Da es in vielen Lebensmitteln vorkommt, wird meist mehr als genügend Chlorid aufgenommen. Eine dauerhafte Überversorgung mit
-											Chlorid kann zu Bluthochdruck führen.</p>
+										<p>_('Chlorid ist ein Bestandteil von Kochsalz und ist daher für die Regulation des Wasserhaushaltes mitverantwortlich. Auch für die Nerven, das Herz und die Muskeln sowie den Säure-Basenhaushalt ist Chlorid wichtig.')</p>
+										<p>_('Da es in vielen Lebensmitteln vorkommt, wird meist mehr als genügend Chlorid aufgenommen. Eine dauerhafte Überversorgung mit Chlorid kann zu Bluthochdruck führen.')</p>
 									</div>
 									<div class="attribute-description attribute-description-nitrat" style="display:none;">
-										<p>Nitrat wird im Körper in giftiges Nitrit umgewandelt. Zudem können aus Nitriten krebserregende Nitrosamine entstehen.</p>
-										<p>Das Nitrit selbst kann eine Sauerstoffunterversorgung aller Organe und Gewebe bewirken. Säuglinge sind hierfür besonders anfällig.</p> 
-										<p>Daher beträgt der Grenzwert in Mineralwasser 50 mg/l. Die im Trinkwasser der Region enthaltenen Nitratwerte liegen mit 5 bis 38 mg/l unter dem Grenzwert und sind daher als unbedenklich einzustufen.</p>
-										<p>Zum Vergleich: Bodensee-Wasser enthält nur 4 mg Nitrat pro Liter.</p> 
+										<p>_('Nitrat wird im Körper in giftiges Nitrit umgewandelt. Zudem können aus Nitriten krebserregende Nitrosamine entstehen.')</p>
+										<p>_('Das Nitrit selbst kann eine Sauerstoffunterversorgung aller Organe und Gewebe bewirken. Säuglinge sind hierfür besonders anfällig.')</p>
+										<p>_('Daher beträgt der Grenzwert in Mineralwasser 50 mg/l. Die im Trinkwasser der Region enthaltenen Nitratwerte liegen mit 5 bis 38 mg/l unter dem Grenzwert und sind daher als unbedenklich einzustufen.')</p>
+										<p>_('Zum Vergleich: Bodensee-Wasser enthält nur 4 mg Nitrat pro Liter.')</p>
 									</div>
 									<div class="attribute-description attribute-description-sulfat" style="display:none;">
-										<p>Sulfate wirken verdauungsfördernd, ab einem Gehalt von 1200 mg/l sogar abführend.</p>
-										<p>Enthält ein Mineralwasser mehr als 1200 mg/l und gleichzeitig hohe Kontentrationen an Mineralstoffen wie Magnesium, Calcium,
-											Flourid, Hydrogencarbonat sowie Kohlendioxid, wird es als Heilwasser bezeichnet.</p>
-										<p>Säuglinge und Patienten mit Erkrankungen des Verdauungstraktes und Neigung zur Bildung von Harnsäuresteinen sollten jedoch wenig
-											Sulfat zu sich nehmen (Gehalt < 240 mg/l).</p>
-										<p>Doch auch Wasser mit wenig Sulfat hat etwas Gutes: Es wird geschmacklich meist positiv empfunden. Hohe Sulfatgehalte hingegen
-											äußern sich in einem süßen bis bitterem Geschmack.</p>
+										<p>_('Sulfate wirken verdauungsfördernd, ab einem Gehalt von 1200 mg/l sogar abführend.')</p>
+										<p>_('Enthält ein Mineralwasser mehr als 1200 mg/l und gleichzeitig hohe Kontentrationen an Mineralstoffen wie Magnesium, Calcium, Flourid, Hydrogencarbonat sowie Kohlendioxid, wird es als Heilwasser bezeichnet.')</p>
+										<p>_('Säuglinge und Patienten mit Erkrankungen des Verdauungstraktes und Neigung zur Bildung von Harnsäuresteinen sollten jedoch wenig Sulfat zu sich nehmen (Gehalt < 240 mg/l).')</p>
+										<p>_('Doch auch Wasser mit wenig Sulfat hat etwas Gutes: Es wird geschmacklich meist positiv empfunden. Hohe Sulfatgehalte hingegen äußern sich in einem süßen bis bitterem Geschmack.')</p>
 									</div>
 									<br />
-									<p><button type="button" class="btn btn-warning switch-to-section hidden-xs" data-section="compare"><span class="glyphicon glyphicon-chevron-right"></span> Vergleich mit Mineralwasser</button></p>
+									<p><button type="button" class="btn btn-warning switch-to-section hidden-xs" data-section="compare"><span class="fa fa-chevron-right"></span> _('Vergleich mit Mineralwasser')</button></p>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-5">
 									<svg class="gauge-glass-img pull-right" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 186 837" preserveAspectRatio="xMinYMin meet">
-										<text class="gauge-unit" x="78" y="175" text-anchor="left">mg/l</text>
-									
+										<text class="gauge-unit" x="78" y="175" text-anchor="left">_('mg/l')</text>
+
 										<path class="gauge-glass"
 											d="M145.993,832.667H38.398
 											c-16.112,0-15.916-16.613-15.916-16.613V158.107c-8.89,0-16.094-7.203-16.094-16.092v-7.179c0-8.887,7.204-16.094,16.094-16.094
 											h139.661c8.887,0,16.094,7.207,16.094,16.094v7.179c0,8.889-7.207,16.092-16.094,16.092l-0.178,657.84
 											C161.966,815.947,162.999,832.667,145.993,832.667z" />
-						
+
 										<g class="gauge-values">
 											<defs>
 												<clipPath id="cut-off-top">
 												 	<rect class="gauge-value-bubble-cut" x="34" y="822" width="116" height="0" />
 										 		</clipPath>
-										 		
+
 												<pattern id="range-indicator" x="8" y="8" width="8" height="8" patternUnits="userSpaceOnUse">
 													<line class="range-indicator" x1="0" x2="8" y1="8" y2="0" />
 												</pattern>
 											</defs>
-											
+
 											<rect class="gauge-value" x="34.5" y="822" width="115" height="0" />
 											<path class="gauge-value-bubbles" clip-path="url(#cut-off-top)"
 											d="M149.469,324.376H34.005v482.118c0,0-0.174,14.819,14.195,14.819h86.875
@@ -178,10 +128,10 @@
 												c0-11.288,9.15-20.439,20.439-20.439c11.29,0,20.441,9.151,20.441,20.439C125.623,791.879,116.472,801.029,105.182,801.029z
 												 M117.668,739.558c-9.198,0-16.653-7.457-16.653-16.653s7.455-16.658,16.653-16.658c9.196,0,16.653,7.462,16.653,16.658
 												S126.864,739.558,117.668,739.558z" />
-						
+
 											<rect class="gauge-value-2" x="34.5" y="822" width="115" height="0" fill="url(#range-indicator)" />
 										</g>
-										
+
 										<g class="gauge-bubbles">
 											<path
 											d="M141.745,24.696c0,11.292-9.15,20.441-20.442,20.441c-11.287,0-20.437-9.149-20.437-20.441
@@ -193,48 +143,48 @@
 											d="M84.963,59.335c0,9.198-7.457,16.658-16.658,16.658c-9.192,0-16.651-7.459-16.651-16.658
 												c0-9.194,7.459-16.651,16.651-16.651C77.506,42.684,84.963,50.141,84.963,59.335z" />
 										</g>
-										
+
 										<g class="gauge-lines"></g>
-										
-										<line class="average-indicator" x1="36" x2="68" y1="822" y2="822"></line>
+
+										<line class="average-indicator" x1="36" x2="148" y1="822" y2="822"></line>
 									</svg>
-									
+
 									<ul class="gauge-description gauge-glass-description pull-right list-unstyled" style="max-width:200px;">
-										<li class="highlight"><strong>Wert: <span class="gauge-value"></span> mg/l</strong></li>
-										<li>Grenzwert: <span class="gauge-legal-limit"></span></li>
-										<li>Durchschnitt: <span class="gauge-average-value"></span> mg/l<br /><small>(Region Heilbronn, rote Linie)</small></li>
-										<li class="gauge-daily-dosis-container">Tagesbedarf: <span class="gauge-daily-dosis">~</span></li>
+										<li class="highlight">_('Wert:') <span class="gauge-value"></span></li>
+										<li class="highlight-red">_('Durchschnitt:') <span class="gauge-average-value"></span></li>
+										<li>_('Grenzwert:') <span class="gauge-legal-limit"></span></li>
+										<li class="gauge-daily-dosis-container">_('Tagesbedarf:') <span class="gauge-daily-dosis">_('~')</span></li>
 									</ul>
 								</div>
 							</div>
-							
+
 							<div class="row gauge-bar-container" style="display:none;">
 								<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-									<p>Die Wasserhärte gibt an, wie weich oder hart ein Wasser ist. Je mehr Calcium und Magnesium in einem Wasser enthalten sind, desto härter ist es.</p>
-									<p>Hartes Wasser kann in Küche und Bad Kalkflecken verursachen. Wegen seinem hohen Calcium- und Magnesiumgehalt ist es gesünder als weiches Wasser.<br />(Calcium: Aufbau von Knochen und Zähnen, Magnesium: Aufbau von Muskeln und Nerven)</p> 
+									<p>_('Die Wasserhärte gibt an, wie weich oder hart ein Wasser ist. Je mehr Calcium und Magnesium in einem Wasser enthalten sind, desto härter ist es.')</p>
+									<p>_('Hartes Wasser kann in Küche und Bad Kalkflecken verursachen. Wegen seinem hohen Calcium- und Magnesiumgehalt ist es gesünder als weiches Wasser.')<br />_('(Calcium: Aufbau von Knochen und Zähnen, Magnesium: Aufbau von Muskeln und Nerven)')</p>
 								</div>
 								<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
 									<div style="padding-right:34px">
-										<img src="img/haushalt.svg" class="pull-right hidden-xs" />
+										<img src="../img/haushalt.svg" class="pull-right hidden-xs" />
 										<table class="table table-gauge-description gauge-description gauge-bar-description">
 											<tr>
-												<th style="border:none;"><strong class="highlight">Wert</strong></th>
-												<td style="border:none;"><strong class="highlight"><span class="gauge-value"></span> °dH</strong></td>
+												<th style="border:none;"><strong class="highlight">_('Wert')</strong></th>
+												<td style="border:none;"><strong class="highlight"><span class="gauge-value"></span> _('°dH')</strong></td>
 											</tr>
 											<tr>
-												<th>Restalkalität</th>
-												<td><span class="gauge-value-ra"></span> °dH</strong></td>
+												<th>_('Restalkalität')</th>
+												<td><span class="gauge-value-ra"></span> _('°dH')</strong></td>
 											</tr>
 											<tr>
-												<th>Bereich</th>
+												<th>_('Bereich')</th>
 												<td><span class="gauge-value-label"></span></td>
 											</tr>
 											<tr>
-												<th>Durchschnitt<br /><small>Region Heilbronn</small></th>
-												<td><span class="gauge-average-value"></span> °dH</td>
+												<th>_('Durchschnitt')<br /><small>_('Region Heilbronn')</small></th>
+												<td><span class="gauge-average-value"></span> _('°dH')</td>
 											</tr>
 										</table>
-										
+
 										<p><br /></p>
 										<svg class="gauge-bar-img" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 750 136" preserveAspectRatio="xMinYMin meet">
 											<defs>
@@ -242,10 +192,10 @@
 													<line class="range-indicator-bar" x1="0" x2="6" y1="6" y2="0" />
 												</pattern>
 											</defs>
-											
+
 											<g class="gauge-bars"></g>
 											<g class="gauge-bar-labels"></g>
-											
+
 											<g class="gauge-value-indicators">
 												<rect class="gauge-bar-range-indicator" x="63.5" y="64" width="25" height="40" fill="url(#hardness-range-indicator)" />
 												<circle class="gauge-bar-ball" cx="63.5" cy="84" r="13" />
@@ -254,22 +204,14 @@
 									</div>
 								</div>
 							</div>
-							
+
 							<p><br /></p>
-							<p><button type="button" class="btn btn-warning switch-to-section hidden-md hidden-lg hidden-sm" data-section="compare"><span class="glyphicon glyphicon-chevron-right"></span> Vergleich mit Mineralwasser</button></p>
+							<p><button type="button" class="btn btn-warning switch-to-section hidden-md hidden-lg hidden-sm" data-section="compare"><span class="fa fa-chevron-right"></span> _('Vergleich mit Mineralwasser')</button></p>
 						</div>
-						
+
 						<div class="section section-compare" style="display:none;margin-top:-32px;">
 							<div class="row">
-								<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 compare-nav">
-									<button type="button" class="btn btn-primary btn-lg btn-block active" data-water="volvic">Volvic</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="wueteria">Wüteria Heiligenquelle</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="teusser">Teusser Naturell</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="vittel">Vittel</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block" data-water="self" style="margin-top:2em;">mein Leitungswasser</button>
-									
-									<p><br /></p>
-								</div>
+								<div id="products" class="col-lg-5 col-md-5 col-sm-5 col-xs-12 compare-nav"></div>
 								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
 									<div class="row">
 										<div class="col-lg-3 col-md-3 hidden-sm hidden-xs"></div>
@@ -277,59 +219,62 @@
 											<div class="gauge-description gauge-glass-description" style="margin-top:38px;">
 												<table class="table table-gauge-description">
 													<tr>
-														<th style="border:none;"><strong class="comparison-water-label highlight">-</strong></th>
-														<td style="border:none;min-width:80px;"><strong class="comparison-water-value highlight">-</strong></td>
+														<td style="border:none;"><span class="comparison-water-label highlight">-</span></td>
+														<td style="border:none;min-width:80px;"><span class="comparison-water-value highlight">-</span></td>
 													</tr>
 													<tr>
-														<th>mein Leitungswasser</th>
-														<td><span class="comparison-water-value-self"></span><br /><small>(rote Linie)</small></td>
+														<td><span class="highlight-red">_('mein Leitungswasser')</span></td>
+														<td><span class="comparison-water-value-self highlight-red"></span></td>
 													</tr>
 													<tr class="gauge-daily-dosis-container">
-														<th>Tagesbedarf</th>
-														<td><span class="gauge-daily-dosis">~</span></td>
+														<td>_('Tagesbedarf')</td>
+														<td><span class="gauge-daily-dosis">_('~')</span></td>
 													</tr>
 												</table>
-												
+
 												<br /><br />
 												<div class="attribute-description attribute-description-natrium" style="display:none;">
-													<p>Natrium reguliert den Wasserhaushalt.</p>
-													<p>Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit Bluthochdruck oder Säuglinge sollten natriumarmes Wasser trinken.<br /><em>(weniger als 20 mg/l)</em></p>
+													<p>_('Natrium reguliert den Wasserhaushalt.')</p>
+													<p>
+                            _('Sportlern ist natriumreiches Wasser zu empfehlen, Menschen mit Bluthochdruck oder Säuglinge sollten natriumarmes Wasser trinken.')
+                            <br />
+                            <em>_('(weniger als 20 mg/l)')</em>
+                          </p>
 												</div>
 												<div class="attribute-description attribute-description-kalium" style="display:none;">
-													<p>Kalium hält den Wasser- und Elektrolythaushalt im Gleichgewicht, reguliert den Blutdruck und ist wichtig für einen regelmäßigen Herzschlag sowie die Nerven.</p>
+													<p>_('Kalium hält den Wasser- und Elektrolythaushalt im Gleichgewicht, reguliert den Blutdruck und ist wichtig für einen regelmäßigen Herzschlag sowie die Nerven.')</p>
 												</div>
 												<div class="attribute-description attribute-description-calcium" style="display:none;">
-													<p>Calcium wird zur Bildung der Knochen und Zähne gebraucht.</p>
-													<p>Auch für die Muskeln und die Blutgerinnung ist Calcium wichtig.</p>
+													<p>_('Calcium wird zur Bildung der Knochen und Zähne gebraucht.')</p>
+													<p>_('Auch für die Muskeln und die Blutgerinnung ist Calcium wichtig.')</p>
 												</div>
 												<div class="attribute-description attribute-description-magnesium" style="display:none;">
-													<p>Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven auf Muskeln, für den Eiweißaufbau sowie und die
-														Knochenmineralisation.</p>
+													<p>_('Magnesium beeinflusst den Energiestoffwechsel, das Zusammenspiel von Nerven auf Muskeln, für den Eiweißaufbau sowie und die Knochenmineralisation.')</p>
 												</div>
 												<div class="attribute-description attribute-description-chlorid" style="display:none;">
-													<p>Chlorid ist für Regulation des Wasserhaushaltes, die Nerven, das Herz und die Muskeln sowie den Säure-Basenhaushalt wichtig.</p>
-													<p>Da Chlorid ein Bestandteil von Kochsalz ist, wird über die Nahrung meist mehr als genügend Chlorid aufgenommen.</p>
+													<p>_('Chlorid ist für Regulation des Wasserhaushaltes, die Nerven, das Herz und die Muskeln sowie den Säure-Basenhaushalt wichtig.')</p>
+													<p>_('Da Chlorid ein Bestandteil von Kochsalz ist, wird über die Nahrung meist mehr als genügend Chlorid aufgenommen.')</p>
 												</div>
 												<div class="attribute-description attribute-description-nitrat" style="display:none;">
-													<p>Nitrat wird im Körper in giftiges Nitrit umgewandelt. Zudem können aus Nitriten krebserregende Nitrosamine entstehen.</p>
-													<p>Das Nitrit selbst kann eine Sauerstoffunterversorgung aller Organe und Gewebe bewirken. Säuglinge sind hierfür besonders anfällig.</p>
+													<p>_('Nitrat wird im Körper in giftiges Nitrit umgewandelt. Zudem können aus Nitriten krebserregende Nitrosamine entstehen.')</p>
+													<p>_('Das Nitrit selbst kann eine Sauerstoffunterversorgung aller Organe und Gewebe bewirken. Säuglinge sind hierfür besonders anfällig.')</p>
 												</div>
 												<div class="attribute-description attribute-description-sulfat" style="display:none;">
-													<p>Sulfate wirken verdauungsfördernd, ab einem Gehalt von 1200 mg/l sogar abführend.</p>
+													<p>_('Sulfate wirken verdauungsfördernd, ab einem Gehalt von 1200 mg/l sogar abführend.')</p>
 												</div>
 											</div>
 										</div>
 										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
 											<svg class="bottle-img pull-right" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 258 837" preserveAspectRatio="xMinYMin meet">
 												<text class="gauge-unit" x="78" y="220" text-anchor="left"></text>
-											
+
 												<g class="gauge-values">
 													<defs>
 														<clipPath id="bottle-cut-off-top">
 														 	<rect class="gauge-value-bubble-cut" x="0" y="822" width="258" height="0" />
 												 		</clipPath>
 													</defs>
-													
+
 													<rect class="gauge-value" x="20" y="822" width="216" height="0" />
 													<path class="gauge-value-bubbles" clip-path="url(#bottle-cut-off-top)" fill="#FFFFFF" d="M232.801,703.685c-3.221-3.223-6.781-2.344-6.781-10.338c0-4.859,8.305-2.204,8.982-17.284
 														c0.678-15.082-0.407-147.848-0.407-147.848l-214.461-0.101c0,16.436,0,152.186,0,152.186s-1.015,4.405,5.085,7.962
@@ -342,12 +287,12 @@
 														C129.428,762.118,126.706,764.837,123.351,764.837z M168.546,743.735c-8.206,0-14.86-6.653-14.86-14.857
 														c0-8.205,6.654-14.856,14.86-14.856s14.856,6.651,14.856,14.856C183.403,737.082,176.752,743.735,168.546,743.735z"/>
 												</g>
-		
+
 												<g class="gauge-lines"></g>
-												
+
 												<line class="average-indicator" x1="20" x2="60" y1="819" y2="819"></line>
-											
-												<g>
+
+												<g class="gauge-top">
 													<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M6.104,719.749l0.382,32.207c0,0,3.43,36.212,18.676,52.031
 														c15.249,15.819,30.495,31.257,54.89,29.922c24.395-1.335,39.833-20.964,53.365-14.866c13.529,6.1,37.927,22.871,60.414,11.246
 														c22.492-11.626,56.225-20.584,56.225-94.532c0-26.871-0.57-28.969-4.193-32.589c-3.622-3.623-7.623-2.635-7.623-11.626
@@ -361,11 +306,11 @@
 														c0-0.842,0.852-1.524,1.899-1.524h95.302c1.048,0,1.902,0.682,1.902,1.524V155.542z"/>
 													<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M173.188,96.629c0-0.748-0.683-1.351-1.528-1.351H84.627
 														c-0.842,0-1.523,0.604-1.523,1.351v45.5c0,0.746,0.682,1.352,1.523,1.352h87.033c0.846,0,1.528-0.606,1.528-1.352V96.629z"/>
-													<path fill="#2a9fd6" d="M98.822,25.035c0,10.071,8.168,18.234,18.236,18.234c10.074,0,18.235-8.163,18.235-18.234
+													<path d="M98.822,25.035c0,10.071,8.168,18.234,18.236,18.234c10.074,0,18.235-8.163,18.235-18.234
 														s-8.161-18.236-18.235-18.236C106.99,6.799,98.822,14.964,98.822,25.035z"/>
-													<path fill="#2a9fd6" d="M116.198,113.161c0,3.358,2.719,6.077,6.079,6.077c3.353,0,6.075-2.719,6.075-6.077
+													<path d="M116.198,113.161c0,3.358,2.719,6.077,6.079,6.077c3.353,0,6.075-2.719,6.075-6.077
 														c0-3.357-2.723-6.079-6.075-6.079C118.917,107.082,116.198,109.803,116.198,113.161z"/>
-													<path fill="#2a9fd6" d="M134.057,72.761c0,8.205,6.658,14.858,14.86,14.858c8.206,0,14.86-6.654,14.86-14.858
+													<path d="M134.057,72.761c0,8.205,6.658,14.858,14.86,14.858c8.206,0,14.86-6.654,14.86-14.858
 														c0-8.204-6.654-14.856-14.86-14.856C140.715,57.906,134.057,64.557,134.057,72.761z"/>
 												</g>
 											</svg>
@@ -375,16 +320,16 @@
 							</div>
 							<p><br /></p>
 							<p><br /></p>
-							<p><button type="button" class="btn btn-warning switch-to-section" data-section="explanation"><span class="glyphicon glyphicon-chevron-left"></span> Zurück</button></p>
+							<p><button type="button" class="btn btn-warning switch-to-section" data-section="explanation"><span class="fa fa-chevron-left"></span> _('Zurück')</button></p>
 							<p><br /></p>
-							<p><small>Beispielhaft wurden zwei überregional bekannte Wasser sowie zwei Wasser aus dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser.</small></p>
+							<p><small>_('Beispielhaft wurden zwei überregional bekannte Wasser sowie zwei Wasser aus dem Landkreis Heilbronn ausgewählt. Alle vier sind stille Mineralwasser.')</small></p>
 						</div>
-						
+
 						<div class="section section-map" style="display:none;">
-							<div class="alert alert-warning">Die Karte steht derzeit nur für die Stadt Heilbronn zur Verfügung und befindet sich noch in einem experimentellen Stadium.</div>
-							
-							<p>Die Straßen mit den niedrigsten Werten sind tiefblau, die Straßen mit den höchsten Werten rot eingefärbt.</p>
-						
+							<div class="alert alert-warning">_('Die Karte steht derzeit nur für die Stadt Heilbronn zur Verfügung und befindet sich noch in einem experimentellen Stadium.')</div>
+
+							<p>_('Die Straßen mit den niedrigsten Werten sind tiefblau, die Straßen mit den höchsten Werten rot eingefärbt.')</p>
+
 							<svg class="map-img" style="width:600px;height:600px;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1170 1170" preserveAspectRatio="xMinYMin meet">
 								<g class="areas"></g>
 								<g class="zones"></g>
@@ -393,139 +338,125 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="info-container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h4 class="panel-title">Information zu <span class="zone-id"></span></h4>
+								<h4 class="panel-title">_('Information zu') <span class="zone-id"></span></h4>
 							</div>
 							<div class="panel-body">
 								<p class="zone-year-container">
-									Die Daten stammen aus dem Jahr <span class="zone-data-year"></span>
+									_('Die Daten stammen aus dem Jahr') <span class="zone-data-year"></span>
 								</p>
 								<p>
 									<span class="zone-description"></span>
 								</p>
 							</div>
 						</div>
-					
+
 						<div class="panel-group" id="accordion">
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> Woher kommt unser Trinkwasser? </a>
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> _('Woher kommt unser Trinkwasser?') </a>
 									</h4>
 								</div>
 								<div id="collapseOne" class="panel-collapse collapse">
 									<div class="panel-body">
-										<p>Im Stadtkreis gibt es etwa 40 Quellen und Brunnen, im Landkreis sind es etwa 130.</p>
-										<p>Da das Heilbronner Wasser aber sehr hart und stark mit giftigem Nitrat belastet ist, kauft die Stadt seit 43 Jahren Wasser vom
-											Bodensee (Zweckverband Bodensee-Wasserversorgung).</p>
-										<p>Zuvor deckte die Stadt den Wasserbedarf über 60 bis 70 Prozent Eigenwasser. Dies hat sich ins Gegenteil gekehrt. Der Anteil an
-											Bodenseewasser liegt heute bei 80 bis 85 Prozent.</p>
+										<p>_('Im Stadtkreis gibt es etwa 40 Quellen und Brunnen, im Landkreis sind es etwa 130.')</p>
+										<p>_('Da das Heilbronner Wasser aber sehr hart und stark mit giftigem Nitrat belastet ist, kauft die Stadt seit 43 Jahren Wasser vom Bodensee (Zweckverband Bodensee-Wasserversorgung).')</p>
+										<p>_('Zuvor deckte die Stadt den Wasserbedarf über 60 bis 70 Prozent Eigenwasser. Dies hat sich ins Gegenteil gekehrt. Der Anteil an Bodenseewasser liegt heute bei 80 bis 85 Prozent.')</p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Warum verzichten manche Kommunen auf die Beimischung von Bodenseewasser? </a>
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> _('Warum verzichten manche Kommunen auf die Beimischung von Bodenseewasser?') </a>
 									</h4>
 								</div>
 								<div id="collapseTwo" class="panel-collapse collapse">
 									<div class="panel-body">
-										<p>Günstiger ist es für die Kommunen, wenn sie ihr Trinkwasser ausschließlich aus eigenen Quellen beziehen.</p>
-										<p>Die Gemeinde Jagsthausen beispielsweise versorgt ihre Einwohner zu 100 Prozent mit Eigenwasser.</p>
+										<p>_('Günstiger ist es für die Kommunen, wenn sie ihr Trinkwasser ausschließlich aus eigenen Quellen beziehen.')</p>
+										<p>_('Die Gemeinde Jagsthausen beispielsweise versorgt ihre Einwohner zu 100 Prozent mit Eigenwasser.')</p>
 										<blockquote>
-											<p>“Wir haben hier ordentliches Wasser, das zwar hart ist. Aber wir sehen keinen Anlass für eine Beimischung von Fremdwasser, wie
-												es andere Kommunen tun”</p>
-											<footer>Bürgermeister Roland Halter</footer>
+											<p>_('Wir haben hier ordentliches Wasser, das zwar hart ist. Aber wir sehen keinen Anlass für eine Beimischung von Fremdwasser, wie es andere Kommunen tun')</p>
+											<footer>_('Bürgermeister Roland Halter')</footer>
 										</blockquote>
-										<p>Beschwerden aus der Gemeinde gäbe es keine, viele Einwohner hätten eine Enthärtungsanlage. Eine Anbindung an Bodenseewasser sei
-											im Fall von Jagsthausen mit hohen Investitionskosten verbunden und derzeit kein Thema.</p>
+										<p>_('Beschwerden aus der Gemeinde gäbe es keine, viele Einwohner hätten eine Enthärtungsanlage. Eine Anbindung an Bodenseewasser sei im Fall von Jagsthausen mit hohen Investitionskosten verbunden und derzeit kein Thema.')</p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Warum schmeckt mein Trinkwasser nicht so gut wie
-											Mineralwasser? </a>
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> _('Warum schmeckt mein Trinkwasser nicht so gut wie Mineralwasser?') </a>
 									</h4>
 								</div>
 								<div id="collapseThree" class="panel-collapse collapse">
 									<div class="panel-body">
-										<p>Der Geschmack von Wasser wird durch die in ihm enthaltenen Mineralien bestimmt.</p>
-										<p>Wasser mit viel Natrium und Kalium, wird als salziger im Geschmack empfunden. Natriumarmes Wasser - wie das Heilbronner
-											Trinkwasser - hingegen schmeckt milder.</p>
-										<p>Ein unangenehmer Geschmack kann entstehen, wenn die Rohrleitungen im Gebäude verunreinigt sind. Die Stadtwerke kontrollieren
-											die Trinkwasserqualität nur bis zur jeweiligen Haustüre. Im Haus liegt die Verantwortung beim Gebäudeeigentümer.</p>
+										<p>_('Der Geschmack von Wasser wird durch die in ihm enthaltenen Mineralien bestimmt.')</p>
+										<p>_('Wasser mit viel Natrium und Kalium, wird als salziger im Geschmack empfunden. Natriumarmes Wasser - wie das Heilbronner Trinkwasser - hingegen schmeckt milder.')</p>
+										<p>_('Ein unangenehmer Geschmack kann entstehen, wenn die Rohrleitungen im Gebäude verunreinigt sind. Die Stadtwerke kontrollieren die Trinkwasserqualität nur bis zur jeweiligen Haustüre. Im Haus liegt die Verantwortung beim Gebäudeeigentümer.')</p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"> Was bedeutet die Wasserhärte für mich?</a>
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"> _('Was bedeutet die Wasserhärte für mich?')</a>
 									</h4>
 								</div>
 								<div id="collapseFour" class="panel-collapse collapse">
 									<div class="panel-body">
-										<p>Überall dort, wo hartes Wasser langsam fließt oder auf über 60 Grad erhitzt wird, setzt sich Kalk ab. In Küche und Bad entstehen
-											so Kalkflecken, beim Wäschewaschen ist mehr Waschmittel nötig, manche Haushaltsgeräte müssen regelmäßig entkalkt werden. Dies gilt ab
-											einem Wasserhärtegrad von 21.</p>
-										<p>In Heilbronn liegt die Obergrenze der Wasserhärte bei 18 Grad. Gesundheitlich birgt hartes Wasser keine Gefahren, im Gegenteil:
-											wegen des hohen Calcium- und Magnesiumgehaltes ist es gesünder als weiches Wasser.</p>
+										<p>_('Überall dort, wo hartes Wasser langsam fließt oder auf über 60 Grad erhitzt wird, setzt sich Kalk ab. In Küche und Bad entstehen so Kalkflecken, beim Wäschewaschen ist mehr Waschmittel nötig, manche Haushaltsgeräte müssen regelmäßig entkalkt werden. Dies gilt ab einem Wasserhärtegrad von 21.')</p>
+										<p>_('In Heilbronn liegt die Obergrenze der Wasserhärte bei 18 Grad. Gesundheitlich birgt hartes Wasser keine Gefahren, im Gegenteil: wegen des hohen Calcium- und Magnesiumgehaltes ist es gesünder als weiches Wasser.')</p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"> Warum gibt es bei uns kein weiches Trinkwasser?</a>
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"> _('Warum gibt es bei uns kein weiches Trinkwasser?')</a>
 									</h4>
 								</div>
 								<div id="collapseFive" class="panel-collapse collapse">
 									<div class="panel-body">
-										<p>Die meisten der Heilbronner Trinkwasserbrunnen befinden sich in der Gesteinsschicht Gipskeuper, der für den sehr hohen
-											Magnesium- und Calciumgehalt im Wasser verantwortlich ist. Da diese beiden Mineralien den Härtegrad des Wassers bestimmen, gibt es in
-											Heilbronn kein weiches Wasser.</p>
-										<p>Das Heilbronner Wasser hat einen Härtegrad von bis zu 28 Grad deutscher Härte, in manchen der 40 Brunnen fließt Wasser mit 30
-											Grad deutscher Härte.</p>
+										<p>_('Die meisten der Heilbronner Trinkwasserbrunnen befinden sich in der Gesteinsschicht Gipskeuper, der für den sehr hohen Magnesium- und Calciumgehalt im Wasser verantwortlich ist. Da diese beiden Mineralien den Härtegrad des Wassers bestimmen, gibt es in Heilbronn kein weiches Wasser.')</p>
+										<p>_('Das Heilbronner Wasser hat einen Härtegrad von bis zu 28 Grad deutscher Härte, in manchen der 40 Brunnen fließt Wasser mit 30 Grad deutscher Härte.')</p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"> Wie entstehen die verschiedenen Härtegrade?</a>
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"> _('Wie entstehen die verschiedenen Härtegrade?')</a>
 									</h4>
 								</div>
 								<div id="collapseSix" class="panel-collapse collapse">
 									<div class="panel-body">
-										<p>Der Geschmack von Wasser wird durch die in ihm enthaltenen Mineralien bestimmt.</p>
-										<p>Trinkwasser enthält verschiedene Mengen der Mineralstoffe Calcium und Magnesium - je nachdem ob es sich um Oberflächen-, Grund
-											oder Quellwasser handelt.</p>
-										<p>Je mehr Calcium und Magnesium im Wasser sind, desto härter ist es.</p>
+										<p>_('Der Geschmack von Wasser wird durch die in ihm enthaltenen Mineralien bestimmt.')</p>
+										<p>_('Trinkwasser enthält verschiedene Mengen der Mineralstoffe Calcium und Magnesium - je nachdem ob es sich um Oberflächen-, Grund oder Quellwasser handelt.')</p>
+										<p>_('Je mehr Calcium und Magnesium im Wasser sind, desto härter ist es.')</p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"> Einheit °dH - “Grad deutscher Härte”?</a>
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"> _('Einheit °dH - Grad deutscher Härte?')</a>
 									</h4>
 								</div>
 								<div id="collapseSeven" class="panel-collapse collapse">
 									<div class="panel-body">
-										<p>Die Einheit °dH (Grad deutscher Härte) ist veraltet, aber in der Praxis nach wie vor gebräuchlich. Neben °dH wird Millimol pro Liter (mmol/l) verwendet.</p>
-										<p>Bereiche:</p>
+										<p>_('Die Einheit °dH (Grad deutscher Härte) ist veraltet, aber in der Praxis nach wie vor gebräuchlich. Neben °dH wird Millimol pro Liter (mmol/l) verwendet.')</p>
+										<p>_('Bereiche:')</p>
 										<ul>
-											<li>weich: weniger als 1,5 Millimol Calciumcarbonat je Liter (entspricht weniger als 8,4 Grad deutscher Härte)</li>
-											<li>mittel: 1,5 bis 2,5 Millimol Calciumcarbonat je Liter (entspricht 8,4 bis 14 Grad deutscher Härte)</li>
-											<li>hart: mehr als 2,5 Millimol Calciumcarbonat je Liter (entspricht mehr als 14 Grad deutscher Härte)</li>
+											<li>_('weich: weniger als 1,5 Millimol Calciumcarbonat je Liter (entspricht weniger als 8,4 Grad deutscher Härte)')</li>
+											<li>_('mittel: 1,5 bis 2,5 Millimol Calciumcarbonat je Liter (entspricht 8,4 bis 14 Grad deutscher Härte)')</li>
+											<li>_('hart: mehr als 2,5 Millimol Calciumcarbonat je Liter (entspricht mehr als 14 Grad deutscher Härte)')</li>
 										</ul>
 									</div>
 								</div>
@@ -533,17 +464,17 @@
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseEight"> Weiterführende Links</a>
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseEight"> _('Weiterführende Links')</a>
 									</h4>
 								</div>
 								<div id="collapseEight" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="http://www.stimme.de/3047311">Heilbronner Wasser: Reich an Mineralien (Stimme.de, 22.03.2014)</a>
-											<li><a href="http://www.gesetze-im-internet.de/bundesrecht/trinkwv_2001/gesamt.pdf">Trinkwasserverordnung</a></li>
-											<li><a href="http://www.mlr.baden-wuerttemberg.de/mlr/allgemein/Liste%20d%20Untersuchungsstellen-Trinkw.pdf">Liste an Laboren zur Untersuchung der Trinkwasserqualität</a></li> 
-											<li><a href="http://www.umweltbundesamt.de/sites/default/files/medien/378/publikationen/rund_um_das_trinkwasser.pdf">Broschüre des Umweltbundesamts “Rund um das Trinkwasser”</a></li>
-											<li><a href="https://www.stadtwerke-heilbronn.de/index/hsw/hsw_wasser.html">Stadtwerke Heilbronn, Rubrik Wasser</a></li>
+											<li><a href="_('http://www.stimme.de/3047311')">_('Heilbronner Wasser: Reich an Mineralien (Stimme.de, 22.03.2014)')</a>
+											<li><a href="_('http://www.gesetze-im-internet.de/bundesrecht/trinkwv_2001/gesamt.pdf')">_('Trinkwasserverordnung')</a></li>
+											<li><a href="_('http://www.mlr.baden-wuerttemberg.de/mlr/allgemein/Liste%20d%20Untersuchungsstellen-Trinkw.pdf')">_('Liste an Laboren zur Untersuchung der Trinkwasserqualität')</a></li>
+											<li><a href="_('http://www.umweltbundesamt.de/sites/default/files/medien/378/publikationen/rund_um_das_trinkwasser.pdf')">_('Broschüre des Umweltbundesamts')</a></li>
+											<li><a href="_('https://www.stadtwerke-heilbronn.de/index/hsw/hsw_wasser.html')">_('Stadtwerke Heilbronn, Rubrik Wasser')</a></li>
 										</ul>
 									</div>
 								</div>
@@ -551,16 +482,16 @@
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseNine"> Quellen</a>
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseNine"> _('Quellen')</a>
 									</h4>
 								</div>
 								<div id="collapseNine" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li>Heilbronner Versorgungs Gmbh</li>
-											<li>Deutsche Gesellschaft für Ernährung</li>
-											<li>Bundesinstitut für Risikobewertung</li>
-											<li>Webseiten der Gemeinden im Landkreis Heilbronn</li>
+											<li>_('Heilbronner Versorgungs Gmbh')</li>
+											<li>_('Deutsche Gesellschaft für Ernährung')</li>
+											<li>_('Bundesinstitut für Risikobewertung')</li>
+											<li>_('Webseiten der Gemeinden im Landkreis Heilbronn')</li>
 										</ul>
 									</div>
 								</div>
@@ -570,19 +501,20 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<footer class="footer">
-			<a data-toggle="modal" data-target="#contactDialog"><span class="glyphicon glyphicon-envelope"></span></a>
-			<a data-toggle="modal" data-target="#contactDialog">Kontakt</a>
-			| 
-			<a data-toggle="modal" data-target="#aboutDialog"><span class="glyphicon glyphicon-question-sign"></span></a>
-			<a data-toggle="modal" data-target="#aboutDialog">Über das Projekt</a>
-			| 
-			<a data-toggle="modal" data-target="#attributionDialog"><span class="glyphicon glyphicon-user"></span></a>
-			<a data-toggle="modal" data-target="#attributionDialog">Mitwirkende</a>
-			| 
-			<a data-toggle="modal" data-target="#imprintDialog"><span class="glyphicon glyphicon-info-sign"></span></a>
-			<a data-toggle="modal" data-target="#imprintDialog">Impressum</a>
+			<a data-toggle="modal" data-target="#contactDialog"><span class="fa fa-envelope"></span></a>
+			<a data-toggle="modal" data-target="#contactDialog">_('Kontakt')</a>
+			|
+			<a data-toggle="modal" data-target="#aboutDialog"><span class="fa fa-question"></span></a>
+			<a data-toggle="modal" data-target="#aboutDialog">_('Über das Projekt')</a>
+			|
+			<a data-toggle="modal" data-target="#attributionDialog"><span class="fa fa-user"></span></a>
+			<a data-toggle="modal" data-target="#attributionDialog">_('Mitwirkende')</a>
+			|
+			<a title="github" href="https://github.com/codeforeurope/transparent-water"><span class="fa fa-github"></span> Github</a>
+			|
+			<a id="api-docs" href="/docs"><span class="fa fa-wrench"></span> _('API')</a>
 		</footer>
 	</div>
 
@@ -591,18 +523,18 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Über &amp; Impressum</h4>
+					<h4 class="modal-title">_('Über &amp; Impressum')</h4>
 				</div>
 				<div class="modal-body">
 					<div style="max-height:400px;overflow:scroll;">
-						<h4 style="margin-top:0;">Wie das Trinkwasser-Tool entstanden ist</h4>
-						<p>Trinkwasser gilt als das am besten kontrollierte Lebensmittel in Deutschland. Und trotzdem wissen wir sehr wenig über das Wasser, das bei uns aus dem Hahn kommt. Viele Kommunen veröffentlichen die Untersuchungsergebnisse auf ihren Webseiten. Für den Bürger sind diese Daten abrufbar - aber nicht greifbar. Was bedeutet ein Härtegrad von 9? Sind 200 Milligramm Calcium pro Liter viel oder wenig? Wie mineralreich unser Leitungswasser ist, zeigt sich erst, wenn wir es mit Wasser aus dem Handel vergleichen.</p>
-						<p>Das ist für die Region Heilbronn jetzt möglich. Die Idee dazu entstand Ende Februar beim Open Data Day in Heilbronn. Obwohl viele Daten online verfügbar waren, mussten sie zuerst in eine maschinenlesbare Form gebracht werden. Viele Kommunen veröffentlichen nur PDF-Dateien mit den Jahresdurchschnittswerten. Diese sind nicht maschinenlesbar und mussten von der Redaktion übertragen werden.  Um die Anwendung zu programmieren, ist ein einheitlicher Datensatz notwendig. Auf manchen Webseiten der Kommunen waren die gesuchten Informationen über das Trinkwasser auf Unterseiten versteckt, veraltet oder nicht vollständig. Bei vielen Städten und Gemeinden haben wir deshalb per Email die Daten abgefragt. Nur von drei Kommunen kam bisher keine Rückmeldung.</p>
-						<p>Überraschend war für uns, wie unterschiedlich das Trinkwasser in der Region zusammengesetzt ist. Teilweise differiert der Mineraliengehalt innerhalb einer Ortschaft sehr stark - nämlich dann, wenn es verschiedene Versorgungsbereiche gibt. Kommunen wie Bad Friedrichshall, Neckarsulm oder Zaberfeld sind in mehrere Gebiete eingeteilt. Dies war in der Phase der Datenerhebung eine besondere Herausforderung. Die Gebiete mussten teilweise noch den Straßen zugeordnet werden, damit der Benutzer auch die korrekten Werte für seine eigene Straße angezeigt bekommt. Zu den Trinkwasserpreisen bietet das Statistische Landesamt einen vollständigen Datensatz für alle Landkreise - für die Trinkwasserqualität gibt es einen solchen öffentlichen Datensatz leider nicht.</p>
-						<p>Der dieser Anwendung zugrundliegende Datensatz war deshalb ein aufwändiges Rechercheprojekt. Nicht weniger aufwändig waren für die Entwickler Felix Ebert, Ulrich Stech und Tom Görner Umsetzung und Visualisierung. Eine große Rolle spielten dabei Benutzerfreundlichkeit und Design. Aus trockenen Zahlen sollte eine interaktive Grafik entstehen, durch die der Benutzer einen Zugang zu seinem Trinkwasser bekommt. Für die grafischen Elemente war Heiko Nicht verantwortlich.</p> 
-						<p>Die Trinkwasser-Anwendung ist eine Beta-Version. Vor allem die Datenerhebung kann nie abgeschlossen werden. Viele Kommunen veröffentlichen bald wieder die aktuellen Jahresmittelwerte - diese sollen auch in unserer Anwendung aktualisiert werden. Wir sind dabei auf die Mitarbeit der Rathäuser angewiesen und haben einen Kontaktbereich eingerichtet. Aufgrund des großen Datensatzes kann es zu fehlerhaften Angaben kommen. Wer Auffälligkeifen entdeckt, kann uns jederzeit kontaktieren. Wir freuen uns auch über Feedback.</p>
-						<p>Datensatz und Code der Anwendung sind öffentlich zugänglich und stehen unter einer Open Source-Lizenz.</p>
-						<p>Du bist an weiteren Open Data Anwendungen interessiert oder möchtest selbst mitwirken? In Heilbronn treffen wir uns regelmäßig im Rahmen von <a href="http://codefor.de">Code for Germany</a>, um gemeinsam Open Data Projekten umzusetzen - wir würden uns über deinen Besuch freuen!</p>
+						<h4 style="margin-top:0;">_('Wie das Trinkwasser-Tool entstanden ist')</h4>
+						<p>_('Trinkwasser gilt als das am besten kontrollierte Lebensmittel in Deutschland. Und trotzdem wissen wir sehr wenig über das Wasser, das bei uns aus dem Hahn kommt. Viele Kommunen veröffentlichen die Untersuchungsergebnisse auf ihren Webseiten. Für den Bürger sind diese Daten abrufbar - aber nicht greifbar. Was bedeutet ein Härtegrad von 9? Sind 200 Milligramm Calcium pro Liter viel oder wenig? Wie mineralreich unser Leitungswasser ist, zeigt sich erst, wenn wir es mit Wasser aus dem Handel vergleichen.')</p>
+						<p>_('Das ist für die Region Heilbronn jetzt möglich. Die Idee dazu entstand Ende Februar beim Open Data Day in Heilbronn. Obwohl viele Daten online verfügbar waren, mussten sie zuerst in eine maschinenlesbare Form gebracht werden. Viele Kommunen veröffentlichen nur PDF-Dateien mit den Jahresdurchschnittswerten. Diese sind nicht maschinenlesbar und mussten von der Redaktion übertragen werden.  Um die Anwendung zu programmieren, ist ein einheitlicher Datensatz notwendig. Auf manchen Webseiten der Kommunen waren die gesuchten Informationen über das Trinkwasser auf Unterseiten versteckt, veraltet oder nicht vollständig. Bei vielen Städten und Gemeinden haben wir deshalb per Email die Daten abgefragt. Nur von drei Kommunen kam bisher keine Rückmeldung.')</p>
+						<p>_('Überraschend war für uns, wie unterschiedlich das Trinkwasser in der Region zusammengesetzt ist. Teilweise differiert der Mineraliengehalt innerhalb einer Ortschaft sehr stark - nämlich dann, wenn es verschiedene Versorgungsbereiche gibt. Kommunen wie Bad Friedrichshall, Neckarsulm oder Zaberfeld sind in mehrere Gebiete eingeteilt. Dies war in der Phase der Datenerhebung eine besondere Herausforderung. Die Gebiete mussten teilweise noch den Straßen zugeordnet werden, damit der Benutzer auch die korrekten Werte für seine eigene Straße angezeigt bekommt. Zu den Trinkwasserpreisen bietet das Statistische Landesamt einen vollständigen Datensatz für alle Landkreise - für die Trinkwasserqualität gibt es einen solchen öffentlichen Datensatz leider nicht.')</p>
+						<p>_('Der dieser Anwendung zugrundliegende Datensatz war deshalb ein aufwändiges Rechercheprojekt. Nicht weniger aufwändig waren für die Entwickler Felix Ebert, Ulrich Stech und Tom Görner Umsetzung und Visualisierung. Eine große Rolle spielten dabei Benutzerfreundlichkeit und Design. Aus trockenen Zahlen sollte eine interaktive Grafik entstehen, durch die der Benutzer einen Zugang zu seinem Trinkwasser bekommt. Für die grafischen Elemente war Heiko Nicht verantwortlich.')</p>
+						<p>_('Die Trinkwasser-Anwendung ist eine Beta-Version. Vor allem die Datenerhebung kann nie abgeschlossen werden. Viele Kommunen veröffentlichen bald wieder die aktuellen Jahresmittelwerte - diese sollen auch in unserer Anwendung aktualisiert werden. Wir sind dabei auf die Mitarbeit der Rathäuser angewiesen und haben einen Kontaktbereich eingerichtet. Aufgrund des großen Datensatzes kann es zu fehlerhaften Angaben kommen. Wer Auffälligkeifen entdeckt, kann uns jederzeit kontaktieren. Wir freuen uns auch über Feedback.')</p>
+						<p>_('Datensatz und Code der Anwendung sind öffentlich zugänglich und stehen unter einer Open Source-Lizenz.')</p>
+						<p>_('Du bist an weiteren Open Data Anwendungen interessiert oder möchtest selbst mitwirken? In Heilbronn treffen wir uns regelmäßig im Rahmen von') <a href="_('http://codefor.de')">_('Code for Germany')</a>, _('um gemeinsam Open Data Projekten umzusetzen - wir würden uns über deinen Besuch freuen!')</p>
 					</div>
 				</div>
 			</div>
@@ -614,95 +546,96 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Mitwirkende</h4>
+					<h4 class="modal-title">_('Mitwirkende')</h4>
 				</div>
 				<div class="modal-body">
-					<p><strong>Redaktionelle Umsetzung</strong></p>
+					<p><strong>_('Redaktionelle Umsetzung')</strong></p>
 					<p>
-						Vanessa Wormer (<a target="_blank" href="https://twitter.com/remrow">@remrow</a>)<br />
-						Isabelle Müller (<a target="_blank" href="https://twitter.com/isa_mue">@isa_mue</a>)
+						Vanessa Wormer <a target="_blank" href="https://twitter.com/remrow"><i class="fa fa-twitter" aria-hidden="true"></i></a><br />
+						Isabelle Müller <a target="_blank" href="https://twitter.com/isa_mue"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 					</p>
-					
-					<p><strong>Gestaltung</strong></p>
+
+					<p><strong>_('Gestaltung')</strong></p>
 					<p>
-						Heiko Nicht (<a target="_blank" href="https://twitter.com/HeikoNicht">@HeikoNicht</a>)
+						Heiko Nicht <a target="_blank" href="https://twitter.com/HeikoNicht"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 					</p>
-					
-					<p><strong>Programmierung</strong></p>
+
+					<p><strong>_('Programmierung')</strong></p>
 					<p>
-						Felix Ebert (<a target="_blank" href="https://twitter.com/femeb">@femeb</a>)<br />
-						Ulrich Stech<br />
+						Felix Ebert <a target="_blank" href="https://twitter.com/femeb"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a target="_blank" href="https://github.com/felixebert"><i class="fa fa-github" aria-hidden="true"></i></a><br />
+						Ulrich Stech <a target="_blank" href="https://github.com/masterX244"><i class="fa fa-github" aria-hidden="true"></i></a><br />
+            Duncan Healy <a target="_blank" href="https://github.com/duncanhealy"><i class="fa fa-github" aria-hidden="true"></i></a><br />
+            Milo van der Linden <a target="_blank" href="https://github.com/milovanderlinden"><i class="fa fa-github" aria-hidden="true"></i></a><br />
 					</p>
-					
-					<p><strong>Mitarbeit</strong></p>
+
+					<p><strong>_('Mitarbeit')</strong></p>
 					<p>
-						Alexander Walther (<a target="_blank" href="https://twitter.com/alexplus_de">@alexplus_de</a>)<br />
+						Alexander Walther <a target="_blank" href="https://twitter.com/alexplus_de"><i class="fa fa-twitter" aria-hidden="true"></i></a><br />
 						Tom Görner<br />
 						Gerd Hoffmann
 					</p>
 					<br />
-					<p>In Heilbronn treffen wir uns regelmäßig im Rahmen von <a href="http://codefor.de">Code for Germany</a>, um gemeinsam Open Data Projekten umzusetzen - wir würden uns über deinen Besuch freuen!</p>
+					<p>_('In Heilbronn treffen wir uns regelmäßig im Rahmen von') <a href="_('http://codefor.eu')">_('Code for Germany')</a>, _('um gemeinsam Open Data Projekten umzusetzen - wir würden uns über deinen Besuch freuen!')</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="imprintDialog" tabindex="-1">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Impressum</h4>
+					<h4 class="modal-title">_('Impressum')</h4>
 				</div>
 				<div class="modal-body">
 					<address>
-						IF-Core IT Services GmbH<br>
-						Clemenshaller Str. 5<br>
-						74254 Offenau<br>
-						T. 07136 / 830 26 30<br>
-						F. 07136 / 830 26 27<br>
-						E-Mail: info<!--nospam@blockscanners121987.de-->@if-core.de<br>
+						_('IF-Core IT Services GmbH')<br>
+						_('Clemenshaller Str. 5')<br>
+						_('74254 Offenau')<br>
+						_('T. 07136 / 830 26 30')<br>
+						_('F. 07136 / 830 26 27')<br>
+						_('E-Mail:') _('info')<!--nospam@blockscanners121987.de-->&#64;_('if-core.de')<br>
 						<br>
-						HRB 108620 (Amtsgericht Stuttgart)<br>
-						USt-IdNr.: DE236085681<br>
-						Geschäftsführer: Felix Ebert<br>
+						_('HRB 108620 (Amtsgericht Stuttgart)')<br>
+						_('USt-IdNr.: DE236085681')<br>
+						_('Geschäftsführer: Felix Ebert')<br>
 					</address>
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="contactDialog" tabindex="-1">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Kontakt</h4>
+					<h4 class="modal-title">_('Kontakt')</h4>
 				</div>
 				<div class="modal-body">
-					<p>Wir freuen uns über Feedback:</p>
+					<p>_('Wir freuen uns über Feedback:')</p>
 
-					<p>E-Mail Adresse: wasser<!--nospam@blockscanners123987.de-->&#64;opendatalab.de - Vielen Dank!</p>
-					<p>Aufgrund der zahlreichen Daten kann es vereinzelt zu fehlerhaften Angaben kommen. Haben Sie einen Fehler entdeckt? Schreiben Sie uns!</p>
-					<p>Oder sind Sie Mitarbeiter einer Kommune und möchten Ihre Daten eintragen? Schicken Sie uns einfach Ihre Daten per E-Mail.</p>
+					<p>_('E-Mail:') _('wasser')<!--nospam@blockscanners123987.de-->&#64;_('opendatalab.de')</p>
+					<p>_('Aufgrund der zahlreichen Daten kann es vereinzelt zu fehlerhaften Angaben kommen. Haben Sie einen Fehler entdeckt? Schreiben Sie uns!')</p>
+					<p>_('Oder sind Sie Mitarbeiter einer Kommune und möchten Ihre Daten eintragen? Schicken Sie uns einfach Ihre Daten per E-Mail.')</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- build:js js/tw.min.js -->
-	<script src="lib/jquery.js"></script>
-	<script src="lib/bootstrap.js"></script>
-	<script src="lib/d3.js"></script>
-	<script src="lib/colorbrewer.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/utils.js"></script>
-	<script src="data/locations.js"></script>
-	<script src="data/zones.js"></script>
-	<script src="data/mineralwaesser.js"></script>
-	<script src="js/gauge.js"></script>
-	<script src="js/comparison.js"></script>
-	<script src="js/map.js"></script>
+	<script src="../lib/jquery-3.2.1.min.js"></script>
+	<script src="../lib/jquery.autocomplete.min.js"></script>
+	<script src="../lib/bootstrap.min.js"></script>
+	<script src="../lib/d3.js"></script>
+	<script src="../lib/colorbrewer.js"></script>
+	<script src="../js/config.js"></script>
+	<script src="../js/app.js"></script>
+	<script src="../js/utils.js"></script>
+	<script src="../js/gauge.js"></script>
+	<script src="../js/comparison.js"></script>
+	<script src="../js/map.js"></script>
 	<!-- endbuild -->
 	<script type="text/javascript">
 		$(document).ready(function() {

@@ -1,0 +1,328 @@
+{
+    "percent": {
+        "value": "%",
+        "label": "percent",
+        "definition": "Percent. Dimensionless quantity."
+    },
+    "oxygensaturation": {
+        "value": "%{oxygenSaturation}",
+        "label": "percent Oxygen saturation",
+        "definition": "Dissolved Oxygen percent saturation."
+    },
+    "meq_l":{
+      "value": "mEq/l",
+      "label": "milli-Equivalent per litre",
+      "definition": ""
+    },
+    "bq_l":{
+      "value": "Bq/l",
+      "label": "becquerel per litre",
+      "definition": "Radioactivity unit per litre. SI unit."
+    },
+    "becquerel": {
+        "value": "Bq",
+        "label": "becquerel",
+        "definition": "Radioactivity unit. SI unit."
+    },
+    "degree_celcius": {
+        "value": "°C",
+        "label": "degree Celsius",
+        "definition": "Temperature unit. Expressed in degree Celsius."
+    },
+    "degree_kelvin": {
+        "value": "°K",
+        "label": "degree Kelvin",
+        "definition": "Temperature unit. SI base unit."
+    },
+    "siemens_per_metre": {
+        "value": "S/m",
+        "label": "siemens per metre",
+        "definition": "Electrical conductivity unit. SI unit."
+    },
+    "saturationindex":{
+      "value": "SI",
+      "label": "Saturation index",
+      "definition": ""
+    },
+    "ph": {
+        "value": "[pH]",
+        "label": "pH",
+        "description": "pH unit."
+    },
+    "year": {
+        "value": "a",
+        "label": "year",
+        "definition": "Time unit."
+    },
+    "day": {
+        "value": "d",
+        "label": "day",
+        "definition": "Time unit."
+    },
+    "kilogram": {
+        "value": "kg",
+        "label": "kilogram",
+        "description": "Mass unit. SI base unit."
+    },
+    "kilogram_per_year": {
+        "value": "kg/a",
+        "label": "kilogram per year",
+        "definition": "Mass flow rate. Conversion to SI unit: 1 kg/s = 31536000 t/a. Used for loads or emissions of hazardous substances."
+    },
+    "kilogram_per_cubic_metre": {
+        "value": "kg/m3",
+        "label": "kilogram per cubic metre",
+        "definition": "Mass concentration unit. SI unit."
+    },
+    "kilogram_per_second": {
+        "value": "kg/s",
+        "label": "kilogram per second",
+        "definition": "Mass flow rate. SI unit."
+    },
+    "kilometre": {
+        "value": "km",
+        "label": "kilometre",
+        "definition": "Length unit. Conversion to SI base unit: 1m=10^-3km"
+    },
+    "square_kilometre": {
+        "value": "km2",
+        "label": "square kilometre",
+        "definition": "Length unit. Conversion to SI unit: 1m2=10^-6km2"
+    },
+    "metre": {
+        "value": "m",
+        "label": "metre",
+        "definition": "Length unit. SI base unit."
+    },
+    "square_metre": {
+        "value": "m2",
+        "label": "square metre",
+        "definition": "Area unit. SI unit."
+    },
+    "mg_l": {
+        "value": "mg/l",
+        "label": "milligram per litre",
+        "definition": "Mass concentration unit. Conversion to SI unit: 1 kg/m3 = 10^3 mg/L"
+    },
+    "mg_g": {
+        "value": "mg/g",
+        "label": "milligram per gram",
+        "description": "Mass ratio unit. Conversion factor: 1 kg/kg = 10^3 mg/g"
+    },
+    "mg_kg": {
+        "value": "mg/kg",
+        "label": "milligram per kilogram",
+        "definition": "Mass ratio unit. Conversion factor: 1 kg/kg = 10^6 mg/kg"
+    },
+    "mg_caco3_l": {
+        "value": "mg{CaCO3}/l",
+        "label": "milligram of Calcium Carbonate per litre",
+        "definition": "Mass concentration unit. Expressed in mass of Calcium Carbonate per volume."
+    },
+
+    "mg_c_l": {
+        "value": "mg{C}/l",
+        "label": "milligram of Carbon per litre",
+        "definition": "Mass concentration unit. Expressed in mass of Carbon per volume."
+    },
+    "mg_nh3_l": {
+        "value": "mg{NH3}/l",
+        "label": "milligram of Ammonia per litre",
+        "definition": "Mass concentration unit. Expressed in mass of Ammonia per volume."
+    },
+    "mg_nh4_l": {
+        "value": "mg{NH4}/l",
+        "label": "milligram of Ammonium per litre",
+        "definition": "Mass concentration unit. Expressed in mass of Ammonium per volume.  Conversion factor: 1 mg{N}/L = 1.2888 mg{NH4}/L"
+    },
+    "mg_no2_l": {
+        "value": "mg{NO2}/l",
+        "label": "milligram of Nitrite per litre",
+        "definition": "Mass concentration unit. Expressed in mass of Nitrite per volume. Conversion factor: 1 mg{N}/L = 3.2845 mg{NO2}/L"
+    },
+    "mg_no3_l": {
+        "value": "mg{NO3}/l",
+        "label": "milligram of Nitrate per litre",
+        "definition": "Mass concentration unit. Expressed in mass of Nitrate per volume. Conversion factor: 1 mg{N}/L = 4.4268 mg{NO3}/L"
+    },
+    "mg_n_l": {
+        "value": "mg{N}/l",
+        "label": "milligram of Nitrogen per litre",
+        "definition": "Mass concentration unit. Expressed in mass of Nitrogen per volume."
+    },
+    "mg_o2_l": {
+        "value": "mg{O2}/l",
+        "label": "milligram of Oxygen per litre",
+        "definition": "Mass concentration unit. Expressed in mass of Oxygen per volume."
+    },
+    "mg_po4_l": {
+        "value": "mg{PO4}/l",
+        "label": "milligram of Phosphate per litre",
+        "definition": "Mass concentration unit. Expressed in mass of Phosphate per volume. Conversion factor: 1 mg{P}/L = 3.0662 mg{PO4}/L"
+    },
+    "mg_p_l": {
+        "value": "mg{P}/l",
+        "label": "milligram of Phosphorus per litre",
+        "definition": "Mass concentration unit. Expressed in mass of Phosphorus per volume."
+    },
+    "mg_sio3": {
+        "value": "mg{SiO3}/l",
+        "label": "milligram of Silicate per litre",
+        "definition": "Mass concentration unit. Expressed in mass of Silicate per volume. Conversion factor: 1 mg{Si}/L = 2.7090 mg{SiO3}/L"
+    },
+    "mg_si_l": {
+        "value": "mg{Si}/l",
+        "label": "milligram of Silicon per litre",
+        "definition": "Mass concentration unit. Expressed in mass of Silicon per volume."
+    },
+    "mg_s_l": {
+        "value": "mg{S}/l",
+        "label": "milligram of Sulphur per litre",
+        "definition": "Mass concentration unit. Expressed in mass of Sulfur per volume."
+    },
+    "mmol_l": {
+        "value": "mmol/l",
+        "label": "millimole per litre",
+        "definition": "Amount of substance concentration unit. Conversion to the SI unit: 1 mol/m3 = 1 mmol/L"
+    },
+    "month": {
+        "value": "mo",
+        "label": "month",
+        "definition": "Time unit."
+    },
+    "mole": {
+        "value": "mol",
+        "label": "mole",
+        "definition": "Amount of substance unit. SI base unit."
+    },
+    "mol_m3": {
+        "value": "mol/m3",
+        "label": "mol per cubic metre",
+        "definition": "Amount of substance concentration unit. SI unit."
+    },
+    "ng_l": {
+        "value": "ng/l",
+        "label": "nanogram per litre",
+        "definition": "Mass concentration unit. Conversion to SI unit: 1 kg/m3 = 10^9 ug/L"
+    },
+    "ng_g": {
+        "value": "ng/g",
+        "label": "nanogram per gram",
+        "definition": "Mass ratio unit. Conversion factor: 1 kg/kg = 10^9 ng/g"
+    },
+    "ng_kg": {
+        "value": "ng/kg",
+        "label": "nanogram per kilogram",
+        "definition": "Mass ratio unit. Conversion factor: 1 kg/kg = 10^12 ng/kg"
+    },
+    "second": {
+        "value": "s",
+        "label": "second",
+        "definition": "Time unit. SI base unit."
+    },
+    "tonne_per_year": {
+        "value": "t/a",
+        "label": "tonne per year",
+        "definition": "Mass flow rate. Conversion to SI unit: 1 kg/s = 31536 t/a. Used for loads or emissions of nutrients of oxygen consuming substances."
+    },
+    "microsiemens_cm": {
+        "value": "uS/cm",
+        "label": "microsiemens per centimetre",
+        "definition": "Electrical conductivity unit. Conversion to SI unit: 1 S/m = 10^4 uS/cm"
+    },
+    "ug_l": {
+        "value": "μg/l",
+        "label": "microgram per litre",
+        "definition": "Mass concentration unit. Conversion to SI unit: 1 kg/m3 = 10^6 ug/L"
+    },
+    "ug_g": {
+        "value": "ug/g",
+        "label": "microgram per gram",
+        "definition": "Mass ratio unit. Conversion factor: 1 kg/kg = 10^6 ug/g"
+    },
+    "ug_kg": {
+        "value": "ug/kg",
+        "label": "microgram per kilogram",
+        "definition": "Mass ratio unit. Conversion factor: 1 kg/kg = 10^9 ug/kg"
+    },
+    "ug_n_l": {
+        "value": "ug{N}/l",
+        "label": "microgram of Nitrogen per litre",
+        "definition": "Mass concentration unit. Expressed in mass of Nitrogen per volume."
+    },
+    "ug_teq_kg": {
+        "value": "ug{TEQ}/kg",
+        "label": "microgram TEQ per kilogram",
+        "definition": "Toxic equivalent (TEQ)  weighted mass ratio unit."
+    },
+    "umol_l": {
+        "value": "μmol/l",
+        "label": "micromole per litre",
+        "definition": "Amount of substance concentration unit. Conversion to the SI unit: 1 mol/m3 = 10^3 umol/L"
+    },
+    "umol_c_l": {
+        "value": "μmol{C}/l",
+        "label": "micromole of Carbon per litre",
+        "definition": "Amount of substance concentration unit. Expressed in amount of Carbon per volume."
+    },
+    "umol_n_l": {
+        "value": "μmol{N}/l",
+        "label": "micromole of Nitrogen per litre",
+        "definition": "Amount of substance concentration unit. Expressed in amount of Nitrogen per volume."
+    },
+    "umol_o2_l": {
+        "value": "μmol{O2}/l",
+        "label": "micromole of Oxygen molecules per litre",
+        "definition": "Amount of substance concentration unit. Expressed in amount of Oxygen molecules per volume."
+    },
+    "umol_p_l": {
+        "value": "μmol{P}/l",
+        "label": "micromole of Phosphorus per litre",
+        "definition": "Amount of substance concentration unit. Expressed in amount of Phosphorus per volume."
+    },
+    "umol_si_l": {
+        "value": "umol{Si}/l",
+        "label": "micromole of Silicon per litre",
+        "definition": "Amount of substance concentration unit. Expressed in amount of Silicon per volume."
+    },
+    "umol_s_l": {
+        "value": "umol{S}/l",
+        "label": "micromole of Sulfur per litre",
+        "definition": "Amount of substance concentration unit. Expressed in amount of Sulfur molecules per volume."
+    },
+    "eqr": {
+        "value": "{EQR}",
+        "label": "Ecological Quality Ratio",
+        "definition": "Ecological quality ratio."
+    },
+    "ntu": {
+        "value": "{NTU}",
+        "label": "Nephelometric Turbidity Unit",
+        "definition": "Nephelometric turbidity unit. See http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html"
+    },
+    "psu": {
+        "value": "{PSU}",
+        "label": "Practical Salinity Unit",
+        "definition": "Salinity unit. See http://unitsofmeasure.org/trac/ticket/27"
+    },
+    "massratio": {
+        "value": "{massRatio}",
+        "label": "mass ratio",
+        "definition": "Mass ratio unit. Dimensionless: kg/kg"
+    },
+    "molarratio": {
+        "value": "{molarRatio}",
+        "label": "molar ratio",
+        "definition": "Amount of substance ratio. Dimensionless: mol/mol"
+    },
+    "presence": {
+        "value": "{presence}",
+        "label": "presence or absence",
+        "definition": "Presence or absence of a given property."
+    },
+    "ratio": {
+        "value": "{ratio}",
+        "label": "ratio",
+        "definition": "Ratio. Dimensionless quantity."
+    }
+}

@@ -1,0 +1,307 @@
+body, html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	color: #FFF;
+}
+.navbar {
+	border-radius: 5px 5px 0 0;
+	border: #9cbc4f !important;
+	margin-left: 0;
+	padding-left: 0;
+}
+a {
+	cursor: pointer;
+}
+.vendor-small {
+	font-size: 65%;
+	color: #ccc;
+}
+.img-float {
+	margin-left: 14px;
+}
+.info-text-container {
+	max-width: 600px;
+	margin: 0 auto;
+}
+h1 {
+	margin-bottom: 24px;
+}
+.state-1 h1 {
+	margin: 1.5em 0 0.75em 0;
+}
+.form-choose-location-quick {
+	margin: 10px 0 60px 0;
+}
+.highlight {
+	color: #FFBE17;
+}
+.highlight-red {
+	color: #FF0000;
+}
+.footer a,
+.footer {
+	color: #EEE;
+	font-size: 12px;
+}
+.footer {
+	margin: 100px 0 100px 0;
+	text-align: center;
+}
+h2 {
+	margin: 2em 0 1em 0;
+}
+h4 {
+	margin: 2.5em 0 1em 0;
+}
+.bg-gradient {
+	background: #2f4f4f;
+	background: -moz-radial-gradient(center, ellipse cover, #436060 0%, #2f4f4f 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, #436060 0%, #2f4f4f 100%);
+	background: -o-radial-gradient(center, ellipse cover, #436060 0%, #2f4f4f 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #436060 0%, #2f4f4f 100%);
+	background: radial-gradient(ellipse at center, #436060 0%, #2f4f4f 100%);
+	background: radial-gradient(ellipse at center, #436060 0%, #2f4f4f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#436060', endColorstr='#2f4f4f',GradientType=1 );
+}
+.choose-location-well {
+	background: #008b8b;
+	border: none;
+	margin-top: 100px;
+}
+.nav {
+	margin: 2em 0 3em 0;
+}
+li.nav-li-main.active a {
+	background-color: #9cbc4f !important;
+}
+svg text {
+	fill: #FFF;
+}
+.result {
+	margin-bottom: 10em;
+}
+.attribute-description-hardness {
+	padding-top: 3em;
+}
+
+/* bar chart */
+.bar-chart-img {
+	width: 100%;
+	height: 350px;
+}
+.comparison-description {
+	margin: 0 0 3em 0;
+}
+.axis {
+	font-size: 12px;
+	color: #FFF;
+}
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #FFF;
+	stroke-width: 1.1;
+	shape-rendering: crispEdges;
+}
+.y.axis line,
+.y.axis path {
+	display: none;
+}
+
+/* map */
+.map-img path {
+	stroke-width: 3px;
+	fill: transparent;
+}
+.areas path {
+	stroke: #9cbc4f;
+	fill: #FFF;
+}
+.zones path {
+}
+
+.compare-nav {
+	padding-left: 50px;
+	padding-top: 45px;
+}
+
+/* gauge */
+.gauge-glass-img {
+	height: 505px;
+	width: 113px;
+}
+.bottle-img {
+	height: 505px;
+	width: 155px;
+}
+@media (min-width: 989px) {
+	.gauge-glass-img {
+		margin-top: -105px;
+	}
+}
+.gauge-bar-img {
+	height: 100px;
+	width: 100%;
+	max-width: 515px;
+	margin-top: 5px;
+}
+.gauge-glass {
+	stroke: #FFF;
+	stroke-width: 2;
+	stroke-miterlimit: 10;
+	fill: none;
+}
+.gauge-description li {
+	margin-bottom: 1em;
+}
+.gauge-description {
+	margin-top: 48px;
+	margin-right: 16px;
+}
+
+.gauge-values path,
+.gauge-value,
+.gauge-bubbles {
+	fill: #9cbc4f;
+}
+.gauge-value-2 {
+	opacity: 0.8;
+}
+.gauge-lines line {
+	stroke: #FFF;
+	stroke-width: 2;
+}
+.gauge-lines text {
+	fill: #FFF;
+	font-size: 20px;
+}
+.average-indicator {
+	stroke: #FF0000;
+	stroke-width: 2;
+}
+.gauge-unit {
+	fill: #FFF;
+	font-size: 16px;
+}
+.gauge-container {
+	position: relative;
+}
+.gauge-description h3 {
+	margin-top: 0 !important;
+}
+.gauge-bar-1 {
+	fill: #6C9BD0;
+}
+.gauge-bar-2 {
+	fill: #98BBE0;
+}
+.gauge-bar-3 {
+	fill: #D6E5F3;
+}
+.gauge-bar-labels text {
+	fill: #FFF;
+	font-size: 24px;
+}
+.gauge-value-indicators circle {
+	fill: #FF0000;
+	stroke-width: 1.6;
+	stroke: #AAA;
+}
+.range-indicator {
+	stroke: #FFF;
+	stroke-width: 1;
+}
+.range-indicator-bar {
+	stroke: #FFF;
+	stroke-width: 1;
+}
+#hardness-range-indicator .range-indicator-bar {
+	stroke: #333;
+}
+
+.autocomplete-suggestions { border: 1px solid #fff; background: #FFF; overflow: auto; border-radius: 0 0 4px 4px;}
+.autocomplete-suggestion { padding: 6px; white-space: nowrap; overflow: hidden; color: #555; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: bold; color: #555; }
+.autocomplete-group { padding: 8px 12px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: 20px;
+		margin-bottom: 1em;
+	}
+	.form-choose-location-quick {
+		margin: 10px 0 30px 0;
+	}
+	.choose-location-well {
+		margin-top: 1em;
+	}
+	.gauge-glass-img {
+		height: 350px;
+		width: 80px;
+	}
+	.gauge-glass-description {
+		font-size: 12px;
+	}
+	.bottle-img {
+		height: 325px;
+		width: 100px;
+	}
+	.compare-nav {
+		padding-left: 15px;
+	}
+}
+/* gauge top bubbles */
+.gauge-top path:nth-last-child(-n+3){
+	fill: #9cbc4f;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: #9cbc4f;
+}
+
+.nav-tabs > li > a:hover {
+  border-color: transparent transparent #9cbc4f;
+}
+.btn-warning {
+	background-color: #d0b808;
+	border-color: #d0b808;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+/*	background-color: #d67200;
+    border-color: #c26700; */
+		background-color: #bba507;
+		border-color: #bba507;
+}
+.btn-primary {
+    border-color: #9cbc4f;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-color: #9cbc4f;
+  border-color: #9cbc4f;
+}
+.panel-default {
+    border-color: #9cbc4f;
+}
+.panel-default > .panel-heading {
+    background-color: #9cbc4f;
+    border-color: #9cbc4f;
+}
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+    border-top-color: #9cbc4f;
+}
+blockquote {
+    border-left: 5px solid #9cbc4f;
+}
