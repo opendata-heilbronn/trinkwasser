@@ -1,5 +1,5 @@
 {
-  "name": "trinkwasser-heilbronn",
+  "name": "trinkwasser",
   "version": "1.0.0",
   "description": "This is a the API for Trinkwasser/Drinking water.  Information about the project can be found on [Github](https://github.com/codeforeurope/trinkwasser) ",
   "dependencies": {

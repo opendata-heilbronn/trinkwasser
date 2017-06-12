@@ -14,7 +14,7 @@ Install your login credentials to ~/.transifexrc
 [https://www.transifex.com]
 hostname = https://www.transifex.com
 password = pwd
-token = 
+token =
 username = username
 
 ```
@@ -22,16 +22,25 @@ username = username
 ```shell
 tx pull -a
 ```
-## After editing localisation changes in lang/locale/{in} 
+## After editing localisation changes in lang/locale/{in}
+### If you not in the language team for it won't let you write
+### Delete the other languages before saving the .po file you edited and executing..
 ```shell
-tx push
+tx push -t
 ```
 
 # Run
 
 ```bash
+npm install -g grunt
+npm install -g http-server
 npm install
 npm start
+```
+
+# Git before pushing your changes please do a pull request
+```shell
+git pull https://github.com/codeforeurope/trinkwasser.git master
 ```
 
 # Sources:
