@@ -1,0 +1,10 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <span class="navbar-brand mb-0 h1">Trinkwasser</span>
+  </div>
+</nav>
+
+<ng-container *ngIf="(waterQuality$ | async); let waterQuality">
+  <app-zone-selector [categories]="waterQuality.categories" (zone)="zone = $event"></app-zone-selector>
+  <app-zone-details *ngIf="zone" [zoneInfo]="waterQuality.zones" [zoneID]="zone"></app-zone-details>
+</ng-container>

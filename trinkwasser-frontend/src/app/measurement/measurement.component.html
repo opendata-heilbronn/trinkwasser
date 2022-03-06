@@ -1,0 +1,8 @@
+<h1>{{ name }}</h1>
+<p *ngIf="type == 'range'; else showNumericValue">
+  {{ range.from }} - {{ range.to }}
+</p>
+
+<ng-template #showNumericValue>
+  {{ numericValue }}
+</ng-template>

@@ -1,0 +1,48 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">World</li>
+              <li
+                *ngFor="let item of currentPosition; index as index; last as last"
+                class="breadcrumb-item"
+                [ngClass]="{'active': last}"
+                aria-current="page"
+                (click)="selectParent(index)"
+              >
+                {{ item.name }}
+              </li>
+            </ol>
+          </nav>
+
+          <div class="container" *ngIf="!isLeaf">
+            <div class="row">
+              <div class="col-12 d-flex flex-column">
+                <input type="search" class="form-control my-2" [(ngModel)]="searchText" (ngModelChange)="search($event)" name="search">
+                <div class="btn-group-vertical d-flex">
+                  <ng-container *ngFor="let category of (searchResult$ | async)">
+                    <button
+                      class="btn btn-outline-secondary flex-grow-1"
+                      type="button" (click)="selectChild(category)"
+                      *ngIf="category.name.toLowerCase().indexOf(searchText.toLowerCase()) != -1"
+                    >
+                      {{ category.name }}
+                    </button>
+                  </ng-container>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,77 @@
+{
+  "categories": [{
+    "name": "Europe",
+    "children": [{
+      "name": "Germany",
+      "children": [{
+        "name": "Baden-Württemberg",
+        "children": [{
+          "name": "Heilbronn",
+          "children": [{
+            "name": "Aachener Straße",
+            "zone": "DE-08121000-Heilbronn 10-11"
+          }, {
+            "name": "Bebelstraße",
+            "zone": "DE-08121000-Heilbronn 9"
+          }, {
+            "name": "Test 1",
+            "zone": "DE-08121000-Heilbronn 9"
+          }, {
+            "name": "Test 2",
+            "zone": "DE-08121000-Heilbronn 9"
+          }, {
+            "name": "Test 3",
+            "zone": "DE-08121000-Heilbronn 9"
+          }, {
+            "name": "Test 4",
+            "zone": "DE-08121000-Heilbronn 9"
+          }, {
+            "name": "Test 5",
+            "zone": "DE-08121000-Heilbronn 9"
+          }, {
+            "name": "Test 6",
+            "zone": "DE-08121000-Heilbronn 9"
+          }, {
+            "name": "Test 7",
+            "zone": "DE-08121000-Heilbronn 9"
+          }, {
+            "name": "Test 8",
+            "zone": "DE-08121000-Heilbronn 9"
+          }]
+        }]
+      }]
+    }]
+  }],
+  "zones": [{
+    "id": "DE-08121000-Heilbronn 9",
+    "name": "Heilbronn 9",
+    "measurements": [{
+      "sodium": {"from":  5, "to":  6},
+      "potassium": {"from":  1, "to":  2},
+      "calcium": {"from": 48, "to": 52},
+      "magnesium": {"from": 7, "to": 9},
+      "chlorides": {"from": 8, "to": 9},
+      "nitrates": {"from": 4.5, "to": 7},
+      "sulfates": 32,
+      "hardness": {"from": 8.5, "to":  9},
+      "year": "2020",
+      "source": "https://opendata.heilbronn.de/dataset/wasserversorgung-und-wasserqualitt-der-stadt-heilbronn/resource/154272a6-9ce8-4e4b-89b8",
+      "origin": ""
+    }]
+  }, {
+    "id": "DE-08121000-Heilbronn 10-11",
+    "name": "Heilbronn 10-11",
+    "measurements": [{
+      "sodium": {"from":  6, "to":  7},
+      "potassium": {"from":  1, "to": 2},
+      "calcium": {"from": 55, "to": 60},
+      "magnesium": {"from": 11, "to": 12},
+      "chlorides": {"from":  9, "to": 10},
+      "nitrates": {"from":  91, "to":  92},
+      "hardness": {"from": 10, "to":  11},
+      "year": "2020",
+      "source": "https://opendata.heilbronn.de/dataset/wasserversorgung-und-wasserqualitt-der-stadt-heilbronn/resource/154272a6-9ce8-4e4b-89b8",
+      "origin": ""
+    }]
+  }]
+}
